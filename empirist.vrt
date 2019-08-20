@@ -6251,7 +6251,7 @@ Größe	NN
 die	PRELS
 auf	APPR
 die	ART
-größte	NN
+größte	ADJA
 Eurer	PPOSAT
 Linsen	NN
 passt	VVFIN
@@ -7154,7 +7154,7 @@ anderem	PIS
 Acast	NE
 ,	$,
 Google	NE
-Listen	NN
+Listen	NE
 oder	KON
 auch	ADV
 die	ART
@@ -14395,8 +14395,7 @@ erfinden	VVINF
 .	$.
 Wie	PWAV
 wärs	VAPPER
-z	APPRART
-B	NN
+zB	ADV
 mit	APPR
 diesem	PDS
 :	$(
@@ -14777,7 +14776,9 @@ echt	PTKMA
 erwischt	VVPP
 @Kaf_fee	ADR
 !	$.
-*betretenzubodenblick*	AKW
+*	$(
+betretenzubodenblick	AKW
+*	$(
 #semibk	HST
 </posting>
 <posting id="cmc_test_012_024" author="AUTOR" date="7. Mai 2011">
@@ -15052,9 +15053,7 @@ um	KOUI
 </posting>
 <posting id="cmc_test_012_035" author="AUTOR" date="6. Mai 2011">
 @Mia1234	ADR
-I	APPR
-d	ART
-R	NN
+IdR	ADV
 ist	VAFIN
 es	PPER
 ja	PTKMA
@@ -15083,7 +15082,8 @@ zuerst	ADV
 <posting id="cmc_test_012_036" author="AUTOR" date="6. Mai 2011">
 @Hüpfy1989	ADR
 Stimmt	VVFIN
-schon.	PTKMA
+schon	PTKMA
+.	$.
 Wenn	KOUS
 man	PIS
 die	ART
@@ -15332,7 +15332,8 @@ mit	PTKVZ
 sudeln	VVINF
 "	$(
 &lt;-	$(
-Fachfrage:	NN
+Fachfrage	NN
+:	$.
 Lässt	VVFIN
 sich	PRF
 Twitter	NE
@@ -16852,7 +16853,8 @@ Gründungs	TRUNC
 mitglied	NN
 von	APPR
 Velvet	NE
-Underground.	NE
+Underground	NE
+.	$.
 Alles	PIAT
 weitere	NN
 wird	VAFIN
@@ -16863,7 +16865,8 @@ geklärt	VVPP
 .	$.
 </posting>
 <posting id="cmc_test_014_013" author="92.77.247.147" date="16:17, 26. Sep. 2010 (CEST)">
-Ok.	PTKANT
+Ok	PTKANT
+.	$.
 Träum	VVIMP
 weiter	ADJD
 :	$.
