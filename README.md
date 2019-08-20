@@ -1,12 +1,33 @@
-# empirist-corpus
+# EmpiriST corpus
 
 ## Introduction
 
-[EmpiriST 2015 shared task](https://sites.google.com/site/empirist2015/)
+The EmpiriST corpus is a manually annotated corpus consisting of
+German web pages and German computer-mediated communication (CMC),
+i.e. written discourse. Examples for CMC genres are monologic and
+dialogic tweets, social and professional chats, threads from Wikipedia
+talk pages, WhatsApp interactions and blog comments.
 
-[harmonised testsuite for POS Tagging of German social media data](https://www.cl.uni-heidelberg.de/~rehbein/tweeDe.mhtml)
+The dataset was originally created for the [EmpiriST 2015 shared
+task](https://sites.google.com/site/empirist2015/) ([Beißwenger et
+al., 2016](https://www.aclweb.org/anthology/W16-2606)) and featured
+manual tokenization and part-of-speech tagging. Subsequently, [Rehbein
+et al.
+(2018)](https://www.oeaw.ac.at/fileadmin/subsites/academiaecorpora/PDF/konvens18_03.pdf)
+incorporated the dataset into their [harmonised testsuite for POS
+tagging of German social media
+data](https://www.cl.uni-heidelberg.de/~rehbein/tweeDe.mhtml),
+manually added sentence boundaries and automatically mapped the
+part-of-speech tags to [UD pos
+tags](https://universaldependencies.org/u/pos/all.html). In our own
+annotation efforts (Proisl et al., in preparation), we manually
+normalized and lemmatized the data and converted the corpus into a
+“vertical” format suitable for importing into the Open Corpus
+Workbench, CQPweb, SketchEngine, or similar corpus tools.
 
 ## Annotation
+
+TODO: Describe S and P attributes
 
 The following subsections give a bit of additional information about
 the annotation process.
