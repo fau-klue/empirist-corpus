@@ -7,7 +7,22 @@
 
 ## Annotation
 
+The following subsections give a bit of additional information about
+the annotation process.
+
 ### Tokenization and part-of-speech tagging
+
+[Beißwenger et al.
+(2016:47)](https://www.aclweb.org/anthology/W16-2606) describe the
+annotation process as follows:
+
+> All data sets were manually tokenized and PoS tagged by multiple
+> annotators, based on the official
+> [tokenization](doc/EmpiriST_Guideline-Tokenisierung.pdf) […] and
+> [tagging](doc/EmpiriST_Guideline-PoS.pdf)
+> [guidelines](doc/EmpiriST_Guideline-Ergaenzungsdokument.pdf) […].
+> Cases of disagreement were then adjudicated by the task organizers to
+> produce the final gold standard.
 
 ### Sentence splitting
 
