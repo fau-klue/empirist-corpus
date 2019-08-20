@@ -12,17 +12,17 @@
 ### Sentence splitting
 
 [Rehbein et al.
-(2018)](https://www.oeaw.ac.at/fileadmin/subsites/academiaecorpora/PDF/konvens18_03.pdf)
+(2018:20)](https://www.oeaw.ac.at/fileadmin/subsites/academiaecorpora/PDF/konvens18_03.pdf)
 used the following rules to guide the segmentation:
 
 > * Hashtags and URLs at the beginning or the end of the tweet that
->     are not integrated in the sentence are separated and form their
->     own unit (see figure 1).
->   * Emoticons are treated as non-verbal comments to the text and are
->     thus integrated in the utterance.
->   * Interjections (*Aaahh*), inflectives (*\*grins\**, fillers (*ähm*)
->     and acronyms typical for CMC (*lol*, *OMG*) are also not separated
->     but considered as part of the message.
+>   are not integrated in the sentence are separated and form their
+>   own unit (see figure 1).
+> * Emoticons are treated as non-verbal comments to the text and are
+>   thus integrated in the utterance.
+> * Interjections (*Aaahh*), inflectives (*\*grins\**, fillers (*ähm*)
+>   and acronyms typical for CMC (*lol*, *OMG*) are also not separated
+>   but considered as part of the message.
 
 ### Normalization and lemmatization
 
