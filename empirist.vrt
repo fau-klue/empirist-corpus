@@ -5543,7 +5543,7 @@ die	ART	DET	die	der	der
 haken	NN	NOUN	Haken	Haken	Haken
 rauskommen	VVFIN	VERB	rauskommen	rauskommen	rauskommen
 .	$.	PUNCT	.	.	.
-emojiQsmilingFaceWithOpenMouthAndSmilingEyes	EMOIMG	SYM	emojiQsmilingFaceWithOpenMouthAndSmilingEyes	emojiQsmilingFaceWithOpenMouthAndSmilingEyes	emojiQsmilingFaceWithOpenMouthAndSmilingEyes
+😄	EMOIMG	SYM	😄	😄	😄
 </s>
 </posting>
 <posting id="cmc_train_006_002" author="Participant_8" date="9. Okt., 21:13" origid="1305">
@@ -5580,7 +5580,7 @@ macht	VVFIN	VERB	macht	machen	machen
 nen	ART	DET	einen	n	ein
 Prototyp	NN	NOUN	Prototyp	Prototyp	Prototyp
 .	$.	PUNCT	.	.	.
-emojiQsmilingFaceWithSmilingEyes	EMOIMG	SYM	emojiQsmilingFaceWithSmilingEyes	emojiQsmilingFaceWithSmilingEyes	emojiQsmilingFaceWithSmilingEyes
+😊	EMOIMG	SYM	😊	😊	😊
 </s>
 <s>
 und	KON	CCONJ	und	und	und
@@ -5605,7 +5605,7 @@ mal	PTKMA	ADV	mal	mal	mal
 wieder	ADV	ADV	wieder	wieder	wieder
 treffen	VVINF	VERB	treffen	treffen	treffen
 .	$.	PUNCT	.	.	.
-emojiQkissingCatFaceWithClosedEyes	EMOIMG	SYM	emojiQkissingCatFaceWithClosedEyes	emojiQkissingCatFaceWithClosedEyes	emojiQkissingCatFaceWithClosedEyes
+😽	EMOIMG	SYM	😽	😽	😽
 </s>
 </posting>
 <posting id="cmc_train_006_004" author="Participant_8" date="9. Okt., 21:17" origid="1307">
@@ -5639,7 +5639,7 @@ schon	ADV	ADV	schon	schon	schon
 so	PTKIFG	ADV	so	so	so
 aufgeregt	ADJD	ADJ	aufgeregt	aufgeregt	aufgeregt
 .	$.	PUNCT	.	.	.
-emojiQflushedFace	EMOIMG	SYM	emojiQflushedFace	emojiQflushedFace	emojiQflushedFace
+😳	EMOIMG	SYM	😳	😳	😳
 </s>
 </posting>
 <posting id="cmc_train_006_006" author="Participant_8" date="9. Okt., 21:22" origid="1309">
@@ -5661,7 +5661,7 @@ wird	VAFIN	AUX	wird	werden	werden
 so	PTKIFG	ADV	so	so	so
 gut	ADJD	ADJ	gut	gut	gut
 .	$.	PUNCT	.	.	.
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
+😻	EMOIMG	SYM	😻	😻	😻
 </s>
 </posting>
 <posting id="cmc_train_006_008" author="Participant_8" date="9. Okt., 21:23" origid="1311">
@@ -5793,7 +5793,7 @@ macht	VVFIN	VERB	macht	machen	machen
 so	ADV	ADV	so	so	so
 Spaß	NN	NOUN	Spaß	Spaß	Spaß
 .	$.	PUNCT	.	.	.
-emojiQcatFaceWithWrySmile	EMOIMG	SYM	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile
+😼	EMOIMG	SYM	😼	😼	😼
 </s>
 </posting>
 <posting id="cmc_train_006_020" author="Participant_8" date="18. Okt., 17:20" origid="1330">
@@ -5815,7 +5815,7 @@ noch	PTKMA	ADV	noch	noch	noch
 mehr	PIS	PRON	mehr	mehr	mehr
 machen	VVFIN	VERB	machen	machen	machen
 .	$.	PUNCT	.	.	.
-emojiQkissingCatFaceWithClosedEyes	EMOIMG	SYM	emojiQkissingCatFaceWithClosedEyes	emojiQkissingCatFaceWithClosedEyes	emojiQkissingCatFaceWithClosedEyes
+😽	EMOIMG	SYM	😽	😽	😽
 </s>
 </posting>
 <posting id="cmc_train_006_022" author="Participant_7" date="18. Okt., 21:53" origid="1335">
@@ -5828,7 +5828,7 @@ bleibe	VVFIN	VERB	bleibe	bleiben	bleiben
 bei	APPR	ADP	bei	bei	bei
 Janosch	NE	PROPN	Janosch	Janosch	Janosch
 .	$.	PUNCT	.	.	.
-emojiQpersonFrowning	EMOIMG	SYM	emojiQpersonFrowning	emojiQpersonFrowning	emojiQpersonFrowning
+🙍	EMOIMG	SYM	🙍	🙍	🙍
 </s>
 </posting>
 <posting id="cmc_train_006_023" author="Participant_8" date="18. Okt., 22:39" origid="1336">
@@ -5857,7 +5857,7 @@ voll	PTKIFG/ADJD	ADJ	voll	voll	voll	CLARIFY
 Mühe	NN	NOUN	Mühe	Mühe	Mühe
 gegeben	VVPP	VERB	gegeben	geben	geben
 .	$.	PUNCT	.	.	.
-emojiQpersonFrowning	EMOIMG	SYM	emojiQpersonFrowning	emojiQpersonFrowning	emojiQpersonFrowning
+🙍	EMOIMG	SYM	🙍	🙍	🙍
 </s>
 </posting>
 <posting id="cmc_train_006_025" author="Participant_8" date="18. Okt., 22:56" origid="1338">
@@ -5875,7 +5875,7 @@ machen	VVFIN	VERB	machen	machen	machen
 sich	PRF	PRON	sich	sich	sich
 schlecht	ADJD	ADJ	schlecht	schlecht	schlecht
 .	$.	PUNCT	.	.	.
-emojiQcatFaceWithWrySmile	EMOIMG	SYM	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile
+😼	EMOIMG	SYM	😼	😼	😼
 </s>
 </posting>
 <posting id="cmc_train_006_027" author="Participant_8" date="18. Okt., 22:59" origid="1340">
@@ -5945,7 +5945,7 @@ lange	ADJD/ADV	ADV	lange	lang	lang	CLARIFY
 sie	PPER	PRON	sie	sie	sie
 bleibt	VVFIN	VERB	bleibt	bleiben	bleiben
 .	$.	PUNCT	.	.	.
-emojiQcatFaceWithWrySmile	EMOIMG	SYM	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile
+😼	EMOIMG	SYM	😼	😼	😼
 </s>
 </posting>
 <posting id="cmc_train_006_031" author="Participant_8" date="24. Okt., 14:53" origid="1346">
@@ -5992,7 +5992,7 @@ schauen	VVINF	VERB	schauen	schauen	schauen
 wegen	APPR	ADP	wegen	wegen	wegen
 Uni	NN	NOUN	Uni	Uni	Uni
 .	$.	PUNCT	.	.	.
-emojiQkissingCatFaceWithClosedEyes	EMOIMG	SYM	emojiQkissingCatFaceWithClosedEyes	emojiQkissingCatFaceWithClosedEyes	emojiQkissingCatFaceWithClosedEyes
+😽	EMOIMG	SYM	😽	😽	😽
 </s>
 </posting>
 <posting id="cmc_train_006_034" author="Participant_7" date="25. Okt., 14:31" origid="1350">
@@ -6012,7 +6012,7 @@ party	NN	NOUN	Party	Party	Party
 ,	$,	PUNCT	,	,	,
 ne	ITJ	INTJ	ne	ne	ne
 ?	$.	PUNCT	?	?	?
-emojiQwearyFace	EMOIMG	SYM	emojiQwearyFace	emojiQwearyFace	emojiQwearyFace
+😩	EMOIMG	SYM	😩	😩	😩
 </s>
 </posting>
 <posting id="cmc_train_006_035" author="Participant_8" date="25. Okt., 15:51" origid="1351">
@@ -6082,7 +6082,7 @@ könnt	VMFIN	AUX	könnte	können	können
 Nadine	NE	PROPN	Nadine	Nadine	Nadine
 mitnehmen	VVINF	VERB	mitnehmen	mitnehmen	mitnehmen
 ?	$.	PUNCT	?	?	?
-emojiQcatFaceWithWrySmile	EMOIMG	SYM	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile
+😼	EMOIMG	SYM	😼	😼	😼
 </s>
 <s>
 und	KON	CCONJ	und	und	und
@@ -6158,7 +6158,7 @@ xD	EMOASC	SYM	xD	xD	xD
 Nadine	NN/NE	PROPN	Nadine	Nadine	Nadine	CLARIFY
 ist	VAFIN	AUX	ist	sein	sein
 16	CARD	NUM	16	16	16
-emojiQcatFaceWithWrySmile	EMOIMG	SYM	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile
+😼	EMOIMG	SYM	😼	😼	😼
 </s>
 <s>
 Ach	ITJ	INTJ	ach	ach	ach
@@ -6171,7 +6171,7 @@ und	KON	CCONJ	und	und	und
 dafür	PAV	ADV	dafür	dafür	dafür
 gebastelt	VVPP	VERB	gebastelt	basteln	basteln
 .	$.	PUNCT	.	.	.
-emojiQsmilingFaceWithOpenMouthAndTightlyClosedEyes	EMOIMG	SYM	emojiQsmilingFaceWithOpenMouthAndTightlyClosedEyes	emojiQsmilingFaceWithOpenMouthAndTightlyClosedEyes	emojiQsmilingFaceWithOpenMouthAndTightlyClosedEyes
+😆	EMOIMG	SYM	😆	😆	😆
 </s>
 </posting>
 <posting id="cmc_train_006_040" author="Participant_8" date="26. Okt., 22:32" origid="1356">
@@ -6233,12 +6233,12 @@ was	PIS	PRON	was	was	was
 schaffen	VVINF	VERB	schaffen	schaffen	schaffen
 können	VMFIN	AUX	können	können	können
 .	$.	PUNCT	.	.	.
-emojiQcatFaceWithWrySmile	EMOIMG	SYM	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile
+😼	EMOIMG	SYM	😼	😼	😼
 </s>
 </posting>
 <posting id="cmc_train_006_042" author="Participant_7" date="26. Okt., 22:59" origid="1359">
 <s>
-emojiQsmilingFaceWithSmilingEyes	EMOIMG	SYM	emojiQsmilingFaceWithSmilingEyes	emojiQsmilingFaceWithSmilingEyes	emojiQsmilingFaceWithSmilingEyes
+😊	EMOIMG	SYM	😊	😊	😊
 </s>
 </posting>
 <posting id="cmc_train_006_043" author="Participant_8" date="26. Okt., 23:00" origid="1361">
@@ -6279,7 +6279,7 @@ restlichen	NN	NOUN	Restlichen	restlicher	restlicher
 werden	VAFIN	AUX	werden	werden	werden
 Attrappen	NN	NOUN	Attrappen	Attrappe	Attrappe
 .	$.	PUNCT	.	.	.
-emojiQcatFaceWithTearsOfJoy	EMOIMG	SYM	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy
+😹	EMOIMG	SYM	😹	😹	😹
 </s>
 </posting>
 <posting id="cmc_train_006_045" author="Participant_8" date="26. Okt., 23:01" origid="1363">
@@ -6288,7 +6288,7 @@ Oooh	ITJ	INTJ	oooh	oooh	oooh
 wie	PTKIFG/PWAV	ADV	wie	wie	wie	CLARIFY
 geeeil	ADJD	ADJ	geil	geeeil	geil
 !	$.	PUNCT	!	!	!
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
+😻	EMOIMG	SYM	😻	😻	😻
 </s>
 </posting>
 <posting id="cmc_train_006_046" author="Participant_7" date="26. Okt., 23:04" origid="1364">
@@ -6301,7 +6301,7 @@ vorhin	ADV	ADV	vorhin	vorhin	vorhin
 auch	ADV	ADV	auch	auch	auch
 bestellt	VVPP	VERB	bestellt	bestellen	bestellen
 .	$.	PUNCT	.	.	.
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
+😻	EMOIMG	SYM	😻	😻	😻
 </s>
 </posting>
 </text>
@@ -18483,7 +18483,7 @@ von	APPR	ADP	von	von	von
 Janine	NE	PROPN	Janine	Janine	Janine
 bekommen	VVPP	VERB	bekommen	bekommen	bekommen
 .	$.	PUNCT	.	.	.
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
+😻	EMOIMG	SYM	😻	😻	😻
 </s>
 </posting>
 <posting id="cmc_test_013_002" author="Participant_8" date="26. Okt., 23:09" origid="1367">
@@ -18492,7 +18492,7 @@ Naaaaw	ITJ	INTJ	naaaaw	naaaaw	naaaaw
 wie	PTKIFG/PWAV	ADV	wie	wie	wie	CLARIFY
 süß	ADJD	ADJ	süß	süß	süß
 !	$.	PUNCT	!	!	!
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
+😻	EMOIMG	SYM	😻	😻	😻
 </s>
 </posting>
 <posting id="cmc_test_013_003" author="Participant_7" date="26. Okt., 23:11" origid="1368">
@@ -18513,7 +18513,7 @@ voll	PTKIFG	ADV	voll	voll	voll
 schlecht	ADJD	ADJ	schlecht	schlecht	schlecht
 gefühlt	VVPP	VERB	gefühlt	fühlen	fühlen
 .	$.	PUNCT	.	.	.
-emojiQloudlyCryingFace	EMOIMG	SYM	emojiQloudlyCryingFace	emojiQloudlyCryingFace	emojiQloudlyCryingFace
+😭	EMOIMG	SYM	😭	😭	😭
 </s>
 </posting>
 <posting id="cmc_test_013_004" author="Participant_8" date="26. Okt., 23:12" origid="1369">
@@ -18546,7 +18546,7 @@ leider	ADV	ADV	leider	leider	leider
 nur	PTKIFG	ADV	nur	nur	nur
 18	CARD	NUM	18	18	18
 +	$(	PUNCT	+	+	+
-emojiQloudlyCryingFace	EMOIMG	SYM	emojiQloudlyCryingFace	emojiQloudlyCryingFace	emojiQloudlyCryingFace
+😭	EMOIMG	SYM	😭	😭	😭
 </s>
 </posting>
 <posting id="cmc_test_013_006" author="Participant_7" date="27. Okt., 11:35" origid="1371">
@@ -18558,7 +18558,7 @@ leider	ADV	ADV	leider	leider	leider
 nicht	PTKNEG	PART	nicht	nicht	nicht
 mit	PTKVZ	PART	mit	mit	mit
 .	$.	PUNCT	.	.	.
-emojiQloudlyCryingFace	EMOIMG	SYM	emojiQloudlyCryingFace	emojiQloudlyCryingFace	emojiQloudlyCryingFace
+😭	EMOIMG	SYM	😭	😭	😭
 </s>
 </posting>
 <posting id="cmc_test_013_007" author="Participant_8" date="27. Okt., 11:35" origid="1372">
@@ -18650,7 +18650,7 @@ lässt	VVFIN	VERB	lässt	lassen	lassen
 dich	PPER	PRON	dich	dich	dich
 rein	PTKVZ	PART	rein	rein	rein
 .	$.	PUNCT	.	.	.
-emojiQcatFaceWithWrySmile	EMOIMG	SYM	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile
+😼	EMOIMG	SYM	😼	😼	😼
 </s>
 </posting>
 <posting id="cmc_test_013_009" author="Participant_8" date="27. Okt., 11:42" origid="1374">
@@ -18672,7 +18672,7 @@ schon	ADV	ADV	schon	schon	schon
 <posting id="cmc_test_013_010" author="Participant_8" date="28. Okt., 12:36" origid="1376">
 <s>
 Whaaaa	ITJ	INTJ	whaaaa	whaaaa	whaaaa
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
+😻	EMOIMG	SYM	😻	😻	😻
 ihr	PPER	PRON	ihr	ihr	ihr
 seid	VAFIN	AUX	seid	sein	sein
 die	ART	DET	die	der	der
@@ -18705,7 +18705,7 @@ noch	PTKMWL	ADV	noch	noch	noch
 mehr	PIAT	ADJ	mehr	mehr	mehr
 davon	PAV	ADV	davon	davon	davon
 .	$.	PUNCT	.	.	.
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
+😻	EMOIMG	SYM	😻	😻	😻
 </s>
 </posting>
 <posting id="cmc_test_013_012" author="Participant_8" date="28. Okt., 12:37" origid="1378">
@@ -18725,7 +18725,7 @@ weiß	VVFIN	VERB	weiß	wissen	wissen
 wir	PPER	PRON	wir	wir	wir
 auch	ADV	ADV	auch	auch	auch
 .	$.	PUNCT	.	.	.
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
+😻	EMOIMG	SYM	😻	😻	😻
 </s>
 </posting>
 <posting id="cmc_test_013_014" author="Participant_8" date="28. Okt., 12:45" origid="1380">
@@ -18754,7 +18754,7 @@ nichts	PIS	PRON	nichts	nichts	nichts
 mehr	ADV	ADV	mehr	mehr	mehr
 ab	PTKVZ	PART	ab	ab	ab
 .	$.	PUNCT	.	.	.
-emojiQcatFaceWithWrySmile	EMOIMG	SYM	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile
+😼	EMOIMG	SYM	😼	😼	😼
 </s>
 </posting>
 <posting id="cmc_test_013_017" author="Participant_8" date="28. Okt., 13:25" origid="1385">
@@ -18811,7 +18811,7 @@ Ja	PTKANT	INTJ	ja	ja	ja
 kein	PIAT	DET	kein	kein	kein
 Problem	NN	NOUN	Problem	Problem	Problem
 .	$.	PUNCT	.	.	.
-emojiQsmilingFaceWithSmilingEyes	EMOIMG	SYM	emojiQsmilingFaceWithSmilingEyes	emojiQsmilingFaceWithSmilingEyes	emojiQsmilingFaceWithSmilingEyes
+😊	EMOIMG	SYM	😊	😊	😊
 </s>
 </posting>
 <posting id="cmc_test_013_021" author="Participant_8" date="28. Okt., 13:27" origid="1389">
@@ -18830,22 +18830,22 @@ Liebe	NN	NOUN	Liebe	liebe	liebe
 zum	APPRART	_	zum	zu	zu
 Geburtstag	NN	NOUN	Geburtstag	Geburtstag	Geburtstag
 .	$.	PUNCT	.	.	.
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
-emojiQkissingCatFaceWithClosedEyes	EMOIMG	SYM	emojiQkissingCatFaceWithClosedEyes	emojiQkissingCatFaceWithClosedEyes	emojiQkissingCatFaceWithClosedEyes
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
-emojiQkissingCatFaceWithClosedEyes	EMOIMG	SYM	emojiQkissingCatFaceWithClosedEyes	emojiQkissingCatFaceWithClosedEyes	emojiQkissingCatFaceWithClosedEyes
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
-emojiQheavyBlackHeart	EMOIMG	SYM	emojiQheavyBlackHeart	emojiQheavyBlackHeart	emojiQheavyBlackHeart
-emojiQheavyBlackHeart	EMOIMG	SYM	emojiQheavyBlackHeart	emojiQheavyBlackHeart	emojiQheavyBlackHeart
-emojiQheavyBlackHeart	EMOIMG	SYM	emojiQheavyBlackHeart	emojiQheavyBlackHeart	emojiQheavyBlackHeart
+😻	EMOIMG	SYM	😻	😻	😻
+😽	EMOIMG	SYM	😽	😽	😽
+😻	EMOIMG	SYM	😻	😻	😻
+😽	EMOIMG	SYM	😽	😽	😽
+😻	EMOIMG	SYM	😻	😻	😻
+😻	EMOIMG	SYM	😻	😻	😻
+❤	EMOIMG	SYM	❤	❤	❤
+❤	EMOIMG	SYM	❤	❤	❤
+❤	EMOIMG	SYM	❤	❤	❤
 </s>
 </posting>
 <posting id="cmc_test_013_023" author="Participant_8" date="29. Okt., 9:45" origid="1391">
 <s>
 Dankeschön	PTKANT	INTJ	dankeschön	dankeschön	dankeschön
-emojiQsmilingFaceWithSmilingEyes	EMOIMG	SYM	emojiQsmilingFaceWithSmilingEyes	emojiQsmilingFaceWithSmilingEyes	emojiQsmilingFaceWithSmilingEyes
-emojiQsmilingFaceWithSmilingEyes	EMOIMG	SYM	emojiQsmilingFaceWithSmilingEyes	emojiQsmilingFaceWithSmilingEyes	emojiQsmilingFaceWithSmilingEyes
+😊	EMOIMG	SYM	😊	😊	😊
+😊	EMOIMG	SYM	😊	😊	😊
 </s>
 </posting>
 <posting id="cmc_test_013_024" author="Participant_8" date="30. Okt., 14:07" origid="1392">
@@ -18860,7 +18860,7 @@ noch	ADV	ADV	noch	noch	noch
 irgendwas	PIS	PRON	irgendwas	irgendwas	irgendwas
 mitbringen	VVINF	VERB	mitbringen	mitbringen	mitbringen
 ?	$.	PUNCT	?	?	?
-emojiQsmilingFaceWithSmilingEyes	EMOIMG	SYM	emojiQsmilingFaceWithSmilingEyes	emojiQsmilingFaceWithSmilingEyes	emojiQsmilingFaceWithSmilingEyes
+😊	EMOIMG	SYM	😊	😊	😊
 </s>
 </posting>
 <posting id="cmc_test_013_025" author="Participant_7" date="30. Okt., 14:08" origid="1393">
@@ -18876,7 +18876,7 @@ ein	ART	DET	ein	ein	ein
 paar	PIDAT/PIAT	ADJ	paar	paar	paar	CLARIFY
 Donuts	NN	NOUN	Donuts	Donut	Donut
 .	$.	PUNCT	.	.	.
-emojiQwhiteSmilingFace	EMOIMG	SYM	emojiQwhiteSmilingFace	emojiQwhiteSmilingFace	emojiQwhiteSmilingFace
+☺	EMOIMG	SYM	☺	☺	☺
 </s>
 </posting>
 <posting id="cmc_test_013_026" author="Participant_8" date="30. Okt., 14:11" origid="1394">
@@ -18908,7 +18908,7 @@ nach	APPR	ADP	nach	nach	nach
 auch	ADV	ADV	auch	auch	auch
 da	PTKVZ	PART	da	da	da
 .	$.	PUNCT	.	.	.
-emojiQsmilingFaceWithSmilingEyes	EMOIMG	SYM	emojiQsmilingFaceWithSmilingEyes	emojiQsmilingFaceWithSmilingEyes	emojiQsmilingFaceWithSmilingEyes
+😊	EMOIMG	SYM	😊	😊	😊
 </s>
 </posting>
 <posting id="cmc_test_013_028" author="Participant_8" date="30. Okt., 14:14" origid="1396">
@@ -18925,7 +18925,7 @@ auf	APPR	ADP	auf	auf	auf
 dem	ART	DET	dem	der	der
 Heimweg	NN	NOUN	Heimweg	Heimweg	Heimweg
 .	$.	PUNCT	.	.	.
-emojiQkissingCatFaceWithClosedEyes	EMOIMG	SYM	emojiQkissingCatFaceWithClosedEyes	emojiQkissingCatFaceWithClosedEyes	emojiQkissingCatFaceWithClosedEyes
+😽	EMOIMG	SYM	😽	😽	😽
 </s>
 </posting>
 <posting id="cmc_test_013_030" author="Participant_8" date="30. Okt., 16:54" origid="1398">
@@ -18954,7 +18954,7 @@ xD	EMOASC	SYM	xD	xD	xD
 <s>
 Kein	PIAT	DET	kein	kein	kein
 Problem	NN	NOUN	Problem	Problem	Problem
-emojiQkissingFaceWithClosedEyes	EMOIMG	SYM	emojiQkissingFaceWithClosedEyes	emojiQkissingFaceWithClosedEyes	emojiQkissingFaceWithClosedEyes
+😚	EMOIMG	SYM	😚	😚	😚
 </s>
 </posting>
 <posting id="cmc_test_013_032" author="Participant_8" date="30. Okt., 17:09" origid="1400">
@@ -18971,7 +18971,7 @@ an	APPR	ADP	an	an	an
 der	ART	DET	der	der	der
 wiebelstraße	NN	NOUN	Wiebelstraße	Wiebelstraße	Wiebelstraße
 rum	PTKVZ	PART	rum	rum	rum
-emojiQfaceWithLookOfTriumph	EMOIMG	SYM	emojiQfaceWithLookOfTriumph	emojiQfaceWithLookOfTriumph	emojiQfaceWithLookOfTriumph
+😤	EMOIMG	SYM	😤	😤	😤
 </s>
 </posting>
 <posting id="cmc_test_013_033" author="Participant_7" date="30. Okt., 17:10" origid="1401">
@@ -18981,7 +18981,7 @@ ich	PPER	PRON	ich	ich	ich
 nur	PTKIFG	ADV	nur	nur	nur
 zu	PTKA	PART	zu	zu	zu
 gut	ADJD	ADJ	gut	gut	gut
-emojiQwearyFace	EMOIMG	SYM	emojiQwearyFace	emojiQwearyFace	emojiQwearyFace
+😩	EMOIMG	SYM	😩	😩	😩
 </s>
 </posting>
 <posting id="cmc_test_013_034" author="Participant_8" date="30. Okt., 17:11" origid="1402">
@@ -19013,7 +19013,7 @@ wieder	ADV	ADV	wieder	wieder	wieder
 nur	PTKIFG	ADV	nur	nur	nur
 einspurig	ADJD	ADJ	einspurig	einspurig	einspurig
 .	$.	PUNCT	.	.	.
-emojiQtiredFace	EMOIMG	SYM	emojiQtiredFace	emojiQtiredFace	emojiQtiredFace
+😫	EMOIMG	SYM	😫	😫	😫
 </s>
 </posting>
 <posting id="cmc_test_013_036" author="Participant_8" date="30. Okt., 17:16" origid="1404">
@@ -19041,7 +19041,7 @@ Minuten	NN	NOUN	Minuten	Minute	Minute
 extra	ADV	ADV	extra	extra	extra
 ein	PTKVZ	PART	ein	ein	ein
 .	$.	PUNCT	.	.	.
-emojiQcatFaceWithWrySmile	EMOIMG	SYM	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile
+😼	EMOIMG	SYM	😼	😼	😼
 </s>
 </posting>
 <posting id="cmc_test_013_038" author="Participant_8" date="30. Okt., 22:12" origid="1406">
@@ -19070,7 +19070,7 @@ dem	ART	DET	dem	der	der
 Rücken	NN	NOUN	Rücken	Rücken	Rücken
 liegen	VVINF	VERB	liegen	liegen	liegen
 ?	$.	PUNCT	?	?	?
-emojiQcatFaceWithWrySmile	EMOIMG	SYM	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile	emojiQcatFaceWithWrySmile
+😼	EMOIMG	SYM	😼	😼	😼
 </s>
 </posting>
 <posting id="cmc_test_013_040" author="Participant_8" date="1. Nov., 21:21" origid="1409">
@@ -19104,13 +19104,13 @@ Ahhhhhhhhh	ITJ	INTJ	ah	ahhhhhhhhh	ah
 wie	PTKIFG/PWAV	ADV	wie	wie	wie	CLARIFY
 süß	ADJD	ADJ	süß	süß	süß
 !	$.	PUNCT	!	!	!
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
+😻	EMOIMG	SYM	😻	😻	😻
+😻	EMOIMG	SYM	😻	😻	😻
+😻	EMOIMG	SYM	😻	😻	😻
+😻	EMOIMG	SYM	😻	😻	😻
+😻	EMOIMG	SYM	😻	😻	😻
+😻	EMOIMG	SYM	😻	😻	😻
+😻	EMOIMG	SYM	😻	😻	😻
 </s>
 </posting>
 <posting id="cmc_test_013_043" author="Participant_7" date="3. Nov., 22:09" origid="1413">
@@ -19118,7 +19118,7 @@ emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeart
 Eine	ART	DET	eine	ein	ein
 Eule	NN	NOUN	Eule	Eule	Eule
 !	$.	PUNCT	!	!	!
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
+😻	EMOIMG	SYM	😻	😻	😻
 </s>
 </posting>
 <posting id="cmc_test_013_044" author="Participant_8" date="3. Nov., 22:09" origid="1414">
@@ -19145,11 +19145,11 @@ mit	APPR	ADP	mit	mit	mit
 Edding	NN	NOUN	Edding	Edding	Edding
 drauf	PAV	ADV	drauf	drauf	drauf
 .	$.	PUNCT	.	.	.
-emojiQcatFaceWithTearsOfJoy	EMOIMG	SYM	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy
-emojiQcatFaceWithTearsOfJoy	EMOIMG	SYM	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy
-emojiQcatFaceWithTearsOfJoy	EMOIMG	SYM	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy
-emojiQcatFaceWithTearsOfJoy	EMOIMG	SYM	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy
-emojiQcatFaceWithTearsOfJoy	EMOIMG	SYM	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy
+😹	EMOIMG	SYM	😹	😹	😹
+😹	EMOIMG	SYM	😹	😹	😹
+😹	EMOIMG	SYM	😹	😹	😹
+😹	EMOIMG	SYM	😹	😹	😹
+😹	EMOIMG	SYM	😹	😹	😹
 </s>
 </posting>
 <posting id="cmc_test_013_046" author="Participant_8" date="3. Nov., 22:11" origid="1416">
@@ -19175,9 +19175,9 @@ Mist	NN	NOUN	Mist	Mist	Mist
 ,	$,	PUNCT	,	,	,
 ertappt	VVPP	VERB	ertappt	ertappen	ertappen
 .	$.	PUNCT	.	.	.
-emojiQcatFaceWithTearsOfJoy	EMOIMG	SYM	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy
-emojiQcatFaceWithTearsOfJoy	EMOIMG	SYM	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy
-emojiQcatFaceWithTearsOfJoy	EMOIMG	SYM	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy
+😹	EMOIMG	SYM	😹	😹	😹
+😹	EMOIMG	SYM	😹	😹	😹
+😹	EMOIMG	SYM	😹	😹	😹
 </s>
 </posting>
 <posting id="cmc_test_013_048" author="Participant_8" date="3. Nov., 22:14" origid="1418">
@@ -19215,7 +19215,7 @@ hübsche	ADJA	ADJ	hübsche	hübsch	hübsch
 für	APPR	ADP	für	für	für
 dich	PPER	PRON	dich	dich	dich
 .	$.	PUNCT	.	.	.
-emojiQkissingFaceWithClosedEyes	EMOIMG	SYM	emojiQkissingFaceWithClosedEyes	emojiQkissingFaceWithClosedEyes	emojiQkissingFaceWithClosedEyes
+😚	EMOIMG	SYM	😚	😚	😚
 </s>
 </posting>
 <posting id="cmc_test_013_050" author="Participant_8" date="3. Nov., 22:17" origid="1420">
@@ -19263,9 +19263,9 @@ in	APPR	ADP	in	in	in
 meiner	PPOSAT	DET	meiner	mein	mein
 Größe	NN	NOUN	Größe	Größe	Größe
 .	$.	PUNCT	.	.	.
-emojiQcatFaceWithTearsOfJoy	EMOIMG	SYM	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy
-emojiQcatFaceWithTearsOfJoy	EMOIMG	SYM	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy
-emojiQcatFaceWithTearsOfJoy	EMOIMG	SYM	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy	emojiQcatFaceWithTearsOfJoy
+😹	EMOIMG	SYM	😹	😹	😹
+😹	EMOIMG	SYM	😹	😹	😹
+😹	EMOIMG	SYM	😹	😹	😹
 </s>
 </posting>
 <posting id="cmc_test_013_052" author="Participant_8" date="3. Nov., 22:20" origid="1422">
@@ -19294,7 +19294,7 @@ nachher	ADV	ADV	nachher	nachher	nachher
 gleich	ADV	ADV	gleich	gleich	gleich
 mal	PTKMA	ADV	mal	mal	mal
 .	$.	PUNCT	.	.	.
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
+😻	EMOIMG	SYM	😻	😻	😻
 </s>
 </posting>
 <posting id="cmc_test_013_054" author="Participant_8" date="3. Nov., 22:27" origid="1424">
@@ -19306,9 +19306,9 @@ Hihi	ITJ	INTJ	hihi	hihi	hihi
 <posting id="cmc_test_013_055" author="Participant_7" date="4. Nov., 14:41" origid="1426">
 <s>
 Ahhhhhhh	ITJ	INTJ	ah	ahhhhhhh	ah
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
-emojiQsmilingCatFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes	emojiQsmilingCatFaceWithHeartShapedEyes
+😻	EMOIMG	SYM	😻	😻	😻
+😻	EMOIMG	SYM	😻	😻	😻
+😻	EMOIMG	SYM	😻	😻	😻
 </s>
 </posting>
 <posting id="cmc_test_013_056" author="Participant_8" date="4. Nov., 14:42" origid="1427">
@@ -19319,7 +19319,7 @@ Hihi	ITJ	INTJ	hihi	hihi	hihi
 </posting>
 <posting id="cmc_test_013_057" author="Participant_8" date="14. Nov., 21:02" origid="1429">
 <s>
-emojiQsmilingFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingFaceWithHeartShapedEyes	emojiQsmilingFaceWithHeartShapedEyes	emojiQsmilingFaceWithHeartShapedEyes
+😍	EMOIMG	SYM	😍	😍	😍
 ich	PPER	PRON	ich	ich	ich
 bin	VAFIN	AUX	bin	sein	sein
 sprachlos	ADJD	ADJ	sprachlos	sprachlos	sprachlos
@@ -19342,10 +19342,10 @@ ist	VAFIN	AUX	ist	sein	sein
 total	PTKIFG/ADJD	ADJ	total	total	total	CLARIFY
 geil	ADJD	ADJ	geil	geil	geil
 .	$.	PUNCT	.	.	.
-emojiQsmilingFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingFaceWithHeartShapedEyes	emojiQsmilingFaceWithHeartShapedEyes	emojiQsmilingFaceWithHeartShapedEyes
-emojiQsmilingFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingFaceWithHeartShapedEyes	emojiQsmilingFaceWithHeartShapedEyes	emojiQsmilingFaceWithHeartShapedEyes
-emojiQsmilingFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingFaceWithHeartShapedEyes	emojiQsmilingFaceWithHeartShapedEyes	emojiQsmilingFaceWithHeartShapedEyes
-emojiQsmilingFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingFaceWithHeartShapedEyes	emojiQsmilingFaceWithHeartShapedEyes	emojiQsmilingFaceWithHeartShapedEyes
+😍	EMOIMG	SYM	😍	😍	😍
+😍	EMOIMG	SYM	😍	😍	😍
+😍	EMOIMG	SYM	😍	😍	😍
+😍	EMOIMG	SYM	😍	😍	😍
 ich	PPER	PRON	ich	ich	ich
 bin	VAFIN	AUX	bin	sein	sein
 jetzt	ADV	ADV	jetzt	jetzt	jetzt
@@ -19362,8 +19362,8 @@ es	PPER	PRON	es	es	es
 ist	VAFIN	AUX	ist	sein	sein
 so	PTKIFG	ADV	so	so	so
 toll	ADJD	ADJ	toll	toll	toll
-emojiQsmilingFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingFaceWithHeartShapedEyes	emojiQsmilingFaceWithHeartShapedEyes	emojiQsmilingFaceWithHeartShapedEyes
-emojiQsmilingFaceWithHeartShapedEyes	EMOIMG	SYM	emojiQsmilingFaceWithHeartShapedEyes	emojiQsmilingFaceWithHeartShapedEyes	emojiQsmilingFaceWithHeartShapedEyes
+😍	EMOIMG	SYM	😍	😍	😍
+😍	EMOIMG	SYM	😍	😍	😍
 </s>
 </posting>
 </text>
