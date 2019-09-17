@@ -34,8 +34,8 @@ the annotation process.
 
 ### Tokenization and part-of-speech tagging
 
-[Beißwenger et al.
-(2016:47)](https://www.aclweb.org/anthology/W16-2606) describe the
+[Beißwenger et al. (2016:
+47)](https://www.aclweb.org/anthology/W16-2606) describe the
 annotation process as follows:
 
 > All data sets were manually tokenized and PoS tagged by multiple
@@ -48,8 +48,8 @@ annotation process as follows:
 
 ### Sentence splitting
 
-[Rehbein et al.
-(2018:20)](https://www.oeaw.ac.at/fileadmin/subsites/academiaecorpora/PDF/konvens18_03.pdf)
+[Rehbein et al. (2018:
+20)](https://www.oeaw.ac.at/fileadmin/subsites/academiaecorpora/PDF/konvens18_03.pdf)
 used the following rules to guide the segmentation:
 
 > * Hashtags and URLs at the beginning or the end of the tweet that
@@ -70,8 +70,9 @@ decided in group meetings with the team leaders.
 
 ## Authors
 
-The EmpiriST 2015 shared task was organized by Michael Beißwenger,
-Sabine Bartsch, Stefan Evert and Kay-Michael Würzner.
+The corpus data was collected, tokenized and part-of-speech tagged by
+Michael Beißwenger, Sabine Bartsch, Stefan Evert and Kay-Michael
+Würzner who organized the EmpiriST 2015 shared task.
 
 Ines Rehbein, Josef Ruppenhofer and Victor Zimmermann added sentence
 boundaries and automatically mapped the STTS pos tags to UD pos tags.
