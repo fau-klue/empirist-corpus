@@ -71,8 +71,8 @@ decided in group meetings with the team leaders.
 ## Authors
 
 The corpus data was collected, tokenized and part-of-speech tagged by
-Michael Beißwenger, Sabine Bartsch, Stefan Evert and Kay-Michael
-Würzner who organized the EmpiriST 2015 shared task.
+the organizers of the EmpiriST 2015 shared task: Michael Beißwenger,
+Sabine Bartsch, Stefan Evert and Kay-Michael Würzner.
 
 Ines Rehbein, Josef Ruppenhofer and Victor Zimmermann added sentence
 boundaries and automatically mapped the STTS pos tags to UD pos tags.
