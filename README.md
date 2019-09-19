@@ -8,8 +8,8 @@ i.e. written discourse. Examples for CMC genres are monologic and
 dialogic tweets, social and professional chats, threads from Wikipedia
 talk pages, WhatsApp interactions and blog comments.
 
-The dataset was originally created by [Beißwenger et al.,
-2016](https://www.aclweb.org/anthology/W16-2606) for the [EmpiriST
+The dataset was originally created by [Beißwenger et al.
+(2016)](https://www.aclweb.org/anthology/W16-2606) for the [EmpiriST
 2015 shared task](https://sites.google.com/site/empirist2015/) and
 featured manual tokenization and part-of-speech tagging. Subsequently,
 [Rehbein et al.
