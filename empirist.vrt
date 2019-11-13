@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <corpus>
 <text subcorpus="cmc" set="train" id="cmc_train_001" raw="cmc_train_blog_comment.txt">
 <posting id="cmc_train_001_001" author="B. Tovar" date="23. Januar 2013 um 15:19">
