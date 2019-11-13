@@ -6,7 +6,14 @@ The EmpiriST corpus is a manually annotated corpus consisting of
 German web pages and German computer-mediated communication (CMC),
 i.e. written discourse. Examples for CMC genres are monologic and
 dialogic tweets, social and professional chats, threads from Wikipedia
-talk pages, WhatsApp interactions and blog comments.
+talk pages, WhatsApp interactions and blog comments. Here is an
+overview of the sizes of the corpus and its subsets in tokens:
+
+|          |    CMC |    Web |  Total |
+|----------|--------|--------|--------|
+| Training |  5,109 |  4,944 | 10,053 |
+| Test     |  5,237 |  7,568 | 12,805 |
+| Total    | 10,346 | 12,512 | 22,858 |
 
 The dataset was originally created by [Beißwenger et al.
 (2016)](https://www.aclweb.org/anthology/W16-2606) for the [EmpiriST
@@ -79,6 +86,17 @@ boundaries and automatically mapped the STTS pos tags to UD pos tags.
 
 Thomas Proisl, Natalie Dykes, Philipp Heinrich, Besim Kabashi and
 Stefan Evert added normalization and lemmatization.
+
+<!-- ## Utilities -->
+
+<!-- Extract the training set: -->
+
+<!--     xsltproc -o empirist_train.vrt utils/extract_train.xsl empirist.vrt -->
+
+<!-- Extract the test set: -->
+
+<!--     xsltproc -o empirist_test.vrt utils/extract_test.xsl empirist.vrt -->
+
 
 ## References
 
