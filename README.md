@@ -9,11 +9,11 @@ dialogic tweets, social and professional chats, threads from Wikipedia
 talk pages, WhatsApp interactions and blog comments. Here is an
 overview of the sizes of the corpus and its subsets in tokens:
 
-|          |    CMC |    Web |  Total |
-|----------|--------|--------|--------|
-| Training |  5,109 |  4,944 | 10,053 |
-| Test     |  5,237 |  7,568 | 12,805 |
-| Total    | 10,346 | 12,512 | 22,858 |
+|              |    CMC |    Web |  Total |
+|--------------|--------|--------|--------|
+| **Training** |  5,109 |  4,944 | 10,053 |
+| **Test**     |  5,237 |  7,568 | 12,805 |
+| **Total**    | 10,346 | 12,512 | 22,858 |
 
 The dataset was originally created by [Beißwenger et al.
 (2016)](https://www.aclweb.org/anthology/W16-2606) for the [EmpiriST
