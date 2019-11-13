@@ -4,7 +4,7 @@
   <xsl:template match="/">
     <xsl:element name="corpus"><xsl:text>
 </xsl:text>
-    <xsl:copy-of select="corpus/text[@set='train']"></xsl:copy-of>
+    <xsl:copy-of select="corpus/text[@set='test']"></xsl:copy-of>
     <xsl:text>
 </xsl:text>
     </xsl:element>
