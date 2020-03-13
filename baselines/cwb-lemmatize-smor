@@ -1,0 +1,2859 @@
+#!/usr/bin/perl
+# -*-cperl-*-
+##
+## (C) 2020 by Stefan Evert [www.stefan-evert.de]
+##
+## This software is provided AS IS and the author makes no warranty as to
+## its use and performance. You may use the software, redistribute and
+## modify it under the same terms as Perl itself.
+$| = 1;
+
+use strict;
+use warnings;
+
+binmode(STDOUT, ":encoding(utf8)");
+
+use CWB;
+use CWB::CL::Strict;
+use CWB::Encoder;
+use Encode;
+
+use Getopt::Long qw(:config no_ignore_case);
+
+our $Corpus = undef;
+our $WordAtt = "word";
+our $POSAtt = "pos";
+our $SentAtt = "s";
+our $LemmaAtt = "lemma";
+our $TigerMode = 0;
+our $Empirist = 0;
+our $Unknown = 0;
+our $Registry = undef;
+our $Memory = 2000;
+our $MaxLen = 80;
+our $Force = 0;
+our $Verbose = 0;
+our $Debug = 0;
+our $Help = 0;
+our $Charset = undef; # will be determined from registry file
+
+our $Word2Lemma; # mapping tables initialized in BEGIN block at tend of script
+our $SMOR2Tiger;
+
+my $ok = GetOptions(
+  "word|wf=s" => \$WordAtt,
+  "pos=s" => \$POSAtt,
+  "sent|s=s" => \$SentAtt,
+  "nosent|nos" => sub { $SentAtt = undef },
+  "tiger|T" => \$TigerMode,
+  "empirist|E" => \$Empirist,
+  "unknown|u" => \$Unknown,
+  "lemma|P=s" => \$LemmaAtt,
+  "registry|r=s" => \$Registry,
+  "memory|M=i" => \$Memory,
+  "maxlen|L=i" => \$MaxLen,
+  "force|f" => \$Force,
+  "verbose|v" => \$Verbose,
+  "debug|d" => \$Debug,
+  "help|h" => \$Help,
+);
+
+die <<"USAGE" unless $ok && @ARGV == 1 && !$Help;
+
+Usage:  cwb-lemmatize-smor [OPTIONS] CORPUS
+
+  -w <att>,       p-attribute for word forms [default: word]
+    --word=<att>
+  -pos <att>,     p-attribute for POS tags [default: pos]
+    --pos=<att>
+  -s <att>,       s-attribute for sentence boundaries [default: s]
+    --sent=<att>
+  -nos, --nosent  sentence boundaries are not available
+  -T, --tiger     adjust to TIGER lemmatization conventions
+  -E, --empirist  adjust to EmpiriST tagset and lemmatization conventions
+  -u, --unknown   don't guess unknown words (lemmatized as <unknown>)
+  -P <att>,       name of p-attribute to be created [default: lemma]
+    --lemma=<att>
+  -r <dir>,       CWB registry directory [system default]
+    --registry=<dir>
+  -M <n>,         use up to <n> MiB of RAM for indexing [default: 2000]
+    --memory=<n>
+  -L <n>          maximum length of word forms analyzed with SMOR [default: 80]
+    --maxlen=<n>      (to work around bugs / exponential complexity in SMOR)
+  -f, --force     overwrite existing attribute
+  -v, --verbose   show progress information
+  -d, --debug     enable debugging output (does not imply -v)
+  -h, --help      this help page
+
+The SMOR command-line utility "smor-lemmatizer" must be installed in 
+the search path. CORPUS should be in UTF-8 encoding (charset: utf8).
+
+(C) 2020 by Stefan Evert [www.stefan-evert.de]
+
+This software is provided AS IS and the author makes no warranty as to
+its use and performance. You may use the software, redistribute and
+modify it under the same terms as Perl itself.
+USAGE
+
+$Corpus = uc(shift @ARGV);
+if (defined $Registry) {
+  $ENV{"CORPUS_REGISTRY"} = $Registry; # will be picked up by CWB::RegistryFile
+  $CWB::CL::Registry = $Registry;      # for CWB::CL access
+}
+
+my $Reg = new CWB::RegistryFile $Corpus;
+die "Can't find corpus $Corpus in registry path ".join(":", CWB::RegistryDirectory())."\n" 
+  unless defined $Reg;
+$Charset = $Reg->property("charset");
+die "Unknown encoding for corpus $Corpus, can't proceed.\n" unless $Charset;
+warn "Corpus $Corpus should be in UTF-8 encoding (but is '$Charset')\n" unless $Charset eq "utf8";
+my $tmp = $Reg->attribute($LemmaAtt);
+if (defined $tmp) {
+  die "Attribute $Corpus.$LemmaAtt already exists, won't overwrite without --force\n" unless $Force;
+  die "Attribute $Corpus.$LemmaAtt already exists, but is not a p-attribute. Can't overwrite.\n" if $tmp ne "p";
+}  
+$Reg->add_attribute($LemmaAtt, "p");
+$Reg->write;
+
+my $C = new CWB::CL::Corpus $Corpus;
+my $Word = $C->attribute($WordAtt, "p");
+my $POS = $C->attribute($POSAtt, "p");
+my $S = undef;
+$S = $C->attribute($SentAtt, "s") if defined $SentAtt;
+
+my $tf = new CWB::TempFile;
+$tf->finish;
+print "Analyzing word forms with SMOR lemmatizer ...\n";
+my $smor_cmd = "smor-lemmatizer > ".$tf->name;
+$smor_cmd .= " 2>/dev/null" unless $Debug;
+my $SMOR = CWB::OpenFile "|-:encoding(utf8)", $smor_cmd;
+
+my $V = $Word->max_id;
+my $n_skip = 0;
+foreach my $i (0 .. $V - 1) {
+  my $word = decode($Charset, $Word->id2str($i));
+  if (length($word) > $MaxLen || $word =~ /\s/) {
+    $n_skip++;
+    next;
+  }
+  print $SMOR "$word\n";
+  my $w2 = lc($word);
+  print $SMOR "$w2\n" unless $w2 eq $word;
+  $w2 = ucfirst($w2);
+  print $SMOR "$w2\n" unless $w2 eq $word;
+  $SMOR->flush();
+  printf "\r%5.1f%% complete |%7d / %d types  ", 100 * ($i + 1) / $V, $i + 1, $V
+    if $Verbose && ($i % 1000) == 0;
+  ## last if $i >= 50000;
+}
+$SMOR->close;
+print "\r", " " x 60, "\r" if $Verbose;
+printf "[skipped %d word forms with > %d characters or blanks]\n", $n_skip, $MaxLen
+  if $Verbose && $n_skip > 0;
+
+my %LemmaHash = ();
+$n_skip = 0;
+while (my $line = $tf->read) {
+  chomp $line;
+  $line = decode("UTF-8", $line); # ensure compatibility with unicode semantics below
+  my ($word, $pos_lemma) = split /\t/, $line;
+  my @F = split " ", $pos_lemma;
+  if (@F != 2) {
+    $n_skip++;
+    next;
+  }
+  my ($pos, $lemma) = @F;
+  $pos =~ m/^([A-Z]+|\$.)(\..*)?$/ or die "Invalid POS tag '$pos' [$line]";
+  $pos = $1;
+  $LemmaHash{$word}{$pos}{$lemma}++;
+}
+$tf->close;
+printf "[skipped %d invalid output lines]\n", $n_skip
+  if $Verbose && $n_skip > 0;
+printf "[analyses found for %d word form types]\n", scalar keys %LemmaHash;
+
+
+print "Annotating corpus with SMOR lemmata ...\n";
+my $verbose_flag = ($Verbose) ? "-v" : "";
+my $Encode = CWB::OpenFile("| $CWB::Encode $verbose_flag -x -c $Charset -d '".$Reg->home."' -p $LemmaAtt");
+foreach my $i (0 .. $Word->max_cpos - 1) {
+  my $word = decode($Charset, $Word->cpos2str($i)); # so we get Unicode semantics
+  my $pos = $POS->cpos2str($i);
+  my $lbound_s = ($S) ? $S->cpos2is_boundary("l", $i) : undef;
+  my $lemma = mk_lemma($word, $pos, $lbound_s);
+  $lemma =~ s/</&lt;/g; # escape XML metas in word forms to avoid warnings
+  $lemma =~ s/>/&gt;/g;
+  print $Encode encode($Charset, $lemma), "\n";
+}
+$Encode->close;
+
+print "Indexing new attribute $Corpus.$LemmaAtt ...\n";
+my $Index = new CWB::Indexer $Corpus;
+$Index->memory($Memory);
+$Index->debug($Debug);
+$Index->make($LemmaAtt);
+
+
+## The workhorse: generate (and memoize) lemma for word form + POS combination
+## $lemma = mk_lemma($word, $pos, $start_of_sent);
+##  - arguments must be Unicode strings (may need to decode() before calling function)
+##  - $start_of_sent is undef, sentence boundaries are not available.
+
+my %Lemma = (); # memoization hash
+sub table_lookup {
+  my ($table, $word, $pos, $default) = @_;
+  my $hash = $table->{$word};
+  return $default unless defined $hash && defined $hash->{$pos};
+  return $hash->{$pos};
+}
+sub mk_lemma {
+  my ($word, $pos, $lbound_s) = @_;
+  $pos = '$.' if $pos =~ /^\$/; # SMOR uses $. for all punctuation 
+  
+  my $lemma = $Lemma{$word}{$pos};
+  return $lemma if defined $lemma; # already memoized
+  
+  if ($TigerMode) { # word form lookup in TIGER mapping table
+    $lemma = table_lookup($Word2Lemma, lc($word), $pos, undef);
+  }
+  return $Lemma{$word}{$pos} = $lemma if defined $lemma;
+  
+  $lemma = $LemmaHash{$word}{$pos}; # SMOR analysis with some case heuristics
+  $lemma = $LemmaHash{lc($word)}{$pos} unless defined $lemma;
+  $lemma = $LemmaHash{ucfirst(lc($word))}{$pos} unless defined $lemma;
+  if (!defined $lemma && $pos =~ /^V[AM](.*)$/) {
+    $pos = "VV$1"; # SMOR seems to tag all verbs as VV
+    $lemma = $LemmaHash{lc($word)}{$pos};
+  }
+  
+  if (defined $lemma) { # resolve ambiguous lemmas produced by SMOR
+    my @l = sort keys %$lemma; 
+    print "MULTI $word/$pos --> @l\n", "" if @l > 1 && $Debug;
+    $lemma = $l[0]; # for now, just take the first lemma in lexical order (usually the shortest)
+    if ($TigerMode) {
+      $lemma = table_lookup($SMOR2Tiger, lc($lemma), $pos, $lemma);
+    }
+    return $Lemma{$word}{$pos} = $lemma if defined $lemma;
+  }
+  
+  if ($Unknown && !($pos =~ /^(\$|ADR|HST|URL|XY|EMOASC)/ || $word =~ /^[0-9]+$/)) {
+    $lemma = "<unknown>"; # invariant items and symbols are always lemmatized as word form
+  }
+  else {
+    $lemma = $word; # heuristic fallback: use word form as lemma
+    if (defined $lbound_s) {
+      # heuristically convert to lowercase at start of sentence (except for nominals)
+      $lemma = lc($lemma) if $lbound_s && $pos !~ /^(N|EMO|ADR|HST|URL)/;
+    }
+    # normalize hashtags, address tags and URLs to lowercase (because they're case-insensitive)
+    if (!$Empirist) {
+      $lemma = lc($lemma) if $pos =~ /^(ADR|HST|URL)$/ || $lemma =~ /^#\w+/;
+    }
+  }  
+  
+  return $Lemma{$word}{$pos} = $lemma;
+}
+
+
+
+################################################################################
+## Mapping tables for closed-class words and lemmatization convention adjustments.
+################################################################################
+
+BEGIN{
+  $Word2Lemma = {
+    '&' => {
+      'KON' => '&'
+    },
+    '\'m' => {
+      'ART' => 'der'
+    },
+    '\'n' => {
+      'ART' => 'ein'
+    },
+    '\'ne' => {
+      'ART' => 'ein'
+    },
+    '\'s' => {
+      'ART' => 'der',
+      'PPER' => 'es'
+    },
+    '+' => {
+      'KON' => '+'
+    },
+    '-' => {
+      'APPR' => '-'
+    },
+    '--' => {
+      'APPR' => 'nach',
+      'PRF' => 'sich'
+    },
+    'a' => {
+      'APPR' => 'a'
+    },
+    'a.' => {
+      'APPR' => 'a.',
+      'APPRART' => 'a.',
+      'PIS' => 'a.'
+    },
+    'ab' => {
+      'APPR' => 'ab',
+      'PTKVZ' => 'ab'
+    },
+    'aber' => {
+      'KON' => 'aber'
+    },
+    'abhanden' => {
+      'PTKVZ' => 'abhanden'
+    },
+    'abseits' => {
+      'APPR' => 'abseits'
+    },
+    "abw\x{e4}rts" => {
+      'PTKVZ' => "abw\x{e4}rts"
+    },
+    "abz\x{fc}glich" => {
+      'APPR' => "abz\x{fc}glich"
+    },
+    'all' => {
+      'PIAT' => 'all'
+    },
+    'alle' => {
+      'PIAT' => 'aller',
+      'PIS' => 'alle'
+    },
+    'alledem' => {
+      'PIS' => 'alledem'
+    },
+    'allem' => {
+      'PIAT' => 'aller',
+      'PIS' => 'alle'
+    },
+    'allen' => {
+      'PIAT' => 'aller',
+      'PIS' => 'alle'
+    },
+    'aller' => {
+      'PIAT' => 'aller',
+      'PIS' => 'alle'
+    },
+    'allerhand' => {
+      'PIAT' => 'allerhand'
+    },
+    'allerlei' => {
+      'PIAT' => 'allerlei'
+    },
+    'allermeisten' => {
+      'PIAT' => 'allermeister',
+      'PIS' => 'allermeister'
+    },
+    'allerwenigsten' => {
+      'PIS' => 'allerwenigster'
+    },
+    'alles' => {
+      'PIAT' => 'aller',
+      'PIS' => 'alle'
+    },
+    'allesamt' => {
+      'PIS' => 'allesamt'
+    },
+    'allzu' => {
+      'PTKA' => 'allzu'
+    },
+    'allzuviel' => {
+      'PIAT' => 'allzuviel'
+    },
+    'allzuviele' => {
+      'PIAT' => 'allzuvieler'
+    },
+    'als' => {
+      'APPR' => 'als',
+      'KOKOM' => 'als',
+      'KON' => 'als',
+      'KOUS' => 'als',
+      'PWAV' => 'als'
+    },
+    'also' => {
+      'PTKANT' => 'also'
+    },
+    'am' => {
+      'APPR' => 'an',
+      'APPRART' => 'an',
+      'PTKA' => 'am'
+    },
+    'an' => {
+      'APPO' => 'an',
+      'APPR' => 'an',
+      'APZR' => 'an',
+      'PTKVZ' => 'an'
+    },
+    'andere' => {
+      'PIAT' => 'anderer',
+      'PIS' => 'anderer'
+    },
+    'anderem' => {
+      'PIAT' => 'anderer',
+      'PIS' => 'anderer'
+    },
+    'anderen' => {
+      'PIAT' => 'anderer',
+      'PIS' => 'anderer'
+    },
+    'anderer' => {
+      'PIS' => 'anderer'
+    },
+    'anderes' => {
+      'PIS' => 'anderer'
+    },
+    'andern' => {
+      'PIAT' => 'anderer',
+      'PIS' => 'anderer'
+    },
+    'andie' => {
+      'APPR' => 'andie'
+    },
+    'angesichts' => {
+      'APPR' => 'angesichts'
+    },
+    'anhand' => {
+      'APPR' => 'anhand'
+    },
+    "anl\x{e4}sslich" => {
+      'APPR' => "anl\x{e4}sslich"
+    },
+    'ans' => {
+      'APPRART' => 'an'
+    },
+    'anstatt' => {
+      'APPR' => 'anstatt',
+      'KOUI' => 'anstatt'
+    },
+    'anstelle' => {
+      'APPR' => 'anstelle'
+    },
+    'auch' => {
+      'KON' => 'auch'
+    },
+    'auf' => {
+      'APPR' => 'auf',
+      'APZR' => 'auf',
+      'PTKVZ' => 'auf'
+    },
+    'aufeinander' => {
+      'PTKVZ' => 'aufeinander'
+    },
+    'aufgrund' => {
+      'APPR' => 'aufgrund'
+    },
+    'aufrecht' => {
+      'PTKVZ' => 'aufrecht'
+    },
+    'aufs' => {
+      'APPRART' => 'auf'
+    },
+    'aus' => {
+      'APPO' => 'aus',
+      'APPR' => 'aus',
+      'APZR' => 'aus',
+      'PTKVZ' => 'aus'
+    },
+    'auseinander' => {
+      'PTKVZ' => 'auseinander'
+    },
+    'ausser' => {
+      'APPR' => 'ausser'
+    },
+    'ausserdem' => {
+      'PROAV' => 'ausserdem'
+    },
+    'ausserhalb' => {
+      'APPR' => 'ausserhalb'
+    },
+    'ausweislich' => {
+      'APPR' => 'ausweislich'
+    },
+    'bei' => {
+      'APPR' => 'bei',
+      'PTKVZ' => 'bei'
+    },
+    'beide' => {
+      'PDS' => 'beide',
+      'PIAT' => 'beide',
+      'PIS' => 'beide'
+    },
+    'beiden' => {
+      'PIAT' => 'beide',
+      'PIS' => 'beide'
+    },
+    'beider' => {
+      'PIAT' => 'beide'
+    },
+    'beiderlei' => {
+      'PIAT' => 'beiderlei'
+    },
+    'beiderseits' => {
+      'APPR' => 'beiderseits'
+    },
+    'beides' => {
+      'PIS' => 'beide'
+    },
+    'beidseits' => {
+      'APPR' => 'beidseits'
+    },
+    'beim' => {
+      'APPRART' => 'bei'
+    },
+    'beisammen' => {
+      'PTKVZ' => 'beisammen'
+    },
+    'beiseite' => {
+      'PTKVZ' => 'beiseite'
+    },
+    'bekannt' => {
+      'PTKVZ' => 'bekannt'
+    },
+    'bereit' => {
+      'PTKVZ' => 'bereit'
+    },
+    'bescheid' => {
+      'PTKVZ' => 'bescheid'
+    },
+    'bevor' => {
+      'KOUS' => 'bevor',
+      'PTKVZ' => 'bevor'
+    },
+    'beziehungsweise' => {
+      'KON' => 'beziehungsweise'
+    },
+    "bez\x{fc}glich" => {
+      'APPR' => "bez\x{fc}glich"
+    },
+    'binnen' => {
+      'APPR' => 'binnen'
+    },
+    'bis' => {
+      'APPR' => 'bis',
+      'KON' => 'bis',
+      'KOUS' => 'bis'
+    },
+    'bisschen' => {
+      'PIAT' => 'bisschen',
+      'PIS' => 'bisschen'
+    },
+    'bisserl' => {
+      'PIAT' => 'bisserl'
+    },
+    'bitte' => {
+      'PTKANT' => 'bitte'
+    },
+    'blank' => {
+      'PTKVZ' => 'blank'
+    },
+    'bloss' => {
+      'PTKVZ' => 'bloss'
+    },
+    'brach' => {
+      'PTKVZ' => 'brach'
+    },
+    'breit' => {
+      'PTKVZ' => 'breit'
+    },
+    'bzw.' => {
+      'KON' => 'bzw.'
+    },
+    'd.' => {
+      'ART' => 'der',
+      'PDS' => 'der'
+    },
+    'da' => {
+      'KOUS' => 'da',
+      'PTKVZ' => 'da'
+    },
+    'dabei' => {
+      'PROAV' => 'dabei',
+      'PTKVZ' => 'dabei'
+    },
+    'dadurch' => {
+      'PROAV' => 'dadurch'
+    },
+    "daf\x{fc}r" => {
+      'PROAV' => "daf\x{fc}r"
+    },
+    'dagegen' => {
+      'PROAV' => 'dagegen',
+      'PTKVZ' => 'dagegen'
+    },
+    'daher' => {
+      'PROAV' => 'daher',
+      'PTKVZ' => 'daher'
+    },
+    'dahin' => {
+      'PROAV' => 'dahin',
+      'PTKVZ' => 'dahin'
+    },
+    'dahinter' => {
+      'PROAV' => 'dahinter'
+    },
+    'damit' => {
+      'KOUS' => 'damit',
+      'PROAV' => 'damit'
+    },
+    'danach' => {
+      'PROAV' => 'danach'
+    },
+    'daneben' => {
+      'PROAV' => 'daneben'
+    },
+    'dank' => {
+      'APPR' => 'dank'
+    },
+    'danke' => {
+      'PTKANT' => 'danke'
+    },
+    'dann' => {
+      'KON' => 'dann'
+    },
+    'dar' => {
+      'PTKVZ' => 'dar'
+    },
+    'daran' => {
+      'PROAV' => 'daran'
+    },
+    'darauf' => {
+      'PROAV' => 'darauf'
+    },
+    'daraufhin' => {
+      'PROAV' => 'daraufhin'
+    },
+    'daraus' => {
+      'PROAV' => 'daraus'
+    },
+    'darein' => {
+      'PROAV' => 'darein'
+    },
+    'darin' => {
+      'PROAV' => 'darin'
+    },
+    'darob' => {
+      'PROAV' => 'darob'
+    },
+    'darum' => {
+      'PROAV' => 'darum'
+    },
+    'darunter' => {
+      'PROAV' => 'darunter'
+    },
+    "dar\x{fc}ber" => {
+      'APPR' => "dar\x{fc}ber",
+      'PROAV' => "dar\x{fc}ber"
+    },
+    'das' => {
+      'ART' => 'der',
+      'KOUS' => 'das',
+      'PDAT' => 'der',
+      'PDS' => 'der',
+      'PRELS' => 'der'
+    },
+    'dass' => {
+      'KOUS' => 'dass'
+    },
+    'dasselbe' => {
+      'PDAT' => 'derselbe',
+      'PDS' => 'derselbe'
+    },
+    'davon' => {
+      'PROAV' => 'davon',
+      'PTKVZ' => 'davon'
+    },
+    'davor' => {
+      'PROAV' => 'davor'
+    },
+    'dazu' => {
+      'PROAV' => 'dazu',
+      'PTKVZ' => 'dazu'
+    },
+    'dazwischen' => {
+      'PROAV' => 'dazwischen'
+    },
+    'dein' => {
+      'PPOSAT' => 'dein'
+    },
+    'deine' => {
+      'PPOSAT' => 'dein'
+    },
+    'deinem' => {
+      'PPOSAT' => 'dein'
+    },
+    'deinen' => {
+      'PPOSAT' => 'dein'
+    },
+    'deiner' => {
+      'PPOSAT' => 'dein'
+    },
+    'deines' => {
+      'PPOSAT' => 'dein'
+    },
+    'dem' => {
+      'ART' => 'der',
+      'PDS' => 'der',
+      'PRELS' => 'der'
+    },
+    "demgegen\x{fc}ber" => {
+      'PROAV' => "demgegen\x{fc}ber"
+    },
+    'demjenigen' => {
+      'PDS' => 'derjenige'
+    },
+    'demnach' => {
+      'PROAV' => 'demnach'
+    },
+    'demselben' => {
+      'PDAT' => 'derselbe'
+    },
+    'demzufolge' => {
+      'PRELS' => 'demzufolge',
+      'PROAV' => 'demzufolge'
+    },
+    'den' => {
+      'ART' => 'der',
+      'PDS' => 'der',
+      'PRELS' => 'der'
+    },
+    'denen' => {
+      'PDS' => 'der',
+      'PRELAT' => 'der',
+      'PRELS' => 'der'
+    },
+    'denenzufolge' => {
+      'PRELS' => 'demzufolge'
+    },
+    'denjenigen' => {
+      'PDAT' => 'derjenige',
+      'PDS' => 'derjenige'
+    },
+    'denn' => {
+      'KOKOM' => 'denn',
+      'KON' => 'denn',
+      'KOUS' => 'denn'
+    },
+    'denselben' => {
+      'PDAT' => 'derselbe',
+      'PDS' => 'derselbe'
+    },
+    'der' => {
+      'ART' => 'der',
+      'PDS' => 'der',
+      'PRELS' => 'der'
+    },
+    'derartige' => {
+      'PDAT' => 'derartig'
+    },
+    'derartigen' => {
+      'PDAT' => 'derartig'
+    },
+    'derartiger' => {
+      'PDAT' => 'derartig'
+    },
+    'deren' => {
+      'PDAT' => 'der',
+      'PDS' => 'der',
+      'PRELAT' => 'der'
+    },
+    'derer' => {
+      'PDS' => 'der',
+      'PRELS' => 'der'
+    },
+    'deretwegen' => {
+      'PWAV' => 'deretwegen'
+    },
+    'dergleichen' => {
+      'PIS' => 'dergleichen'
+    },
+    'derjenige' => {
+      'PDS' => 'derjenige'
+    },
+    'derjenigen' => {
+      'PDS' => 'derjenige'
+    },
+    'derlei' => {
+      'PIAT' => 'derlei'
+    },
+    'derselbe' => {
+      'PDAT' => 'derselbe'
+    },
+    'derselben' => {
+      'PDAT' => 'derselbe',
+      'PDS' => 'derselbe'
+    },
+    'des' => {
+      'ART' => 'der'
+    },
+    'deshalb' => {
+      'PROAV' => 'deshalb'
+    },
+    'desselben' => {
+      'PDAT' => 'derselbe',
+      'PDS' => 'derselbe'
+    },
+    'dessen' => {
+      'PDAT' => 'der',
+      'PDS' => 'der',
+      'PPOSAT' => 'dessen',
+      'PRELAT' => 'der',
+      'PRELS' => 'der'
+    },
+    'deswegen' => {
+      'PROAV' => 'deswegen'
+    },
+    'det' => {
+      'ART' => 'der',
+      'PDS' => 'der'
+    },
+    'dich' => {
+      'PPER' => 'dich',
+      'PRF' => 'sich'
+    },
+    'die' => {
+      'ART' => 'der',
+      'PDS' => 'der',
+      'PRELS' => 'der'
+    },
+    'diejenige' => {
+      'PDAT' => 'derjenige',
+      'PDS' => 'derjenige'
+    },
+    'diejenigen' => {
+      'PDAT' => 'derjenige',
+      'PDS' => 'derjenige'
+    },
+    'dies' => {
+      'PDAT' => 'dieser',
+      'PDS' => 'dieser',
+      'PIAT' => 'dieser'
+    },
+    "diesbez\x{fc}glich" => {
+      'PROAV' => "diesbez\x{fc}glich"
+    },
+    'diese' => {
+      'PDAT' => 'dieser',
+      'PDS' => 'dieser'
+    },
+    'dieselbe' => {
+      'PDAT' => 'derselbe'
+    },
+    'dieselben' => {
+      'PDAT' => 'derselbe'
+    },
+    'diesem' => {
+      'PDAT' => 'dieser',
+      'PDS' => 'dieser'
+    },
+    'diesen' => {
+      'PDAT' => 'dieser',
+      'PDS' => 'dieser'
+    },
+    'dieser' => {
+      'PDAT' => 'dieser',
+      'PDS' => 'dieser'
+    },
+    'dieses' => {
+      'PDAT' => 'dieser',
+      'PDS' => 'dieser'
+    },
+    'diesseits' => {
+      'APPR' => 'diesseits'
+    },
+    'dir' => {
+      'PPER' => 'dir'
+    },
+    'doch' => {
+      'KON' => 'doch'
+    },
+    'dran' => {
+      'PROAV' => 'dran',
+      'PTKVZ' => 'dran'
+    },
+    'drauf' => {
+      'PROAV' => 'drauf',
+      'PTKVZ' => 'drauf'
+    },
+    'draus' => {
+      'PROAV' => 'draus'
+    },
+    'drin' => {
+      'PTKVZ' => 'drin'
+    },
+    'drunter' => {
+      'PROAV' => 'drunter'
+    },
+    "dr\x{fc}ber" => {
+      'PROAV' => "dr\x{fc}ber"
+    },
+    'du' => {
+      'PPER' => 'du'
+    },
+    'durch' => {
+      'APPO' => 'durch',
+      'APPR' => 'durch',
+      'PTKVZ' => 'durch'
+    },
+    'durcheinander' => {
+      'PTKVZ' => 'durcheinander'
+    },
+    'durchs' => {
+      'APPRART' => 'durch'
+    },
+    'ebendiese' => {
+      'PDAT' => 'ebendieser'
+    },
+    'ebendieses' => {
+      'PDAT' => 'ebendieser'
+    },
+    'ebenso' => {
+      'KON' => 'ebenso'
+    },
+    'ebensolche' => {
+      'PIS' => 'ebensolcher'
+    },
+    'ebensoviel' => {
+      'PIAT' => 'ebensoviel',
+      'PIS' => 'ebensoviel'
+    },
+    'ebensoviele' => {
+      'PIAT' => 'ebensovieler'
+    },
+    'ehe' => {
+      'KOUS' => 'ehe'
+    },
+    'ei-ne' => {
+      'ART' => 'ein'
+    },
+    'ein' => {
+      'ART' => 'ein',
+      'PTKVZ' => 'ein'
+    },
+    'einander' => {
+      'PPER' => 'einander',
+      'PRF' => 'sich'
+    },
+    'eine' => {
+      'ART' => 'ein',
+      'PDS' => 'einer',
+      'PIS' => 'einer'
+    },
+    'einem' => {
+      'ART' => 'ein',
+      'PIS' => 'einer'
+    },
+    'einen' => {
+      'ART' => 'ein',
+      'PIAT' => 'ein',
+      'PIS' => 'einer'
+    },
+    'einer' => {
+      'ART' => 'ein',
+      'PIS' => 'einer'
+    },
+    'eines' => {
+      'ART' => 'ein',
+      'PIS' => 'einer'
+    },
+    'einher' => {
+      'PTKVZ' => 'einher'
+    },
+    'einige' => {
+      'PIAT' => 'einiger',
+      'PIS' => 'einige'
+    },
+    'einigem' => {
+      'PIAT' => 'einiger'
+    },
+    'einigen' => {
+      'PIAT' => 'einiger'
+    },
+    'einiger' => {
+      'PIAT' => 'einiger'
+    },
+    'einiges' => {
+      'PIAT' => 'einiger',
+      'PIS' => 'einige'
+    },
+    'eins' => {
+      'PIS' => 'einer'
+    },
+    'einschliesslich' => {
+      'APPR' => 'einschliesslich'
+    },
+    'einzelne' => {
+      'PIS' => 'einzelner'
+    },
+    'einzelnen' => {
+      'PIS' => 'einzelner'
+    },
+    'einzelner' => {
+      'PIS' => 'einzelner'
+    },
+    'einzige' => {
+      'PIS' => 'einziger'
+    },
+    'einzigen' => {
+      'PIS' => 'einziger'
+    },
+    'einziger' => {
+      'PIS' => 'einziger'
+    },
+    'einziges' => {
+      'PIS' => 'einziger'
+    },
+    'empor' => {
+      'PTKVZ' => 'empor'
+    },
+    'entgegen' => {
+      'APPO' => 'entgegen',
+      'APPR' => 'entgegen',
+      'PTKVZ' => 'entgegen'
+    },
+    'entlang' => {
+      'APPO' => 'entlang',
+      'APPR' => 'entlang',
+      'APZR' => 'entlang',
+      'PTKVZ' => 'entlang'
+    },
+    'entsprechend' => {
+      'APPR' => 'entsprechend'
+    },
+    'entweder' => {
+      'KON' => 'entweder'
+    },
+    'er' => {
+      'PPER' => 'er'
+    },
+    'ernst' => {
+      'PTKVZ' => 'ernst'
+    },
+    'erste' => {
+      'PIS' => 'erster'
+    },
+    'ersten' => {
+      'PIS' => 'erster'
+    },
+    'erster' => {
+      'PIS' => 'erster'
+    },
+    'erstere' => {
+      'PIS' => 'ersterer'
+    },
+    'ersteres' => {
+      'PIS' => 'ersterer'
+    },
+    'es' => {
+      'PPER' => 'es'
+    },
+    'etliche' => {
+      'PIAT' => 'etlicher',
+      'PIS' => 'etlicher'
+    },
+    'etlichen' => {
+      'PIAT' => 'etlicher'
+    },
+    'etlicher' => {
+      'PIAT' => 'etlicher'
+    },
+    'etliches' => {
+      'PIS' => 'etlicher'
+    },
+    'etwas' => {
+      'PIAT' => 'etwas',
+      'PIS' => 'etwas'
+    },
+    'euch' => {
+      'PPER' => 'euch',
+      'PRF' => 'sich'
+    },
+    'eure' => {
+      'PPOSAT' => 'dein'
+    },
+    'eurem' => {
+      'PPOSAT' => 'dein'
+    },
+    'eures' => {
+      'PPOSAT' => 'dein'
+    },
+    'ex' => {
+      'APPR' => 'ex'
+    },
+    'falls' => {
+      'KOUS' => 'falls'
+    },
+    'fehl' => {
+      'PTKVZ' => 'fehl'
+    },
+    'feil' => {
+      'PTKVZ' => 'feil'
+    },
+    'fern' => {
+      'APPR' => 'fern',
+      'PTKVZ' => 'fern'
+    },
+    'fertig' => {
+      'PTKVZ' => 'fertig'
+    },
+    'fest' => {
+      'PTKVZ' => 'fest'
+    },
+    'folgendes' => {
+      'PIS' => 'folgender'
+    },
+    'fort' => {
+      'PTKVZ' => 'fort'
+    },
+    'frei' => {
+      'PTKVZ' => 'frei'
+    },
+    "f\x{fc}r" => {
+      'APPR' => "f\x{fc}r"
+    },
+    "f\x{fc}rs" => {
+      'APPRART' => "f\x{fc}r"
+    },
+    'gefangen' => {
+      'PTKVZ' => 'gefangen'
+    },
+    'gegen' => {
+      'APPR' => 'gegen',
+      'PTKVZ' => 'gegen'
+    },
+    "gegen\x{fc}ber" => {
+      'APPO' => "gegen\x{fc}ber",
+      'APPR' => "gegen\x{fc}ber",
+      'PROAV' => "gegen\x{fc}ber",
+      'PTKVZ' => "gegen\x{fc}ber"
+    },
+    "gem\x{e4}ss" => {
+      'APPR' => "gem\x{e4}ss"
+    },
+    'gen' => {
+      'APPR' => 'gen'
+    },
+    'genug' => {
+      'PIAT' => 'genug',
+      'PIS' => 'genug'
+    },
+    "gen\x{fc}gend" => {
+      'PIAT' => "gen\x{fc}gend"
+    },
+    'gerade' => {
+      'PTKVZ' => 'gerade'
+    },
+    'geschweige' => {
+      'KON' => 'geschweige'
+    },
+    'gewiss' => {
+      'PTKANT' => 'gewiss'
+    },
+    'gleich' => {
+      'APPR' => 'gleich',
+      'PTKVZ' => 'gleich'
+    },
+    'gleiches' => {
+      'PIS' => 'gleiches'
+    },
+    'gleichwohl' => {
+      'KOUS' => 'gleichwohl'
+    },
+    'halber' => {
+      'APPO' => 'halber'
+    },
+    'heim' => {
+      'PTKVZ' => 'heim'
+    },
+    'her' => {
+      'APZR' => 'her',
+      'PTKVZ' => 'her'
+    },
+    'heran' => {
+      'PTKVZ' => 'heran'
+    },
+    'herauf' => {
+      'PTKVZ' => 'herauf'
+    },
+    'heraus' => {
+      'APZR' => 'heraus',
+      'PTKVZ' => 'heraus'
+    },
+    'herbei' => {
+      'PTKVZ' => 'herbei'
+    },
+    'herein' => {
+      'PTKVZ' => 'herein'
+    },
+    'hernieder' => {
+      'PTKVZ' => 'hernieder'
+    },
+    'herum' => {
+      'APZR' => 'herum',
+      'PTKVZ' => 'herum'
+    },
+    'herunter' => {
+      'APZR' => 'herunter',
+      'PTKVZ' => 'herunter'
+    },
+    'hervor' => {
+      'PTKVZ' => 'hervor'
+    },
+    'hieran' => {
+      'PROAV' => 'hieran'
+    },
+    'hierauf' => {
+      'PROAV' => 'hierauf'
+    },
+    'hieraus' => {
+      'PROAV' => 'hieraus'
+    },
+    'hierbei' => {
+      'PROAV' => 'hierbei'
+    },
+    'hierdurch' => {
+      'PROAV' => 'hierdurch'
+    },
+    "hierf\x{fc}r" => {
+      'PROAV' => "hierf\x{fc}r"
+    },
+    'hierher' => {
+      'PROAV' => 'hierher'
+    },
+    'hiervon' => {
+      'PROAV' => 'hiervon'
+    },
+    'hiervor' => {
+      'PROAV' => 'hiervor'
+    },
+    'hierzu' => {
+      'PROAV' => 'hierzu'
+    },
+    "hier\x{fc}ber" => {
+      'PROAV' => "hier\x{fc}ber"
+    },
+    'hin' => {
+      'APZR' => 'hin',
+      'PTKVZ' => 'hin'
+    },
+    'hinab' => {
+      'PTKVZ' => 'hinab'
+    },
+    'hinauf' => {
+      'PTKVZ' => 'hinauf'
+    },
+    'hinaus' => {
+      'APZR' => 'hinaus',
+      'PROAV' => 'hinaus',
+      'PTKVZ' => 'hinaus'
+    },
+    'hindurch' => {
+      'PROAV' => 'hindurch'
+    },
+    'hinein' => {
+      'APZR' => 'hinein',
+      'PTKVZ' => 'hinein'
+    },
+    'hinsichtlich' => {
+      'APPR' => 'hinsichtlich'
+    },
+    'hinter' => {
+      'APPR' => 'hinter'
+    },
+    'hinterher' => {
+      'PTKVZ' => 'hinterher'
+    },
+    'hinterm' => {
+      'APPRART' => 'hinter'
+    },
+    'hinters' => {
+      'APPRART' => 'hinter'
+    },
+    'hinunter' => {
+      'APPO' => 'hinunter',
+      'PTKVZ' => 'hinunter'
+    },
+    'hinweg' => {
+      'APZR' => 'hinweg',
+      'PTKVZ' => 'hinweg'
+    },
+    'hinzu' => {
+      'PROAV' => 'hinzu',
+      'PTKVZ' => 'hinzu'
+    },
+    'hoch' => {
+      'PTKVZ' => 'hoch'
+    },
+    "h\x{e4}ngen" => {
+      'PTKVZ' => "h\x{e4}ngen"
+    },
+    'ich' => {
+      'PPER' => 'ich',
+      'PRF' => 'ich'
+    },
+    'ihm' => {
+      'PPER' => 'ihm'
+    },
+    'ihn' => {
+      'PPER' => 'ihn'
+    },
+    'ihnen' => {
+      'PPER' => 'ihnen'
+    },
+    'ihr' => {
+      'PPER' => 'ihr',
+      'PPOSAT' => 'ihr'
+    },
+    'ihre' => {
+      'PPOSAT' => 'ihr'
+    },
+    'ihrem' => {
+      'PPOSAT' => 'ihr'
+    },
+    'ihren' => {
+      'PPOSAT' => 'ihr'
+    },
+    'ihrer' => {
+      'PPOSAT' => 'ihr'
+    },
+    'ihres' => {
+      'PPOSAT' => 'ihr'
+    },
+    'ihresgleichen' => {
+      'PIS' => 'seinesgleichen'
+    },
+    'ihretwegen' => {
+      'PROAV' => 'ihretwegen'
+    },
+    'im' => {
+      'APPR' => 'in',
+      'APPRART' => 'in'
+    },
+    'in' => {
+      'APPR' => 'in'
+    },
+    'incl.' => {
+      'APPR' => 'inclusive'
+    },
+    'indem' => {
+      'KOUS' => 'indem'
+    },
+    'indessen' => {
+      'KOUS' => 'indessen'
+    },
+    'infolge' => {
+      'APPR' => 'infolge'
+    },
+    'inklusive' => {
+      'APPR' => 'inklusive'
+    },
+    'inmitten' => {
+      'APPR' => 'inmitten'
+    },
+    'inne' => {
+      'PTKVZ' => 'inne'
+    },
+    'innerhalb' => {
+      'APPR' => 'innerhalb'
+    },
+    'ins' => {
+      'APPRART' => 'in'
+    },
+    'inwieweit' => {
+      'PWAV' => 'inwieweit'
+    },
+    'irgendein' => {
+      'PIAT' => 'irgendein'
+    },
+    'irgendeine' => {
+      'PIS' => 'irgendeiner'
+    },
+    'irgendeinem' => {
+      'PIAT' => 'irgendein'
+    },
+    'irgendeinen' => {
+      'PIAT' => 'irgendein'
+    },
+    'irgendeiner' => {
+      'PIS' => 'irgendeiner'
+    },
+    'irgendetwas' => {
+      'PIS' => 'irgendetwas'
+    },
+    'irgendjemand' => {
+      'PIS' => 'irgendjemand'
+    },
+    'irgendwas' => {
+      'PIS' => 'irgendwas'
+    },
+    'irgendwelche' => {
+      'PIAT' => 'irgendwelcher'
+    },
+    'irgendwelcher' => {
+      'PIAT' => 'irgendwelcher'
+    },
+    'irgendwem' => {
+      'PIS' => 'irgendwer'
+    },
+    'ja' => {
+      'PTKANT' => 'ja'
+    },
+    'je' => {
+      'APPR' => 'je'
+    },
+    'jede' => {
+      'PIAT' => 'jeder',
+      'PIS' => 'jeder'
+    },
+    'jedem' => {
+      'PIAT' => 'jeder',
+      'PIS' => 'jeder'
+    },
+    'jeden' => {
+      'PIAT' => 'jeder',
+      'PIS' => 'jeder'
+    },
+    'jeder' => {
+      'PIAT' => 'jeder',
+      'PIS' => 'jeder'
+    },
+    'jedermann' => {
+      'PIS' => 'jedermann'
+    },
+    'jedes' => {
+      'PIAT' => 'jeder',
+      'PIS' => 'jeder'
+    },
+    'jedoch' => {
+      'KON' => 'jedoch'
+    },
+    'jedweder' => {
+      'PIAT' => 'jedweder'
+    },
+    'jegliche' => {
+      'PIAT' => 'jeglicher'
+    },
+    'jeglichen' => {
+      'PIAT' => 'jeglicher'
+    },
+    'jeglicher' => {
+      'PIAT' => 'jeglicher'
+    },
+    'jemand' => {
+      'PIS' => 'jemand'
+    },
+    'jemandem' => {
+      'PIS' => 'jemand'
+    },
+    'jemanden' => {
+      'PIS' => 'jemand'
+    },
+    'jene' => {
+      'PDAT' => 'jener',
+      'PDS' => 'jener'
+    },
+    'jenem' => {
+      'PDAT' => 'jener'
+    },
+    'jenen' => {
+      'PDAT' => 'jener',
+      'PDS' => 'jener'
+    },
+    'jener' => {
+      'PDAT' => 'jener',
+      'PDS' => 'jener',
+      'PIS' => 'jener'
+    },
+    'jenes' => {
+      'PDAT' => 'jener',
+      'PDS' => 'jener'
+    },
+    'jenseits' => {
+      'APPR' => 'jenseits'
+    },
+    'kalt' => {
+      'PTKVZ' => 'kalt'
+    },
+    'kaputt' => {
+      'PTKVZ' => 'kaputt'
+    },
+    'kein' => {
+      'PIAT' => 'kein'
+    },
+    'keine' => {
+      'PIAT' => 'kein',
+      'PIS' => 'keiner'
+    },
+    'keinem' => {
+      'PIAT' => 'kein',
+      'PIS' => 'keiner'
+    },
+    'keinen' => {
+      'PIAT' => 'kein',
+      'PIS' => 'keiner'
+    },
+    'keiner' => {
+      'PIAT' => 'kein',
+      'PIS' => 'keiner'
+    },
+    'keinerlei' => {
+      'PIAT' => 'keinerlei'
+    },
+    'keines' => {
+      'PIAT' => 'kein',
+      'PIS' => 'keiner'
+    },
+    'kennen' => {
+      'PTKVZ' => 'kennen'
+    },
+    'klar' => {
+      'PTKVZ' => 'klar'
+    },
+    'kontra' => {
+      'APPR' => 'kontra'
+    },
+    'kraft' => {
+      'APPR' => 'kraft'
+    },
+    'kund' => {
+      'PTKVZ' => 'kund'
+    },
+    'kurz' => {
+      'PTKVZ' => 'kurz'
+    },
+    'kurzem' => {
+      'PIS' => 'kurzer'
+    },
+    'lahm' => {
+      'PTKVZ' => 'lahm'
+    },
+    'lang' => {
+      'APPO' => 'lang'
+    },
+    'laut' => {
+      'APPR' => 'laut'
+    },
+    'lauter' => {
+      'PIAT' => 'lauter'
+    },
+    'leer' => {
+      'PTKVZ' => 'leer'
+    },
+    'leicht' => {
+      'PTKVZ' => 'leicht'
+    },
+    'letzten' => {
+      'PIS' => 'letzter'
+    },
+    'letzter' => {
+      'PIS' => 'letzter'
+    },
+    'letztere' => {
+      'PIS' => 'letzterer'
+    },
+    'letzteren' => {
+      'PIS' => 'letzterer'
+    },
+    'letzterer' => {
+      'PIS' => 'letzterer'
+    },
+    'letzteres' => {
+      'PIS' => 'letzterer'
+    },
+    'liegen' => {
+      'PTKVZ' => 'liegen'
+    },
+    'locker' => {
+      'PTKVZ' => 'locker'
+    },
+    'los' => {
+      'PTKVZ' => 'los'
+    },
+    'm.' => {
+      'APPR' => 'm.'
+    },
+    'mal' => {
+      'KON' => 'mal'
+    },
+    'man' => {
+      'PIS' => 'man'
+    },
+    'manche' => {
+      'PIAT' => 'mancher',
+      'PIS' => 'mancher'
+    },
+    'manchem' => {
+      'PIAT' => 'mancher'
+    },
+    'manchen' => {
+      'PIAT' => 'mancher',
+      'PIS' => 'mancher'
+    },
+    'mancher' => {
+      'PIAT' => 'mancher',
+      'PIS' => 'mancher'
+    },
+    'mancherlei' => {
+      'PIAT' => 'mancherlei',
+      'PIS' => 'mancherlei'
+    },
+    'manches' => {
+      'PIAT' => 'mancher',
+      'PIS' => 'mancher'
+    },
+    'mangels' => {
+      'APPR' => 'mangels'
+    },
+    'matt' => {
+      'PTKVZ' => 'matt'
+    },
+    'mehr' => {
+      'PIAT' => 'mehr',
+      'PIS' => 'mehr'
+    },
+    'mehrere' => {
+      'PIAT' => 'mehrere',
+      'PIS' => 'mehrere'
+    },
+    'mehreren' => {
+      'PIAT' => 'mehrere',
+      'PIS' => 'mehrere'
+    },
+    'mehrerer' => {
+      'PIAT' => 'mehrere'
+    },
+    'mein' => {
+      'PPOSAT' => 'mein'
+    },
+    'meine' => {
+      'PPOSAT' => 'mein'
+    },
+    'meinem' => {
+      'PPOSAT' => 'mein'
+    },
+    'meinen' => {
+      'PPOSAT' => 'mein'
+    },
+    'meiner' => {
+      'PPOSAT' => 'mein',
+      'PPOSS' => 'mein'
+    },
+    'meines' => {
+      'PPOSAT' => 'mein'
+    },
+    'meiste' => {
+      'PIAT' => 'meister',
+      'PIS' => 'meister'
+    },
+    'meisten' => {
+      'PIAT' => 'meister',
+      'PIS' => 'meister'
+    },
+    'mich' => {
+      'PPER' => 'mich',
+      'PRF' => 'sich'
+    },
+    'minus' => {
+      'APPR' => 'minus'
+    },
+    'mir' => {
+      'PPER' => 'mir',
+      'PRF' => 'sich'
+    },
+    'miss' => {
+      'PTKVZ' => 'miss'
+    },
+    'mit' => {
+      'APPR' => 'mit',
+      'KON' => 'mit',
+      'PTKVZ' => 'mit'
+    },
+    'miteinander' => {
+      'PROAV' => 'miteinander'
+    },
+    'mitsamt' => {
+      'APPR' => 'mitsamt'
+    },
+    'mittels' => {
+      'APPR' => 'mittels'
+    },
+    'n.' => {
+      'APPR' => 'n.'
+    },
+    'nach' => {
+      'APPO' => 'nach',
+      'APPR' => 'nach',
+      'APZR' => 'nach',
+      'PTKVZ' => 'nach'
+    },
+    'nachdem' => {
+      'KOUS' => 'nachdem',
+      'PROAV' => 'nachdem'
+    },
+    'nacheinander' => {
+      'PROAV' => 'nacheinander'
+    },
+    'nahe' => {
+      'APPO' => 'nahe',
+      'APPR' => 'nahe',
+      'PTKVZ' => 'nahe'
+    },
+    'namens' => {
+      'APPR' => 'namens'
+    },
+    'neben' => {
+      'APPR' => 'neben'
+    },
+    'nebst' => {
+      'APPR' => 'nebst'
+    },
+    'nein' => {
+      'PTKANT' => 'nein'
+    },
+    'nem' => {
+      'ART' => 'ein'
+    },
+    'nicht' => {
+      'PTKNEG' => 'nicht'
+    },
+    'nichts' => {
+      'PIAT' => 'nichts',
+      'PIS' => 'nichts'
+    },
+    'nichtsdestotrotz' => {
+      'PROAV' => 'nichtsdestotrotz'
+    },
+    'nieder' => {
+      'PTKVZ' => 'nieder'
+    },
+    'niemand' => {
+      'PIS' => 'niemand'
+    },
+    'niemandem' => {
+      'PIS' => 'niemand'
+    },
+    'niemanden' => {
+      'PIS' => 'niemand'
+    },
+    'nix' => {
+      'PIS' => 'nix'
+    },
+    'noch' => {
+      'KON' => 'noch'
+    },
+    'not' => {
+      'PTKVZ' => 'not'
+    },
+    'ob' => {
+      'APPR' => 'ob',
+      'KOUS' => 'ob'
+    },
+    'oberhalb' => {
+      'APPR' => 'oberhalb'
+    },
+    'obgleich' => {
+      'KOUS' => 'obgleich'
+    },
+    'obschon' => {
+      'KOUS' => 'obschon'
+    },
+    'obwohl' => {
+      'KOUS' => 'obwohl'
+    },
+    'oder' => {
+      'KON' => 'oder'
+    },
+    'offen' => {
+      'PTKVZ' => 'offen'
+    },
+    'ohne' => {
+      'APPR' => 'ohne',
+      'KOUI' => 'ohne',
+      'KOUS' => 'ohne'
+    },
+    'paar' => {
+      'PIAT' => 'paar'
+    },
+    'parat' => {
+      'PTKVZ' => 'parat'
+    },
+    'per' => {
+      'APPR' => 'per'
+    },
+    'platt' => {
+      'PTKVZ' => 'platt'
+    },
+    'pleite' => {
+      'PTKVZ' => 'pleite'
+    },
+    'plus' => {
+      'APPR' => 'plus',
+      'KON' => 'plus'
+    },
+    'preis' => {
+      'PTKVZ' => 'preis'
+    },
+    'pro' => {
+      'APPR' => 'pro'
+    },
+    'qua' => {
+      'APPR' => 'qua'
+    },
+    'rauf' => {
+      'PTKVZ' => 'rauf'
+    },
+    'raus' => {
+      'PTKVZ' => 'raus'
+    },
+    'recht' => {
+      'PTKVZ' => 'recht'
+    },
+    'reichlich' => {
+      'PIAT' => 'reichlich'
+    },
+    'rein' => {
+      'PTKVZ' => 'rein'
+    },
+    'respektive' => {
+      'KON' => 'respektive'
+    },
+    'runter' => {
+      'PTKVZ' => 'runter'
+    },
+    "r\x{fc}ber" => {
+      'PROAV' => "r\x{fc}ber"
+    },
+    's' => {
+      'ART' => 'der',
+      'PPER' => 's'
+    },
+    'samt' => {
+      'APPR' => 'samt'
+    },
+    'sauber' => {
+      'PTKVZ' => 'sauber'
+    },
+    'schief' => {
+      'PTKVZ' => 'schief'
+    },
+    'schwer' => {
+      'PTKVZ' => 'schwer'
+    },
+    "sch\x{e4}tzen" => {
+      'PTKVZ' => "sch\x{e4}tzen"
+    },
+    'sein' => {
+      'PPOSAT' => 'sein'
+    },
+    'seine' => {
+      'PPOSAT' => 'sein'
+    },
+    'seinem' => {
+      'PPOSAT' => 'sein',
+      'PPOSS' => 'seine'
+    },
+    'seinen' => {
+      'PPOSAT' => 'sein'
+    },
+    'seiner' => {
+      'PPOSAT' => 'sein'
+    },
+    'seines' => {
+      'PPOSAT' => 'sein',
+      'PPOSS' => 'sein'
+    },
+    'seinesgleichen' => {
+      'PIS' => 'seinesgleichen'
+    },
+    'seit' => {
+      'APPR' => 'seit',
+      'KOUS' => 'seit'
+    },
+    'seitdem' => {
+      'KOUS' => 'seitdem',
+      'PROAV' => 'seitdem'
+    },
+    'seitens' => {
+      'APPR' => 'seitens'
+    },
+    'selbiger' => {
+      'PIS' => 'selbiger'
+    },
+    'sich' => {
+      'PPER' => 'sich',
+      'PRF' => 'sich'
+    },
+    'sicher' => {
+      'PTKVZ' => 'sicher'
+    },
+    'sie' => {
+      'PPER' => 'sie'
+    },
+    'sitzen' => {
+      'PTKVZ' => 'sitzen'
+    },
+    'so' => {
+      'KOUS' => 'so'
+    },
+    'sobald' => {
+      'KOUS' => 'sobald'
+    },
+    'soetwas' => {
+      'PIS' => 'soetwas'
+    },
+    'sofern' => {
+      'KOUS' => 'sofern'
+    },
+    'solange' => {
+      'KOUS' => 'solange'
+    },
+    'solch' => {
+      'PIAT' => 'solch',
+      'PIS' => 'solch'
+    },
+    'solche' => {
+      'PDAT' => 'solcher',
+      'PIAT' => 'solcher',
+      'PIS' => 'solcher'
+    },
+    'solchem' => {
+      'PIAT' => 'solcher'
+    },
+    'solchen' => {
+      'PIAT' => 'solcher',
+      'PIS' => 'solcher'
+    },
+    'solcher' => {
+      'PIAT' => 'solcher',
+      'PIS' => 'solcher'
+    },
+    'solcherlei' => {
+      'PIAT' => 'solcherlei'
+    },
+    'solches' => {
+      'PIAT' => 'solcher'
+    },
+    'sondern' => {
+      'KON' => 'sondern'
+    },
+    'soviel' => {
+      'PIAT' => 'soviel',
+      'PIS' => 'soviel'
+    },
+    'soviele' => {
+      'PIAT' => 'sovieler',
+      'PIS' => 'soviele'
+    },
+    'soweit' => {
+      'KOUS' => 'soweit'
+    },
+    'sowie' => {
+      'KON' => 'sowie'
+    },
+    'sowohl' => {
+      'KON' => 'sowohl'
+    },
+    'stand' => {
+      'PTKVZ' => 'stand'
+    },
+    'stark' => {
+      'PTKVZ' => 'stark'
+    },
+    'statt' => {
+      'APPR' => 'statt',
+      'KON' => 'statt',
+      'KOUI' => 'statt',
+      'PTKVZ' => 'statt'
+    },
+    'stattdessen' => {
+      'PROAV' => 'stattdessen'
+    },
+    'stehen' => {
+      'PTKVZ' => 'stehen'
+    },
+    'still' => {
+      'PTKVZ' => 'still'
+    },
+    'stramm' => {
+      'PTKVZ' => 'stramm'
+    },
+    'streitig' => {
+      'PTKVZ' => 'streitig'
+    },
+    "s\x{e4}mtliche" => {
+      'PIAT' => "s\x{e4}mtlicher"
+    },
+    "s\x{e4}mtlichen" => {
+      'PIAT' => "s\x{e4}mtlicher"
+    },
+    "s\x{fc}dlich" => {
+      'APPR' => "s\x{fc}dlich"
+    },
+    'teil' => {
+      'PTKVZ' => 'teil'
+    },
+    'trotz' => {
+      'APPR' => 'trotz'
+    },
+    'trotzdem' => {
+      'PROAV' => 'trotzdem'
+    },
+    'u' => {
+      'KON' => 'u'
+    },
+    'u.' => {
+      'APPR' => 'u.'
+    },
+    'um' => {
+      'APPR' => 'um',
+      'KOUI' => 'um',
+      'PTKA' => 'um',
+      'PTKVZ' => 'um'
+    },
+    'umher' => {
+      'PTKVZ' => 'umher'
+    },
+    'umhin' => {
+      'PTKVZ' => 'umhin'
+    },
+    'ums' => {
+      'APPRART' => 'um',
+      'KOUI' => 'um'
+    },
+    'und' => {
+      'KON' => 'und'
+    },
+    'ungeachtet' => {
+      'APPO' => 'ungeachtet',
+      'APPR' => 'ungeachtet'
+    },
+    'uns' => {
+      'PPER' => 'uns',
+      'PRF' => 'sich'
+    },
+    'unser' => {
+      'PPOSAT' => 'unser'
+    },
+    'unsere' => {
+      'PPOSAT' => 'unser'
+    },
+    'unsereins' => {
+      'PIS' => 'unsereiner'
+    },
+    'unserem' => {
+      'PPOSAT' => 'unser'
+    },
+    'unseren' => {
+      'PPOSAT' => 'unser',
+      'PPOSS' => 'unsere'
+    },
+    'unserer' => {
+      'PPOSAT' => 'unser'
+    },
+    'unserers' => {
+      'PPOSAT' => 'unser'
+    },
+    'unseres' => {
+      'PPOSAT' => 'unser'
+    },
+    'unserm' => {
+      'PPOSAT' => 'unser'
+    },
+    'unsrigen' => {
+      'PPOSS' => 'unsriger'
+    },
+    'unter' => {
+      'APPR' => 'unter',
+      'PTKVZ' => 'unter'
+    },
+    'unterhalb' => {
+      'APPR' => 'unterhalb'
+    },
+    'unterm' => {
+      'APPRART' => 'unter'
+    },
+    'unters' => {
+      'APPRART' => 'unter'
+    },
+    'unweit' => {
+      'APPR' => 'unweit'
+    },
+    'v.' => {
+      'APPR' => 'v.',
+      'APPRART' => 'v.'
+    },
+    'ver' => {
+      'PTKVZ' => 'ver'
+    },
+    'verantwortlich' => {
+      'PTKVZ' => 'verantwortlich'
+    },
+    'verloren' => {
+      'PTKVZ' => 'verloren'
+    },
+    'versus' => {
+      'APPR' => 'versus'
+    },
+    'via' => {
+      'APPR' => 'via'
+    },
+    'viel' => {
+      'PIAT' => 'viel',
+      'PIS' => 'viel'
+    },
+    'viele' => {
+      'PIAT' => 'vieler',
+      'PIS' => 'viele'
+    },
+    'vielem' => {
+      'PIS' => 'vieler'
+    },
+    'vielen' => {
+      'PIAT' => 'vieler',
+      'PIS' => 'viele'
+    },
+    'vieler' => {
+      'PIAT' => 'vieler',
+      'PIS' => 'viele'
+    },
+    'vielerlei' => {
+      'PIAT' => 'vielerlei'
+    },
+    'vieles' => {
+      'PIS' => 'viele'
+    },
+    'viell' => {
+      'PIAT' => 'viel'
+    },
+    'voll' => {
+      'APPR' => 'voll'
+    },
+    'voller' => {
+      'APPR' => 'voller'
+    },
+    'vom' => {
+      'APPRART' => 'von'
+    },
+    'von' => {
+      'APPR' => 'von'
+    },
+    'vor' => {
+      'APPR' => 'vor',
+      'PTKVZ' => 'vor'
+    },
+    'voran' => {
+      'APPO' => 'voran',
+      'PTKVZ' => 'voran'
+    },
+    'voraus' => {
+      'PROAV' => 'voraus',
+      'PTKVZ' => 'voraus'
+    },
+    'vorbei' => {
+      'APZR' => 'vorbei',
+      'PTKVZ' => 'vorbei'
+    },
+    'vordem' => {
+      'PROAV' => 'vordem'
+    },
+    'vorm' => {
+      'APPRART' => 'vor'
+    },
+    'vors' => {
+      'APPRART' => 'vor'
+    },
+    "vorw\x{e4}rts" => {
+      'PTKVZ' => "vorw\x{e4}rts"
+    },
+    "vor\x{fc}ber" => {
+      'PTKVZ' => "vor\x{fc}ber"
+    },
+    'wach' => {
+      'PTKVZ' => 'wach'
+    },
+    'wahr' => {
+      'PTKVZ' => 'wahr'
+    },
+    'wann' => {
+      'PWAV' => 'wann'
+    },
+    'warum' => {
+      'PWAV' => 'warum'
+    },
+    'was' => {
+      'PIAT' => 'was',
+      'PIS' => 'was',
+      'PRELS' => 'wer',
+      'PWAV' => 'was',
+      'PWS' => 'was'
+    },
+    'wat' => {
+      'PIS' => 'was'
+    },
+    'weder' => {
+      'KON' => 'weder'
+    },
+    'weg' => {
+      'PTKVZ' => 'weg'
+    },
+    'wegen' => {
+      'APPO' => 'wegen',
+      'APPR' => 'wegen',
+      'APZR' => 'wegen'
+    },
+    'weh' => {
+      'PTKVZ' => 'weh'
+    },
+    'weil' => {
+      'KOUS' => 'weil'
+    },
+    'weitem' => {
+      'PIS' => 'weiter'
+    },
+    'weiter' => {
+      'PTKVZ' => 'weiter'
+    },
+    'weitere' => {
+      'PIS' => 'weiterer'
+    },
+    'weiteren' => {
+      'PIS' => 'weiterer'
+    },
+    'weiterer' => {
+      'PIAT' => 'weit'
+    },
+    'weiteres' => {
+      'PIS' => 'weiterer'
+    },
+    'welch' => {
+      'PWAT' => 'welcher'
+    },
+    'welche' => {
+      'PIS' => 'welcher',
+      'PRELS' => 'welcher',
+      'PWAT' => 'welcher'
+    },
+    'welchem' => {
+      'PRELS' => 'welcher',
+      'PWAT' => 'welcher'
+    },
+    'welchen' => {
+      'PWAT' => 'welcher'
+    },
+    'welcher' => {
+      'PRELS' => 'welcher',
+      'PWAT' => 'welcher',
+      'PWS' => 'welcher'
+    },
+    'welches' => {
+      'PRELS' => 'welcher',
+      'PWAT' => 'welcher'
+    },
+    'wem' => {
+      'PIS' => 'wer',
+      'PWS' => 'wem'
+    },
+    'wen' => {
+      'PWS' => 'wen'
+    },
+    'wen\'ge' => {
+      'PIS' => 'weniger'
+    },
+    'wenig' => {
+      'PIAT' => 'wenig',
+      'PIS' => 'wenig'
+    },
+    'wenige' => {
+      'PIAT' => 'weniger',
+      'PIS' => 'weniger'
+    },
+    'wenigen' => {
+      'PIAT' => 'weniger'
+    },
+    'weniger' => {
+      'PIAT' => 'weniger',
+      'PIS' => 'weniger'
+    },
+    'wenigsten' => {
+      'PIAT' => 'wenigster',
+      'PIS' => 'wenigster'
+    },
+    'wenn' => {
+      'KON' => 'wenn',
+      'KOUS' => 'wenn'
+    },
+    'wenngleich' => {
+      'KON' => 'wenngleich',
+      'KOUS' => 'wenngleich'
+    },
+    'wennschon' => {
+      'KON' => 'wennschon'
+    },
+    'wer' => {
+      'PWS' => 'wer'
+    },
+    'weshalb' => {
+      'PWAV' => 'weshalb'
+    },
+    'wessen' => {
+      'PWAT' => 'wessen'
+    },
+    'weswegen' => {
+      'PWAV' => 'weswegen',
+      'PWS' => 'weswegen'
+    },
+    'wett' => {
+      'PTKVZ' => 'wett'
+    },
+    'wider' => {
+      'APPR' => 'wider',
+      'PTKVZ' => 'wider'
+    },
+    'wie' => {
+      'KOKOM' => 'wie',
+      'KON' => 'wie',
+      'KOUS' => 'wie',
+      'PWAT' => 'wie',
+      'PWAV' => 'wie'
+    },
+    'wieder' => {
+      'PTKVZ' => 'wieder'
+    },
+    'wieso' => {
+      'PWAV' => 'wieso'
+    },
+    'wieviel' => {
+      'PWAT' => 'wieviel',
+      'PWAV' => 'wieviel',
+      'PWS' => 'wieviel'
+    },
+    'wieviele' => {
+      'PWAT' => 'wieviele',
+      'PWS' => 'wieviele'
+    },
+    'wiewohl' => {
+      'KOUS' => 'wiewohl'
+    },
+    'willen' => {
+      'APZR' => 'willen'
+    },
+    'wir' => {
+      'PPER' => 'wir'
+    },
+    'wo' => {
+      'KOUS' => 'wo',
+      'PWAV' => 'wo'
+    },
+    'wobei' => {
+      'KOUS' => 'wobei',
+      'PWAV' => 'wobei'
+    },
+    'wodurch' => {
+      'PWAV' => 'wodurch'
+    },
+    "wof\x{fc}r" => {
+      'PWAV' => "wof\x{fc}r"
+    },
+    'wogegen' => {
+      'PWAV' => 'wogegen'
+    },
+    'woher' => {
+      'PWAV' => 'woher'
+    },
+    'wohin' => {
+      'PWAV' => 'wohin'
+    },
+    'wohinein' => {
+      'PWAV' => 'wohinein'
+    },
+    'wohingegen' => {
+      'KOUS' => 'wohingegen'
+    },
+    'womit' => {
+      'PWAV' => 'womit'
+    },
+    'wonach' => {
+      'PWAV' => 'wonach'
+    },
+    'woran' => {
+      'PWAV' => 'woran'
+    },
+    'worauf' => {
+      'PROAV' => 'worauf',
+      'PWAV' => 'worauf'
+    },
+    'woraufhin' => {
+      'PROAV' => 'woraufhin',
+      'PWAV' => 'woraufhin'
+    },
+    'woraus' => {
+      'PWAV' => 'woraus'
+    },
+    'worin' => {
+      'PWAV' => 'worin'
+    },
+    'worum' => {
+      'PWAV' => 'worum'
+    },
+    "wor\x{fc}ber" => {
+      'PROAV' => "wor\x{fc}ber",
+      'PWAV' => "wor\x{fc}ber"
+    },
+    'wovon' => {
+      'PWAV' => 'wovon'
+    },
+    'wovor' => {
+      'PWAV' => 'wovor'
+    },
+    'wozu' => {
+      'PWAV' => 'wozu'
+    },
+    "w\x{e4}hrend" => {
+      'APPR' => "w\x{e4}hrend",
+      'KOUS' => "w\x{e4}hrend"
+    },
+    "w\x{e4}hrenddessen" => {
+      'PROAV' => "w\x{e4}hrenddessen"
+    },
+    'z.' => {
+      'APPRART' => 'z.'
+    },
+    'zu' => {
+      'APPR' => 'zu',
+      'APPRART' => 'zu',
+      'PTKA' => 'zu',
+      'PTKVZ' => 'zu',
+      'PTKZU' => 'zu'
+    },
+    'zudem' => {
+      'PROAV' => 'zudem'
+    },
+    'zuende' => {
+      'PTKVZ' => 'zuende'
+    },
+    'zufolge' => {
+      'APPO' => 'zufolge'
+    },
+    'zugrunde' => {
+      'PTKVZ' => 'zugrunde'
+    },
+    'zugunsten' => {
+      'APPR' => 'zugunsten'
+    },
+    'zugute' => {
+      'PTKVZ' => 'zugute'
+    },
+    'zuliebe' => {
+      'APPO' => 'zuliebe'
+    },
+    'zum' => {
+      'APPR' => 'zu',
+      'APPRART' => 'zu',
+      'PTKZU' => 'zum'
+    },
+    'zumal' => {
+      'KOUS' => 'zumal'
+    },
+    'zunichte' => {
+      'PTKVZ' => 'zunichte'
+    },
+    'zur' => {
+      'APPR' => 'zu',
+      'APPRART' => 'zu',
+      'PTKZU' => 'zur'
+    },
+    'zurecht' => {
+      'PTKVZ' => 'zurecht'
+    },
+    "zur\x{fc}ck" => {
+      'APZR' => "zur\x{fc}ck",
+      'PTKVZ' => "zur\x{fc}ck"
+    },
+    'zusammen' => {
+      'PTKVZ' => 'zusammen'
+    },
+    'zustande' => {
+      'PTKVZ' => 'zustande'
+    },
+    'zutage' => {
+      'PTKVZ' => 'zutage'
+    },
+    'zuteil' => {
+      'PTKVZ' => 'zuteil'
+    },
+    'zuviel' => {
+      'PIAT' => 'zuviel'
+    },
+    'zuviele' => {
+      'PIS' => 'zuviele'
+    },
+    'zuvor' => {
+      'APPO' => 'zuvor',
+      'PROAV' => 'zuvor',
+      'PTKVZ' => 'zuvor'
+    },
+    "zuz\x{fc}glich" => {
+      'APPR' => "zuz\x{fc}glich"
+    },
+    'zwar' => {
+      'KON' => 'zwar',
+      'KOUS' => 'zwar'
+    },
+    'zwecks' => {
+      'APPR' => 'zwecks'
+    },
+    'zweierlei' => {
+      'PIAT' => 'zweierlei',
+      'PIS' => 'zweierlei'
+    },
+    'zweiten' => {
+      'PIS' => 'zweiter'
+    },
+    'zweitmeisten' => {
+      'PIAT' => 'zweitmeister'
+    },
+    'zwischen' => {
+      'APPR' => 'zwischen'
+    },
+    "\x{e0}" => {
+      'APPR' => "\x{e0}"
+    },
+    "\x{f6}fteren" => {
+      'PIS' => "\x{f6}fter"
+    },
+    "\x{f6}stlich" => {
+      'APPR' => "\x{f6}stlich"
+    },
+    "\x{fc}bel" => {
+      'PTKVZ' => "\x{fc}bel"
+    },
+    "\x{fc}ber" => {
+      'APPO' => "\x{fc}ber",
+      'APPR' => "\x{fc}ber",
+      'PTKVZ' => "\x{fc}ber"
+    },
+    "\x{fc}berein" => {
+      'PTKVZ' => "\x{fc}berein"
+    },
+    "\x{fc}bereinander" => {
+      'PROAV' => "\x{fc}bereinander"
+    },
+    "\x{fc}berm" => {
+      'APPRART' => "\x{fc}ber"
+    },
+    "\x{fc}bers" => {
+      'APPRART' => "\x{fc}ber"
+    },
+    "\x{fc}brig" => {
+      'PTKVZ' => "\x{fc}brig"
+    }
+  };
+  
+  $SMOR2Tiger = {
+    '\'m' => {
+      'ART' => 'der'
+    },
+    '\'n' => {
+      'ART' => 'ein'
+    },
+    '\'ne' => {
+      'ART' => 'ein'
+    },
+    '\'s' => {
+      'ART' => 'der',
+      'PPER' => 'es'
+    },
+    'alle' => {
+      'PIAT' => 'aller'
+    },
+    'allermeisten' => {
+      'PIAT' => 'allermeister',
+      'PIS' => 'allermeister'
+    },
+    'allerwenigsten' => {
+      'PIS' => 'allerwenigster'
+    },
+    'allzuviele' => {
+      'PIAT' => 'allzuvieler'
+    },
+    'am' => {
+      'APPR' => 'an'
+    },
+    'andere' => {
+      'PIAT' => 'anderer',
+      'PIS' => 'anderer'
+    },
+    'd.' => {
+      'ART' => 'der',
+      'PDS' => 'der'
+    },
+    'das' => {
+      'PDAT' => 'der'
+    },
+    'deine' => {
+      'PPOSAT' => 'dein'
+    },
+    'denen' => {
+      'PRELAT' => 'der'
+    },
+    'denenzufolge' => {
+      'PRELS' => 'demzufolge'
+    },
+    'derartige' => {
+      'PDAT' => 'derartig'
+    },
+    'derartigen' => {
+      'PDAT' => 'derartig'
+    },
+    'derartiger' => {
+      'PDAT' => 'derartig'
+    },
+    'det' => {
+      'ART' => 'der',
+      'PDS' => 'der'
+    },
+    'die' => {
+      'ART' => 'der',
+      'PDAT' => 'der',
+      'PDS' => 'der',
+      'PRELS' => 'der'
+    },
+    'diejenige' => {
+      'PDAT' => 'derjenige',
+      'PDS' => 'derjenige'
+    },
+    'dies' => {
+      'PDAT' => 'dieser',
+      'PDS' => 'dieser',
+      'PIAT' => 'dieser'
+    },
+    'diese' => {
+      'PDAT' => 'dieser',
+      'PDS' => 'dieser'
+    },
+    'dieselbe' => {
+      'PDAT' => 'derselbe',
+      'PDS' => 'derselbe'
+    },
+    'ebendiese' => {
+      'PDAT' => 'ebendieser'
+    },
+    'ebensolche' => {
+      'PIS' => 'ebensolcher'
+    },
+    'ebensoviele' => {
+      'PIAT' => 'ebensovieler'
+    },
+    'ei-ne' => {
+      'ART' => 'ein'
+    },
+    'einander' => {
+      'PRF' => 'sich'
+    },
+    'eine' => {
+      'ART' => 'ein',
+      'PDS' => 'einer',
+      'PIS' => 'einer'
+    },
+    'einige' => {
+      'PIAT' => 'einiger'
+    },
+    'eins' => {
+      'PIS' => 'einer'
+    },
+    'einzelne' => {
+      'PIS' => 'einzelner'
+    },
+    'einzelnen' => {
+      'PIS' => 'einzelner'
+    },
+    'einzige' => {
+      'PIS' => 'einziger'
+    },
+    'einzigen' => {
+      'PIS' => 'einziger'
+    },
+    'einziges' => {
+      'PIS' => 'einziger'
+    },
+    'erste' => {
+      'PIS' => 'erster'
+    },
+    'ersten' => {
+      'PIS' => 'erster'
+    },
+    'erstere' => {
+      'PIS' => 'ersterer'
+    },
+    'etliche' => {
+      'PIAT' => 'etlicher',
+      'PIS' => 'etlicher'
+    },
+    'folgendes' => {
+      'PIS' => 'folgender'
+    },
+    'ihre' => {
+      'PPOSAT' => 'ihr'
+    },
+    'ihresgleichen' => {
+      'PIS' => 'seinesgleichen'
+    },
+    'im' => {
+      'APPR' => 'in'
+    },
+    'incl.' => {
+      'APPR' => 'inclusive'
+    },
+    'irgendeine' => {
+      'PIAT' => 'irgendein',
+      'PIS' => 'irgendeiner'
+    },
+    'irgendwelche' => {
+      'PIAT' => 'irgendwelcher'
+    },
+    'jede' => {
+      'PIAT' => 'jeder',
+      'PIS' => 'jeder'
+    },
+    'jedwede' => {
+      'PIAT' => 'jedweder'
+    },
+    'jegliche' => {
+      'PIAT' => 'jeglicher'
+    },
+    'jene' => {
+      'PDAT' => 'jener',
+      'PDS' => 'jener'
+    },
+    'keine' => {
+      'PIAT' => 'kein',
+      'PIS' => 'keiner'
+    },
+    'kurzem' => {
+      'PIS' => 'kurzer'
+    },
+    'letzten' => {
+      'PIS' => 'letzter'
+    },
+    'letztere' => {
+      'PIS' => 'letzterer'
+    },
+    'manche' => {
+      'PIAT' => 'mancher',
+      'PIS' => 'mancher'
+    },
+    'meine' => {
+      'PPOSAT' => 'mein',
+      'PPOSS' => 'mein'
+    },
+    'meiste' => {
+      'PIAT' => 'meister',
+      'PIS' => 'meister'
+    },
+    'nem' => {
+      'ART' => 'ein'
+    },
+    's' => {
+      'ART' => 'der'
+    },
+    'seine' => {
+      'PPOSAT' => 'sein'
+    },
+    'sie' => {
+      'PRF' => 'sich'
+    },
+    'solche' => {
+      'PDAT' => 'solcher',
+      'PIAT' => 'solcher',
+      'PIS' => 'solcher'
+    },
+    'soviele' => {
+      'PIAT' => 'sovieler'
+    },
+    "s\x{e4}mtliche" => {
+      'PIAT' => "s\x{e4}mtlicher"
+    },
+    'ums' => {
+      'KOUI' => 'um'
+    },
+    'unsereins' => {
+      'PIS' => 'unsereiner'
+    },
+    'unserers' => {
+      'PPOSAT' => 'unser'
+    },
+    'unsre' => {
+      'PPOSAT' => 'unser',
+      'PPOSS' => 'unsere'
+    },
+    'unsrige' => {
+      'PPOSS' => 'unsriger'
+    },
+    'viele' => {
+      'PIAT' => 'vieler'
+    },
+    'viell' => {
+      'PIAT' => 'viel'
+    },
+    'was' => {
+      'PRELS' => 'wer'
+    },
+    'wat' => {
+      'PIS' => 'was'
+    },
+    'weitem' => {
+      'PIS' => 'weiter'
+    },
+    'weitere' => {
+      'PIS' => 'weiterer'
+    },
+    'weiteren' => {
+      'PIS' => 'weiterer'
+    },
+    'weiterer' => {
+      'PIAT' => 'weit'
+    },
+    'weiteres' => {
+      'PIS' => 'weiterer'
+    },
+    'welch' => {
+      'PWAT' => 'welcher'
+    },
+    'welche' => {
+      'PIS' => 'welcher',
+      'PRELS' => 'welcher',
+      'PWAT' => 'welcher'
+    },
+    'wem' => {
+      'PIS' => 'wer'
+    },
+    'wen\'ge' => {
+      'PIS' => 'weniger'
+    },
+    'wenige' => {
+      'PIAT' => 'weniger',
+      'PIS' => 'weniger'
+    },
+    'wenigste' => {
+      'PIAT' => 'wenigster',
+      'PIS' => 'wenigster'
+    },
+    'zum' => {
+      'APPR' => 'zu'
+    },
+    'zur' => {
+      'APPR' => 'zu'
+    },
+    'zweiten' => {
+      'PIS' => 'zweiter'
+    },
+    'zweitmeisten' => {
+      'PIAT' => 'zweitmeister'
+    },
+    "\x{f6}fteren" => {
+      'PIS' => "\x{f6}fter"
+    }
+  };
+}
