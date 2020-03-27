@@ -37,17 +37,17 @@ The primary evaluation result is the score for setting 1 (surf-surf).
 | Lookup EmpiriST              |     85.75 |              |     85.22 |           |
 | Lookup TIGER                 |     93.27 |              |     92.53 |           |
 | Lookup TIGER + EmpiriST      |     94.52 |              |     93.92 |           |
-|:-----------------------------|----------:|-------------:|----------:|----------:|
+|                              |           |              |           |           |
 | TreeTagger                   |     80.80 |              |     80.34 |           |
 | TreeTagger + post-processing |     92.01 |              |     91.74 |           |
 | RNNTagger                    |     92.71 |              |     92.06 |           |
-|:-----------------------------|----------:|-------------:|----------:|----------:|
+|                              |           |              |           |           |
 | **statistical lemmatizers**  |           |              |           |           |
 | OpenNLP EmpiriST             |     76.17 |        92.78 |     75.81 |           |
 | OpenNLP TIGER + EmpiriST     |     78.51 |        97.51 |     78.13 |           |
 | mate-tools EmpiriST          |     71.00 |        86.36 |     70.55 |           |
 | mate-tools TIGER + EmpiriST  |     76.83 |        94.30 |     76.26 |           |
-|:-----------------------------|----------:|-------------:|----------:|----------:|
+|                              |           |              |           |           |
 | **SMOR morphology**          |           |              |           |           |
 | `cwb-lemmatize-smor` v1.0    |     74.01 |              |     74.04 |           |
 |  + TIGER post-processing     |     89.21 |              |     89.22 |           |
@@ -56,4 +56,3 @@ The primary evaluation result is the score for setting 1 (surf-surf).
 |  + heuristic & disambiguation|     83.44 |        84.88 |     82.80 |     83.98 |
 |  + TIGER adaptations         |     97.30 |        98.62 |     96.66 |     97.95 |
 |  + EmpiriST adaptations      | **97.81** |    **98.73** | **96.94** | **98.62** |
-|:-----------------------------|----------:|-------------:|----------:|----------:|
