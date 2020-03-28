@@ -310,39 +310,41 @@ sub find_wf_lemma { # find particular combination of word form and lemma in %Lem
 }
 
 sub memoize { # check lemma for required adaptations, add to memoization hash and return
-  my ($word, $pos, $lemma) = @_;
+  my ($word, $pos, $lemma, $unknown) = @_;
+  die "INTERNAL ERROR" unless defined $unknown; # catch wrong number of arguments
   if ($Empirist && $lemma eq "ein" && $pos eq "ART") {
     $lemma = "n" if $word =~ /^'?n(e[mnrs]?)?$/i; # EmpiriST surface lemmatization nen/ART -> n
   }
   if ($pos =~ /^(PTK|AKW)/) {
     $lemma = lc($lemma); # unconditionally convert all particles and inflectives to lowercase
   }
-  $Lemma{$word}{$pos} = $lemma;
+  $Lemma{$unknown}{$pos}{$word} = $lemma;
   return $lemma;
 }
 
 sub mk_lemma {
   my ($word, $pos, $lbound_s, $mark_unknown) = @_;
+  $mark_unknown = ($mark_unknown) ? 1 : 0; # for memoization
   $pos = '$.' if $pos =~ /^\$/; # SMOR uses $. for all punctuation 
   
-  my $lemma = $Lemma{$word}{$pos};
+  my $lemma = $Lemma{$mark_unknown}{$pos}{$word};
   return $lemma if defined $lemma; # already memoized
   
   if ($TigerMode) { # word form lookup in TIGER mapping table
     $lemma = table_lookup($Word2Lemma, lc($word), $pos, undef);
   }
-  return memoize($word, $pos, $lemma) if defined $lemma;
+  return memoize($word, $pos, $lemma, $mark_unknown) if defined $lemma;
   
   ## manual correction rules
   my $add_er = ($TigerMode) ? "er" : ""; # lemma convention for non-predicative adjectives
   $lemma = "profitabel" if $word =~ /^profitable[mnrs]?$/i && $pos eq "ADJA"; # SMOR generates "profitabl"
   $lemma = "$1nächst".$add_er if $word =~ /^((über)?)nächste[mnrs]?$/i && $pos eq "ADJA";
   $lemma = "selb".${add_er} if $word =~ /^selbe[mnrs]?$/i && $pos eq "ADJA";
-  return memoize($word, $pos, $lemma) if defined $lemma;
+  return memoize($word, $pos, $lemma, $mark_unknown) if defined $lemma;
   
   ## custom lemmatization dictionary (case-sensitive)
   $lemma = $CustomDict{join("\t", $word, $pos)};
-  return memoize($word, $pos, $lemma) if defined $lemma;
+  return memoize($word, $pos, $lemma, $mark_unknown) if defined $lemma;
   
   ## look up SMOR analysis with some case heuristics
   $lemma = $LemmaHash{$word}{$pos};
@@ -423,7 +425,7 @@ sub mk_lemma {
     }
     
     printf "MULTI %s/%s --> %s --> %s\n", $word, $pos, join(", ", @l), ($lemma // "<unknown>") if @l > 1 && $Debug;
-    return memoize($word, $pos, $lemma) if defined $lemma;
+    return memoize($word, $pos, $lemma, $mark_unknown) if defined $lemma;
   }
   
   ## mark as unknown or use word form as lemma
@@ -433,7 +435,7 @@ sub mk_lemma {
   else {
     ## custom lemmatization dictionary (case-insensitive)
     $lemma = $CustomDictLC{join("\t", lc($word), $pos)};
-    return memoize($word, $pos, $lemma) if defined $lemma;
+    return memoize($word, $pos, $lemma, $mark_unknown) if defined $lemma;
     
     ## various heuristic for different POS categories
     if ($pos eq "ADJD") {
@@ -449,17 +451,17 @@ sub mk_lemma {
         ## NB: not for NE because they might be lowercase (dpa, von/van, chromatic, usernames in chatrooms)
       }
       if (defined $lbound_s) {
-        # heuristically convert to lowercase at start of sentence (except for nominals)
+        ## heuristically convert to lowercase at start of sentence (except for nominals)
         $lemma = lc($lemma) if $lbound_s && $pos !~ /^(N|EMO|ADR|HST|URL)/;
       }
-      # normalize hashtags, address tags and URLs to lowercase (because they're case-insensitive)
+      ## normalize hashtags, address tags and URLs to lowercase (because they're case-insensitive), but not in --empirist mode
       if (!$Empirist) {
         $lemma = lc($lemma) if $pos =~ /^(ADR|HST|URL)$/ || $lemma =~ /^#\w+/;
       }
     }
   }
   
-  return memoize($word, $pos, $lemma);
+  return memoize($word, $pos, $lemma, $mark_unknown);
 }
 
 
