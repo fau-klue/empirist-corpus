@@ -406,7 +406,7 @@ sub mk_lemma {
           ## heuristics for truncation
           my $cand = mk_lemma($stem, "NN", 0, 1); # prefer analysis as noun stem
           $cand = "<unknown>" unless $cand eq $stem;
-          if ($cand eq "<unknown>" && $stem =~ /^p{Ll}+$/) {
+          if ($cand eq "<unknown>" && $stem =~ /^\p{Ll}+$/) {
             $cand = $stem if find_wf_lemma($stem, $stem); # accept lowercase stem if it is a base form of some POS
           }
           $cand = mk_lemma($stem, "NN", 0, 1) if $cand eq "<unknown>"; # try analysis as inflected noun (with heuristics)
