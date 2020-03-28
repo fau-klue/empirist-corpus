@@ -444,9 +444,9 @@ sub mk_lemma {
     }    
     else {
       $lemma = $word; # heuristic fallback: use word form as lemma
-      if ($pos =~ /^N/ && $word !~ /\p{Lu}/) {
+      if ($pos eq "NN" && $word !~ /\p{Lu}/) {
         $lemma = ucfirst($lemma) # uppercase first letter of nominals that are all lowercase
-          unless $Empirist && $pos eq "NE"; # but not for usernames in chatrooms
+        ## NB: not for NE because they might be lowercase (dpa, von/van, chromatic, usernames in chatrooms)
       }
       if (defined $lbound_s) {
         # heuristically convert to lowercase at start of sentence (except for nominals)
