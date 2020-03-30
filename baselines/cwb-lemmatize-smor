@@ -15,13 +15,14 @@ use utf8;
 binmode(STDOUT, ":encoding(utf8)");
 
 use CWB;
+use CWB::CQP;
 use CWB::CL::Strict;
 use CWB::Encoder;
 use Encode;
 
 use Getopt::Long qw(:config no_ignore_case);
 
-our $VERSION = "1.2";
+our $VERSION = "1.3 beta";
 
 our $Corpus = undef;
 our $WordAtt = "word";
@@ -30,6 +31,7 @@ our $SentAtt = "s";
 our $LemmaAtt = "lemma";
 our $TigerMode = 0;
 our $Empirist = 0;
+our $Query = 0;
 our $Unknown = 0;
 our $Ambiguous = 0;
 our $Registry = undef;
@@ -55,6 +57,7 @@ my $ok = GetOptions(
   "nosent|nos" => sub { $SentAtt = undef },
   "tiger|T" => \$TigerMode,
   "empirist|E" => \$Empirist,
+  "query|Q" => \$Query,
   "unknown|u" => \$Unknown,
   "ambiguous|a" => \$Ambiguous,
   "lemma|P=s" => \$LemmaAtt,
@@ -86,6 +89,7 @@ Usage:  cwb-lemmatize-smor [OPTIONS] CORPUS
   -nos, --nosent  sentence boundaries are not available
   -T, --tiger     adjust to TIGER lemmatization conventions
   -E, --empirist  adjust to EmpiriST tagset and lemmatization conventions
+  -Q, --query     query CORPUS for improved lemma disambiguation
   -u, --unknown   don't guess unknown words (lemmatized as <unknown>)
   -a, --ambiguous don't disambiguate between multiple possible lemmata
   -P <att>,       name of p-attribute to be created [default: lemma]
@@ -137,6 +141,14 @@ my $Word = $C->attribute($WordAtt, "p");
 my $POS = $C->attribute($POSAtt, "p");
 my $S = undef;
 $S = $C->attribute($SentAtt, "s") if defined $SentAtt;
+
+my $CQP = undef;
+if ($Query) {
+  my $registry_flag = (defined $Registry) ? "-r ".CWB::Shell::Quote($Registry) : "";
+  $CQP = new CWB::CQP $registry_flag;
+  $CQP->set_error_handler('die');
+  $CQP->activate($Corpus);
+}
 
 ######################################################################
 
@@ -310,21 +322,21 @@ sub find_wf_lemma { # find particular combination of word form and lemma in %Lem
 }
 
 sub memoize { # check lemma for required adaptations, add to memoization hash and return
-  my ($word, $pos, $lemma, $unknown) = @_;
-  die "INTERNAL ERROR" unless defined $unknown; # catch wrong number of arguments
+  my ($word, $pos, $lemma, $memo_class) = @_;
+  die "INTERNAL ERROR" unless defined $memo_class; # catch wrong number of arguments
   if ($Empirist && $lemma eq "ein" && $pos eq "ART") {
     $lemma = "n" if $word =~ /^'?n(e[mnrs]?)?$/i; # EmpiriST surface lemmatization nen/ART -> n
   }
   if ($pos =~ /^(PTK|AKW)/) {
     $lemma = lc($lemma); # unconditionally convert all particles and inflectives to lowercase
   }
-  $Lemma{$unknown}{$pos}{$word} = $lemma;
+  $Lemma{$memo_class}{$pos}{$word} = $lemma;
   return $lemma;
 }
 
 sub mk_lemma {
   my ($word, $pos, $lbound_s, $mark_unknown) = @_;
-  $mark_unknown = ($mark_unknown) ? 1 : 0; # for memoization
+  my $memo_class = sprintf "%d-%d", ($mark_unknown) ? 1 : 0, ($lbound_s) ? 1 : 0; # for memoization
   $pos = '$.' if $pos =~ /^\$/; # SMOR uses $. for all punctuation 
   
   my $lemma = $Lemma{$mark_unknown}{$pos}{$word};
@@ -333,18 +345,18 @@ sub mk_lemma {
   if ($TigerMode) { # word form lookup in TIGER mapping table
     $lemma = table_lookup($Word2Lemma, lc($word), $pos, undef);
   }
-  return memoize($word, $pos, $lemma, $mark_unknown) if defined $lemma;
+  return memoize($word, $pos, $lemma, $memo_class) if defined $lemma;
   
   ## manual correction rules
   my $add_er = ($TigerMode) ? "er" : ""; # lemma convention for non-predicative adjectives
   $lemma = "profitabel" if $word =~ /^profitable[mnrs]?$/i && $pos eq "ADJA"; # SMOR generates "profitabl"
   $lemma = "$1nächst".$add_er if $word =~ /^((über)?)nächste[mnrs]?$/i && $pos eq "ADJA";
   $lemma = "selb".${add_er} if $word =~ /^selbe[mnrs]?$/i && $pos eq "ADJA";
-  return memoize($word, $pos, $lemma, $mark_unknown) if defined $lemma;
+  return memoize($word, $pos, $lemma, $memo_class) if defined $lemma;
   
   ## custom lemmatization dictionary (case-sensitive)
   $lemma = $CustomDict{join("\t", $word, $pos)};
-  return memoize($word, $pos, $lemma, $mark_unknown) if defined $lemma;
+  return memoize($word, $pos, $lemma, $memo_class) if defined $lemma;
   
   ## look up SMOR analysis with some case heuristics
   $lemma = $LemmaHash{$word}{$pos};
@@ -365,23 +377,48 @@ sub mk_lemma {
       ## NB: TigerMode lookup cannot work for an ambiguous lemma, hence skip it
     }    
     else {
-
       ## use frequency data for disambiguation of nouns, verbs and adjectives
       if ($pos =~ /^(N[NE]|VV|ADJA)/) {
-        my @cand = map { [$_, $LemmaScore->{$_} || 0] } @l;
-        if (! grep { $_->[1] > 0 } @cand) {
-          ## no candidate is a known lemma, so retry with head of hyphenated compound
-          foreach my $c (@cand) {
-            if ($c->[0] =~ /-(\pL+)$/) {
-              $c->[1] = $LemmaScore->{$1} || 0;
+        $lemma = $l[0]; # default if it's the only one in the set
+        if (@l > 1) {
+          my @cand = map { [$_, $LemmaScore->{$_} // 0] } @l;
+          ## if none of the candidates is in the internal table, retry with head of hyphenated compound
+          if (! grep { $_->[1] > 0 } @cand) {
+            foreach my $c (@cand) {
+              if ($c->[0] =~ /-(\pL+)$/) {
+                $c->[1] = $LemmaScore->{$1} // 0;
+              }
+            }            
+          }
+          ## with --query, try to obtain missing frequency data from corpus being processed
+          if ($Query && ! grep { $_->[1] > 0 } @cand) {
+            print "Searching corpus for @l / $pos ...\n" if $Debug;
+            my $find_pos = substr($pos, 0, 2);
+            $find_pos = "ADJD" if $pos eq "AD";
+            $find_pos = "VV(FIN|INF)" if $pos eq "VV";
+            foreach my $x (@cand) {
+              my $l = $x->[0];
+              my $query = sprintf "[%s = %s %%l & %s = %s]", 
+                $WordAtt, $CQP->quote($l), $POSAtt, $CQP->quote($find_pos);
+              $CQP->exec("A = $query");
+              my ($f) = $CQP->exec("size A");
+              $CQP->exec("discard A");
+              $f = ($f >= 3) ? $f : 1; # so we don't keep re-querying lemmata with f = 0
+              $x->[1] = $LemmaScore->{$l} = $f;
+            }
+            if ($Debug) {
+              foreach my $x (@cand) {
+                printf "%10d  %s\n", $x->[1], $x->[0] if $x->[1] > 1;
+              }
             }
           }
+          ## now sort by frequency, breaking ties in lexicographic order
+          @cand = sort { $b->[1] <=> $a->[1] || $a->[0] cmp $b->[0] } @cand;
+          $lemma = $cand[0][0]; # best score and/or first in lexicographic order
         }
-        @cand = sort { $b->[1] <=> $a->[1] || $a->[0] cmp $b->[0] } @cand;
-        $lemma = $cand[0][0]; # best score and/or first in lexicographic order
       }
 
-      ## attributive adjective: prefer invariant lemma (same as surface form)
+      ## predicative adjective: prefer invariant lemma (same as surface form)
       elsif ($pos eq "ADJD") {
         $lemma = $l[0];
         if (grep {$_ eq lc($word)} @l) {
@@ -422,10 +459,15 @@ sub mk_lemma {
           $lemma = ($cand ne "<unknown>") ? $cand : $stem; # simply remove "-" if we have found no analysis
         }
       }
+      else {
+        $lemma = lc($lemma) if $pos =~ /^PP/; # SMOR lemmatizes "Er" -> "Sie"
+      }
+      $lemma =~ s/([Vv])erkäuf$/$1erkauf/; # work around SMOR bugs
+      $lemma =~ s/([Sc])chlüss$/$1chluss/;
     }
     
     printf "MULTI %s/%s --> %s --> %s\n", $word, $pos, join(", ", @l), ($lemma // "<unknown>") if @l > 1 && $Debug;
-    return memoize($word, $pos, $lemma, $mark_unknown) if defined $lemma;
+    return memoize($word, $pos, $lemma, $memo_class) if defined $lemma;
   }
   
   ## mark as unknown or use word form as lemma
@@ -435,7 +477,7 @@ sub mk_lemma {
   else {
     ## custom lemmatization dictionary (case-insensitive)
     $lemma = $CustomDictLC{join("\t", lc($word), $pos)};
-    return memoize($word, $pos, $lemma, $mark_unknown) if defined $lemma;
+    return memoize($word, $pos, $lemma, $memo_class) if defined $lemma;
     
     ## various heuristic for different POS categories
     if ($pos eq "ADJD") {
@@ -446,7 +488,7 @@ sub mk_lemma {
     }    
     else {
       $lemma = $word; # heuristic fallback: use word form as lemma
-      if ($pos eq "NN" && $word !~ /\p{Lu}/) {
+      if ($pos eq "NN" && $word =~ /^[\p{Ll}\pN-]+$/) {
         $lemma = ucfirst($lemma) # uppercase first letter of nominals that are all lowercase
         ## NB: not for NE because they might be lowercase (dpa, von/van, chromatic, usernames in chatrooms)
       }
@@ -461,7 +503,7 @@ sub mk_lemma {
     }
   }
   
-  return memoize($word, $pos, $lemma, $mark_unknown);
+  return memoize($word, $pos, $lemma, $memo_class);
 }
 
 
@@ -3481,6 +3523,7 @@ BEGIN{
     'Akkurutsche' => '33',
     'Akkutyp' => '100',
     'Aktdarstellung' => '25',
+    'Akte' => '10000', # manually added
     'Aktenband' => '9',
     'Aktenstudium' => '188',
     'Aktien-Indexfonds' => '19',
@@ -8131,6 +8174,7 @@ BEGIN{
     'Flaschenkasten' => '21',
     'Flaschenreife' => '59',
     'Flat-Rate' => '53',
+    'Fleck' => '10000', # manually added
     'Fledermausfest' => '10',
     'Fledermauskasten' => '27',
     'Fleece-Weste' => '11',
@@ -9192,6 +9236,7 @@ BEGIN{
     "Getr\x{e4}nkeladen" => '65',
     "Getr\x{e4}nkeliste" => '19',
     "Getr\x{e4}nkewart" => '20',
+    'Gewaltakt' => '500', # manually added
     'Gewaltbereite' => '70',
     'Gewaltdarstellung' => '514',
     'Gewaltfrieden' => '21',
@@ -16070,6 +16115,7 @@ BEGIN{
     'Rechtevermarkter' => '17',
     'Rechts-vor-Links-Regelung' => '37',
     'Rechts-vor-links-Regelung' => '31',
+    'Rechtsakt' => '350', # manually added
     'Rechtsberaterin' => '56',
     'Rechtschreibregelung' => '20',
     'Rechtsdogmatisch' => '12',
@@ -18163,6 +18209,7 @@ BEGIN{
     'Soziologie-Studium' => '22',
     'Soziologiestudium' => '67',
     'Soziusraste' => '11',
+    'Spalte' => '3000', # manually added
     'Spaltentyp' => '14',
     'Spam-Liste' => '17',
     'Spamfalle' => '8',
@@ -19062,6 +19109,7 @@ BEGIN{
     'Substudie' => '13',
     'Subtyp' => '262',
     "Subventionsk\x{fc}rzung" => '28',
+    'Suchanfrage' => '350', # manually added
     'Suchaufruf' => '22',
     'Suche' => '164246',
     'Suchende' => '1448',
@@ -21993,6 +22041,7 @@ BEGIN{
     'Zertifikatsstudium' => '28',
     'Zertifizierungsreife' => '15',
     'Zettelkasten' => '322',
+    'Zeuge' => '50000', # manually added
     'Zeugenaufruf' => '141',
     'Zeugenliste' => '69',
     'Zeugnisfest' => '36',
