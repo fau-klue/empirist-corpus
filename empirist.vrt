@@ -1487,7 +1487,7 @@ Satzstrukturen	NN	NOUN	Satzstrukturen	Satzstruktur	Satzstruktur
 :	$.	PUNCT	:	:	:
 jdn.	PIS	PRON	jemanden	jdn.	jemand
 fördern	VVINF	VERB	fördern	fördern	fördern
-=	$(/XY	X	=	=	=	CLARIFY
+=	XY	X	=	=	=
 jmdn.	PIS	PRON	jemanden	jmdn.	jemand
 unterstützen	VVINF	VERB	unterstützen	unterstützen	unterstützen
 .	$.	PUNCT	.	.	.
@@ -3404,7 +3404,7 @@ m	NN	NOUN	M	M	M
 g	AKW	INTJ	g	g	g
 *	$(	PUNCT	*	*	*
 bruam	NN	NOUN	Baum	Bruam	Baum
-=	$(/XY	X	=	=	=	CLARIFY
+=	XY	X	=	=	=
 baum	NN	NOUN	Baum	Baum	Baum
 </s>
 </posting>
@@ -4739,7 +4739,7 @@ Sonntag	NN	NOUN	Sonntag	Sonntag	Sonntag
 <s>
 "	$(	PUNCT	"	"	"
 Emoticons	NN	NOUN	Emoticons	Emoticon	Emoticon
-=	$(/XY	X	=	=	=	CLARIFY
+=	XY	X	=	=	=
 schriftl.	ADJA	ADJ	schriftliches	schriftl.	schriftlich
 Äquivalent	NN	NOUN	Äquivalent	Äquivalent	Äquivalent
 zur	APPRART	_	zur	zu	zu
@@ -25408,15 +25408,15 @@ einem	PIS	PRON	einem	einer	einer
 die	ART	DET	die	der	der
 leidige	ADJA	ADJ	leidige	leidig	leidig
 Junge	NN	NOUN	Junge	Junge	Junge
-=	$(/XY	X	=	=	=	CLARIFY
+=	XY	X	=	=	=
 blau	ADJD	ADJ	blau	blau	blau
-=	$(/XY	X	=	=	=	CLARIFY
+=	XY	X	=	=	=
 Powerranger	NN	NOUN	Powerranger	Powerranger	Powerranger
 ,	$,	PUNCT	,	,	,
 Mädchen	NN	NOUN	Mädchen	Mädchen	Mädchen
-=	$(/XY	X	=	=	=	CLARIFY
+=	XY	X	=	=	=
 pink	ADJD	ADJ	pink	pink	pink
-=	$(/XY	X	=	=	=	CLARIFY
+=	XY	X	=	=	=
 Prinzessin	NN	NOUN	Prinzessin	Prinzessin	Prinzessin
 Codierung	NN	NOUN	Codierung	Codierung	Codierung
 .	$.	PUNCT	.	.	.
