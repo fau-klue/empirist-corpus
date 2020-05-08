@@ -356,7 +356,7 @@ anders	ADV	ADV	anders	anders	anders
 ist	VAFIN	AUX	ist	sein	sein
 ,	$,	PUNCT	,	,	,
 wie	KOKOM	ADP	wie	wie	wie
-bei	APPRART/APPR	ADP	bei	bei	bei	CLARIFY
+bei	APPR	ADP	bei	bei	bei
 vielen	PIAT	ADJ	vielen	vieler	vieler
 Coven	NN	NOUN	Coven	Coven	Coven
 ,	$,	PUNCT	,	,	,
@@ -1398,7 +1398,7 @@ sind	VAFIN	AUX	sind	sein	sein
 die	ART	DET	die	der	der
 etymologischen	ADJA	ADJ	etymologischen	etymologisch	etymologisch
 Angaben	NN	NOUN	Angaben	Angabe	Angabe
-zu	APPR/PTKZU	PART	zu	zu	zu	CLARIFY
+zu	APPR	PART	zu	zu	zu
 fördern	VVINF	VERB	fördern	fördern	fördern
 ,	$,	PUNCT	,	,	,
 die	PRELS	PRON	die	der	der
@@ -6917,7 +6917,7 @@ schreibe	VVFIN	VERB	schreibe	schreiben	schreiben
 ich	PPER	PRON	ich	ich	ich
 nichts	PIAT	DET	nichts	nichts	nichts
 anderes	PIS	PRON	anderes	anderer	anderer
-als	APPR/KOKOM	ADP	als	als	als	CLARIFY
+als	KOKOM	ADP	als	als	als
 ein	ART	DET	ein	ein	ein
 Lied	NN	NOUN	Lied	Lied	Lied
 .	$.	PUNCT	.	.	.
@@ -26125,7 +26125,7 @@ Pops	NN	NOUN	Pops	Pop	Pop
 20.	ADJA	ADJ	20.	20.	20.
 März	NN	NOUN	März	März	März
 2014	CARD	NUM	2014	2014	2014
-by	APPR/FM	X	by	by	by	CLARIFY
+by	FM	X	by	by	by
 Wiebke	NE	PROPN	Wiebke	Wiebke	Wiebke
 ,	$,	PUNCT	,	,	,
 in	APPR	ADP	in	in	in
