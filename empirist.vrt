@@ -18546,7 +18546,7 @@ ist	VAFIN	AUX	ist	sein	sein
 leider	ADV	ADV	leider	leider	leider
 nur	PTKIFG	ADV	nur	nur	nur
 18	CARD	NUM	18	18	18
-+	$(	PUNCT	+	+	+
++	ADV	ADV	+	+	+
 😭	EMOIMG	SYM	😭	😭	😭
 </s>
 </posting>
