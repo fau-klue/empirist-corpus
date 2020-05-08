@@ -388,7 +388,7 @@ heute	ADV	ADV	heute	heute	heute
 bei	APPR	ADP	bei	bei	bei
 uns	PPER	PRON	uns	uns	uns
 ,	$,	PUNCT	,	,	,
-egal	ADV/ADJD	ADJ	egal	egal	egal	CLARIFY
+egal	ADV	ADV	egal	egal	egal
 ob	KOUS	SCONJ	ob	ob	ob
 “	$(	PUNCT	“	“	“
 Otto-normal-Bürger	NN	NOUN	Otto-normal-Bürger	Otto-normal-Bürger	Otto-normal-Bürger
@@ -1735,7 +1735,7 @@ Synonymangaben	NN	NOUN	Synonymangaben	Synonymangabe	Synonymangabe
 </posting>
 <posting id="cmc_train_002_092" author="Teacher1" origid="SEM-44">
 <s>
-Bitte	PTKANT/ADV	ADV	bitte	bitte	bitte	CLARIFY
+Bitte	ADV	ADV	bitte	bitte	bitte
 zurück	PTKVZ	PART	zurück	zurück	zurück
 in	APPR	ADP	in	in	in
 den	ART	DET	den	der	der
@@ -1773,7 +1773,7 @@ Beispielsätze	NN	NOUN	Beispielsätze	Beispielsatz	Beispielsatz
 <s>
 das	PDS	PRON	das	der	der
 müsste	VMFIN	AUX	müsste	müssen	müssen
-eigentlich	ADJD/ADV	ADV	eigentlich	eigentlich	eigentlich	CLARIFY
+eigentlich	ADV	ADV	eigentlich	eigentlich	eigentlich
 reichen	VVINF	VERB	reichen	reichen	reichen
 .	$.	PUNCT	.	.	.
 </s>
@@ -3620,7 +3620,7 @@ unternehmen	NN	NOUN	Unternehmen	Unternehmen	Unternehmen
 ???	$.	PUNCT	???	???	???
 </s>
 <s>
-eigentlich	ADJD/ADV	ADV	eigentlich	eigentlich	eigentlich	CLARIFY
+eigentlich	ADV	ADV	eigentlich	eigentlich	eigentlich
 kostet	VVFIN	VERB	kostet	kosten	kosten
 sowas	PIS	PRON	sowas	sowas	sowas
 die	ART	DET	die	der	der
@@ -4840,7 +4840,7 @@ usw.	ADV	ADV	usw.	usw.	usw.
 &lt;--	XY	X	&lt;--	&lt;--	&lt;--
 Sind	VAFIN	AUX	sind	sein	sein
 Emoticons	NN	NOUN	Emoticons	Emoticon	Emoticon
-eigentlich	ADJD/ADV	ADV	eigentlich	eigentlich	eigentlich	CLARIFY
+eigentlich	ADV	ADV	eigentlich	eigentlich	eigentlich
 ein	ART	DET	ein	ein	ein
 schriftliches	ADJA	ADJ	schriftliches	schriftlich	schriftlich
 Äquivalent	NN	NOUN	Äquivalent	Äquivalent	Äquivalent
@@ -5700,7 +5700,7 @@ wenn	KOUS	SCONJ	wenn	wenn	wenn
 ich	PPER	PRON	ich	ich	ich
 schon	PTKMA	ADV	schon	schon	schon
 voll	PTKIFG	ADV	voll	voll	voll
-pleite	ADV/ADJD	ADJ	pleite	pleite	pleite	CLARIFY
+pleite	ADJD	ADJ	pleite	pleite	pleite
 bin	VAFIN	AUX	bin	sein	sein
 xD	EMOASC	SYM	xD	xD	xD
 </s>
@@ -5942,7 +5942,7 @@ erfahre	VVFIN	VERB	erfahre	erfahren	erfahren
 ich	PPER	PRON	ich	ich	ich
 ,	$,	PUNCT	,	,	,
 wie	PWAV	ADV	wie	wie	wie
-lange	ADJD/ADV	ADV	lange	lang	lang	CLARIFY
+lange	ADV	ADV	lange	lange	lange
 sie	PPER	PRON	sie	sie	sie
 bleibt	VVFIN	VERB	bleibt	bleiben	bleiben
 .	$.	PUNCT	.	.	.
@@ -6142,7 +6142,7 @@ Muss	VMFIN	AUX	muss	müssen	müssen
 ja	PTKMA	ADV	ja	ja	ja
 auch	PTKMA	ADV	auch	auch	auch
 nicht	PTKNEG	PART	nicht	nicht	nicht
-lange	ADJD/ADV	ADV	lange	lang	lang	CLARIFY
+lange	ADV	ADV	lange	lange	lange
 sein	VAINF	AUX	sein	sein	sein
 -	$(	PUNCT	-	-	-
 ich	PPER	PRON	ich	ich	ich
@@ -6200,7 +6200,7 @@ kann	VMFIN	AUX	kann	können	können
 <s>
 (	$(	PUNCT	(	(	(
 weiß	VVFIN	VERB	weiß	wissen	wissen
-nämlich	ADJD/ADV	ADV	nämlich	nämlich	nämlich	CLARIFY
+nämlich	ADV	ADV	nämlich	nämlich	nämlich
 nicht	PTKNEG	PART	nicht	nicht	nicht
 ,	$,	PUNCT	,	,	,
 wie	PWAV	ADV	wie	wie	wie
@@ -6474,7 +6474,7 @@ Review	NN	NOUN	Review	Review	Review
 denn	KON	CCONJ	denn	denn	denn
 ich	PPER	PRON	ich	ich	ich
 habe	VAFIN	AUX	habe	haben	haben
-eigentlich	ADJD/ADV	ADV	eigentlich	eigentlich	eigentlich	CLARIFY
+eigentlich	ADV	ADV	eigentlich	eigentlich	eigentlich
 keine	PIAT	DET	keine	kein	kein
 Lust	NN	NOUN	Lust	Lust	Lust
 ,	$,	PUNCT	,	,	,
@@ -6495,7 +6495,7 @@ ein	ART	DET	ein	ein	ein
 paar	PIDAT/PIAT	ADJ	paar	paar	paar	CLARIFY
 Anmerkungen	NN	NOUN	Anmerkungen	Anmerkung	Anmerkung
 :	$.	PUNCT	:	:	:
-1.	ADJD/ADV	ADV	1.	1.	1.	CLARIFY
+1.	ADV	ADV	1.	1.	1.
 Es	PPER	PRON	es	es	es
 gibt	VVFIN	VERB	gibt	geben	geben
 keine	PIAT	DET	keine	kein	kein
@@ -6525,7 +6525,7 @@ lassen	VVFIN	VERB	lassen	lassen	lassen
 .	$.	PUNCT	.	.	.
 </s>
 <s>
-2.	ADJD/ADV	ADV	2.	2.	2.	CLARIFY
+2.	ADV	ADV	2.	2.	2.
 Natürlich	ADJD	ADJ	natürlich	natürlich	natürlich
 könnte	VMFIN	AUX	könnte	können	können
 ein	ART	DET	ein	ein	ein
@@ -6592,8 +6592,8 @@ mal	PTKMA	ADV	mal	mal	mal
 bitte	ADV	ADV	bitte	bitte	bitte
 jemand	PIS	PRON	jemand	jemand	jemand
 noch	ADV	ADV	noch	noch	noch
-etwas	PIS/ADV	ADV	etwas	etwas	etwas	CLARIFY
-mehr	ADV/PIS	PRON	mehr	mehr	mehr	CLARIFY
+etwas	ADV	ADV	etwas	etwas	etwas
+mehr	PIS	PRON	mehr	mehr	mehr
 zur	APPRART	_	zur	zu	zu
 Gefährlichkeit	NN	NOUN	Gefährlichkeit	Gefährlichkeit	Gefährlichkeit
 der	ART	DET	der	der	der
@@ -7148,7 +7148,7 @@ Aber	KON	CCONJ	aber	aber	aber
 mir	PPER	PRON	mir	mir	mir
 ist	VAFIN	AUX	ist	sein	sein
 das	PDS	PRON	das	der	der
-egal	ADV/ADJD	ADJ	egal	egal	egal	CLARIFY
+egal	ADV	ADJ	egal	egal	egal
 ,	$,	PUNCT	,	,	,
 wer	PWS	PRON	wer	wer	wer
 sich	PRF	PRON	sich	sich	sich
@@ -8075,7 +8075,7 @@ dem	ART	DET	dem	der	der
 Bildschirm	NN	NOUN	Bildschirm	Bildschirm	Bildschirm
 es	PPER	PRON	es	es	es
 ihnen	PPER	PRON	ihnen	ihnen	ihnen
-gleich	ADV/ADJD	ADJ	gleich	gleich	gleich	CLARIFY
+gleich	ADV/ADJD/PTKVZ	ADJ	gleich	gleich	gleich	CLARIFY
 tat	VVFIN	VERB	tat	tun	tun
 .	$.	PUNCT	.	.	.
 </s>
@@ -8867,7 +8867,7 @@ Werte	NN	NOUN	Werte	Wert	Wert
 zusammen	ADV	ADV	zusammen	zusammen	zusammen
 ergeben	VVFIN	VERB	ergeben	ergeben	ergeben
 ein	ART	DET	ein	ein	ein
-voll	ADJD/ADV	ADV	voll	voll	voll	CLARIFY
+voll	ADJD	ADJ	voll	voll	voll
 entwickeltes	ADJA	ADJ	entwickeltes	entwickelt	entwickelt
 „	$(	PUNCT	„	„	„
 Humanistisches	ADJA	ADJ	humanistisches	humanistisch	humanistisch
@@ -8911,7 +8911,7 @@ entfacht	VVPP	VERB	entfacht	entfachen	entfachen
 </s>
 <s>
 Ein	ART	DET	ein	ein	ein
-voll	ADJD/ADV	ADV	voll	voll	voll	CLARIFY
+voll	ADJD	ADJ	voll	voll	voll
 entwickeltes	ADJA	ADJ	entwickeltes	entwickelt	entwickelt
 humanistisches	ADJA	ADJ	humanistisches	humanistisch	humanistisch
 Weltbild	NN	NOUN	Weltbild	Weltbild	Weltbild
@@ -9539,7 +9539,7 @@ Süßigkeiten	NN	NOUN	Süßigkeiten	Süßigkeit	Süßigkeit
 )	$(	PUNCT	)	)	)
 oder	KON	CCONJ	oder	oder	oder
 möglichst	ADV	ADV	möglichst	möglichst	möglichst
-lange	ADJD/ADV	ADV	lange	lang	lang	CLARIFY
+lange	ADV	ADV	lange	lange	lange
 erinnern	VVINF	VERB	erinnern	erinnern	erinnern
 (	$(	PUNCT	(	(	(
 zB	ADV	ADV	z.B.	zB	z.B.
@@ -9621,7 +9621,7 @@ z.	APPRART	_	z.	z.	z.
 B.	NN	NOUN	B.	B.	B.
 Königs-Datteln	NN	NOUN	Königs-Datteln	Königs-Dattel	Königs-Dattel
 ,	$,	PUNCT	,	,	,
-richtig	ADJD/ADV	ADV	richtig	richtig	richtig	CLARIFY
+richtig	ADJD	ADJ	richtig	richtig	richtig
 reife	ADJA	ADJ	reife	reif	reif
 Mangos	NN	NOUN	Mangos	Mango	Mango
 ,	$,	PUNCT	,	,	,
@@ -12111,7 +12111,7 @@ CEST	NN	NOUN	CEST	CEST	CEST
 )	$(	PUNCT	)	)	)
 </s>
 <s>
-Bitte	PTKANT/ADV	ADV	bitte	bitte	bitte	CLARIFY
+Bitte	ADV	ADV	bitte	bitte	bitte
 keine	PIAT	DET	keine	kein	kein
 inhaltlichen	ADJA	ADJ	inhaltlichen	inhaltlich	inhaltlich
 Veränderungen	NN	NOUN	Veränderungen	Veränderung	Veränderung
@@ -13413,7 +13413,7 @@ Sie	PPER	PRON	sie	sie	sie
 den	ART	DET	den	der	der
 Irrsinn	NN	NOUN	Irrsinn	Irrsinn	Irrsinn
 nicht	PTKNEG	PART	nicht	nicht	nicht
-endlich	ADJD/ADV	ADV	endlich	endlich	endlich	CLARIFY
+endlich	ADV	ADV	endlich	endlich	endlich
 beenden	VVINF	VERB	beenden	beenden	beenden
 ,	$,	PUNCT	,	,	,
 die	ART	DET	die	der	der
@@ -13947,7 +13947,7 @@ dem	ART	DET	dem	der	der
 11.	ADJA	ADJ	11.	11.	11.
 September	NN	NOUN	September	September	September
 wird	VAFIN	AUX	wird	werden	werden
-viel	ADV/PIS	PRON	viel	viel	viel	CLARIFY
+viel	PIS	PRON	viel	viel	viel
 über	APPR	ADP	über	über	über
 die	ART	DET	die	der	der
 Präventionsstrategien	NN	NOUN	Präventionsstrategien	Präventionsstrategie	Präventionsstrategie
@@ -14207,7 +14207,7 @@ geändert	VVPP	VERB	geändert	ändern	ändern
 </posting>
 <posting id="cmc_test_010_061" author="Cem Özdemir" origid="261">
 <s>
-Endlich	ADJD/ADV	ADV	endlich	endlich	endlich	CLARIFY
+Endlich	ADV	ADV	endlich	endlich	endlich
 gibt	VVFIN	VERB	gibt	geben	geben
 es	PPER	PRON	es	es	es
 starke	ADJA	ADJ	starke	stark	stark
@@ -14722,7 +14722,7 @@ zu	APPR	ADP	zu	zu	zu
 der	PDS	PRON	der	der	der
 war	VAFIN	AUX	war	sein	sein
 jetzt	ADV	ADV	jetzt	jetzt	jetzt
-weniger	ADJD/ADV	ADV	weniger	wenig	wenig	CLARIFY
+weniger	ADV	ADV	weniger	wenig	wenig
 witzig	ADJD	ADJ	witzig	witzig	witzig
 ,	$,	PUNCT	,	,	,
 cem	NE	PROPN	Cem	Cem	Cem
@@ -16080,7 +16080,7 @@ aha	ITJ	INTJ	aha	aha	aha
 den	ART	DET	den	der	der
 Günther	NE	PROPN	Günther	Günther	Günther
 also	ADV	ADV	also	also	also
-anders	ADJD/ADV	ADV	anders	anders	anders	CLARIFY
+anders	ADV	ADV	anders	anders	anders
 ..	$.	PUNCT	..	..	..
 </s>
 <s>
@@ -17357,7 +17357,7 @@ Frage	NN	NOUN	Frage	Frage	Frage
 Was	PWS	PRON	was	was	was
 ist	VAFIN	AUX	ist	sein	sein
 Twitter	NE	PROPN	Twitter	Twitter	Twitter
-eigentlich	ADJD/ADV	ADV	eigentlich	eigentlich	eigentlich	CLARIFY
+eigentlich	ADV	ADV	eigentlich	eigentlich	eigentlich
 ?	$.	PUNCT	?	?	?
 </s>
 <s>
@@ -18182,7 +18182,7 @@ dann	ADV	ADV	dann	dann	dann
 <s>
 War	VAFIN	AUX	war	sein	sein
 ja	PTKMA	ADV	ja	ja	ja
-weniger	ADJD/ADV	ADV	weniger	wenig	wenig	CLARIFY
+weniger	ADV	ADV	weniger	wenig	wenig
 chaotisch	ADJD	ADJ	chaotisch	chaotisch	chaotisch
 als	KOKOM	ADP	als	als	als
 gedacht	VVPP	VERB	gedacht	denken	denken
@@ -18572,7 +18572,7 @@ blöde	ADJD	ADJ	blöde	blöd	blöd
 ...	$(	PUNCT	...	...	...
 aber	KON	CCONJ	aber	aber	aber
 eben	PTKMA	ADV	eben	eben	eben
-auch	ADR/ADV	ADV	auch	auch	auch	CLARIFY
+auch	ADV	ADV	auch	auch	auch
 verständlich	ADJD	ADJ	verständlich	verständlich	verständlich
 .	$.	PUNCT	.	.	.
 </s>
@@ -18643,7 +18643,7 @@ du	PPER	PRON	du	du	du
 kannst	VMFIN	AUX	kannst	können	können
 gerne	ADV	ADV	gerne	gerne	gerne
 schon	ADV	ADV	schon	schon	schon
-früher	ADJD/ADV	ADV	früher	früh	früh	CLARIFY
+früher	ADJD	ADJ	früher	früh	früh
 kommen	VVINF	VERB	kommen	kommen	kommen
 ,	$,	PUNCT	,	,	,
 Nadine	NE	PROPN	Nadine	Nadine	Nadine
@@ -18997,7 +18997,7 @@ hier	ADV	ADV	hier	hier	hier
 denn	PTKMA	ADV	denn	denn	denn
 überhaupt	ADV	ADV	überhaupt	überhaupt	überhaupt
 so	PTKIFG	ADV	so	so	so
-lange	ADJD/ADV	ADV	lange	lang	lang	CLARIFY
+lange	ADV	ADV	lange	lange	lange
 >_&lt;	EMOASC	SYM	>_&lt;	>_&lt;	>_&lt;
 </s>
 </posting>
@@ -19541,7 +19541,7 @@ mich	PRF	PRON	mich	sich	sich
 nun	ADV	ADV	nun	nun	nun
 wirklich	ADJD	ADJ	wirklich	wirklich	wirklich
 wie	PWAV	ADV	wie	wie	wie
-lange	ADJD/ADV	ADV	lange	lang	lang	CLARIFY
+lange	ADV	ADV	lange	lange	lange
 ich	PPER	PRON	ich	ich	ich
 sie	PPER	PRON	sie	sie	sie
 nun	ADV	ADV	nun	nun	nun
@@ -19566,7 +19566,7 @@ etwas	ADV	ADV	etwas	etwas	etwas
 </s>
 <s>
 Wie	PWAV	ADV	wie	wie	wie
-lange	ADJD/ADV	ADV	lange	lang	lang	CLARIFY
+lange	ADV	ADV	lange	lange	lange
 kann	VMFIN	AUX	kann	können	können
 sie	PPER	PRON	sie	sie	sie
 denn	PTKMA	ADV	denn	denn	denn
@@ -19904,7 +19904,7 @@ Und	KON	CCONJ	und	und	und
 damit	PAV	ADV	damit	damit	damit
 bin	VAFIN	AUX	bin	sein	sein
 ich	PPER	PRON	ich	ich	ich
-vermutlich	ADJD/ADV	ADV	vermutlich	vermutlich	vermutlich	CLARIFY
+vermutlich	ADV	ADV	vermutlich	vermutlich	vermutlich
 nicht	PTKNEG	PART	nicht	nicht	nicht
 allein	ADV	ADV	allein	allein	allein
 ,	$,	PUNCT	,	,	,
@@ -19975,7 +19975,7 @@ Solokünstler	NN	NOUN	Solokünstler	Solokünstler	Solokünstler
 und	KON	CCONJ	und	und	und
 dann	ADV	ADV	dann	dann	dann
 kommt	VVFIN	VERB	kommt	kommen	kommen
-anschließend	ADV/ADJD	ADJ	anschließend	anschließend	anschließend	CLARIFY
+anschließend	ADJD	ADJ	anschließend	anschließend	anschließend
 ,	$,	PUNCT	,	,	,
 dass	KOUS	SCONJ	dass	dass	dass
 er	PPER	PRON	er	er	er
@@ -20108,7 +20108,7 @@ Underground	NE	PROPN	Underground	Underground	Underground
 Alles	PIAT	ADJ	alles	aller	aller
 weitere	NN	NOUN	Weitere	weitere	weitere
 wird	VAFIN	AUX	wird	werden	werden
-anschließend	ADV/ADJD	ADJ	anschließend	anschließend	anschließend	CLARIFY
+anschließend	ADJD	ADJ	anschließend	anschließend	anschließend
 im	APPRART	_	im	in	in
 Artikel	NN	NOUN	Artikel	Artikel	Artikel
 geklärt	VVPP	VERB	geklärt	klären	klären
@@ -20462,7 +20462,7 @@ ihn	PPER	PRON	ihn	ihn	ihn
 ,	$,	PUNCT	,	,	,
 statt	KOUI	SCONJ	statt	statt	statt
 ihm	PPER	PRON	ihm	ihm	ihm
-ständig	ADV/ADJD	ADJ	ständig	ständig	ständig	CLARIFY
+ständig	ADJD	ADJ	ständig	ständig	ständig
 irgenwelche	PIAT	DET	irgenwelche	irgenwelcher	irgenwelcher
 "	$(	PUNCT	"	"	"
 Knüppel	NN	NOUN	Knüppel	Knüppel	Knüppel
@@ -23871,7 +23871,7 @@ Artikels	NN	NOUN	Artikels	Artikel	Artikel
 Da	ADV	ADV	da	da	da
 wird	VAFIN	AUX	wird	werden	werden
 sehr	PTKIFG	ADV	sehr	sehr	sehr
-lange	ADJD/ADV	ADV	lange	lang	lang	CLARIFY
+lange	ADV	ADV	lange	lange	lange
 nur	PTKIFG	ADV	nur	nur	nur
 vom	APPRART	_	vom	von	von
 »	$(	PUNCT	»	»	»
@@ -24014,7 +24014,7 @@ E-Books	NN	NOUN	E-Books	E-Book	E-Book
 beim	APPRART	_	beim	bei	bei
 Umblättern	NN	NOUN	Umblättern	umblättern	umblättern
 so	ADV	ADV	so	so	so
-lange	ADJD/ADV	ADV	lange	lang	lang	CLARIFY
+lange	ADV	ADV	lange	lange	lange
 ,	$,	PUNCT	,	,	,
 bis	KOUS	SCONJ	bis	bis	bis
 man	PIS	PRON	man	man	man
@@ -24478,7 +24478,7 @@ KF8	NE	PROPN	KF8	KF8	KF8
 </text>
 <text subcorpus="web" set="test" id="web_test_007" raw="web_test_007.txt" url="http://www.zfdg.de/sb001_020">
 <s>
-1.	ADJA/ADV	ADV	1.	1.	1.	CLARIFY
+1.	ADV	ADV	1.	1.	1.
 Einleitung	NN	NOUN	Einleitung	Einleitung	Einleitung
 </s>
 <s>
@@ -24712,7 +24712,7 @@ Anwenderkreis	NN	NOUN	Anwenderkreis	Anwenderkreis	Anwenderkreis
 .	$.	PUNCT	.	.	.
 </s>
 <s>
-2.	ADJA/ADV	ADV	2.	2.	2.	CLARIFY
+2.	ADV	ADV	2.	2.	2.
 Anwendungskontext	NN	NOUN	Anwendungskontext	Anwendungskontext	Anwendungskontext
 </s>
 <s>
@@ -24875,7 +24875,7 @@ verdeutlichen	VVFIN	VERB	verdeutlichen	verdeutlichen	verdeutlichen
 .	$.	PUNCT	.	.	.
 </s>
 <s>
-2.1	ADJA/ADV	ADV	2.1	2.1	2.1	CLARIFY
+2.1	ADV	ADV	2.1	2.1	2.1
 Generische	ADJA	ADJ	generische	generisch	generisch
 Suche	NN	NOUN	Suche	Suche	Suche
 </s>
@@ -25037,7 +25037,7 @@ können	VMINF	AUX	können	können	können
 .	$.	PUNCT	.	.	.
 </s>
 <s>
-2.2	ADJA/ADV	ADV	2.2	2.2	2.2	CLARIFY
+2.2	ADV	ADV	2.2	2.2	2.2
 Datenintegration	NN	NOUN	Datenintegration	Datenintegration	Datenintegration
 </s>
 <s>
@@ -25209,7 +25209,7 @@ kann	VMFIN	AUX	kann	können	können
 .	$.	PUNCT	.	.	.
 </s>
 <s>
-3.	ADJA/ADV	ADV	3.	3.	3.	CLARIFY
+3.	ADV	ADV	3.	3.	3.
 Föderationsarchitektur	NN	NOUN	Föderationsarchitektur	Föderationsarchitektur	Föderationsarchitektur
 </s>
 <s>
@@ -26171,7 +26171,7 @@ gut	ADJD	ADJ	gut	gut	gut
 hinzukriegen	VVIZU	VERB	hinzukriegen	hinkriegen	hinkriegen
 und	KON	CCONJ	und	und	und
 musste	VMFIN	AUX	musste	müssen	müssen
-lange	ADJD/ADV	ADV	lange	lang	lang	CLARIFY
+lange	ADV	ADV	lange	lange	lange
 üben	VVINF	VERB	üben	üben	üben
 ,	$,	PUNCT	,	,	,
 bis	KOUS	SCONJ	bis	bis	bis
@@ -26259,14 +26259,14 @@ Pops	NN	NOUN	Pops	Pop	Pop
 .	$.	PUNCT	.	.	.
 </s>
 <s>
-1.	ADJA/ADV	ADV	1.	1.	1.	CLARIFY
+1.	ADV	ADV	1.	1.	1.
 Kuchen	NN	NOUN	Kuchen	Kuchen	Kuchen
 für	APPR	ADP	für	für	für
 Cake	NN	NOUN	Cake	Cake	Cake
 Pops	NN	NOUN	Pops	Pop	Pop
 </s>
 <s>
-1.1.	ADJA/ADV	ADV	1.1.	1.1.	1.1.	CLARIFY
+1.1.	ADV	ADV	1.1.	1.1.	1.1.
 Kuchen	NN	NOUN	Kuchen	Kuchen	Kuchen
 für	APPR	ADP	für	für	für
 Cake	NN	NOUN	Cake	Cake	Cake
@@ -26419,7 +26419,7 @@ Teig	NN	NOUN	Teig	Teig	Teig
 .	$.	PUNCT	.	.	.
 </s>
 <s>
-1.2.	ADJA/ADV	ADV	1.2.	1.2.	1.2.	CLARIFY
+1.2.	ADV	ADV	1.2.	1.2.	1.2.
 Kuchen	NN	NOUN	Kuchen	Kuchen	Kuchen
 für	APPR	ADP	für	für	für
 Cake	NN	NOUN	Cake	Cake	Cake
@@ -26571,7 +26571,7 @@ selbst	ADV	ADV	selbst	selbst	selbst
 .	$.	PUNCT	.	.	.
 </s>
 <s>
-1.3.	ADJA/ADV	ADV	1.3.	1.3.	1.3.	CLARIFY
+1.3.	ADV	ADV	1.3.	1.3.	1.3.
 Kekse	NN	NOUN	Kekse	Keks	Keks
 für	APPR	ADP	für	für	für
 Cake	NN	NOUN	Cake	Cake	Cake
@@ -26698,7 +26698,7 @@ Frosting	NN	NOUN	Frosting	Frosting	Frosting
 .	$.	PUNCT	.	.	.
 </s>
 <s>
-2.	ADJA/ADV	ADV	2.	2.	2.	CLARIFY
+2.	ADV	ADV	2.	2.	2.
 Frostings	NN	NOUN	Frostings	Frosting	Frosting
 für	APPR	ADP	für	für	für
 Cake	NN	NOUN	Cake	Cake	Cake
