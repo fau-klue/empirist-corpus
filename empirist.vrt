@@ -14425,7 +14425,7 @@ aus	PTKVZ	PART	aus	aus	aus
 </s>
 <s>
 Werden	VAFIN	AUX	werden	werden	werden
-Sie	PDS/PPER	PRON	sie	sie	sie	CLARIFY
+Sie	PPER	PRON	sie	sie	sie
 vielleicht	PTKMA	ADV	vielleicht	vielleicht	vielleicht
 nur	ADV	ADV	nur	nur	nur
 nicht	PTKNEG	PART	nicht	nicht	nicht
@@ -18765,7 +18765,7 @@ besser	ADJD	ADJ	besser	gut	gut
 -	$(	PUNCT	-	-	-
 dann	ADV	ADV	dann	dann	dann
 halten	VVFIN	VERB	halten	halten	halten
-dir	PDS/PPER	PRON	die	dir	der	CLARIFY
+dir	PDS	PRON	die	dir	der
 ja	PTKMA	ADV	ja	ja	ja
 auch	ADV	ADV	auch	auch	auch
 nen	ART	DET	einen	n	ein
