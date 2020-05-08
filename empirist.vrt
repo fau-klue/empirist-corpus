@@ -4311,7 +4311,7 @@ Einstiegsreflexion	NN	NOUN	Einstiegsreflexion	Einstiegsreflexion	Einstiegsreflex
 bis	APPR	ADP	bis	bis	bis
 zum	APPRART	_	zum	zu	zu
 12.	ADJA	ADJ	12.	12.	12.
-5.	ADJA/NN	NOUN	5.	5.	5.	CLARIFY
+5.	ADJA	ADJ	5.	5.	5.
 </s>
 </posting>
 <posting id="cmc_train_005_006" author="AUTOR" date="28. Apr. 2011">
@@ -4327,7 +4327,7 @@ die	ART	DET	die	der	der
 Ergebnisse	NN	NOUN	Ergebnisse	Ergebnis	Ergebnis
 v.	APPRART	_	v.	v.	v.
 14.	ADJA	ADJ	14.	14.	14.
-4.	ADJA/NN	NOUN	4.	4.	4.	CLARIFY
+4.	ADJA	ADJ	4.	4.	4.
 noch	ADV	ADV	noch	noch	noch
 nachlesen	VVINF	VERB	nachlesen	nachlesen	nachlesen
 ?	$.	PUNCT	?	?	?
