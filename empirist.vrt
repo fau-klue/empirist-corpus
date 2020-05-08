@@ -4243,11 +4243,11 @@ doch	PTKMA	ADV	doch	doch	doch
 einfach	ADJD	ADJ	einfach	einfach	einfach
 als	KOKOM	ADP	als	als	als
 "	$(	PUNCT	"	"	"
-Word	NE/NN	NOUN	Word	Word	Word	CLARIFY
+Word	NN	NOUN	Word	Word	Word
 97	CARD	NUM	97	97	97
 "	$(	PUNCT	"	"	"
 oder	KON	CCONJ	oder	oder	oder
-RTF	NE/NN	NOUN	RTF	RTF	RTF	CLARIFY
+RTF	NN	NOUN	RTF	RTF	RTF
 </s>
 </posting>
 <posting id="cmc_train_005_004" author="AUTOR" date="28. Apr. 2011">
@@ -4271,9 +4271,9 @@ am	PTKA	PART	am	am	am
 liebsten	ADJD	ADJ	liebsten	lieb	lieb
 wär	VAFIN	AUX	wär	sein	sein
 mir	PPER	PRON	mir	mir	mir
-RTF	NE/NN	NOUN	RTF	RTF	RTF	CLARIFY
+RTF	NN	NOUN	RTF	RTF	RTF
 oder	KON	CCONJ	oder	oder	oder
-PDF	NE/NN	NOUN	PDF	PDF	PDF	CLARIFY
+PDF	NN	NOUN	PDF	PDF	PDF
 -	$(	PUNCT	-	-	-
 das	PDS	PRON	das	der	der
 kann	VMFIN	AUX	kann	können	können
@@ -6156,7 +6156,7 @@ xD	EMOASC	SYM	xD	xD	xD
 </posting>
 <posting id="cmc_train_006_039" author="Participant_7" date="26. Okt., 22:29" origid="1355">
 <s>
-Nadine	NN/NE	PROPN	Nadine	Nadine	Nadine	CLARIFY
+Nadine	NE	PROPN	Nadine	Nadine	Nadine
 ist	VAFIN	AUX	ist	sein	sein
 16	CARD	NUM	16	16	16
 😼	EMOIMG	SYM	😼	😼	😼
@@ -6929,7 +6929,7 @@ Ich	PPER	PRON	ich	ich	ich
 hab	VAFIN	AUX	habe	haben	haben
 mal	PTKMA	ADV	mal	mal	mal
 im	APPRART	_	im	in	in
-Duden	NE/NN	NOUN	Duden	Duden	Duden	CLARIFY
+Duden	NN	NOUN	Duden	Duden	Duden
 nachgesehen	VVPP	VERB	nachgesehen	nachsehen	nachsehen
 (	$(	PUNCT	(	(	(
 24.	ADJA	ADJ	24.	24.	24.
@@ -6985,7 +6985,7 @@ Begriff	NN	NOUN	Begriff	Begriff	Begriff
 ,	$,	PUNCT	,	,	,
 den	PRELS	PRON	den	der	der
 der	ART	DET	der	der	der
-Duden	NE/NN	NOUN	Duden	Duden	Duden	CLARIFY
+Duden	NN	NOUN	Duden	Duden	Duden
 wiegesagt	ITJ	INTJ	wiegesagt	wiegesagt	wiegesagt
 nicht	PTKNEG	PART	nicht	nicht	nicht
 kennt	VVFIN	VERB	kennt	kennen	kennen
@@ -7195,7 +7195,7 @@ deswegen	PAV	ADV	deswegen	deswegen	deswegen
 auch	ADV	ADV	auch	auch	auch
 nicht	PTKNEG	PART	nicht	nicht	nicht
 im	APPRART	_	im	in	in
-Duden	NE/NN	NOUN	Duden	Duden	Duden	CLARIFY
+Duden	NN	NOUN	Duden	Duden	Duden
 finden	VVINF	VERB	finden	finden	finden
 .	$.	PUNCT	.	.	.
 </s>
@@ -8509,11 +8509,11 @@ geht	VVFIN	VERB	geht	gehen	gehen
 .	$.	PUNCT	.	.	.
 </s>
 <s>
-iTunes	NE/NN	NOUN	iTunes	iTunes	iTunes	CLARIFY
+iTunes	NN	NOUN	iTunes	iTunes	iTunes
 plus	KON	CCONJ	plus	plus	plus
-iPhone	NE/NN	NOUN	iPhone	iPhone	iPhone	CLARIFY
+iPhone	NN	NOUN	iPhone	iPhone	iPhone
 oder	KON	CCONJ	oder	oder	oder
-iPad	NE/NN	NOUN	iPad	iPad	iPad	CLARIFY
+iPad	NN	NOUN	iPad	iPad	iPad
 funktioniert	VVFIN	VERB	funktioniert	funktionieren	funktionieren
 in	APPR	ADP	in	in	in
 der	ART	DET	der	der	der
@@ -8632,7 +8632,7 @@ anderem	PIS	PRON	anderem	anderer	anderer
 Acast	NE	PROPN	Acast	Acast	Acast
 ,	$,	PUNCT	,	,	,
 Google	NE	PROPN	Google	Google	Google
-Listen	NE/NN	NOUN	Listen	Listen	Listen	CLARIFY
+Listen	NE	PROPN	Listen	Listen	Listen
 oder	KON	CCONJ	oder	oder	oder
 auch	ADV	ADV	auch	auch	auch
 die	ART	DET	die	der	der
@@ -14409,7 +14409,7 @@ Frage	NN	NOUN	Frage	Frage	Frage
 </s>
 <s>
 Die	ART	DET	die	der	der
-Union	NE/NN	NOUN	Union	Union	Union	CLARIFY
+Union	NN	NOUN	Union	Union	Union
 will	VMFIN	AUX	will	wollen	wollen
 ein	ART	DET	ein	ein	ein
 Sicherheitspaket	NN	NOUN	Sicherheitspaket	Sicherheitspaket	Sicherheitspaket
@@ -14460,7 +14460,7 @@ können	VMFIN	AUX	können	können	können
 <posting id="cmc_test_010_072" author="Cem Özdemir" origid="272">
 <s>
 Die	ART	DET	die	der	der
-Union	NE/NN	NOUN	Union	Union	Union	CLARIFY
+Union	NN	NOUN	Union	Union	Union
 wird	VAFIN	AUX	wird	werden	werden
 immer	ADV	ADV	immer	immer	immer
 neue	ADJA	ADJ	neue	neu	neu
@@ -21209,8 +21209,8 @@ und	KON	CCONJ	und	und	und
 Wellness-Radroute	NN	NOUN	Wellness-Radroute	Wellness-Radroute	Wellness-Radroute
 sowie	KON	CCONJ	sowie	sowie	sowie
 die	ART	DET	die	der	der
-BahnRadRoute	NE/NN	NOUN	BahnRadRoute	BahnRadRoute	BahnRadRoute	CLARIFY
-Weser-Lippe	NE	PROPN	Weser-Lippe	Weser-Lippe	Weser-Lippe
+BahnRadRoute	NN	NOUN	Bahnradroute	BahnRadRoute	Bahnradroute
+Weser-Lippe	NN	NOUN	Weser-Lippe	Weser-Lippe	Weser-Lippe
 führen	VVFIN	VERB	führen	führen	führen
 durch	APPR	ADP	durch	durch	durch
 das	ART	DET	das	der	der
@@ -23509,10 +23509,10 @@ Lücken	NN	NOUN	Lücken	Lücke	Lücke
 z.	APPRART	_	z.	z.	z.
 B.	NN	NOUN	B.	B.	B.
 im	APPRART	_	im	in	in
-Firefox	NE/NN	NOUN	Firefox	Firefox	Firefox	CLARIFY
+Firefox	NN	NOUN	Firefox	Firefox	Firefox
 oder	KON	CCONJ	oder	oder	oder
-Adobe	NE/NN	NOUN	Adobe	Adobe	Adobe	CLARIFY
-Reader	NE/NN	NOUN	Reader	Reader	Reader	CLARIFY
+Adobe	NN	NOUN	Adobe	Adobe	Adobe
+Reader	NN	NOUN	Reader	Reader	Reader
 nutzt	VVFIN	VERB	nutzt	nutzen	nutzen
 -	$(	PUNCT	-	-	-
 beides	PIS	PRON	beides	beide	beide
