@@ -1262,7 +1262,7 @@ Dafür	PAV	ADV	dafür	dafür	dafür
 aber	ADV	ADV	aber	aber	aber
 die	ART	DET	die	der	der
 Synonyme	NN	NOUN	Synonyme	Synonym	Synonym
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 abbauen	VVINF	VERB	abbauen	abbauen	abbauen
 ,	$,	PUNCT	,	,	,
 aufbauen	VVINF	VERB	aufbauen	aufbauen	aufbauen
@@ -1470,7 +1470,7 @@ heißt	VVFIN	VERB	heißt	heißen	heißen
 vorwärts	ADV	ADV	vorwärts	vorwärts	vorwärts
 ...	$(	PUNCT	...	...	...
 fördern	VVINF	VERB	fördern	fördern	fördern
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 eine	ART	DET	eine	ein	ein
 Sache	NN	NOUN	Sache	Sache	Sache
 vorwärts	ADV	ADV	vorwärts	vorwärts	vorwärts
@@ -1484,7 +1484,7 @@ wir	PPER	PRON	wir	wir	wir
 es	PPER	PRON	es	es	es
 mit	APPR	ADP	mit	mit	mit
 Satzstrukturen	NN	NOUN	Satzstrukturen	Satzstruktur	Satzstruktur
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 jdn.	PIS	PRON	jemanden	jdn.	jemand
 fördern	VVINF	VERB	fördern	fördern	fördern
 =	$(/XY	X	=	=	=	CLARIFY
@@ -1537,7 +1537,7 @@ fördern	VVINF	VERB	fördern	fördern	fördern
 <s>
 (	$(	PUNCT	(	(	(
 Quelle	NN	NOUN	Quelle	Quelle	Quelle
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Kindler	NE	PROPN	Kindler	Kindler	Kindler
 Literaturlexikon	NN	NOUN	Literaturlexikon	Literaturlexikon	Literaturlexikon
 )	$(	PUNCT	)	)	)
@@ -1577,7 +1577,7 @@ fördern	VVINF	VERB	fördern	fördern	fördern
 <s>
 (	$(	PUNCT	(	(	(
 Quelle	NN	NOUN	Quelle	Quelle	Quelle
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Kindler	NE	PROPN	Kindler	Kindler	Kindler
 Literaturlexikon	NN	NOUN	Literaturlexikon	Literaturlexikon	Literaturlexikon
 )	$(	PUNCT	)	)	)
@@ -1625,7 +1625,7 @@ gilt	VVFIN	VERB	gilt	gelten	gelten
 <s>
 (	$(	PUNCT	(	(	(
 Quelle	NN	NOUN	Quelle	Quelle	Quelle
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 ZDNet	NE	PROPN	ZDNet	ZDNet	ZDNet
 1999	CARD	NUM	1999	1999	1999
 )	$(	PUNCT	)	)	)
@@ -1664,7 +1664,7 @@ fördern	VVINF	VERB	fördern	fördern	fördern
 <s>
 (	$(	PUNCT	(	(	(
 Quelle	NN	NOUN	Quelle	Quelle	Quelle
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 ZDNet	NE	PROPN	ZDNet	ZDNet	ZDNet
 1999	CARD	NUM	1999	1999	1999
 )	$(	PUNCT	)	)	)
@@ -1709,7 +1709,7 @@ fördern	VVINF	VERB	fördern	fördern	fördern
 <s>
 (	$(	PUNCT	(	(	(
 Quelle	NN	NOUN	Quelle	Quelle	Quelle
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 ZDNet	NE	PROPN	ZDNet	ZDNet	ZDNet
 1999	CARD	NUM	1999	1999	1999
 )	$(	PUNCT	)	)	)
@@ -3319,7 +3319,7 @@ Shaddy	NE	PROPN	Shaddy	Shaddy	Shaddy
 <posting id="cmc_train_003_168" author="zora" origid="1-186">
 <s>
 emon	NE	PROPN	Emon	Emon	Emon
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 http://mitglied.lycos.de/achtpfennig/zeugnis.jpg	URL	PROPN	http://mitglied.lycos.de/achtpfennig/zeugnis.jpg	http://mitglied.lycos.de/achtpfennig/zeugnis.jpg	http://mitglied.lycos.de/achtpfennig/zeugnis.jpg
 </s>
 </posting>
@@ -3959,7 +3959,7 @@ Dank	NN	NOUN	Dank	Dank	Dank
 <s>
 CLARIN	NE	PROPN	Clarin	Clarin	Clarin
 VLO	NE	PROPN	Vlo	Vlo	Vlo
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 https://catalog.clarin.eu	URL	PROPN	https://catalog.clarin.eu	https://catalog.clarin.eu	https://catalog.clarin.eu
 #dtaclarin14	HST	X	#dtaclarin14	#dtaclarin14	#dtaclarin14
 </s>
@@ -3972,13 +3972,13 @@ Uytvanck	NE	PROPN	Uytvanck	Uytvanck	Uytvanck
 (	$(	PUNCT	(	(	(
 Nijmegen	NE	PROPN	Nijmegen	Nijmegen	Nijmegen
 )	$(	PUNCT	)	)	)
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Auf	APPR	ADP	auf	auf	auf
 der	ART	DET	der	der	der
 Suche	NN	NOUN	Suche	Suche	Suche
 nach	APPR	ADP	nach	nach	nach
 Sprachressourcen	NN	NOUN	Sprachressourcen	Sprachressource	Sprachressource
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 CLARINs	NE	PROPN	CLARINs	CLARIN	CLARIN
 Virtual	NE	PROPN	Virtual	Virtual	Virtual
 Language	NE	PROPN	Language	Language	Language
@@ -3994,7 +3994,7 @@ praktisches	ADJA	ADJ	praktisches	praktisch	praktisch
 Beispiel	NN	NOUN	Beispiel	Beispiel	Beispiel
 der	ART	DET	der	der	der
 Wortverlaufskurve	NN	NOUN	Wortverlaufskurve	Wortverlaufskurve	Wortverlaufskurve
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Abnahme	NN	NOUN	Abnahme	Abnahme	Abnahme
 von	APPR	ADP	von	von	von
 erweiterten	ADJA	ADJ	erweiterten	erweitert	erweitert
@@ -4003,7 +4003,7 @@ mit	APPR	ADP	mit	mit	mit
 "	$(	PUNCT	"	"	"
 habend	ADJD	ADJ	habend	habend	habend
 "	$(	PUNCT	"	"	"
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 http://bit.ly/1EUPPhK	URL	PROPN	http://bit.ly/1eupphk	http://bit.ly/1eupphk	http://bit.ly/1eupphk
 #dtaclarin14	HST	X	#dtaclarin14	#dtaclarin14	#dtaclarin14
 </s>
@@ -4044,7 +4044,7 @@ noch	ADV	ADV	noch	noch	noch
 im	APPRART	_	im	in	in
 @dwds_de	NE	PROPN	@dwds_de	@dwds_de	@dwds_de
 fehlt	VVFIN	VERB	fehlt	fehlen	fehlen
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 http://de.m.wikipedia.org/wiki/Troll_(Netzkultur)	URL	PROPN	http://de.m.wikipedia.org/wiki/troll_(netzkultur)	http://de.m.wikipedia.org/wiki/troll_(netzkultur)	http://de.m.wikipedia.org/wiki/troll_(netzkultur)
 …	$./$(	PUNCT	…	…	…	CLARIFY
 #dtaclarin14	HST	X	#dtaclarin14	#dtaclarin14	#dtaclarin14
@@ -4079,7 +4079,7 @@ Europäische	ADJA	ADJ	europäische	europäisch	europäisch
 Welt-	TRUNC	X	Welt-	Welt	Welt
 und	KON	CCONJ	und	und	und
 Staats-Geschichte	NN	NOUN	Staats-Geschichte	Staats-Geschichte	Staats-Geschichte
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 20	CARD	NUM	20	20	20
 Ausgaben	NN	NOUN	Ausgaben	Ausgabe	Ausgabe
 von	APPR	ADP	von	von	von
@@ -4100,7 +4100,7 @@ http://www.deutschestextarchiv.de/dtaq/about	URL	PROPN	http://www.deutschestexta
 <s>
 Mannheimer	ADJA	ADJ	Mannheimer	Mannheimer	Mannheimer
 Zeitungskorpus	NN	NOUN	Zeitungskorpus	Zeitungskorpus	Zeitungskorpus
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 652	CARD	NUM	652	652	652
 Ausgaben	NN	NOUN	Ausgaben	Ausgabe	Ausgabe
 ,	$,	PUNCT	,	,	,
@@ -4134,7 +4134,7 @@ Kermes	NE	PROPN	Kermes	Kermes	Kermes
 ,	$,	PUNCT	,	,	,
 C	NE	PROPN	C	C	C
 Draxler	NE	PROPN	Draxler	Draxler	Draxler
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Kontextualisierung	NN	NOUN	Kontextualisierung	Kontextualisierung	Kontextualisierung
 von	APPR	ADP	von	von	von
 Sprachressourcen	NN	NOUN	Sprachressourcen	Sprachressource	Sprachressource
@@ -4966,7 +4966,7 @@ Vernachlässigung	NN	NOUN	Vernachlässigung	Vernachlässigung	Vernachlässigung
 <s>
 Wenn	KOUS	SCONJ	wenn	wenn	wenn
 2	CARD	NUM	2	2	2
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 warum	PWAV	ADV	warum	warum	warum
 ?	$.	PUNCT	?	?	?
 </s>
@@ -5158,7 +5158,7 @@ Allg.	ADJA	ADJ	allgemeine	allg.	allgemein
 Infos	NN	NOUN	Infos	Info	Info
 zu	APPR	ADP	zu	zu	zu
 Twitterwalls	NN	NOUN	Twitterwalls	Twitterwall	Twitterwall
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 http://tinyurl.com/5snbvpn	URL	PROPN	http://tinyurl.com/5snbvpn	http://tinyurl.com/5snbvpn	http://tinyurl.com/5snbvpn
 )	$(	PUNCT	)	)	)
 )	$(	PUNCT	)	)	)
@@ -5204,7 +5204,7 @@ erfunden	VVPP	VERB	erfunden	erfinden	erfinden
 </s>
 <s>
 Quelle	NN	NOUN	Quelle	Quelle	Quelle
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Mein	PPOSAT	DET	mein	mein	mein
 Sohn	NN	NOUN	Sohn	Sohn	Sohn
 (	$(	PUNCT	(	(	(
@@ -5219,7 +5219,7 @@ Abendessen	NN	NOUN	Abendessen	Abendessen	Abendessen
 <s>
 Gefällt	VVFIN	VERB	gefällt	gefallen	gefallen
 mir	PPER	PRON	mir	mir	mir
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 „	$(	PUNCT	„	„	„
 Wie	PWAV	ADV	wie	wie	wie
 kamen	VVFIN	VERB	kamen	kommen	kommen
@@ -5273,7 +5273,7 @@ Veranstaltung	NN	NOUN	Veranstaltung	Veranstaltung	Veranstaltung
 <s>
 Gefällt	VVFIN	VERB	gefällt	gefallen	gefallen
 mir	PPER	PRON	mir	mir	mir
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Der	ART	DET	der	der	der
 digitale	ADJA	ADJ	digitale	digital	digital
 Brotkasten	NN	NOUN	Brotkasten	Brotkasten	Brotkasten
@@ -5909,7 +5909,7 @@ wann	KOUS	SCONJ	wann	wann	wann
 die	ART	DET	die	der	der
 halloweenparty	NN	NOUN	Halloweenparty	Halloweenparty	Halloweenparty
 ist	VAFIN	AUX	ist	sein	sein
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 am	APPRART	_	am	an	an
 31.	ADJA	ADJ	31.	31.	31.
 :)	EMOASC	SYM	:)	:)	:)
@@ -6309,7 +6309,7 @@ bestellt	VVPP	VERB	bestellt	bestellen	bestellen
 <text subcorpus="cmc" set="train" id="cmc_train_007" raw="cmc_train_wiki_discussion_1.txt">
 <s>
 Diskussion	NN	NOUN	Diskussion	Diskussion	Diskussion
-:	$(	PUNCT	:	:	:
+:	$.	PUNCT	:	:	:
 Kreuzspinnen	NN	NOUN	Kreuzspinnen	Kreuzspinne	Kreuzspinne
 </s>
 <posting id="cmc_train_007_001" author="Thomas G. Graf" date="22. Jun 2004 (CEST)">
@@ -6353,7 +6353,7 @@ zusammengefasst	VVPP	VERB	zusammengefasst	zusammenfassen	zusammenfassen
 ,	$,	PUNCT	,	,	,
 spricht	VVFIN	VERB	spricht	sprechen	sprechen
 dafür	PAV	ADV	dafür	dafür	dafür
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Kein	PIAT	DET	kein	kein	kein
 unnötiges	ADJA	ADJ	unnötiges	unnötig	unnötig
 Herumgerede	NN	NOUN	Herumgerede	Herumgerede	Herumgerede
@@ -6420,7 +6420,7 @@ machen	VVINF	VERB	machen	machen	machen
 <s>
 //	$(	PUNCT	//	//	//
 OT	NN	NOUN	OT	OT	OT
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Übrigens	ADV	ADV	übrigens	übrigens	übrigens
 gibt	VVFIN	VERB	gibt	geben	geben
 es	PPER	PRON	es	es	es
@@ -6494,7 +6494,7 @@ Trotzdem	PAV	ADV	trotzdem	trotzdem	trotzdem
 ein	ART	DET	ein	ein	ein
 paar	PIDAT/PIAT	ADJ	paar	paar	paar	CLARIFY
 Anmerkungen	NN	NOUN	Anmerkungen	Anmerkung	Anmerkung
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 1.	ADJD/ADV	ADV	1.	1.	1.	CLARIFY
 Es	PPER	PRON	es	es	es
 gibt	VVFIN	VERB	gibt	geben	geben
@@ -7163,7 +7163,7 @@ möchte	VMFIN	AUX	möchte	möchten	möchten
 <s>
 Und	KON	CCONJ	und	und	und
 PS.	ADV	ADV	PS	PS.	PS
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Jetz	ADV	ADV	jetzt	jetz	jetzt
 steht	VVFIN	VERB	steht	stehen	stehen
 über	APPR	ADP	über	über	über
@@ -7290,7 +7290,7 @@ bezeichnen	VVFIN	VERB	bezeichnen	bezeichnen	bezeichnen
 sich	PRF	PRON	sich	sich	sich
 als	APPR	ADP	als	als	als
 Liedschreiber	NN	NOUN	Liedschreiber	Liedschreiber	Liedschreiber
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 http://server.selltec.com/go/rcn/_ws/mediabase/Issue/rcn_127_01_48_web.pdf	URL	PROPN	http://server.selltec.com/go/rcn/_ws/mediabase/issue/rcn_127_01_48_web.pdf	http://server.selltec.com/go/rcn/_ws/mediabase/issue/rcn_127_01_48_web.pdf	http://server.selltec.com/go/rcn/_ws/mediabase/issue/rcn_127_01_48_web.pdf
 ,	$,	PUNCT	,	,	,
 S.	NN	NOUN	S.	S.	S.
@@ -13138,7 +13138,7 @@ mal	PTKMA	ADV	mal	mal	mal
 meine	PPOSAT	DET	meine	mein	mein
 addy	NN	NOUN	Adresse	Addy	Adresse
 auf	PTKVZ	PART	auf	auf	auf
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 [	$(	PUNCT	[	[	[
 Email-Adresse	NN	NOUN	Email-Adresse	Email-Adresse	Email-Adresse
 ]	$(	PUNCT	]	]	]
@@ -13288,7 +13288,7 @@ Tschüß	ITJ	INTJ	tschüß	tschüß	tschüß
 <s>
 Neues	ADJA	ADJ	neues	neu	neu
 Thema	NN	NOUN	Thema	Thema	Thema
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Drogenpolitik	NN	NOUN	Drogenpolitik	Drogenpolitik	Drogenpolitik
 ...	$.	PUNCT	...	...	...
 </s>
@@ -13362,7 +13362,7 @@ verheerend	ADJD	ADJ	verheerend	verheerend	verheerend
 Recht	NN	NOUN	Recht	Recht	Recht
 auf	APPR	ADP	auf	auf	auf
 Rausch	NN	NOUN	Rausch	Rausch	Rausch
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Ein	ART	DET	ein	ein	ein
 freiheitliches	ADJA	ADJ	freiheitliches	freiheitlich	freiheitlich
 Grundrecht	NN	NOUN	Grundrecht	Grundrecht	Grundrecht
@@ -13674,7 +13674,7 @@ virtuellen	ADJA	ADJ	virtuellen	virtuell	virtuell
 Podium	NN	NOUN	Podium	Podium	Podium
 :	$.	PUNCT	:	:	:
 zap	NE	PROPN	zap	zap	zap
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Welche	PWAT	DET	welche	welcher	welcher
 Freiheitsrechte	NN	NOUN	Freiheitsrechte	Freiheitsrecht	Freiheitsrecht
 dürfen	VMFIN	AUX	dürfen	dürfen	dürfen
@@ -13859,7 +13859,7 @@ wandern	VVINF	VERB	wandern	wandern	wandern
 <s>
 ZU	APPR	ADP	zu	zu	zu
 237	CARD	NUM	237	237	237
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 ...	$(	PUNCT	...	...	...
 </s>
 </posting>
@@ -13867,7 +13867,7 @@ ZU	APPR	ADP	zu	zu	zu
 <s>
 Zu	APPR	ADP	zu	zu	zu
 zap	NE	PROPN	zap	zap	zap
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Die	ART	DET	die	der	der
 Freiheit	NN	NOUN	Freiheit	Freiheit	Freiheit
 des	ART	DET	des	der	der
@@ -14008,7 +14008,7 @@ fehlgeschlagen	ADJD/VVPP	VERB	fehlgeschlagen	fehlgeschlagen	fehlgeschlagen	CLARI
 <s>
 Zu	APPR	ADP	zu	zu	zu
 246	CARD	NUM	246	246	246
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Außer	APPR	ADP	außer	außer	außer
 beim	APPRART	_	beim	bei	bei
 Recht	NN	NOUN	Recht	Recht	Recht
@@ -14022,7 +14022,7 @@ Körper	NN	NOUN	Körper	Körper	Körper
 ,	$,	PUNCT	,	,	,
 Stichwort	NN	NOUN	Stichwort	Stichwort	Stichwort
 wieder	ADV	ADV	wieder	wieder	wieder
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Recht	NN	NOUN	Recht	Recht	Recht
 auf	APPR	ADP	auf	auf	auf
 Rausch	NN	NOUN	Rausch	Rausch	Rausch
@@ -14034,7 +14034,7 @@ Rausch	NN	NOUN	Rausch	Rausch	Rausch
 Ergänzung	NN	NOUN	Ergänzung	Ergänzung	Ergänzung
 zu	APPR	ADP	zu	zu	zu
 247	CARD	NUM	247	247	247
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Zu	APPR	ADP	zu	zu	zu
 Die	ART	DET	die	der	der
 Freiheit	NN	NOUN	Freiheit	Freiheit	Freiheit
@@ -14069,7 +14069,7 @@ abhebt	VVFIN	VERB	abhebt	abheben	abheben
 <posting id="cmc_test_010_053" author="sebastian" origid="253">
 <s>
 @lukas	ADR	PROPN	@lukas	@lukas	@lukas
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 da	ADV	ADV	da	da	da
 kenne	VVFIN	VERB	kenne	kennen	kennen
 ich	PPER	PRON	ich	ich	ich
@@ -14081,7 +14081,7 @@ niederländer	NN	NOUN	Niederländer	Niederländer	Niederländer
 <s>
 Zu	APPR	ADP	zu	zu	zu
 248	CARD	NUM	248	248	248
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Nein	PTKANT	INTJ	nein	nein	nein
 .	$.	PUNCT	.	.	.
 </s>
@@ -14089,7 +14089,7 @@ Nein	PTKANT	INTJ	nein	nein	nein
 <posting id="cmc_test_010_055" author="Cem Özdemir" origid="255">
 <s>
 248	CARD	NUM	248	248	248
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Einige	PIS	PRON	einige	einige	einige
 der	ART	DET	der	der	der
 Befugnisse	NN	NOUN	Befugnisse	Befugnis	Befugnis
@@ -14181,7 +14181,7 @@ zuerst	ADV	ADV	zuerst	zuerst	zuerst
 <s>
 Zu	APPR	ADP	zu	zu	zu
 257	CARD	NUM	257	257	257
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Dienstaufsicht	NN	NOUN	Dienstaufsicht	Dienstaufsicht	Dienstaufsicht
 ,	$,	PUNCT	,	,	,
 Parlament	NN	NOUN	Parlament	Parlament	Parlament
@@ -14387,7 +14387,7 @@ Gericht	NN	NOUN	Gericht	Gericht	Gericht
 <posting id="cmc_test_010_069" author="Bakunin" origid="269">
 <s>
 @Lukas	ADR	PROPN	@lukas	@lukas	@lukas
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Aber	KON	CCONJ	aber	aber	aber
 du	PPER	PRON	du	du	du
 hast	VAFIN	AUX	hast	haben	haben
@@ -14654,7 +14654,7 @@ am	APPRART	_	am	an	an
 Debatten-Forum	NN	NOUN	Debatten-Forum	Debatten-Forum	Debatten-Forum
 zum	APPRART	_	zum	zu	zu
 Thema	NN	NOUN	Thema	Thema	Thema
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 "	$(	PUNCT	"	"	"
 Sicher	ADJD	ADJ	sicher	sicher	sicher
 oder	KON	CCONJ	oder	oder	oder
@@ -14718,7 +14718,7 @@ BErlin	NE	PROPN	Berlin	Berlin	Berlin
 <s>
 zu	APPR	ADP	zu	zu	zu
 275	CARD	NUM	275	275	275
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 der	PDS	PRON	der	der	der
 war	VAFIN	AUX	war	sein	sein
 jetzt	ADV	ADV	jetzt	jetzt	jetzt
@@ -14733,7 +14733,7 @@ cem	NE	PROPN	Cem	Cem	Cem
 <s>
 Zu	APPR	ADP	zu	zu	zu
 277	CARD	NUM	277	277	277
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Ja	PTKANT	INTJ	ja	ja	ja
 ,	$,	PUNCT	,	,	,
 vor	APPR	ADP	vor	vor	vor
@@ -16755,7 +16755,7 @@ hier	ADV	ADV	hier	hier	hier
 <posting id="cmc_test_011_216" author="Happy" origid="1-499">
 <s>
 Bochum	NE	PROPN	Bochum	Bochum	Bochum
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 das	PDS	PRON	das	der	der
 ist	VAFIN	AUX	ist	sein	sein
 hier	ADV	ADV	hier	hier	hier
@@ -17071,10 +17071,10 @@ nitela	FM	X	nitela	nitela	nitela
 </s>
 <s>
 In	APPR	ADP	in	in	in
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Carl	NE	PROPN	Carl	Carl	Carl
 Vogt	NE	PROPN	Vogt	Vogt	Vogt
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Zoologische	ADJA	ADJ	zoologische	zoologisch	zoologisch
 Briefe	NN	NOUN	Briefe	Brief	Brief
 .	$.	PUNCT	.	.	.
@@ -17097,13 +17097,13 @@ Johann	NE	PROPN	Johann	Johann	Johann
 Wolfgang	NE	PROPN	Wolfgang	Wolfgang	Wolfgang
 von	NE	PROPN	von	von	von
 Goethe	NE	PROPN	Goethe	Goethe	Goethe
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 #Siebenschläfer	NN	NOUN	#Siebenschläfer	#Siebenschläfer	#Siebenschläfer
 .	$.	PUNCT	.	.	.
 </s>
 <s>
 In	APPR	ADP	in	in	in
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 West-östlicher	ADJA	ADJ	west-östlicher	west-östlich	west-östlich
 Divan	NN	NOUN	Divan	Divan	Divan
 .	$.	PUNCT	.	.	.
@@ -17196,7 +17196,7 @@ wärs	VAPPER	_	wärs	sein	sein
 zB	ADV	ADV	z.B.	zB	z.B.
 mit	APPR	ADP	mit	mit	mit
 diesem	PDS	PRON	diesem	dieser	dieser
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 ^3	EMOASC	SYM	^3	^3	^3
 (	$(	PUNCT	(	(	(
 Ikon	NN	NOUN	Ikon	Ikon	Ikon
@@ -17292,7 +17292,7 @@ sei	VAFIN	AUX	sei	sein	sein
 </s>
 <s>
 Tipp	NN	NOUN	Tipp	Tipp	Tipp
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Beziehen	VVIMP	VERB	beziehen	beziehen	beziehen
 Sie	PPER	PRON	sie	sie	sie
 Weblogs	NN	NOUN	Weblogs	Weblog	Weblog
@@ -17393,7 +17393,7 @@ in	APPR	ADP	in	in	in
 diesem	PDAT	DET	diesem	dieser	dieser
 Artikel	NN	NOUN	Artikel	Artikel	Artikel
 beschrieben	VVPP	VERB	beschrieben	beschreiben	beschreiben
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 http://tinyurl.com/6yldv5d	URL	PROPN	http://tinyurl.com/6yldv5d	http://tinyurl.com/6yldv5d	http://tinyurl.com/6yldv5d
 (	$(	PUNCT	(	(	(
 Abschnitt	NN	NOUN	Abschnitt	Abschnitt	Abschnitt
@@ -17502,7 +17502,7 @@ ich	PPER	PRON	ich	ich	ich
 nochmal	ADV	ADV	nochmal	nochmal	nochmal
 auf	APPR	ADP	auf	auf	auf
 Luckhardt	NE	PROPN	Luckhardt	Luckhardt	Luckhardt
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 http://tinyurl.com/3umxkuh	URL	PROPN	http://tinyurl.com/3umxkuh	http://tinyurl.com/3umxkuh	http://tinyurl.com/3umxkuh
 </s>
 </posting>
@@ -17679,7 +17679,7 @@ Natives	NN	NOUN	Natives	Native	Native
 vs.	APPR	ADP	vs.	vs.	vs.
 Digital	ADJA	ADJ	digital	digital	digital
 Immigrants	NN	NOUN	Immigrants	Immigrant	Immigrant
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 http://www.omnisophie.com/day_140.html	URL	PROPN	http://www.omnisophie.com/day_140.html	http://www.omnisophie.com/day_140.html	http://www.omnisophie.com/day_140.html
 </s>
 </posting>
@@ -17697,7 +17697,7 @@ von	APPR	ADP	von	von	von
 unserer	PPOSAT	DET	unserer	unser	unser
 gestrigen	ADJA	ADJ	gestrigen	gestrig	gestrig
 Sitzung	NN	NOUN	Sitzung	Sitzung	Sitzung
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 http://blogfilet.wordpress.com/	URL	PROPN	http://blogfilet.wordpress.com/	http://blogfilet.wordpress.com/	http://blogfilet.wordpress.com/
 </s>
 </posting>
@@ -17793,7 +17793,7 @@ schwierig	ADJD	ADJ	schwierig	schwierig	schwierig
 </s>
 <s>
 Einschätzg	NN	NOUN	Einschätzg.	Einschätzg	Einschätzg.
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 http://tinyurl.com/5spl57v	URL	PROPN	http://tinyurl.com/5spl57v	http://tinyurl.com/5spl57v	http://tinyurl.com/5spl57v
 </s>
 </posting>
@@ -18147,11 +18147,11 @@ lassen	VVINF	VERB	lassen	lassen	lassen
 </s>
 <s>
 übrigens	ADV	ADV	übrigens	übrigens	übrigens
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Tipp	NN	NOUN	Tipp	Tipp	Tipp
 für	APPR	ADP	für	für	für
 alle	PIS	PRON	alle	alle	alle
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Wenn	KOUS	SCONJ	wenn	wenn	wenn
 ein	ART	DET	ein	ein	ein
 Tweet	NN	NOUN	Tweet	Tweet	Tweet
@@ -18292,7 +18292,7 @@ für	APPR	ADP	für	für	für
 unsere	PPOSAT	DET	unsere	unser	unser
 heutige	ADJA	ADJ	heutige	heutig	heutig
 Sitzung	NN	NOUN	Sitzung	Sitzung	Sitzung
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 http://twitterwallr.com/semibk	URL	PROPN	http://twitterwallr.com/semibk	http://twitterwallr.com/semibk	http://twitterwallr.com/semibk
 </s>
 </posting>
@@ -18313,7 +18313,7 @@ kreative	ADJA	ADJ	kreative	kreativ	kreativ
 Wortbildung	NN	NOUN	Wortbildung	Wortbildung	Wortbildung
 (	$(	PUNCT	(	(	(
 Typus	NN	NOUN	Typus	Typus	Typus
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 Wortkreuzung	NN	NOUN	Wortkreuzung	Wortkreuzung	Wortkreuzung
 bzw.	KON	CCONJ	bzw.	bzw.	bzw.
 Kontamination	NN	NOUN	Kontamination	Kontamination	Kontamination
@@ -20395,7 +20395,7 @@ ihre	PPOSAT	DET	ihre	ihr	ihr
 erste	ADJA	ADJ	erste	erster	erster
 Version	NN	NOUN	Version	Version	Version
 hier	ADV	ADV	hier	hier	hier
-:	$(/$.	PUNCT	:	:	:	CLARIFY
+:	$.	PUNCT	:	:	:
 http://de.wikipedia.org/w/index.php?title=Lou_Reed&amp;diff=next&amp;oldid=79503162	URL	PROPN	http://de.wikipedia.org/w/index.php?title=lou_reed&amp;diff=next&amp;oldid=79503162	http://de.wikipedia.org/w/index.php?title=lou_reed&amp;diff=next&amp;oldid=79503162	http://de.wikipedia.org/w/index.php?title=lou_reed&amp;diff=next&amp;oldid=79503162
 auch	ADV	ADV	auch	auch	auch
 nicht	PTKNEG	PART	nicht	nicht	nicht
