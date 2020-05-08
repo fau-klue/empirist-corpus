@@ -6625,8 +6625,8 @@ haben	VAFIN	AUX	haben	haben	haben
 sicher	ADJD	ADJ	sicher	sicher	sicher
 anderes	PIS	PRON	anderes	anderer	anderer
 gehört	VVPP	VERB	gehört	hören	hören
-à	KOKOM/FM	X	à	à	à	CLARIFY
-la	KOKOM/FM	X	la	la	la	CLARIFY
+à	KOKOM	ADP	à	à	à
+la	KOKOM	ADP	la	la	la
 "	$(	PUNCT	"	"	"
 brennt	VVFIN	VERB	brennt	brennen	brennen
 tierisch	ADJD	ADJ	tierisch	tierisch	tierisch
@@ -12814,8 +12814,8 @@ Audouin	NE	PROPN	Audouin	Audouin	Audouin
 </s>
 <s>
 Gartenkreuzspinne	NN	NOUN	Gartenkreuzspinne	Gartenkreuzspinne	Gartenkreuzspinne
-Araneus	NE/FM	X	Araneus	Araneus	Araneus	CLARIFY
-diadematus	NE/FM	X	Diadematus	Diadematus	Diadematus	CLARIFY
+Araneus	FM	X	Araneus	Araneus	Araneus
+diadematus	FM	X	Diadematus	Diadematus	Diadematus
 –	$(	PUNCT	–	–	–
 Clerck	NE	PROPN	Clerck	Clerck	Clerck
 ,	$,	PUNCT	,	,	,
@@ -13401,8 +13401,8 @@ ist	VAFIN	AUX	ist	sein	sein
 die	ART	DET	die	der	der
 ideologische	ADJA	ADJ	ideologische	ideologisch	ideologisch
 drogenpolitik	NN	NOUN	Drogenpolitik	Drogenpolitik	Drogenpolitik
-a	KOKOM/FM	X	a	a	a	CLARIFY
-la	KOKOM/FM	X	la	la	la	CLARIFY
+a	KOKOM	ADP	à	a	à
+la	KOKOM	ADP	la	la	la
 dsu	NE	PROPN	CSU	DSU	CSU
 </s>
 </posting>
@@ -17042,9 +17042,9 @@ weitergeleitet	VVPP	VERB	weitergeleitet	weiterleiten	weiterleiten
 auch	PTKIFG	ADV	auch	auch	auch
 CLARIN-D	NE	PROPN	CLARIN-D	CLARIN-D	CLARIN-D
 übergreifende	ADJA	ADJ	übergreifende	übergreifend	übergreifend
-federated	ADJA/FM	X	federated	federated	federated	CLARIFY
-content	NN/FM	X	Content	Content	Content	CLARIFY
-search	NN/FM	X	Search	Search	Search	CLARIFY
+federated	FM	X	federated	federated	federated
+content	FM	X	Content	Content	Content
+search	FM	X	Search	Search	Search
 http://weblicht.sfs.uni-tuebingen.de/Aggregator/	URL	PROPN	http://weblicht.sfs.uni-tuebingen.de/aggregator/	http://weblicht.sfs.uni-tuebingen.de/aggregator/	http://weblicht.sfs.uni-tuebingen.de/aggregator/
 in	APPR	ADP	in	in	in
 der	ART	DET	der	der	der
@@ -28683,7 +28683,7 @@ OpenXPKI	FM	X	OpenXPKI	OpenXPKI	OpenXPKI
 Red	FM	X	red	red	red
 Hat	FM	X	hat	hat	hat
 Certificate	FM	X	certificate	certificate	certificate
-System	NN/FM	X	System	System	System	CLARIFY
+System	FM	X	System	System	System
 ist	VAFIN	AUX	ist	sein	sein
 Open	FM	X	open	open	open
 Source	FM	X	source	source	source
