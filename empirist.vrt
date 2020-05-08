@@ -3846,7 +3846,7 @@ drin	ADV	ADV	drin	drin	drin
 <s>
 am	PTKA	PART	an	am	am
 besten	ADJD	ADJ	besten	gut	gut
-welche	PDS/PWS	PRON	welche	welcher	welcher	CLARIFY
+welche	PWS	PRON	welche	welcher	welcher
 was	PIAT	DET	was	was	was
 handwerkliches	NN	NOUN	Handwerkliches	handwerkliche	handwerkliche
 machen	VVFIN	VERB	machen	machen	machen
@@ -11066,7 +11066,7 @@ wollten	VMFIN	AUX	wollten	wollen	wollen
 .	$.	PUNCT	.	.	.
 </s>
 <s>
-Was	PWS/PWAT	DET	was	was	was	CLARIFY
+Was	PWS	PRON	was	was	was
 für	APPR	ADP	für	für	für
 eine	ART	DET	eine	ein	ein
 gute	ADJA	ADJ	gute	gut	gut
@@ -15573,7 +15573,7 @@ mieze	NE	PROPN	mieze	mieze	mieze
 </posting>
 <posting id="cmc_test_011_085" author="Bochum" origid="1-351">
 <s>
-wer	PRELS/PWS	PRON	wer	wer	wer	CLARIFY
+wer	PWS	PRON	wer	wer	wer
 es	PPER	PRON	es	es	es
 sich	PRF	PRON	sich	sich	sich
 selber	ADV	ADV	selber	selber	selber
@@ -22206,7 +22206,7 @@ mechanischen	ADJA	ADJ	mechanischen	mechanisch	mechanisch
 Tippen	NN	NOUN	Tippen	tippen	tippen
 verschrieb	VVFIN	VERB	verschrieb	verschreiben	verschreiben
 ,	$,	PUNCT	,	,	,
-welches	PWS/PRELS	PRON	welches	welches	welches	CLARIFY
+welches	PRELS	PRON	welches	welches	welches
 er	PPER	PRON	er	er	er
 jedoch	ADV	ADV	jedoch	jedoch	jedoch
 auf	APPR	ADP	auf	auf	auf
@@ -22860,7 +22860,7 @@ Recht	NN	NOUN	Recht	Recht	Recht
 165	CARD	NUM	165	165	165
 ,	$,	PUNCT	,	,	,
 183	CARD	NUM	183	183	183
-f.	ADJA/ADJD	ADJ	f.	f.	f.	CLARIFY
+f.	ADJD	ADJ	f.	f.	f.
 [	$(	PUNCT	[	[	[
 PDF	NN	NOUN	PDF	PDF	PDF
 ]	$(	PUNCT	]	]	]
@@ -23104,7 +23104,7 @@ Fast	PTKIFG	ADV	fast	fast	fast
 alle	PIAT	ADJ	alle	aller	aller
 Schadprogramme	NN	NOUN	Schadprogramme	Schadprogramm	Schadprogramm
 (	$(	PUNCT	(	(	(
-engl.	ADJD/ADJA	ADJ	englisch	englisch	englisch	CLARIFY
+engl.	ADJD	ADJ	englisch	englisch	englisch
 Malware	NN	NOUN	Malware	Malware	Malware
 )	$(	PUNCT	)	)	)
 richten	VVFIN	VERB	richten	richten	richten
@@ -24703,7 +24703,7 @@ Kollektionen	NN	NOUN	Kollektionen	Kollektion	Kollektion
 und	KON	CCONJ	und	und	und
 Daten	NN	NOUN	Daten	Datum	Datum
 sowie	KON	CCONJ	sowie	sowie	sowie
-deren	PRELAT/PDAT	DET	deren	der	der	CLARIFY
+deren	PDAT	DET	deren	der	der
 Beziehungen	NN	NOUN	Beziehungen	Beziehung	Beziehung
 für	APPR	ADP	für	für	für
 einen	ART	DET	einen	ein	ein
