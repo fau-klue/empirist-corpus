@@ -23535,7 +23535,7 @@ spielen	VVFIN	VERB	spielen	spielen	spielen
 die	ART	DET	die	der	der
 Lücken	NN	NOUN	Lücken	Lücke	Lücke
 und	KON	CCONJ	und	und	und
-deren	ART/PDAT	DET	deren	der	der	CLARIFY
+deren	PDS	PRON	deren	der	der
 Ausnutzung	NN	NOUN	Ausnutzung	Ausnutzung	Ausnutzung
 (	$(	PUNCT	(	(	(
 Exploit	NN	NOUN	Exploit	Exploit	Exploit
@@ -23594,7 +23594,7 @@ NT	NE	PROPN	NT	NT	NT
 (	$(	PUNCT	(	(	(
 als	APPR	ADP	als	als	als
 auch	ADV	ADV	auch	auch	auch
-dessen	ART/PDAT	DET	dessen	der	der	CLARIFY
+dessen	PDS	PRON	dessen	der	der
 Nachfolger	NN	NOUN	Nachfolger	Nachfolger	Nachfolger
 XP	NE	PROPN	XP	XP	XP
 ,	$,	PUNCT	,	,	,
@@ -23897,7 +23897,7 @@ am	APPRART	_	am	an	an
 eBook	NN	NOUN	E-Book	eBook	E-Book
 «	$(	PUNCT	«	«	«
 und	KON	CCONJ	und	und	und
-dessen	ART/PDAT	DET	dessen	der	der	CLARIFY
+dessen	PDS	PRON	dessen	der	der
 »	$(	PUNCT	»	»	»
 Produzenten	NN	NOUN	Produzenten	Produzent	Produzent
 «	$(	PUNCT	«	«	«
