@@ -5130,7 +5130,7 @@ ein	ART	DET	ein	ein	ein
 <posting id="cmc_train_005_033" author="AUTOR" date="14. Apr. 2011">
 <s>
 Herzlich	ADJD	ADJ	herzlich	herzlich	herzlich
-willkommen	NN/ADJD	ADJ	Willkommen	Willkommen	Willkommen	CLARIFY
+willkommen	ADJD	ADJ	willkommen	willkommen	willkommen
 @Mia1234	ADR	PROPN	@Mia1234	@Mia1234	@Mia1234
 :)	EMOASC	SYM	:)	:)	:)
 </s>
@@ -6088,7 +6088,7 @@ mitnehmen	VVINF	VERB	mitnehmen	mitnehmen	mitnehmen
 <s>
 und	KON	CCONJ	und	und	und
 Donnerstag	NN	NOUN	Donnerstag	Donnerstag	Donnerstag
-Nachmittag	NN/ADV	ADV	Nachmittag	Nachmittag	Nachmittag	CLARIFY
+Nachmittag	ADV	ADV	nachmittag	nachmittag	nachmittag
 ging	VVFIN	VERB	ginge	gehen	gehen
 bei	APPR	ADP	bei	bei	bei
 uns	PPER	PRON	uns	uns	uns
@@ -7615,7 +7615,7 @@ Größe	NN	NOUN	Größe	Größe	Größe
 die	PRELS	PRON	die	der	der
 auf	APPR	ADP	auf	auf	auf
 die	ART	DET	die	der	der
-größte	ADJA/NN	NOUN	größte	groß	groß	CLARIFY
+größte	ADJA	ADJ	größte	groß	groß
 Eurer	PPOSAT	DET	eurer	euer	euer
 Linsen	NN	NOUN	Linsen	Linse	Linse
 passt	VVFIN	VERB	passt	passen	passen
@@ -15144,7 +15144,7 @@ klar	ADJD	ADJ	klar	klar	klar
 ,	$,	PUNCT	,	,	,
 nen	ART	DET	einen	n	ein
 richtig	PTKIFG	ADV	richtig	richtig	richtig
-dicken	ADJA/NN	NOUN	dicken	dick	dick	CLARIFY
+dicken	ADJA	ADJ	dicken	dick	dick
 :)	EMOASC	SYM	:)	:)	:)
 </s>
 </posting>
@@ -26129,8 +26129,8 @@ by	FM	X	by	by	by
 Wiebke	NE	PROPN	Wiebke	Wiebke	Wiebke
 ,	$,	PUNCT	,	,	,
 in	APPR	ADP	in	in	in
-category	NN	NOUN	Category	Category	Category
-Allgemein	NN/ADJD	ADJ	Allgemein	Allgemein	Allgemein	CLARIFY
+category	FM	NOUN	category	category	category
+Allgemein	ADJD	ADJ	Allgemein	Allgemein	Allgemein
 ,	$,	PUNCT	,	,	,
 Food	NN	NOUN	Food	Food	Food
 &amp;	KON	CCONJ	&amp;	&amp;	&amp;
