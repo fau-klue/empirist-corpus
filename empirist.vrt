@@ -28628,7 +28628,7 @@ Public-Key-Infrastruktur	NN	NOUN	Public-Key-Infrastruktur	Public-Key-Infrastrukt
 (	$(	PUNCT	(	(	(
 PKI	NN	NOUN	PKI	PKI	PKI
 ,	$,	PUNCT	,	,	,
-engl.	ADJD/ADJA	ADJ	englisch	englisch	englisch	CLARIFY
+engl.	ADJD	ADJ	englisch	englisch	englisch
 public	FM	X	public	public	public
 key	FM	X	key	key	key
 infrastructure	FM	X	infrastructure	infrastructure	infrastructure
