@@ -17874,7 +17874,7 @@ zur	APPRART	_	zur	zu	zu
 Weiterentwicklung	NN	NOUN	Weiterentwicklung	Weiterentwicklung	Weiterentwicklung
 der	ART	DET	der	der	der
 Erkenntnisse	NN	NOUN	Erkenntnisse	Erkenntnis	Erkenntnis
-+	$(/KON	CCONJ	+	+	+	CLARIFY
++	KON	CCONJ	+	+	+
 Theorien	NN	NOUN	Theorien	Theorie	Theorie
 zum	APPRART	_	zum	zu	zu
 Thema	NN	NOUN	Thema	Thema	Thema
@@ -17942,7 +17942,7 @@ die	ART	DET	die	der	der
 eigene	ADJA	ADJ	eigene	eigen	eigen
 Untersuchung	NN	NOUN	Untersuchung	Untersuchung	Untersuchung
 neu	ADJD	ADJ	neu	neu	neu
-+	$(/KON	CCONJ	+	+	+	CLARIFY
++	KON	CCONJ	+	+	+
 innovativ	ADJD	ADJ	innovativ	innovativ	innovativ
 ist	VAFIN	AUX	ist	sein	sein
 .	$.	PUNCT	.	.	.
@@ -17978,7 +17978,7 @@ Gegenstand	NN	NOUN	Gegenstand	Gegenstand	Gegenstand
 schon	ADV	ADV	schon	schon	schon
 für	APPR	ADP	für	für	für
 Positionen	NN	NOUN	Positionen	Position	Position
-+	$(/KON	CCONJ	+	+	+	CLARIFY
++	KON	CCONJ	+	+	+
 Befunde	NN	NOUN	Befunde	Befund	Befund
 gibt	VVFIN	VERB	gibt	geben	geben
 ,	$,	PUNCT	,	,	,
@@ -18093,7 +18093,7 @@ dass	KOUS	SCONJ	dass	dass	dass
 sie	PPER	PRON	sie	sie	sie
 automat.	ADJD	ADJ	automat.	automat.	automat.
 updatet	VVFIN	VERB	updatet	updaten	updaten
-+	$(/KON	CCONJ	+	+	+	CLARIFY
++	KON	CCONJ	+	+	+
 man	PIS	PRON	man	man	man
 nicht	PTKNEG	PART	nicht	nicht	nicht
 klicken	VVINF	VERB	klicken	klicken	klicken
