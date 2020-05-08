@@ -396,7 +396,7 @@ Otto-normal-Bürger	NN	NOUN	Otto-normal-Bürger	Otto-normal-Bürger	Otto-normal-
 oder	KON	CCONJ	oder	oder	oder
 Heide	NN	NOUN	Heide	Heide	Heide
 X-D	EMOASC	SYM	X-D	X-D	X-D
-,	$(/$,	PUNCT	,	,	,	CLARIFY
+,	$,	PUNCT	,	,	,
 auch	PTKMWL	ADV	auch	auch	auch
 noch	ADV	ADV	noch	noch	noch
 höchst	PTKIFG	ADV	höchst	höchst	höchst
