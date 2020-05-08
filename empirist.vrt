@@ -15385,7 +15385,7 @@ Hochzeit	NN	NOUN	Hochzeit	Hochzeit	Hochzeit
 </posting>
 <posting id="cmc_test_011_064" author="Thor..." origid="1-328">
 <s>
-umso	KON/ADV	ADV	umso	umso	umso	CLARIFY
+umso	ADV	ADV	umso	umso	umso
 besser	ADJD	ADJ	besser	gut	gut
 lanto	NE	PROPN	lanto	lanto	lanto
 *	$(	PUNCT	*	*	*
@@ -18259,7 +18259,7 @@ einfach	ADJD	ADJ	einfach	einfach	einfach
 haben	VAINF	AUX	haben	haben	haben
 wollen	VMINF	AUX	wollen	wollen	wollen
 ,	$,	PUNCT	,	,	,
-noch	KON/ADV	ADV	noch	noch	noch	CLARIFY
+noch	ADV	ADV	noch	noch	noch
 dazu	PAV	ADV	dazu	dazu	dazu
 in	APPR	ADP	in	in	in
 einem	ART	DET	einem	ein	ein
