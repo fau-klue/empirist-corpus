@@ -10704,7 +10704,7 @@ sind	VAFIN	AUX	sind	sein	sein
 ähnliche	ADJA	ADJ	ähnliche	ähnlich	ähnlich
 Schriftzeichen	NN	NOUN	Schriftzeichen	Schriftzeichen	Schriftzeichen
 zugeordnet	VVPP	VERB	zugeordnet	zuordnen	zuordnen
-werden	VAFIN/VAINF	AUX	werden	werden	werden	CLARIFY
+werden	VAFIN	AUX	werden	werden	werden
 .	$.	PUNCT	.	.	.
 </s>
 <s>
@@ -19824,7 +19824,7 @@ von	APPR	ADP	von	von	von
 einer	ART	DET	einer	ein	ein
 Kreuzspinne	NN	NOUN	Kreuzspinne	Kreuzspinne	Kreuzspinne
 gebissen	VVPP	VERB	gebissen	beißen	beißen
-worden	VAINF/VAPP	AUX	worden	werden	werden	CLARIFY
+worden	VAPP	AUX	worden	werden	werden
 wäre	VAFIN	AUX	wäre	sein	sein
 ,	$,	PUNCT	,	,	,
 halte	VVFIN	VERB	halte	halten	halten
@@ -23526,7 +23526,7 @@ laufen	VVFIN	VERB	laufen	laufen	laufen
 bzw.	KON	CCONJ	bzw.	bzw.	bzw.
 rege	ADJD	ADJ	rege	rege	rege
 genutzt	VVPP	VERB	genutzt	nutzen	nutzen
-werden	VAFIN/VAINF	AUX	werden	werden	werden	CLARIFY
+werden	VAFIN	AUX	werden	werden	werden
 .	$.	PUNCT	.	.	.
 </s>
 <s>
