@@ -120,7 +120,7 @@ zum	APPRART	_	zum	zu	zu
 Glück	NN	NOUN	Glück	Glück	Glück
 (	$(	PUNCT	(	(	(
 so	ADV	ADV	so	so	so
-wie	KOUS/KOKOM	ADP	wie	wie	wie	CLARIFY
+wie	KOKOM	ADP	wie	wie	wie
 du	PPER	PRON	du	du	du
 offensichtlich	ADJD	ADJ	offensichtlich	offensichtlich	offensichtlich
 ja	PTKMA	ADV	ja	ja	ja
@@ -231,7 +231,7 @@ Seiten	NN	NOUN	Seiten	Seite	Seite
 </s>
 <s>
 So	ADV	ADV	so	so	so
-wie	KOUS/PWAV	ADV	wie	wie	wie	CLARIFY
+wie	PWAV	ADV	wie	wie	wie
 ich	PPER	PRON	ich	ich	ich
 das	PDS	PRON	das	der	der
 mitbekommen	VVPP	VERB	mitbekommen	mitbekommen	mitbekommen
@@ -335,7 +335,7 @@ ihre	PPOSAT	DET	ihre	ihr	ihr
 strengen	ADJA	ADJ	strengen	streng	streng
 Regeln	NN	NOUN	Regeln	Regel	Regel
 ,	$,	PUNCT	,	,	,
-als	KOUS/KOKOM	ADP	als	als	als	CLARIFY
+als	KOKOM	ADP	als	als	als
 eben	PTKMA	ADV	eben	eben	eben
 um	APPR	ADP	um	um	um
 die	ART	DET	die	der	der
@@ -1745,7 +1745,7 @@ kommen	VVINF	VERB	kommen	kommen	kommen
 </posting>
 <posting id="cmc_train_002_093" author="Student6" origid="SEM-46">
 <s>
-wie	KOUS/PWAV	ADV	wie	wie	wie	CLARIFY
+wie	PWAV	ADV	wie	wie	wie
 du	PPER	PRON	du	du	du
 ,	$,	PUNCT	,	,	,
 Student3	NE	PROPN	Student3	Student3	Student3
@@ -3188,7 +3188,7 @@ hello	ITJ	INTJ	hello	hello	hello
 </posting>
 <posting id="cmc_train_003_152" author="marc30" origid="1-169">
 <s>
-wie	KOUS/PWAV	ADV	wie	wie	wie	CLARIFY
+wie	PWAV	ADV	wie	wie	wie
 großzügig	ADJD	ADJ	großzügig	großzügig	großzügig
 quaki	NE	PROPN	quaki	quaki	quaki
 manchmal	ADV	ADV	manchmal	manchmal	manchmal
@@ -6833,7 +6833,7 @@ mal	ADV	ADV	mal	mal	mal
 Junge	NN	NOUN	Junge	Junge	Junge
 kriegt	VVFIN	VERB	kriegt	kriegen	kriegen
 ,	$,	PUNCT	,	,	,
-weil	KOUS/KON	CCONJ	weil	weil	weil	CLARIFY
+weil	KOUS	SCONJ	weil	weil	weil
 das	PDS	PRON	das	der	der
 sind	VAFIN	AUX	sind	sein	sein
 ja	PTKMA	ADV	ja	ja	ja
@@ -10346,7 +10346,7 @@ Erfahrungen	NN	NOUN	Erfahrungen	Erfahrung	Erfahrung
 mit	APPR	ADP	mit	mit	mit
 Skype	NE	PROPN	Skype	Skype	Skype
 und	KON	CCONJ	und	und	und
-wie	KOKOM/PWAV	ADV	wie	wie	wie	CLARIFY
+wie	PWAV	ADV	wie	wie	wie
 häufig	ADJD	ADJ	häufig	häufig	häufig
 entscheidet	VVFIN	VERB	entscheidet	entscheiden	entscheiden
 Ihr	PPER	PRON	ihr	ihr	ihr
@@ -13634,7 +13634,7 @@ noch	ADV	ADV	noch	noch	noch
 genauso	ADV	ADV	genauso	genauso	genauso
 erleben	VVINF	VERB	erleben	erleben	erleben
 ,	$,	PUNCT	,	,	,
-wie	KOUS/PWAV	ADV	wie	wie	wie	CLARIFY
+wie	PWAV	ADV	wie	wie	wie
 die	ART	DET	die	der	der
 Anerkennung	NN	NOUN	Anerkennung	Anerkennung	Anerkennung
 der	ART	DET	der	der	der
@@ -17570,7 +17570,7 @@ Fall	NN	NOUN	Fall	Fall	Fall
 gibt	VVFIN	VERB	gibt	geben	geben
 es	PPER	PRON	es	es	es
 (	$(	PUNCT	(	(	(
-wie	KOUS/KOKOM	ADP	wie	wie	wie	CLARIFY
+wie	KOKOM	ADP	wie	wie	wie
 auch	ADV	ADV	auch	auch	auch
 in	APPR	ADP	in	in	in
 der	ART	DET	der	der	der
@@ -23346,7 +23346,7 @@ Linux-Schadsoftware	NN	NOUN	Linux-Schadsoftware	Linux-Schadsoftware	Linux-Schads
 rechnen	VVINF	VERB	rechnen	rechnen	rechnen
 ,	$,	PUNCT	,	,	,
 so	ADV	ADV	so	so	so
-wie	KOKOM/PWAV	ADV	wie	wie	wie	CLARIFY
+wie	KOKOM	ADV	wie	wie	wie
 man	PIS	PRON	man	man	man
 es	PPER	PRON	es	es	es
 unter	APPR	ADP	unter	unter	unter
@@ -23590,7 +23590,7 @@ sind	VAFIN	AUX	sind	sein	sein
 Linux	NE	PROPN	Linux	Linux	Linux
 und	KON	CCONJ	und	und	und
 Windows	NE	PROPN	Windows	Windows	Windows
-NT	KOUSPPER/NE	PROPN	NT	NT	NT	CLARIFY
+NT	NE	PROPN	NT	NT	NT
 (	$(	PUNCT	(	(	(
 als	APPR	ADP	als	als	als
 auch	ADV	ADV	auch	auch	auch
@@ -23950,7 +23950,7 @@ jedoch	ADV	ADV	jedoch	jedoch	jedoch
 den	ART	DET	den	der	der
 Eindruck	NN	NOUN	Eindruck	Eindruck	Eindruck
 ,	$,	PUNCT	,	,	,
-als	KON/KOKOM	ADP	als	als	als	CLARIFY
+als	KOKOM	ADP	als	als	als
 sei	VAFIN	AUX	sei	sein	sein
 ausschließlich	ADJD	ADJ	ausschließlich	ausschließlich	ausschließlich
 »	$(	PUNCT	»	»	»
@@ -24829,7 +24829,7 @@ eines	ART	DET	eines	ein	ein
 einfachen	ADJA	ADJ	einfachen	einfach	einfach
 Modells	NN	NOUN	Modells	Modell	Modell
 ,	$,	PUNCT	,	,	,
-wie	PWAV/KOKOM	ADP	wie	wie	wie	CLARIFY
+wie	KOKOM	ADP	wie	wie	wie
 z.	APPRART	_	z.	z.	z.
 B.	NN	NOUN	B.	B.	B.
 Dublin	NE	PROPN	Dublin	Dublin	Dublin
@@ -25120,7 +25120,7 @@ Analyse-	TRUNC	X	Analyse-/analyse-	Analyse	Analyse
 und	KON	CCONJ	und	und	und
 Visualisierungslösung	NN	NOUN	Visualisierungslösung	Visualisierungslösung	Visualisierungslösung
 ,	$,	PUNCT	,	,	,
-wie	PWAV/KOKOM	ADP	wie	wie	wie	CLARIFY
+wie	KOKOM	ADP	wie	wie	wie
 beispielsweise	ADV	ADV	beispielsweise	beispielsweise	beispielsweise
 dem	ART	DET	dem	der	der
 DARIAH-DE	NE	PROPN	DARIAH-DE	DARIAH-DE	DARIAH-DE
@@ -25562,7 +25562,7 @@ war	VAFIN	AUX	war	sein	sein
 vor	APPR	ADP	vor	vor	vor
 allem	PIS	PRON	allem	alle	alle
 ,	$,	PUNCT	,	,	,
-wie	KOUS/PWAV	ADV	wie	wie	wie	CLARIFY
+wie	PWAV	ADV	wie	wie	wie
 schön	ADJD	ADJ	schön	schön	schön
 auch	PTKIFG	ADV	auch	auch	auch
 Funktionales	NN	NOUN	Funktionales	funktionale	funktionale
@@ -27057,7 +27057,7 @@ erreichende	ADJA	ADJ	erreichende	erreichend	erreichend
 gemeinsame	ADJA	ADJ	gemeinsame	gemeinsam	gemeinsam
 Ideal	NN	NOUN	Ideal	Ideal	Ideal
 ,	$,	PUNCT	,	,	,
-damit	KOKOM/KOUS	SCONJ	damit	damit	damit	CLARIFY
+damit	KOUS	SCONJ	damit	damit	damit
 jeder	PIAT	DET	jeder	jeder	jeder
 einzelne	NN	NOUN	Einzelne	einzelne	einzelne
 und	KON	CCONJ	und	und	und
