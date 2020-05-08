@@ -1827,7 +1827,7 @@ weißt	VVFIN	VERB	weißt	wissen	wissen
 ja	PTKMA	ADV	ja	ja	ja
 ,	$,	PUNCT	,	,	,
 was	PWS	PRON	was	was	was
-gemeint	ADJD/VVPP	VERB	gemeint	gemeint	gemeint	CLARIFY
+gemeint	VVPP	VERB	gemeint	gemeint	gemeint
 ist	VAFIN	AUX	ist	sein	sein
 !	$.	PUNCT	!	!	!
 </s>
@@ -8335,7 +8335,7 @@ Böhner	NE	PROPN	Böhner	Böhner	Böhner
 <s>
 Und	KON	CCONJ	und	und	und
 wie	PWAV	ADV	wie	wie	wie
-versprochen	VMPP/VVPP	VERB	versprochen	versprechen	versprechen	CLARIFY
+versprochen	VVPP	VERB	versprochen	versprechen	versprechen
 gibt	VVFIN	VERB	gibt	geben	geben
 es	PPER	PRON	es	es	es
 hier	ADV	ADV	hier	hier	hier
@@ -12560,7 +12560,7 @@ Radnetzspinnen	NN	NOUN	Radnetzspinnen	Radnetzspinne	Radnetzspinne
 Sie	PPER	PRON	sie	sie	sie
 sind	VAFIN	AUX	sind	sein	sein
 weltweit	ADJD	ADJ	weltweit	weltweit	weltweit
-verbreitet	ADJD/VVPP	VERB	verbreitet	verbreitet	verbreitet	CLARIFY
+verbreitet	VVPP	VERB	verbreitet	verbreiten	verbreiten
 .	$.	PUNCT	.	.	.
 </s>
 <s>
@@ -13369,7 +13369,7 @@ Grundrecht	NN	NOUN	Grundrecht	Grundrecht	Grundrecht
 ,	$,	PUNCT	,	,	,
 das	PRELS	PRON	das	der	der
 hierzulande	ADV	ADV	hierzulande	hierzulande	hierzulande
-verwehrt	ADJD/VVPP	VERB	verwehrt	verwehrt	verwehrt	CLARIFY
+verwehrt	VVPP	VERB	verwehrt	verwehren	verwehren
 bleibt	VVFIN	VERB	bleibt	bleiben	bleiben
 ...	$(	PUNCT	...	...	...
 !	$.	PUNCT	!	!	!
@@ -14000,7 +14000,7 @@ ist	VAFIN	AUX	ist	sein	sein
 an	APPR	ADP	an	an	an
 Ihrer	PPOSAT	DET	Ihrer	ihr	ihr
 Politik	NN	NOUN	Politik	Politik	Politik
-fehlgeschlagen	ADJD/VVPP	VERB	fehlgeschlagen	fehlgeschlagen	fehlgeschlagen	CLARIFY
+fehlgeschlagen	VVPP	VERB	fehlgeschlagen	fehlschlagen	fehlschlagen
 ?	$.	PUNCT	?	?	?
 </s>
 </posting>
@@ -14573,7 +14573,7 @@ Duell	NN	NOUN	Duell	Duell	Duell
 ist	VAFIN	AUX	ist	sein	sein
 leider	ADV	ADV	leider	leider	leider
 bereits	ADV	ADV	bereits	bereits	bereits
-abgelaufen	ADJD/VVPP	VERB	abgelaufen	ablaufen	ablaufen	CLARIFY
+abgelaufen	VVPP	VERB	abgelaufen	ablaufen	ablaufen
 .	$.	PUNCT	.	.	.
 </s>
 <s>
@@ -17317,7 +17317,7 @@ Annäherungen	NN	NOUN	Annäherungen	Annäherung	Annäherung
 Beobachtungen	NN	NOUN	Beobachtungen	Beobachtung	Beobachtung
 ,	$,	PUNCT	,	,	,
 Vergleiche	NN	NOUN	Vergleiche	Vergleich	Vergleich
-interessiert	ADJD/VVPP	VERB	interessiert	interessiert	interessiert	CLARIFY
+interessiert	ADJD	ADJ	interessiert	interessiert	interessiert
 mit	PTKVZ	PART	mit	mit	mit
 .	$.	PUNCT	.	.	.
 </s>
@@ -18219,7 +18219,7 @@ beantworten	VVINF	VERB	beantworten	beantworten	beantworten
 Mitgliedern	NN	NOUN	Mitgliedern	Mitglied	Mitglied
 Ihrer	PPOSAT	DET	Ihrer	ihr	ihr
 Gruppe	NN	NOUN	Gruppe	Gruppe	Gruppe
-erlaubt	ADJD/VVFIN	VERB	erlaubt	erlauben	erlauben	CLARIFY
+erlaubt	VVFIN	VERB	erlaubt	erlauben	erlauben
 ,	$,	PUNCT	,	,	,
 Änderungen	NN	NOUN	Änderungen	Änderung	Änderung
 vorzunehmen	VVIZU	VERB	vorzunehmen	vornehmen	vornehmen
@@ -19716,7 +19716,7 @@ finde	VVFIN	VERB	finde	finden	finden
 ich	PPER	PRON	ich	ich	ich
 diese	PDAT	DET	diese	dieser	dieser
 Tiere	NN	NOUN	Tiere	Tier	Tier
-faszinierend	ADJD/VVPP	VERB	faszinierend	faszinierend	faszinierend	CLARIFY
+faszinierend	ADJD	ADJ	faszinierend	faszinierend	faszinierend
 ;	$.	PUNCT	;	;	;
 meine	PPOSAT	DET	meine	mein	mein
 Meinung	NN	NOUN	Meinung	Meinung	Meinung
@@ -25787,7 +25787,7 @@ Kinder	NN	NOUN	Kinder	Kind	Kind
 und	KON	CCONJ	und	und	und
 Schwangeren	NN	NOUN	Schwangeren	schwangere	schwangere
 Mode	NN	NOUN	Mode	Mode	Mode
-geworden	VVPP/VAPP	AUX	geworden	werden	werden	CLARIFY
+geworden	VAPP	AUX	geworden	werden	werden
 .	$.	PUNCT	.	.	.
 </s>
 <s>
@@ -26403,7 +26403,7 @@ vom	APPRART	_	vom	von	von
 Kuchen	NN	NOUN	Kuchen	Kuchen	Kuchen
 ab	PTKVZ	PART	ab	ab	ab
 und	KON	CCONJ	und	und	und
-nutzt	VVFIN/VVIMP	VERB	nutzt	nutzen	nutzen	CLARIFY
+nutzt	VVIMP	VERB	nutzt	nutzen	nutzen
 nur	PTKIFG	ADV	nur	nur	nur
 die	ART	DET	die	der	der
 schön	ADJD	ADJ	schön	schön	schön
@@ -26537,7 +26537,7 @@ entfernt	VVIMP	VERB	entfernt	entfernen	entfernen
 den	ART	DET	den	der	der
 Schokoladenüberzug	NN	NOUN	Schokoladenüberzug	Schokoladenüberzug	Schokoladenüberzug
 und	KON	CCONJ	und	und	und
-nutzt	VVFIN/VVIMP	VERB	nutzt	nutzen	nutzen	CLARIFY
+nutzt	VVIMP	VERB	nutzt	nutzen	nutzen
 nur	PTKIFG	ADV	nur	nur	nur
 das	ART	DET	das	der	der
 Innere	NN	NOUN	Innere	innere	innere
@@ -26560,7 +26560,7 @@ euch	PRF	PRON	euch	sich	sich
 die	ART	DET	die	der	der
 Zeit	NN	NOUN	Zeit	Zeit	Zeit
 und	KON	CCONJ	und	und	und
-backt	VVFIN/VVIMP	VERB	backt	backen	backen	CLARIFY
+backt	VVFIN	VERB	backt	backen	backen
 den	ART	DET	den	der	der
 Kuchen	NN	NOUN	Kuchen	Kuchen	Kuchen
 für	APPR	ADP	für	für	für
@@ -28299,7 +28299,7 @@ werden	VAINF	AUX	werden	werden	werden
 <s>
 Wenn	KOUS	SCONJ	wenn	wenn	wenn
 er	PPER	PRON	er	er	er
-verloren	VVPP/PTKVZ	PART	verloren	verlieren	verlieren	CLARIFY
+verloren	VVPP/PTKVZ/ADJD	PART	verloren	verlieren	verlieren	CLARIFY
 geht	VVFIN	VERB	geht	gehen	gehen
 kann	VMFIN	AUX	kann	können	können
 man	PIS	PRON	man	man	man
