@@ -247,7 +247,7 @@ Sie	PPER	PRON	sie	sie	sie
 haben	VAFIN	AUX	haben	haben	haben
 nur	PTKIFG	ADV	nur	nur	nur
 einfach	ADJD	ADJ	einfach	einfach	einfach
-andere	PIAT/ADJA	ADJ	andere	anderer	anderer	CLARIFY
+andere	ADJA	ADJ	andere	anderer	anderer
 (	$(	PUNCT	(	(	(
 strenge	ADJA	ADJ	strenge	streng	streng
 )	$(	PUNCT	)	)	)
@@ -2936,7 +2936,7 @@ ja	PTKANT	INTJ	ja	ja	ja
 wo	PWAV	ADV	wo	wo	wo
 ich	PPER	PRON	ich	ich	ich
 doch	PTKMA	ADV	doch	doch	doch
-kaum	PIAT/ADV	ADV	kaum	kaum	kaum	CLARIFY
+kaum	ADV	ADV	kaum	kaum	kaum
 was	PIS	PRON	was	was	was
 dafür	PAV	ADV	dafür	dafür	dafür
 getan	VVPP	VERB	getan	tun	tun
@@ -4822,7 +4822,7 @@ Verhält	VVFIN	VERB	verhält	verhalten	verhalten
 es	PPER	PRON	es	es	es
 sich	PRF	PRON	sich	sich	sich
 in	APPR	ADP	in	in	in
-anderen	PIAT/ADJA	ADJ	anderen	anderer	anderer	CLARIFY
+anderen	ADJA	ADJ	anderen	anderer	anderer
 Komm.formen	NN	NOUN	Kommunikationsformen	Komm.form	Kommunikationsform
 anders	ADV	ADV	anders	anders	anders
 ?	$.	PUNCT	?	?	?
@@ -6889,7 +6889,7 @@ Liedschreiber	NN	NOUN	Liedschreiber	Liedschreiber	Liedschreiber
 <s>
 Wieso	PWAV	ADV	wieso	wieso	wieso
 das	PDS	PRON	das	der	der
-weniger	PIAT/ADV	ADV	weniger	weniger	weniger	CLARIFY
+weniger	ADV	ADV	weniger	weniger	weniger
 deutsch	ADJD	ADJ	deutsch	deutsch	deutsch
 sein	VAINF	AUX	sein	sein	sein
 soll	VMFIN	AUX	soll	sollen	sollen
@@ -7004,7 +7004,7 @@ Konnoation	NN	NOUN	Konnotation	Konnoation	Konnotation
 ist	VAFIN	AUX	ist	sein	sein
 eben	PTKMA	ADV	eben	eben	eben
 eine	ART	DET	eine	ein	ein
-andere	PIAT/ADJA	ADJ	andere	anderer	anderer	CLARIFY
+andere	ADJA	ADJ	andere	anderer	anderer
 als	KOKOM	ADP	als	als	als
 bei	APPR	ADP	bei	bei	bei
 Songwriter	NN	NOUN	Songwriter	Songwriter	Songwriter
@@ -13455,7 +13455,7 @@ vor	PTKVZ	PART	vor	vor	vor
 <s>
 Sind	VAFIN	AUX	sind	sein	sein
 die	PDS	PRON	die	der	der
-weniger	PIAT/ADV	ADV	weniger	weniger	weniger	CLARIFY
+weniger	ADV	ADV	weniger	weniger	weniger
 klug	ADJD	ADJ	klug	klug	klug
 wie	KOKOM	ADP	wie	wie	wie
 wir	PPER	PRON	wir	wir	wir
@@ -14073,7 +14073,7 @@ abhebt	VVFIN	VERB	abhebt	abheben	abheben
 da	ADV	ADV	da	da	da
 kenne	VVFIN	VERB	kenne	kennen	kennen
 ich	PPER	PRON	ich	ich	ich
-andere	PIAT/ADJA	ADJ	andere	anderer	anderer	CLARIFY
+andere	ADJA	ADJ	andere	anderer	anderer
 niederländer	NN	NOUN	Niederländer	Niederländer	Niederländer
 </s>
 </posting>
@@ -20136,7 +20136,7 @@ heute	ADV	ADV	heute	heute	heute
 noch	ADV	ADV	noch	noch	noch
 ,	$,	PUNCT	,	,	,
 mit	APPR	ADP	mit	mit	mit
-anderen	PIAT/ADJA	ADJ	anderen	anderer	anderer	CLARIFY
+anderen	ADJA	ADJ	anderen	anderer	anderer
 Musikern	NN	NOUN	Musikern	Musiker	Musiker
 zusammengearbeitet	VVPP	VERB	zusammengearbeitet	zusammenarbeiten	zusammenarbeiten
 .	$.	PUNCT	.	.	.
@@ -20226,7 +20226,7 @@ hat	VAFIN	AUX	hat	haben	haben
 seine	PPOSAT	DET	seine	sein	sein
 Kooperation	NN	NOUN	Kooperation	Kooperation	Kooperation
 mit	APPR	ADP	mit	mit	mit
-anderen	PIAT/ADJA	ADJ	anderen	anderer	anderer	CLARIFY
+anderen	ADJA	ADJ	anderen	anderer	anderer
 Musikern	NN	NOUN	Musikern	Musiker	Musiker
 mit	APPR	ADP	mit	mit	mit
 seiner	PPOSAT	DET	seiner	sein	sein
@@ -21703,7 +21703,7 @@ Skigebieten	NN	NOUN	Skigebieten	Skigebiet	Skigebiet
 fällt	VVFIN	VERB	fällt	fallen	fallen
 nicht	PTKNEG	PART	nicht	nicht	nicht
 immer	PTKMWL	ADV	immer	immer	immer
-genug	ADV/PIAT	DET	genug	genug	genug	CLARIFY
+genug	PIAT	DET	genug	genug	genug
 Schnee	NN	NOUN	Schnee	Schnee	Schnee
 ,	$,	PUNCT	,	,	,
 um	KOUI	SCONJ	um	um	um
@@ -22406,9 +22406,9 @@ hat	VAFIN	AUX	hat	haben	haben
 und	KON	CCONJ	und	und	und
 auf	APPR	ADP	auf	auf	auf
 die	ART	DET	die	der	der
-ein	PIAT/ADJA	ADJ	ein	ein	ein	CLARIFY
+ein	ART	DET	eine	ein	ein
 oder	KON	CCONJ	oder	oder	oder
-andere	PIAT/ADJA	ADJ	andere	anderer	anderer	CLARIFY
+andere	ADJA	ADJ	andere	anderer	anderer
 Weise	NN	NOUN	Weise	Weise	Weise
 mitlesen	VVINF	VERB	mitlesen	mitlesen	mitlesen
 kann	VMFIN	AUX	kann	können	können
@@ -25778,7 +25778,7 @@ Grenzen	NN	NOUN	Grenzen	Grenze	Grenze
 Bonns	NE	PROPN	Bonns	Bonn	Bonn
 hinaus	APZR	ADP	hinaus	hinaus	hinaus
 zu	APPR	ADP	zu	zu	zu
-einer	PIAT/PIS	PRON	einer	einer	einer	CLARIFY
+einer	PIS	PRON	einer	einer	einer
 der	ART	DET	der	der	der
 ersten	ADJA	ADJ	ersten	erster	erster
 Adressen	NN	NOUN	Adressen	Adresse	Adresse
