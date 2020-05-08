@@ -138,7 +138,7 @@ Jugend	NN	NOUN	Jugend	Jugend	Jugend
 Vielleicht	ADV	ADV	vielleicht	vielleicht	vielleicht
 schreibt	VVFIN	VERB	schreibt	schreiben	schreiben
 Ihr	PPER	PRON	ihr	ihr	ihr
-euch	PRF/PPER	PRON	euch	sich	sich	CLARIFY
+euch	PPER	PRON	euch	sich	sich
 mal	ADV	ADV	mal	mal	mal
 im	APPRART	_	im	in	in
 SchülerVZ	NE	PROPN	SchülerVZ	SchülerVZ	SchülerVZ
@@ -5330,7 +5330,7 @@ intermezzo	NN	NOUN	Intermezzo	Intermezzo	Intermezzo
 </s>
 <s>
 Lässt	VVFIN	VERB	lässt	lassen	lassen
-sich	PPER/PRF	PRON	sich	sich	sich	CLARIFY
+sich	PRF	PRON	sich	sich	sich
 schon	ADV	ADV	schon	schon	schon
 absehen	VVINF	VERB	absehen	absehen	absehen
 ,	$,	PUNCT	,	,	,
@@ -8021,7 +8021,7 @@ Vergnügen	NN	NOUN	Vergnügen	Vergnügen	Vergnügen
 <s>
 Ich	PPER	PRON	ich	ich	ich
 hab	VAFIN	AUX	habe	haben	haben
-mir	PPER/PRF	PRON	mir	mir	mir	CLARIFY
+mir	PRF	PRON	mir	mir	mir
 ein	ART	DET	ein	ein	ein
 ruhiges	ADJA	ADJ	ruhiges	ruhig	ruhig
 Örtchen	NN	NOUN	Örtchen	Örtchen	Örtchen
@@ -20437,7 +20437,7 @@ Artikels	NN	NOUN	Artikels	Artikel	Artikel
 vorzuschlagen	VVIZU	VERB	vorzuschlagen	vorschlagen	vorschlagen
 ,	$,	PUNCT	,	,	,
 statt	KOUI	SCONJ	statt	statt	statt
-sich	PPER/PRF	PRON	sich	sich	sich	CLARIFY
+sich	PRF	PRON	sich	sich	sich
 in	APPR	ADP	in	in	in
 einem	ART	DET	einem	ein	ein
 solchen	PIAT	DET	solchen	solcher	solcher
