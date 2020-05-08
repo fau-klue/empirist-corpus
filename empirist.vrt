@@ -3581,7 +3581,7 @@ kostet	VVFIN	VERB	kostet	kosten	kosten
 </posting>
 <posting id="cmc_train_003_201" author="Lantonie" origid="1-219">
 <s>
-Aber	ADV/KON	CCONJ	aber	aber	aber	CLARIFY
+Aber	KON	CCONJ	aber	aber	aber
 ,	$,	PUNCT	,	,	,
 ich	PPER	PRON	ich	ich	ich
 dachte	VVFIN	VERB	dachte	denken	denken
@@ -6619,7 +6619,7 @@ ungefährlich	ADJD	ADJ	ungefährlich	ungefährlich	ungefährlich
 .	$.	PUNCT	.	.	.
 </s>
 <s>
-Aber	ADV/KON	CCONJ	aber	aber	aber	CLARIFY
+Aber	KON	CCONJ	aber	aber	aber
 viele	PIS	PRON	viele	viele	viele
 haben	VAFIN	AUX	haben	haben	haben
 sicher	ADJD	ADJ	sicher	sicher	sicher
@@ -7144,7 +7144,7 @@ WP	NE	PROPN	Wikipedia	WP	Wikipedia
 ?	$.	PUNCT	?	?	?
 </s>
 <s>
-Aber	ADV/KON	CCONJ	aber	aber	aber	CLARIFY
+Aber	KON	CCONJ	aber	aber	aber
 mir	PPER	PRON	mir	mir	mir
 ist	VAFIN	AUX	ist	sein	sein
 das	PDS	PRON	das	der	der
@@ -22478,7 +22478,7 @@ Einsichtnahme	NN	NOUN	Einsichtnahme	Einsichtnahme	Einsichtnahme
 .	$.	PUNCT	.	.	.
 </s>
 <s>
-Aber	ADV/KON	CCONJ	aber	aber	aber	CLARIFY
+Aber	KON	CCONJ	aber	aber	aber
 dieses	PDAT	DET	dieses	dieser	dieser
 Grundrecht	NN	NOUN	Grundrecht	Grundrecht	Grundrecht
 ist	VAFIN	AUX	ist	sein	sein
@@ -23801,7 +23801,7 @@ beispielsweise	ADV	ADV	beispielsweise	beispielsweise	beispielsweise
 :	$.	PUNCT	:	:	:
 </s>
 <s>
-Doch	ADV/KON	CCONJ	doch	doch	doch	CLARIFY
+Doch	KON	CCONJ	doch	doch	doch
 ein	ART	DET	ein	ein	ein
 E-Book	NN	NOUN	E-Book	E-Book	E-Book
 kann	VMFIN	AUX	kann	können	können
