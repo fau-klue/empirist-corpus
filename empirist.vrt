@@ -2914,7 +2914,7 @@ schwarzer	ADJA	ADJ	schwarzer	schwarz	schwarz
 vögel	NN	NOUN	Vögel	Vogel	Vogel
 drüber	PAV	ADV	drüber	drüber	drüber
 und	KON	CCONJ	und	und	und
-drin	PAV/ADV	ADV	drin	drin	drin	CLARIFY
+drin	ADV	ADV	drin	drin	drin
 :-)	EMOASC	SYM	:-)	:-)	:-)
 </s>
 </posting>
@@ -3769,7 +3769,7 @@ alles	PIS	PRON	alles	alle	alle
 so	PTKMA	ADV	so	so	so
 einfällt	VVFIN	VERB	einfällt	einfallen	einfallen
 ,	$,	PUNCT	,	,	,
-da	PAV/ADV	ADV	da	da	da	CLARIFY
+da	ADV	ADV	da	da	da
 kommt	VVFIN	VERB	kommt	kommen	kommen
 kein	PIAT	DET	kein	kein	kein
 Mensch	NN	NOUN	Mensch	Mensch	Mensch
@@ -3839,7 +3839,7 @@ macht	VVFIN	VERB	macht	machen	machen
 wärs	VAPPER	_	wärs	sein	sein
 ja	PTKMA	ADV	ja	ja	ja
 mal	PTKMA	ADV	mal	mal	mal
-drin	PAV/ADV	ADV	drin	drin	drin	CLARIFY
+drin	ADV	ADV	drin	drin	drin
 </s>
 </posting>
 <posting id="cmc_train_003_226" author="Bochum" origid="1-248">
@@ -5080,7 +5080,7 @@ sprechen	VVINF	VERB	sprechen	sprechen	sprechen
 </s>
 <s>
 ...	$(	PUNCT	...	...	...
-womit	PAV/PWAV	ADV	womit	womit	womit	CLARIFY
+womit	PWAV	ADV	womit	womit	womit
 Sie	PPER	PRON	Sie	sie	sie
 ein	ART	DET	ein	ein	ein
 wichtiges	ADJA	ADJ	wichtiges	wichtig	wichtig
@@ -11406,7 +11406,7 @@ Reißverschluss	NN	NOUN	Reißverschluss	Reißverschluss	Reißverschluss
 <s>
 Gelacht	VVPP	VERB	gelacht	lachen	lachen
 wird	VAFIN	AUX	wird	werden	werden
-trotzdem	ADV/PAV	ADV	trotzdem	trotzdem	trotzdem	CLARIFY
+trotzdem	PAV	ADV	trotzdem	trotzdem	trotzdem
 .	$.	PUNCT	.	.	.
 </s>
 <s>
@@ -13504,7 +13504,7 @@ verheerender	ADJD	ADJ	verheerender	verheerend	verheerend
 und	KON	CCONJ	und	und	und
 wird	VAFIN	AUX	wird	werden	werden
 ironischerweise	ADV	ADV	ironischerweise	ironischerweise	ironischerweise
-trotzdem	ADV/PAV	ADV	trotzdem	trotzdem	trotzdem	CLARIFY
+trotzdem	PAV	ADV	trotzdem	trotzdem	trotzdem
 von	APPR	ADP	von	von	von
 der	ART	DET	der	der	der
 Gesellschaft	NN	NOUN	Gesellschaft	Gesellschaft	Gesellschaft
@@ -14829,7 +14829,7 @@ Asja	NE	PROPN	Asja	Asja	Asja
 </posting>
 <posting id="cmc_test_011_003" author="Emon" origid="1-260">
 <s>
-dennoch	PAV/ADV	ADV	dennoch	dennoch	dennoch	CLARIFY
+dennoch	ADV	ADV	dennoch	dennoch	dennoch
 würde	VAFIN	AUX	würde	werden	werden
 ich	PPER	PRON	ich	ich	ich
 mir	PRF	PRON	mir	sich	sich
@@ -23477,7 +23477,7 @@ könnte	VMFIN	AUX	könnte	können	können
 Konzeptionell	ADJD	ADJ	konzeptionell	konzeptionell	konzeptionell
 "	$(	PUNCT	"	"	"
 bedeutet	VVFIN	VERB	bedeutet	bedeuten	bedeuten
-außerdem	ADV/PAV	ADV	außerdem	außerdem	außerdem	CLARIFY
+außerdem	PAV	ADV	außerdem	außerdem	außerdem
 noch	ADV	ADV	noch	noch	noch
 lange	PTKMWL	ADV	lange	lange	lange
 nicht	PTKNEG	PART	nicht	nicht	nicht
@@ -24744,7 +24744,7 @@ heterogene	ADJA	ADJ	heterogene	heterogen	heterogen
 semi-strukturierte	ADJA	ADJ	semi-strukturierte	semi-strukturiert	semi-strukturiert
 Daten	NN	NOUN	Daten	Datum	Datum
 werden	VAFIN	AUX	werden	werden	werden
-hierbei	PAV/ADV	ADV	hierbei	hierbei	hierbei	CLARIFY
+hierbei	ADV	ADV	hierbei	hierbei	hierbei
 in	APPR	ADP	in	in	in
 ein	ART	DET	ein	ein	ein
 gemeinsames	ADJA	ADJ	gemeinsames	gemeinsam	gemeinsam
@@ -26331,7 +26331,7 @@ Stückchen	NN	NOUN	Stückchen	Stückchen	Stückchen
 enthält	VVFIN	VERB	enthält	enthalten	enthalten
 ,	$,	PUNCT	,	,	,
 sollte	VMFIN	AUX	sollte	sollen	sollen
-außerdem	ADV/PAV	ADV	außerdem	außerdem	außerdem	CLARIFY
+außerdem	PAV	ADV	außerdem	außerdem	außerdem
 der	ART	DET	der	der	der
 Rand	NN	NOUN	Rand	Rand	Rand
 abgschnitten	VVPP	VERB	abgeschnitten	abschneiden	abschneiden
