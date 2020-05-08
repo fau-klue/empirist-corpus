@@ -6393,7 +6393,7 @@ Cholerabrunnen	NN	NOUN	Cholerabrunnen	Cholerabrunnen	Cholerabrunnen
 ,	$,	PUNCT	,	,	,
 zudem	PAV	ADV	zudem	zudem	zudem
 Qualität	NN	NOUN	Qualität	Qualität	Qualität
->	$(/XY	X	>	>	>	CLARIFY
+>	XY	X	>	>	>
 Quantität	NN	NOUN	Quantität	Quantität	Quantität
 .	$.	PUNCT	.	.	.
 </s>
@@ -18337,7 +18337,7 @@ will	VMFIN	AUX	will	wollen	wollen
 mit	PTKVZ	PART	mit	mit	mit
 sudeln	VVINF	VERB	sudeln	sudeln	sudeln
 "	$(	PUNCT	"	"	"
-&lt;-	$(/XY	X	&lt;-	&lt;-	&lt;-	CLARIFY
+&lt;-	XY	X	&lt;-	&lt;-	&lt;-
 Fachfrage	NN	NOUN	Fachfrage	Fachfrage	Fachfrage
 :	$.	PUNCT	:	:	:
 Lässt	VVFIN	VERB	lässt	lassen	lassen
@@ -18430,7 +18430,7 @@ gar	PTKIFG	ADV	gar	gar	gar
 nich	PTKNEG	PART	nicht	nich	nicht
 auf	PTKVZ	PART	auf	auf	auf
 "	$(	PUNCT	"	"	"
-&lt;-	$(/XY	X	&lt;-	&lt;-	&lt;-	CLARIFY
+&lt;-	XY	X	&lt;-	&lt;-	&lt;-
 also	ADV	ADV	also	also	also
 sowas	PIS	PRON	sowas	sowas	sowas
 ,	$,	PUNCT	,	,	,
@@ -18450,7 +18450,7 @@ mein	PPOSAT	DET	mein	mein	mein
 erster	ADJA	ADJ	erster	erster	erster
 tweed	NN	NOUN	Tweed	Tweed	Tweed
 "	$(	PUNCT	"	"	"
-&lt;-	$(/XY	X	&lt;-	&lt;-	&lt;-	CLARIFY
+&lt;-	XY	X	&lt;-	&lt;-	&lt;-
 Tweed	NN	NOUN	Tweed	Tweed	Tweed
 or	KON	CCONJ	or	or	or
 Tweet	NN	NOUN	Tweet	Tweet	Tweet
@@ -18463,7 +18463,7 @@ die	ART	DET	die	der	der
 Frage	NN	NOUN	Frage	Frage	Frage
 !	$.	PUNCT	!	!	!
 ;)	EMOASC	SYM	;)	;)	;)
-->	$(/XY	X	->	->	->	CLARIFY
+->	XY	X	->	->	->
 s.	VVIMP	VERB	s.	s.	s.
 http://tinyurl.com/65bd5ms	URL	PROPN	http://tinyurl.com/65bd5ms	http://tinyurl.com/65bd5ms	http://tinyurl.com/65bd5ms
 vs	APPR	ADP	vs	vs	vs
