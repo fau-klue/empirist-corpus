@@ -22798,7 +22798,7 @@ gerechtfertigt	ADJD	ADJ	gerechtfertigt	gerechtfertigt	gerechtfertigt
 und	KON	CCONJ	und	und	und
 zulässig	ADJD	ADJ	zulässig	zulässig	zulässig
 sein	VAINF	AUX	sein	sein	sein
-;	$(/$.	PUNCT	;	;	;	CLARIFY
+;	$.	PUNCT	;	;	;
 aber	KON	CCONJ	aber	aber	aber
 nur	ADV	ADV	nur	nur	nur
 ,	$,	PUNCT	,	,	,
