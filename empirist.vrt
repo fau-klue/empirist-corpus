@@ -4020,7 +4020,7 @@ sehr	PTKIFG	ADV	sehr	sehr	sehr
 instabil	ADJD	ADJ	instabil	instabil	instabil
 und	KON	CCONJ	und	und	und
 nicht	PTKNEG	PART	nicht	nicht	nicht
-wirklich	PTKMWL/ADJD	ADJ	wirklich	wirklich	wirklich	CLARIFY
+wirklich	PTKMWL	ADV	wirklich	wirklich	wirklich
 brauchbar	ADJD	ADJ	brauchbar	brauchbar	brauchbar
 .	$.	PUNCT	.	.	.
 </s>
@@ -6108,7 +6108,7 @@ ausfallen	VVINF	VERB	ausfallen	ausfallen	ausfallen
 </posting>
 <posting id="cmc_train_006_038" author="Participant_8" date="26. Okt., 21:42" origid="1354">
 <s>
-Klar	PTKANT/ADJD	ADJ	klar	klar	klar	CLARIFY
+Klar	PTKANT	PART	klar	klar	klar
 ,	$,	PUNCT	,	,	,
 warum	PWAV	ADV	warum	warum	warum
 nicht	PTKNEG	PART	nicht	nicht	nicht
@@ -6163,7 +6163,7 @@ ist	VAFIN	AUX	ist	sein	sein
 </s>
 <s>
 Ach	ITJ	INTJ	ach	ach	ach
-was	ITJ/PWS	PRON	was	was	was	CLARIFY
+was	ITJ	INTJ	was	was	was
 ,	$,	PUNCT	,	,	,
 Latein	NN	NOUN	Latein	Latein	Latein
 wird	VAFIN	AUX	wird	werden	werden
@@ -7808,7 +7808,7 @@ OpenBiblioJobs	NE	PROPN	OpenBiblioJobs	OpenBiblioJobs	OpenBiblioJobs
 </s>
 <s>
 03.	ADJA	ADJ	03.	03.	03.
-June	NN	NOUN	June	June	June
+June	FM	X	June	June	June
 2014	CARD	NUM	2014	2014	2014
 ·	$(	PUNCT	·	·	·
 1	CARD	NUM	1	1	1
@@ -7822,7 +7822,7 @@ Berichte	NN	NOUN	Berichte	Bericht	Bericht
 ·	$(	PUNCT	·	·	·
 Tags	NN	NOUN	Tags	Tag	Tag
 :	$.	PUNCT	:	:	:
-#bibtag14	HST/NE	PROPN	#bibtag14	#bibtag14	#bibtag14	CLARIFY
+#bibtag14	HST	X	#bibtag14	#bibtag14	#bibtag14
 ,	$,	PUNCT	,	,	,
 Bibliothekartag	NN	NOUN	Bibliothekartag	Bibliothekartag	Bibliothekartag
 ,	$,	PUNCT	,	,	,
@@ -15589,7 +15589,7 @@ heiraten	VVINF	VERB	heiraten	heiraten	heiraten
 </posting>
 <posting id="cmc_test_011_086" author="Lantonie" origid="1-352">
 <s>
-Ja	PTKANT/ITJ	INTJ	ja	ja	ja	CLARIFY
+Ja	ITJ	INTJ	ja	ja	ja
 ,	$,	PUNCT	,	,	,
 geht	VVFIN	VERB	geht	gehen	gehen
 denn	PTKMA	ADV	denn	denn	denn
@@ -16252,7 +16252,7 @@ boah	ITJ	INTJ	boah	boah	boah
 ...	$(	PUNCT	...	...	...
 ich	PPER	PRON	ich	ich	ich
 bekomm	VVFIN	VERB	bekomme	bekommen	bekommen
-echt	PTKMA/ADJD	ADJ	echt	echt	echt	CLARIFY
+echt	PTKMA	ADV	echt	echt	echt
 augenkrebs	NN	NOUN	Augenkrebs	Augenkrebs	Augenkrebs
 von	APPR	ADP	von	von	von
 bochum	NE	PROPN	Bochum	Bochum	Bochum
@@ -17648,7 +17648,7 @@ Sie	PPER	PRON	sie	sie	sie
 mich	PPER	PRON	mich	mich	mich
 jetzt	ADV	ADV	jetzt	jetzt	jetzt
 aber	PTKMA	ADV	aber	aber	aber
-echt	PTKMA/ADJD	ADJ	echt	echt	echt	CLARIFY
+echt	PTKMA	ADJ	echt	echt	echt
 erwischt	VVPP	VERB	erwischt	erwischen	erwischen
 @Kaf_fee	ADR	PROPN	@Kaf_fee	@Kaf_fee 	@Kaf_fee
 !	$.	PUNCT	!	!	!
@@ -18595,7 +18595,7 @@ nicht	PTKNEG	PART	nicht	nicht	nicht
 (	$(	PUNCT	(	(	(
 da	ADV	ADV	da	da	da
 ists	VAPPER	_	ists	sein	sein
-echt	PTKMA/ADJD	ADJ	echt	echt	echt	CLARIFY
+echt	PTKMA	ADV	echt	echt	echt
 immer	ADV	ADV	immer	immer	immer
 ziemlich	PTKIFG	ADV	ziemlich	ziemlich	ziemlich
 voll	ADJD	ADJ	voll	voll	voll
@@ -18740,7 +18740,7 @@ Hehe	ITJ	INTJ	hehe	hehe	hehe
 Wie	PWAV	ADV	wie	wie	wie
 es	PPER	PRON	es	es	es
 einfaach	ADJD	ADJ	einfach	einfaach	einfach
-total	PTKIFG/ADJD	ADJ	total	total	total	CLARIFY
+total	PTKIFG	ADJ	total	total	total
 geil	ADJD	ADJ	geil	geil	geil
 aussieht	VVFIN	VERB	aussieht	aussehen	aussehen
 ...	$.	PUNCT	...	...	...
@@ -18791,7 +18791,7 @@ Uuuh	ITJ	INTJ	uh	uuuh	uh
 Wir	PPER	PRON	wir	wir	wir
 müssen	VMFIN	AUX	müssen	müssen	müssen
 dann	ADV	ADV	dann	dann	dann
-wirklich	PTKMA/ADJD	ADJ	wirklich	wirklich	wirklich	CLARIFY
+wirklich	PTKMA	ADV	wirklich	wirklich	wirklich
 mal	ADV	ADV	mal	mal	mal
 ausrechnen	VVINF	VERB	ausrechnen	ausrechnen	ausrechnen
 ,	$,	PUNCT	,	,	,
@@ -23264,7 +23264,7 @@ nutzt	VVFIN	VERB	nutzt	nutzen	nutzen
 ,	$,	PUNCT	,	,	,
 das	PRELS	PRON	das	der	der
 vergleichsweise	ADV	ADV	vergleichsweise	vergleichsweise	vergleichsweise
-weit	PTKMWL/ADJD	ADJ	weit	weit	weit	CLARIFY
+weit	PTKMWL	ADV	weit	weit	weit
 weniger	PTKIFG	ADV	weniger	weniger	weniger
 anfällig	ADJD	ADJ	anfällig	anfällig	anfällig
 gegen	APPR	ADP	gegen	gegen	gegen
