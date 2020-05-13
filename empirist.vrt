@@ -1657,7 +1657,7 @@ mit	APPR	ADP	mit	mit	mit
 zwei	CARD	NUM	zwei	zwei	zwei
 neuen	ADJA	ADJ	neuen	neu	neu
 Projekten	NN	NOUN	Projekten	Projekt	Projekt
-weiter	ADJD/ADV	ADV	weiter	weit	weit	CLARIFY
+weiter	ADV	ADV	weiter	weiter	weiter
 fördern	VVINF	VERB	fördern	fördern	fördern
 .	$.	PUNCT	.	.	.
 </s>
@@ -2472,7 +2472,7 @@ meine	PPOSAT	DET	meine	mein	mein
 benehmennote	NN	NOUN	Benehmennote	Benehmennote	Benehmennote
 reden	VVFIN	VERB	reden	reden	reden
 wir	PPER	PRON	wir	wir	wir
-lieber	ADJD/ADV	ADV	lieber	lieb	lieb	CLARIFY
+lieber	ADV	ADV	lieber	lieber	lieber
 nicht	PTKNEG	PART	nicht	nicht	nicht
 </s>
 </posting>
@@ -5254,7 +5254,7 @@ siehe	VVIMP	VERB	siehe	sehen	sehen
 #tudwiki11	HST	X	#tudwiki11	#tudwiki11	#tudwiki11
 für	APPR	ADP	für	für	für
 Tweets	NN	NOUN	Tweets	Tweet	Tweet
-rund	ADJD/ADV	ADV	rund	rund	rund	CLARIFY
+rund	ADV	ADV	rund	rund	rund
 um	APPR	ADP	um	um	um
 den	ART	DET	den	der	der
 Workshop	NN	NOUN	Workshop	Workshop	Workshop
@@ -6339,7 +6339,7 @@ Fall	NN	NOUN	Fall	Fall	Fall
 )	$(	PUNCT	)	)	)
 nicht	PTKNEG	PART	nicht	nicht	nicht
 mehr	PTKMWL	ADV	mehr	mehr	mehr
-weiter	ADJD/ADV	ADV	weiter	weit	weit	CLARIFY
+weiter	ADJD	ADJ	weiter	weit	weit
 ausbauen	VVINF	VERB	ausbauen	ausbauen	ausbauen
 bzw.	KON	CCONJ	bzw.	bzw.	bzw.
 verbesser	VVINF	VERB	verbessern	verbesser	verbessern
@@ -11043,7 +11043,7 @@ dass	KOUS	SCONJ	dass	dass	dass
 wir	PPER	PRON	wir	wir	wir
 ab	APPR	ADP	ab	ab	ab
 morgen	ADV	ADV	morgen	morgen	morgen
-unbedingt	ADV/ADJD	ADJ	unbedingt	unbedingt	unbedingt	CLARIFY
+unbedingt	ADV	ADV	unbedingt	unbedingt	unbedingt
 unseren	PPOSAT	DET	unseren	unser	unser
 sauberen	ADJA	ADJ	sauberen	sauber	sauber
 ,	$,	PUNCT	,	,	,
@@ -11235,7 +11235,7 @@ ist	VAFIN	AUX	ist	sein	sein
 erst	ADV	ADV	erst	erst	erst
 100	CARD	NUM	100	100	100
 Meter	NN	NOUN	Meter	Meter	Meter
-weiter	ADV/ADJD	ADJ	weiter	weiter	weiter	CLARIFY
+weiter	ADV	ADV	weiter	weiter	weiter
 .	$.	PUNCT	.	.	.
 </s>
 <s>
@@ -12168,7 +12168,7 @@ genannt	VVPP	VERB	genannt	nennen	nennen
 <s>
 Kam	VVFIN	VERB	kam	kommen	kommen
 es	PPER	PRON	es	es	es
-früher	ADJD/ADV	ADV	früher	früh	früh	CLARIFY
+früher	ADV	ADV	früher	früher	früher
 durchschnittlich	ADJD	ADJ	durchschnittlich	durchschnittlich	durchschnittlich
 zu	APPR	ADP	zu	zu	zu
 einem	ART	DET	einem	ein	ein
@@ -14642,7 +14642,7 @@ Wer	PWS	PRON	wer	wer	wer
 Interesse	NN	NOUN	Interesse	Interesse	Interesse
 hat	VAFIN	AUX	hat	haben	haben
 ,	$,	PUNCT	,	,	,
-weiter	ADJD/ADV	ADV	weiter	weit	weit	CLARIFY
+weiter	ADV	ADV	weiter	weiter	weiter
 zu	PTKZU	PART	zu	zu	zu
 diskutieren	VVINF	VERB	diskutieren	diskutieren	diskutieren
 ,	$,	PUNCT	,	,	,
@@ -20122,7 +20122,7 @@ Ok	PTKANT	INTJ	o.k.	ok	o.k.
 </s>
 <s>
 Träum	VVIMP	VERB	träum	träumen	träumen
-weiter	ADJD/ADV	ADV	weiter	weit	weit	CLARIFY
+weiter	ADV	ADV	weiter	weiter	weiter
 :	$.	PUNCT	:	:	:
 er	PPER	PRON	er	er	er
 hat	VAFIN	AUX	hat	haben	haben
@@ -22200,7 +22200,7 @@ Mitteldeutschland	NE	PROPN	Mitteldeutschland	Mitteldeutschland	Mitteldeutschland
 wo	PWAV	ADV	wo	wo	wo
 er	PPER	PRON	er	er	er
 sich	PRF	PRON	sich	sich	sich
-ganz	ADV/ADJD	ADJ	ganz	ganz	ganz	CLARIFY
+ganz	ADV	ADV	ganz	ganz	ganz
 dem	ART	DET	dem	der	der
 mechanischen	ADJA	ADJ	mechanischen	mechanisch	mechanisch
 Tippen	NN	NOUN	Tippen	tippen	tippen
@@ -23331,7 +23331,7 @@ Windows	NE	PROPN	Windows	Windows	Windows
 Sobald	KOUS	SCONJ	sobald	sobald	sobald
 es	PPER	PRON	es	es	es
 sich	PRF	PRON	sich	sich	sich
-weiter	ADV/ADJD	ADJ	weiter	weiter	weiter	CLARIFY
+weiter	ADJD	ADJ	weiter	weit	weit
 verbreite	VVFIN	VERB	verbreite	verbreiten	verbreiten
 ,	$,	PUNCT	,	,	,
 müssten	VMFIN	AUX	müssten	müssen	müssen
@@ -23992,7 +23992,7 @@ stattfinden	VVFIN	VERB	stattfinden	stattfinden	stattfinden
 </s>
 <s>
 Dazu	PAV	ADV	dazu	dazu	dazu
-weiter	ADV/ADJD	ADJ	weiter	weiter	weiter	CLARIFY
+weiter	ADV	ADV	weiter	weiter	weiter
 unten	ADV	ADV	unten	unten	unten
 mehr	PIS	PRON	mehr	mehr	mehr
 .	$.	PUNCT	.	.	.
