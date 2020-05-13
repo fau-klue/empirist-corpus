@@ -13151,7 +13151,7 @@ ja	PTKANT	INTJ	ja	ja	ja
 </posting>
 <posting id="cmc_test_010_003" author="Student3" origid="SEM-68">
 <s>
-Also	DM/ADV	ADV	also	also	also	CLARIFY
+Also	DM	CCONJ	also	also	also
 ,	$,	PUNCT	,	,	,
 tschüss	ITJ	INTJ	tschüss	tschüss	tschüss
 ihr	PPER	PRON	ihr	ihr	ihr
@@ -16540,7 +16540,7 @@ ihrs	PPER	PRON	ihr	ihrs	ihr
 </posting>
 <posting id="cmc_test_011_191" author="nudelsuppenstern" origid="1-468">
 <s>
-Also	DM/ADV	ADV	also	also	also	CLARIFY
+Also	DM	CCONJ	also	also	also
 ,	$,	PUNCT	,	,	,
 nchmal	ADV	ADV	nochmal	nchmal	nochmal
 :	$.	PUNCT	:	:	:
@@ -18277,7 +18277,7 @@ anderen	PIS	PRON	anderen	anderer	anderer
 #semibk	HST	X	#semibk	#semibk	#semibk
 </s>
 <s>
-sooo	DM/ADV	ADV	so	sooo	so	CLARIFY
+sooo	DM	CCONJ	so	sooo	so
 ...	$(	PUNCT	...	...	...
 hier	ADV	ADV	hier	hier	hier
 der	ART	DET	der	der	der
@@ -18533,7 +18533,7 @@ nicht	PTKNEG	PART	nicht	nicht	nicht
 <s>
 Huhu	ITJ	INTJ	huhu	huhu	huhu
 !	$.	PUNCT	!	!	!
-Also	DM/ADV	ADV	also	also	also	CLARIFY
+Also	DM	CCONJ	also	also	also
 ich	PPER	PRON	ich	ich	ich
 hab	VAFIN	AUX	habe	haben	haben
 jetzt	ADV	ADV	jetzt	jetzt	jetzt
@@ -18748,7 +18748,7 @@ aussieht	VVFIN	VERB	aussieht	aussehen	aussehen
 </posting>
 <posting id="cmc_test_013_016" author="Participant_7" date="28. Okt., 13:25" origid="1384">
 <s>
-So	DM/ADV	ADV	so	so	so	CLARIFY
+So	DM	CCONJ	so	so	so
 jetzt	ADV	ADV	jetzt	jetzt	jetzt
 bricht	VVFIN	VERB	bricht	brechen	brechen
 nichts	PIS	PRON	nichts	nichts	nichts
@@ -19047,7 +19047,7 @@ ein	PTKVZ	PART	ein	ein	ein
 </posting>
 <posting id="cmc_test_013_038" author="Participant_8" date="30. Okt., 22:12" origid="1406">
 <s>
-So	DM/ADV	ADV	so	so	so	CLARIFY
+So	DM	CCONJ	so	so	so
 ,	$,	PUNCT	,	,	,
 zu	APPR	ADP	zu	zu	zu
 hause	NN	NOUN	Hause	Haus	Haus
