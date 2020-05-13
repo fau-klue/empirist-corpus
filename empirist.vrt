@@ -96,7 +96,7 @@ bewundern	VVINF	VERB	bewundern	bewundern	bewundern
 ;)	EMOASC	SYM	;)	;)	;)
 </s>
 <s>
-Echt	PTKIFG/ADJD	ADJ	echt	echt	echt	CLARIFY
+Echt	PTKIFG	ADV	echt	echt	echt
 stark	ADJD	ADJ	stark	stark	stark
 für	APPR	ADP	für	für	für
 dein	PPOSAT	DET	dein	dein	dein
@@ -5854,7 +5854,7 @@ dabei	PAV	ADV	dabei	dabei	dabei
 hab	VAFIN	AUX	habe	haben	haben
 ich	PPER	PRON	ich	ich	ich
 mit	PRF	PRON	mir	sich	sich
-voll	PTKIFG/ADJD	ADJ	voll	voll	voll	CLARIFY
+voll	PTKIFG	ADV	voll	voll	voll
 Mühe	NN	NOUN	Mühe	Mühe	Mühe
 gegeben	VVPP	VERB	gegeben	geben	geben
 .	$.	PUNCT	.	.	.
@@ -6613,7 +6613,7 @@ nur	PTKIFG	ADV	nur	nur	nur
 ein	ART	DET	ein	ein	ein
 Satz	NN	NOUN	Satz	Satz	Satz
 "	$(	PUNCT	"	"	"
-völlig	PTKIFG/ADJD	ADJ	völlig	völlig	völlig	CLARIFY
+völlig	PTKIFG	ADV	völlig	völlig	völlig
 ungefährlich	ADJD	ADJ	ungefährlich	ungefährlich	ungefährlich
 "	$(	PUNCT	"	"	"
 .	$.	PUNCT	.	.	.
@@ -7126,7 +7126,7 @@ diese	PDAT	DET	diese	dieser	dieser
 Diskussion	NN	NOUN	Diskussion	Diskussion	Diskussion
 mal	PTKMA	ADV	mal	mal	mal
 wieder	ADV	ADV	wieder	wieder	wieder
-völlig	PTKIFG/ADJD	ADJ	völlig	völlig	völlig	CLARIFY
+völlig	PTKIFG	ADV	völlig	völlig	völlig
 sinnlos	ADJD	ADJ	sinnlos	sinnlos	sinnlos
 .	$.	PUNCT	.	.	.
 </s>
@@ -9392,7 +9392,7 @@ außerhalb	APPR	ADP	außerhalb	außerhalb	außerhalb
 Nordeuropas	NE	PROPN	Nordeuropas	Nordeuropa	Nordeuropa
 muß	VMFIN	AUX	muss	müssen	müssen
 Empfindliches	NN	NOUN	Empfindliches	empfindliche	empfindliche
-extrem	PTKIFG/ADJD	ADJ	extrem	extrem	extrem	CLARIFY
+extrem	PTKIFG	ADV	extrem	extrem	extrem
 gut	ADJD	ADJ	gut	gut	gut
 verpackt	VVPP	VERB	verpackt	verpacken	verpacken
 sein	VAINF	AUX	sein	sein	sein
@@ -9567,7 +9567,7 @@ sind	VAFIN	AUX	sind	sein	sein
 in	APPR	ADP	in	in	in
 vielen	PIAT	ADJ	vielen	vieler	vieler
 Gegenden	NN	NOUN	Gegenden	Gegend	Gegend
-extrem	PTKIFG/ADJD	ADJ	extrem	extrem	extrem	CLARIFY
+extrem	PTKIFG	ADV	extrem	extrem	extrem
 günstig	ADJD	ADJ	günstig	günstig	günstig
 und	KON	CCONJ	und	und	und
 teils	ADV	ADV	teils	teils	teils
@@ -9578,7 +9578,7 @@ landestypisch	ADJD	ADJ	landestypisch	landestypisch	landestypisch
 Pralinen	NN	NOUN	Pralinen	Praline	Praline
 sind	VAFIN	AUX	sind	sein	sein
 oft	ADV	ADV	oft	oft	oft
-extrem	PTKIFG/ADJD	ADJ	extrem	extrem	extrem	CLARIFY
+extrem	PTKIFG	ADV	extrem	extrem	extrem
 billig	ADJD	ADJ	billig	billig	billig
 (	$(	PUNCT	(	(	(
 1	CARD	NUM	1	1	1
@@ -18567,7 +18567,7 @@ mit	PTKVZ	PART	mit	mit	mit
 Ja	PTKANT	INTJ	ja	ja	ja
 ,	$,	PUNCT	,	,	,
 ist	VAFIN	AUX	ist	sein	sein
-echt	PTKIFG/ADJD	ADJ	echt	echt	echt	CLARIFY
+echt	PTKIFG	ADV	echt	echt	echt
 blöde	ADJD	ADJ	blöde	blöd	blöd
 ...	$(	PUNCT	...	...	...
 aber	KON	CCONJ	aber	aber	aber
@@ -19340,7 +19340,7 @@ aus	PTKVZ	PART	aus	aus	aus
 Das	ART	DET	das	der	der
 Metallspray	NN	NOUN	Metallspray	Metallspray	Metallspray
 ist	VAFIN	AUX	ist	sein	sein
-total	PTKIFG/ADJD	ADJ	total	total	total	CLARIFY
+total	PTKIFG	ADV	total	total	total
 geil	ADJD	ADJ	geil	geil	geil
 .	$.	PUNCT	.	.	.
 😍	EMOIMG	SYM	😍	😍	😍
@@ -19433,7 +19433,7 @@ darf	VMFIN	AUX	darf	dürfen	dürfen
 man	PIS	PRON	man	man	man
 sie	PPER	PRON	sie	sie	sie
 nicht	PTKNEG	PART	nicht	nicht	nicht
-zu	PTKIFG/PTKA	PART	zu	zu	zu	CLARIFY
+zu	PTKIFG	ADV	zu	zu	zu
 doll	ADJD	ADJ	doll	doll	doll
 stören	VVINF	VERB	stören	stören	stören
 )	$(	PUNCT	)	)	)
@@ -20359,7 +20359,7 @@ Phis	NE	PROPN	Phis	Phi	Phi
 ständigem	ADJA	ADJ	ständigem	ständig	ständig
 Revertieren	NN	NOUN	Revertieren	revertieren	revertieren
 war	VAFIN	AUX	war	sein	sein
-völlig	PTKIFG/ADJD	ADJ	völlig	völlig	völlig	CLARIFY
+völlig	PTKIFG	ADJ	völlig	völlig	völlig
 sinnlos	ADJD	ADJ	sinnlos	sinnlos	sinnlos
 .	$.	PUNCT	.	.	.
 </s>
@@ -22893,7 +22893,7 @@ Gestaltungsfreiheit	NN	NOUN	Gestaltungsfreiheit	Gestaltungsfreiheit	Gestaltungsf
 <s>
 Er	PPER	PRON	er	er	er
 kann	VMFIN	AUX	kann	können	können
-weitgehend	PTKIFG/ADJD	ADJ	weitgehend	weitgehend	weitgehend	CLARIFY
+weitgehend	PTKIFG	ADJ	weitgehend	weitgehend	weitgehend
 selbstständig	ADJD	ADJ	selbstständig	selbstständig	selbstständig
 entscheiden	VVINF	VERB	entscheiden	entscheiden	entscheiden
 ,	$,	PUNCT	,	,	,
@@ -25456,7 +25456,7 @@ das	ART	DET	das	der	der
 eine	ADJA	ADJ	eine	ein	ein
 oder	KON	CCONJ	oder	oder	oder
 andere	ADJA	ADJ	andere	anderer	anderer
-wirklich	PTKIFG/ADJD	ADJ	wirklich	wirklich	wirklich	CLARIFY
+wirklich	PTKIFG	ADV	wirklich	wirklich	wirklich
 schöne	ADJA	ADJ	schöne	schön	schön
 Déjà	NN	NOUN	Déjà	Déjà	Déjà
 vu	NN	NOUN	vu	vu	vu
@@ -25897,7 +25897,7 @@ gelungen	VVPP	VERB	gelungen	gelingen	gelingen
 </s>
 <s>
 Ein	ART	DET	ein	ein	ein
-wirklich	PTKIFG/ADJD	ADJ	wirklich	wirklich	wirklich	CLARIFY
+wirklich	PTKIFG	ADV	wirklich	wirklich	wirklich
 schöner	ADJA	ADJ	schöner	schön	schön
 Laden	NN	NOUN	Laden	Laden	Laden
 ,	$,	PUNCT	,	,	,
@@ -27716,7 +27716,7 @@ sich	PRF	PRON	sich	sich	sich
 die	ART	DET	die	der	der
 Anlage	NN	NOUN	Anlage	Anlage	Anlage
 als	APPR	ADP	als	als	als
-völlig	PTKIFG/ADJD	ADJ	völlig	völlig	völlig	CLARIFY
+völlig	PTKIFG	ADJ	völlig	völlig	völlig
 unzureichend	ADJD	ADJ	unzureichend	unzureichend	unzureichend
 ,	$,	PUNCT	,	,	,
 und	KON	CCONJ	und	und	und
