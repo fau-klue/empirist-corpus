@@ -1355,17 +1355,17 @@ nicht	PTKNEG	PART	nicht	nicht	nicht
 aufschieben	VVINF	VERB	aufschieben	aufschieben	aufschieben
 ,	$,	PUNCT	,	,	,
 aus	APPR	ADP	aus	aus	aus
-förder	FM/VVFIN	VERB	förder	förder	förder	CLARIFY
+förder	VVINF	VERB	förder	förder	förder
 gebildet	VVPP	VERB	gebildet	bilden	bilden
 ,	$,	PUNCT	,	,	,
 wie	KOKOM	ADP	wie	wie	wie
 fürdern	VVINF	VERB	fürdern	fürdern	fürdern
 aus	APPR	ADP	aus	aus	aus
-fürder	FM/VVFIN	VERB	fürder	fürder	fürder	CLARIFY
+fürder	VVINF	VERB	fürder	fürder	fürder
 ,	$,	PUNCT	,	,	,
 fordern	VVINF	VERB	fordern	fordern	fordern
 aus	APPR	ADP	aus	aus	aus
-forder	FM/VVFIN	VERB	forder	forder	forder	CLARIFY
+forder	VVINF	VERB	forder	forder	forder
 .	$.	PUNCT	.	.	.
 </s>
 <s>
@@ -1432,7 +1432,7 @@ mihd.	ADJA	ADJ	mhd.	mihd.	mhd.
 fürdern	VVINF	VERB	fürdern	fürdern	fürdern
 ,	$,	PUNCT	,	,	,
 aus	APPR	ADP	aus	aus	aus
-fürder	FM/VVFIN	VERB	fürder	fürder	fürder	CLARIFY
+fürder	VVINF	VERB	fürder	fürder	fürder
 )	$(	PUNCT	)	)	)
 </s>
 </posting>
@@ -1460,7 +1460,7 @@ interessant	ADJD	ADJ	interessant	interessant	interessant
 </posting>
 <posting id="cmc_train_002_080" author="Student3" origid="SEM-31">
 <s>
-fürder	FM/VVFIN	VERB	fürder	fürder	fürder	CLARIFY
+fürder	VVINF	VERB	fürder	fürder	fürder
 ,	$,	PUNCT	,	,	,
 seh	VVFIN	VERB	sehe	sehen	sehen
 ich	PPER	PRON	ich	ich	ich
