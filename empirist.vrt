@@ -7810,16 +7810,16 @@ OpenBiblioJobs	NE	PROPN	OpenBiblioJobs	OpenBiblioJobs	OpenBiblioJobs
 03.	ADJA	ADJ	03.	03.	03.
 June	NN	NOUN	June	June	June
 2014	CARD	NUM	2014	2014	2014
-·	$./$(	PUNCT	·	·	·	CLARIFY
+·	$(	PUNCT	·	·	·
 1	CARD	NUM	1	1	1
 Kommentar	NN	NOUN	Kommentar	Kommentar	Kommentar
-·	$./$(	PUNCT	·	·	·	CLARIFY
+·	$(	PUNCT	·	·	·
 Kategorien	NN	NOUN	Kategorien	Kategorie	Kategorie
 :	$.	PUNCT	:	:	:
 Veranstaltungen	NN	NOUN	Veranstaltungen	Veranstaltung	Veranstaltung
 /	$(	PUNCT	/	/	/
 Berichte	NN	NOUN	Berichte	Bericht	Bericht
-·	$./$(	PUNCT	·	·	·	CLARIFY
+·	$(	PUNCT	·	·	·
 Tags	NN	NOUN	Tags	Tag	Tag
 :	$.	PUNCT	:	:	:
 #bibtag14	HST/NE	PROPN	#bibtag14	#bibtag14	#bibtag14	CLARIFY
@@ -8482,11 +8482,11 @@ OS	NN	NOUN	OS	OS	OS
 by	FM	X	by	by	by
 Claus	NE	PROPN	Claus	Claus	Claus
 Hesseling	NE	PROPN	Hesseling	Hesseling	Hesseling
-·	$./$(	PUNCT	·	·	·	CLARIFY
+·	$(	PUNCT	·	·	·
 14.	ADJA	ADJ	14.	14.	14.
 Mai	NN	NOUN	Mai	Mai	Mai
 2012	CARD	NUM	2012	2012	2012
-·	$./$(	PUNCT	·	·	·	CLARIFY
+·	$(	PUNCT	·	·	·
 4	CARD	NUM	4	4	4
 comments	FM	X	comments	comments	comments
 </s>
@@ -8795,11 +8795,11 @@ Wettbewerbsverzerrung	NN	NOUN	Wettbewerbsverzerrung	Wettbewerbsverzerrung	Wettbe
 by	FM	X	by	by	by
 Claus	NE	PROPN	Claus	Claus	Claus
 Hesseling	NE	PROPN	Hesseling	Hesseling	Hesseling
-·	$./$(	PUNCT	·	·	·	CLARIFY
+·	$(	PUNCT	·	·	·
 21.	ADJA	ADJ	21.	21.	21.
 Juni	NN	NOUN	Juni	Juni	Juni
 2011	CARD	NUM	2011	2011	2011
-·	$./$(	PUNCT	·	·	·	CLARIFY
+·	$(	PUNCT	·	·	·
 20	CARD	NUM	20	20	20
 comments	FM	X	comments	comments	comments
 </s>
@@ -28859,7 +28859,7 @@ AES-NI-Instruktionen	NN	NOUN	AES-NI-Instruktionen	AES-NI-Instruktion	AES-NI-Inst
 </s>
 <s>
 security/verschlüsselung.txt	URL	PROPN	security/verschlüsselung.txt	security/verschlüsselung.txt	security/verschlüsselung.txt
-·	$./$(	PUNCT	·	·	·	CLARIFY
+·	$(	PUNCT	·	·	·
 Zuletzt	ADV	ADV	zuletzt	zuletzt	zuletzt
 geändert	VVPP	VERB	geändert	ändern	ändern
 :	$.	PUNCT	:	:	:
