@@ -3726,7 +3726,7 @@ von	APPR	ADP	von	von	von
 intererent	NE	PROPN	InterRent	Intererent	InterRent
 und	KON	CCONJ	und	und	und
 ein	ART	DET	ein	ein	ein
-paar	PIAT	ADJ	paar	paar	paar	CLARIFY
+paar	PIAT	ADJ	paar	paar	paar
 leute	NN	NOUN	Leute	Leute	Leute
 zum	APPRART	_	zum	zu	zu
 anpacken	NN	NOUN	Anpacken	anpacken	anpacken
@@ -4600,7 +4600,7 @@ her	APZR	ADP	her	her	her
 ja	PTKMA	ADV	ja	ja	ja
 auch	PTKMA	ADV	auch	auch	auch
 ein	ART	DET	ein	ein	ein
-wenig	PIAT	ADJ	wenig	wenig	wenig	CLARIFY
+wenig	PIAT	ADJ	wenig	wenig	wenig
 Vorsatz	NN	NOUN	Vorsatz	Vorsatz	Vorsatz
 dabei	PAV	ADV	dabei	dabei	dabei
 ,	$,	PUNCT	,	,	,
@@ -6492,7 +6492,7 @@ machen	VVINF	VERB	machen	machen	machen
 <s>
 Trotzdem	PAV	ADV	trotzdem	trotzdem	trotzdem
 ein	ART	DET	ein	ein	ein
-paar	PIAT	ADJ	paar	paar	paar	CLARIFY
+paar	PIAT	ADJ	paar	paar	paar
 Anmerkungen	NN	NOUN	Anmerkungen	Anmerkung	Anmerkung
 :	$.	PUNCT	:	:	:
 1.	ADV	ADV	1.	1.	1.
@@ -6506,14 +6506,14 @@ haben	VAFIN	AUX	haben	haben	haben
 wir	PPER	PRON	wir	wir	wir
 vor	APPR	ADP	vor	vor	vor
 ein	ART	DET	ein	ein	ein
-paar	PIAT	ADJ	paar	paar	paar	CLARIFY
+paar	PIAT	ADJ	paar	paar	paar
 Wochen	NN	NOUN	Wochen	Woche	Woche
 abgeschafft	VVPP	VERB	abgeschafft	abschaffen	abschaffen
 ,	$,	PUNCT	,	,	,
 da	KOUS	SCONJ	da	da	da
 sich	PRF	PRON	sich	sich	sich
 die	ART	DET	die	der	der
-vielen	PIAT	ADJ	vielen	vieler	vieler	CLARIFY
+vielen	PIAT	ADJ	vielen	vieler	vieler
 verschiedenen	ADJA	ADJ	verschiedenen	verschieden	verschieden
 Tiere	NN	NOUN	Tiere	Tier	Tier
 nicht	PTKNEG	PART	nicht	nicht	nicht
@@ -17135,7 +17135,7 @@ sind	VAFIN	AUX	sind	sein	sein
 aber	ADV	ADV	aber	aber	aber
 nach	APPR	ADP	nach	nach	nach
 ein	ART	DET	ein	ein	ein
-paar	PIAT	ADJ	paar	paar	paar	CLARIFY
+paar	PIAT	ADJ	paar	paar	paar
 Tagen	NN	NOUN	Tagen	Tag	Tag
 nur	PTKIFG	ADV	nur	nur	nur
 noch	PTKMWL	ADV	noch	noch	noch
@@ -18204,7 +18204,7 @@ jetzt	ADV	ADV	jetzt	jetzt	jetzt
 mal	PTKMA	ADV	mal	mal	mal
 noch	ADV	ADV	noch	noch	noch
 ein	ART	DET	ein	ein	ein
-paar	PIAT	ADJ	paar	paar	paar	CLARIFY
+paar	PIAT	ADJ	paar	paar	paar
 Tweets	NN	NOUN	Tweets	Tweet	Tweet
 beantworten	VVINF	VERB	beantworten	beantworten	beantworten
 .	$.	PUNCT	.	.	.
@@ -18874,7 +18874,7 @@ hole	VVFIN	VERB	hole	holen	holen
 uns	PPER	PRON	uns	uns	uns
 noch	ADV	ADV	noch	noch	noch
 ein	ART	DET	ein	ein	ein
-paar	PIAT	ADJ	paar	paar	paar	CLARIFY
+paar	PIAT	ADJ	paar	paar	paar
 Donuts	NN	NOUN	Donuts	Donut	Donut
 .	$.	PUNCT	.	.	.
 ☺	EMOIMG	SYM	☺	☺	☺
@@ -18938,7 +18938,7 @@ Guti	ADJD	ADJ	gut	guti	gut
 ich	PPER	PRON	ich	ich	ich
 komme	VVFIN	VERB	komme	kommen	kommen
 ein	ART	DET	ein	ein	ein
-paar	PIAT	ADJ	paar	paar	paar	CLARIFY
+paar	PIAT	ADJ	paar	paar	paar
 minuten	NN	NOUN	Minuten	Minute	Minute
 später	ADJD	ADJ	später	spät	spät
 ,	$,	PUNCT	,	,	,
