@@ -9870,7 +9870,7 @@ gehen	VVINF	VERB	gehen	gehen	gehen
 meist	ADV	ADV	meist	meist	meist
 wird	VAFIN	AUX	wird	werden	werden
 man	PIS	PRON	man	man	man
-zurück	PTKVZ	PART	zurück	zurück	zurück
+zurück	ADV	ADV	zurück	zurück	zurück
 gerufen	VVPP	VERB	gerufen	rufen	rufen
 ...	$./$(	PUNCT	...	...	...	CLARIFY
 </s>
@@ -9993,7 +9993,7 @@ checken	VVINF	VERB	checken	checken	checken
 <s>
 Bei	APPR	ADP	bei	bei	bei
 Leuten	NN	NOUN	Leuten	Leute	Leute
-zurück	PTKVZ	PART	zurück	zurück	zurück
+zurück	ADV	ADV	zurück	zurück	zurück
 melden	VVINF	VERB	melden	melden	melden
 ,	$,	PUNCT	,	,	,
 Mitbringsel	NN	NOUN	Mitbringsel	Mitbringsel	Mitbringsel
@@ -18334,7 +18334,7 @@ Sudelbuch-Seminar	NN	NOUN	Sudelbuch-Seminar	Sudelbuch-Seminar	Sudelbuch-Seminar
 -	$(	PUNCT	-	-	-
 wer	PWS	PRON	wer	wer	wer
 will	VMFIN	AUX	will	wollen	wollen
-mit	PTKVZ	PART	mit	mit	mit
+mit	ADV	ADV	mit	mit	mit
 sudeln	VVINF	VERB	sudeln	sudeln	sudeln
 "	$(	PUNCT	"	"	"
 &lt;-	XY	X	&lt;-	&lt;-	&lt;-
@@ -18615,7 +18615,7 @@ soll	VMFIN	AUX	soll	sollen	sollen
 ich	PPER	PRON	ich	ich	ich
 dann	ADV	ADV	dann	dann	dann
 eigentlich	PTKMA	ADV	eigentlich	eigentlich	eigentlich
-rum	PTKVZ	PART	rum	rum	rum
+rum	ADV	ADV	rum	rum	rum
 kommen	VVFIN	VERB	kommen	kommen	kommen
 ?	$.	PUNCT	?	?	?
 ;)	EMOASC	SYM	;)	;)	;)
@@ -20322,7 +20322,7 @@ Müll	NN	NOUN	Müll	Müll	Müll
 weil	KOUS	SCONJ	weil	weil	weil
 der	ART	DET	der	der	der
 Zusammenhang	NN	NOUN	Zusammenhang	Zusammenhang	Zusammenhang
-verloren	ADJD/PTKVZ	PART	verloren	verloren	verloren	CLARIFY
+verloren	ADJD	ADJ	verloren	verloren	verloren
 geht	VVFIN	VERB	geht	gehen	gehen
 -	$(	PUNCT	-	-	-
 basta	ITJ	INTJ	basta	basta	basta
@@ -25811,7 +25811,7 @@ suchen	VVFIN	VERB	suchen	suchen	suchen
 .	$.	PUNCT	.	.	.
 </s>
 <s>
-Hinzu	PTKVZ	PART	hinzu	hinzu	hinzu
+Hinzu	ADV	ADV	hinzu	hinzu	hinzu
 kommt	VVFIN	VERB	kommt	kommen	kommen
 ,	$,	PUNCT	,	,	,
 dass	KOUS	SCONJ	dass	dass	dass
@@ -25831,7 +25831,7 @@ Designer	NN	NOUN	Designer	Designer	Designer
 mit	APPR	ADP	mit	mit	mit
 denen	PRELS	PRON	denen	der	der
 sie	PPER	PRON	sie	sie	sie
-zusammen	PTKVZ	PART	zusammen	zusammen	zusammen
+zusammen	ADV	ADV	zusammen	zusammen	zusammen
 arbeitet	VVFIN	VERB	arbeitet	arbeiten	arbeiten
 nach	APPR	ADP	nach	nach	nach
 Möglichkeit	NN	NOUN	Möglichkeit	Möglichkeit	Möglichkeit
@@ -28299,7 +28299,7 @@ werden	VAINF	AUX	werden	werden	werden
 <s>
 Wenn	KOUS	SCONJ	wenn	wenn	wenn
 er	PPER	PRON	er	er	er
-verloren	VVPP/PTKVZ/ADJD	PART	verloren	verlieren	verlieren	CLARIFY
+verloren	ADJD	ADJD	verloren	verloren	verloren
 geht	VVFIN	VERB	geht	gehen	gehen
 kann	VMFIN	AUX	kann	können	können
 man	PIS	PRON	man	man	man
