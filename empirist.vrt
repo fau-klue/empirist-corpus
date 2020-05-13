@@ -13,7 +13,7 @@ einem	ART	DET	einem	ein	ein
 spannend-amüsanten	ADJA	ADJ	spannend-amüsanten	spannend-amüsant	spannend-amüsant
 Ausflug	NN	NOUN	Ausflug	Ausflug	Ausflug
 an	PTKVZ	PART	an	an	an
-…	$(	PUNCT	…	…	…
+…	$.	PUNCT	…	…	…
 .	$.	PUNCT	.	.	.
 </s>
 <s>
@@ -54,7 +54,7 @@ die	ART	DET	die	der	der
 Seite	NN	NOUN	Seite	Seite	Seite
 kenne	VVFIN	VERB	kenne	kennen	kennen
 ich	PPER	PRON	ich	ich	ich
-…	$./$(	PUNCT	…	…	…	CLARIFY
+…	$.	PUNCT	…	…	…
 ;-)	EMOASC	SYM	;-)	;-)	;-)
 </s>
 </posting>
@@ -479,7 +479,7 @@ Funknetz	NN	NOUN	Funknetz	Funknetz	Funknetz
 </s>
 <s>
 Doch	KON	CCONJ	doch	doch	doch
-...	$(/$.	PUNCT	...	...	...	CLARIFY
+...	$(	PUNCT	...	...	...
 </s>
 </posting>
 <posting id="cmc_train_002_004" author="AUSKUNFT" origid="UB1-4">
@@ -2253,7 +2253,7 @@ ich	PPER	PRON	ich	ich	ich
 mal	PTKMA	ADV	mal	mal	mal
 wieder	ADV	ADV	wieder	wieder	wieder
 nich	PTKNEG	PART	nicht	nich	nicht
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 </s>
 </posting>
 <posting id="cmc_train_003_049" author="quaki" origid="1-57">
@@ -2291,7 +2291,7 @@ fürn	APPRART	_	fürn	für	für
 krawall	NN	NOUN	Krawall	Krawall	Krawall
 hier	ADV	ADV	hier	hier	hier
 draußen	ADV	ADV	draußen	draußen	draußen
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 *	$(	PUNCT	*	*	*
 guck	AKW	VERB	guck	guck	guck
 *	$(	PUNCT	*	*	*
@@ -2419,7 +2419,7 @@ etwa	ADV	ADV	etwa	etwa	etwa
 m	NN	NOUN	m	m	m
 weg	ADV	ADV	weg	weg	weg
 is	VAFIN	AUX	ist	sein	sein
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 </s>
 </posting>
 <posting id="cmc_train_003_068" author="stoeps" origid="1-79">
@@ -2632,7 +2632,7 @@ tatsächlich	ADJD	ADJ	tatsächlich	tatsächlich	tatsächlich
 was	PIAT	DET	was	was	was
 verdauliches	NN	NOUN	Verdauliches	verdauliche	verdauliche
 gegessen	VVPP	VERB	gegessen	essen	essen
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 :)	EMOASC	SYM	:)	:)	:)
 </s>
 </posting>
@@ -2797,7 +2797,7 @@ flocken	NN	NOUN	Flocken	Flocke	Flocke
 von	APPR	ADP	von	von	von
 sich	PRF	PRON	sich	sich	sich
 wirft	VVFIN	VERB	wirft	werfen	werfen
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 </s>
 </posting>
 <posting id="cmc_train_003_115" author="quaki" origid="1-130">
@@ -2855,7 +2855,7 @@ noch	ADV	ADV	noch	noch	noch
 ein	ART	DET	ein	ein	ein
 bein	NN	NOUN	Bein	Bein	Bein
 heraus	PTKVZ	PART	heraus	heraus	heraus
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 </s>
 </posting>
 <posting id="cmc_train_003_120" author="quaki" origid="1-136">
@@ -3193,7 +3193,7 @@ großzügig	ADJD	ADJ	großzügig	großzügig	großzügig
 quaki	NE	PROPN	quaki	quaki	quaki
 manchmal	ADV	ADV	manchmal	manchmal	manchmal
 ist	VAFIN	AUX	ist	sein	sein
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 </s>
 </posting>
 <posting id="cmc_train_003_153" author="Emon" origid="1-170">
@@ -3758,7 +3758,7 @@ kreativ	ADJD	ADJ	kreativ	kreativ	kreativ
 <s>
 re	ITJ	INTJ	re	re	re
 stoeps	NE	PROPN	stoeps	stoeps	stoeps
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 </s>
 </posting>
 <posting id="cmc_train_003_219" author="Lantonie" origid="1-241">
@@ -4028,7 +4028,7 @@ brauchbar	ADJD	ADJ	brauchbar	brauchbar	brauchbar
 Tut	VVFIN	VERB	tut	tun	tun
 uns	PPER	PRON	uns	uns	uns
 leid	PTKVZ	PART	leid	leid	leid
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 </s>
 <s>
 #dtaclarin14	HST	X	#dtaclarin14	#dtaclarin14	#dtaclarin14
@@ -4046,7 +4046,7 @@ im	APPRART	_	im	in	in
 fehlt	VVFIN	VERB	fehlt	fehlen	fehlen
 :	$.	PUNCT	:	:	:
 http://de.m.wikipedia.org/wiki/Troll_(Netzkultur)	URL	PROPN	http://de.m.wikipedia.org/wiki/troll_(netzkultur)	http://de.m.wikipedia.org/wiki/troll_(netzkultur)	http://de.m.wikipedia.org/wiki/troll_(netzkultur)
-…	$./$(	PUNCT	…	…	…	CLARIFY
+…	$.	PUNCT	…	…	…
 #dtaclarin14	HST	X	#dtaclarin14	#dtaclarin14	#dtaclarin14
 </s>
 </posting>
@@ -5176,7 +5176,7 @@ am	APPRART	_	am	an	an
 Fall	NN	NOUN	Fall	Fall	Fall
 Guttenberg	NE	PROPN	Guttenberg	Guttenberg	Guttenberg
 besteht	VVFIN	VERB	besteht	bestehen	bestehen
-...	$(	PUNCT	...	...	...
+...	$.	PUNCT	...	...	...
 </s>
 <s>
 http://tinyurl.com/69a4tny	URL	PROPN	http://tinyurl.com/69a4tny	http://tinyurl.com/69a4tny	http://tinyurl.com/69a4tny
@@ -7310,7 +7310,9 @@ nu	PTKMWL	ADV	nun	nu	nun
 mal	PTKMA	ADV	mal	mal	mal
 gar	PTKIFG	ADV	gar	gar	gar
 nix	PIS	PRON	nix	nix	nix
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
+</s>
+<s>
 schon	PTKMWL	ADV	schon	schon	schon
 mal	PTKMA	ADV	mal	mal	mal
 was	PIS	PRON	was	was	was
@@ -9636,7 +9638,7 @@ Fruchtsuppe	NN	NOUN	Fruchtsuppe	Fruchtsuppe	Fruchtsuppe
 ,	$,	PUNCT	,	,	,
 Schoko-Raspeln	NN	NOUN	Schoko-Raspeln	Schoko-Raspel	Schoko-Raspel
 ,	$,	PUNCT	,	,	,
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 </s>
 <s>
 Ggf.	ADV	ADV	ggf.	ggf.	ggf.
@@ -9872,7 +9874,7 @@ wird	VAFIN	AUX	wird	werden	werden
 man	PIS	PRON	man	man	man
 zurück	ADV	ADV	zurück	zurück	zurück
 gerufen	VVPP	VERB	gerufen	rufen	rufen
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 </s>
 <s>
 Sehr	PTKIFG	ADV	sehr	sehr	sehr
@@ -13542,7 +13544,7 @@ Lieferländer	NN	NOUN	Lieferländer	Lieferland	Lieferland
 nicht	PTKNEG	PART	nicht	nicht	nicht
 nur	PTKIFG	ADV	nur	nur	nur
 für	APPR	ADP	für	für	für
-..	$(/$.	PUNCT	..	..	..	CLARIFY
+..	$(	PUNCT	..	..	..
 </s>
 </posting>
 <posting id="cmc_test_010_031" author="Kolja Raube" origid="231">
@@ -14187,7 +14189,7 @@ Dienstaufsicht	NN	NOUN	Dienstaufsicht	Dienstaufsicht	Dienstaufsicht
 Parlament	NN	NOUN	Parlament	Parlament	Parlament
 ,	$,	PUNCT	,	,	,
 Gerichte	NN	NOUN	Gerichte	Gericht	Gericht
-....	$(/$.	PUNCT	....	....	....	CLARIFY
+....	$(	PUNCT	....	....	....
 </s>
 </posting>
 <posting id="cmc_test_010_060" author="Günther Beckstein" origid="260">
@@ -14944,7 +14946,7 @@ marc	NE	PROPN	Marc	Marc	Marc
 <s>
 na	ITJ	INTJ	na	na	na
 okay	PTKANT	INTJ	okay	okay	okay
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 *	$(	PUNCT	*	*	*
 1	CARD	NUM	1	1	1
 anne	APPRART	_	anne	an	an
@@ -15928,7 +15930,9 @@ zora	NE	PROPN	Zora	Zora	Zora
 is	VAFIN	AUX	ist	sein	sein
 nich	PTKNEG	PART	nicht	nich	nicht
 lesbisch	ADJD	ADJ	lesbisch	lesbisch	lesbisch
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
+</s>
+<s>
 sie	PPER	PRON	sie	sie	sie
 mag	VMFIN	AUX	mag	mögen	mögen
 auch	PTKIFG	ADV	auch	auch	auch
@@ -16076,7 +16080,7 @@ rückwärts	ADV	ADV	rückwärts	rückwärts	rückwärts
 <posting id="cmc_test_011_139" author="mieze" origid="1-407">
 <s>
 aha	ITJ	INTJ	aha	aha	aha
-..	$,/$(	PUNCT	..	..	..	CLARIFY
+..	$(	PUNCT	..	..	..
 den	ART	DET	den	der	der
 Günther	NE	PROPN	Günther	Günther	Günther
 also	ADV	ADV	also	also	also
@@ -16196,7 +16200,7 @@ ach	ITJ	INTJ	ach	ach	ach
 ja	PTKANT	INTJ	ja	ja	ja
 ..	$(	PUNCT	..	..	..
 zora	NE	PROPN	Zora	Zora	Zora
-..	$(/$.	PUNCT	..	..	..	CLARIFY
+..	$.	PUNCT	..	..	..
 </s>
 <s>
 Herzlichen	ADJA	ADJ	herzlichen	herzlich	herzlich
@@ -16256,7 +16260,7 @@ echt	PTKMA	ADV	echt	echt	echt
 augenkrebs	NN	NOUN	Augenkrebs	Augenkrebs	Augenkrebs
 von	APPR	ADP	von	von	von
 bochum	NE	PROPN	Bochum	Bochum	Bochum
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 *	$(	PUNCT	*	*	*
 augenreib	AKW	VERB	augenreib	augenreib	augenreib
 *	$(	PUNCT	*	*	*
@@ -16449,7 +16453,7 @@ sternchen	NE	PROPN	sternchen	sternchen	sternchen
 bin	VAFIN	AUX	bin	sein	sein
 ja	PTKMA	ADV	ja	ja	ja
 ich	PPER	PRON	ich	ich	ich
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 *	$(	PUNCT	*	*	*
 verwirrt	ADJD	ADJ	verwirrt	verwirrt	verwirrt
 guck	AKW	VERB	guck	guck	guck
@@ -17088,7 +17092,7 @@ Frankfurt	NE	PROPN	Frankfurt	Frankfurt	Frankfurt
 </s>
 <s>
 http://www.deutschestextarchiv.de/vogt_briefe02_1851/528	URL	PROPN	http://www.deutschestextarchiv.de/vogt_briefe02_1851/528	http://www.deutschestextarchiv.de/vogt_briefe02_1851/528	http://www.deutschestextarchiv.de/vogt_briefe02_1851/528
-…	$./$(	PUNCT	…	…	…	CLARIFY
+…	$.	PUNCT	…	…	…
 </s>
 </posting>
 <posting id="cmc_test_012_005" author="Deutsches Textarchiv @textarchiv" date="27. Juni">
@@ -17114,7 +17118,7 @@ Stuttgart	NE	PROPN	Stuttgart	Stuttgart	Stuttgart
 </s>
 <s>
 http://www.deutschestextarchiv.de/goethe_divan_1819/245	URL	PROPN	http://www.deutschestextarchiv.de/goethe_divan_1819/245	http://www.deutschestextarchiv.de/goethe_divan_1819/245	http://www.deutschestextarchiv.de/goethe_divan_1819/245
-…	$./$(	PUNCT	…	…	…	CLARIFY
+…	$.	PUNCT	…	…	…
 #lyrik	HST	X	#lyrik	#lyrik	#lyrik
 </s>
 </posting>
@@ -17168,7 +17172,7 @@ gewisse	ADJA	ADJ	gewisse	gewiss	gewiss
 Zeit	NN	NOUN	Zeit	Zeit	Zeit
 vorgehalten	VVPP	VERB	vorgehalten	vorhalten	vorhalten
 .	$.	PUNCT	.	.	.
-...	$(/$.	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 </s>
 </posting>
 <posting id="cmc_test_012_008" author="AUTOR" date="11. Mai 2011">
@@ -17416,7 +17420,7 @@ eine	ART	DET	eine	ein	ein
 bewusste	ADJA	ADJ	bewusste	bewusst	bewusst
 Strategie	NN	NOUN	Strategie	Strategie	Strategie
 .	$.	PUNCT	.	.	.
-...	$(/$.	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 </s>
 </posting>
 <posting id="cmc_test_012_016" author="AUTOR" date="7. Mai 2011">
@@ -17441,7 +17445,7 @@ geschr.	ADJA	ADJ	geschr.	geschr.	geschr.
 Standardsprache	NN	NOUN	Standardsprache	Standardsprache	Standardsprache
 orientieren	VVFIN	VERB	orientieren	orientieren	orientieren
 .	$.	PUNCT	.	.	.
-...	$(/$.	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 </s>
 </posting>
 <posting id="cmc_test_012_017" author="AUTOR" date="7. Mai 2011">
@@ -17575,7 +17579,7 @@ auch	ADV	ADV	auch	auch	auch
 in	APPR	ADP	in	in	in
 der	ART	DET	der	der	der
 Sitzung	NN	NOUN	Sitzung	Sitzung	Sitzung
-...	$(/$.	PUNCT	...	...	...	CLARIFY
+...	$(	PUNCT	...	...	...
 </s>
 </posting>
 <posting id="cmc_test_012_021" author="AUTOR" date="7. Mai 2011">
@@ -17923,7 +17927,7 @@ Unters	NN	NOUN	Unters.	Unters	Unters.
 dann	ADV	ADV	dann	dann	dann
 einen	ART	DET	einen	ein	ein
 Beitrag	NN	NOUN	Beitrag	Beitrag	Beitrag
-..	$(/$.	PUNCT	..	..	..	CLARIFY
+..	$(	PUNCT	..	..	..
 </s>
 <s>
 #semibk	HST	X	#semibk	#semibk	#semibk
@@ -18030,7 +18034,7 @@ man	PIS	PRON	man	man	man
 sich	PRF	PRON	sich	sich	sich
 üblicherweise	ADV	ADV	üblicherweise	üblicherweise	üblicherweise
 zuerst	ADV	ADV	zuerst	zuerst	zuerst
-..	$(/$.	PUNCT	..	..	..	CLARIFY
+..	$.	PUNCT	..	..	..
 </s>
 <s>
 #semibk	HST	X	#semibk	#semibk	#semibk
@@ -19483,7 +19487,7 @@ Tier	NN	NOUN	Tier	Tier	Tier
 ja	PTKMA	ADV	ja	ja	ja
 nicht	PTKNEG	PART	nicht	nicht	nicht
 umbringen	VVINF	VERB	umbringen	umbringen	umbringen
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 </s>
 </posting>
 <posting id="cmc_test_014_003" author="Mhohner" date="10:37, 2. Jun. 2008 (CEST)">
@@ -19572,7 +19576,7 @@ sie	PPER	PRON	sie	sie	sie
 denn	PTKMA	ADV	denn	denn	denn
 überleben	VVINF	VERB	überleben	überleben	überleben
 ??	$.	PUNCT	??	??	??
-...	$(/$.	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
 </s>
 <s>
 hat	VAFIN	AUX	hat	haben	haben
@@ -19871,7 +19875,9 @@ gefährlich	ADJD	ADJ	gefährlich	gefährlich	gefährlich
 Und	KON	CCONJ	und	und	und
 Autos	NN	NOUN	Autos	Auto	Auto
 erst	PTKIFG	ADV	erst	erst	erst
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
+</s>
+<s>
 Aber	KON	CCONJ	aber	aber	aber
 mir	PPER	PRON	mir	mir	mir
 hat	VAFIN	AUX	hat	haben	haben
@@ -20341,7 +20347,9 @@ der	ART	DET	der	der	der
 Ausgangsfrage	NN	NOUN	Ausgangsfrage	Ausgangsfrage	Ausgangsfrage
 zu	PTKZU	PART	zu	zu	zu
 tun	VVINF	VERB	tun	tun	tun
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$.	PUNCT	...	...	...
+</s>
+<s>
 du	PPER	PRON	du	du	du
 lenkst	VVFIN	VERB	lenkst	lenken	lenken
 ab	PTKVZ	PART	ab	ab	ab
@@ -26035,7 +26043,7 @@ ist	VAFIN	AUX	ist	sein	sein
 eine	ART	DET	eine	ein	ein
 andere	ADJA	ADJ	andere	anderer	anderer
 Geschichte	NN	NOUN	Geschichte	Geschichte	Geschichte
-…	$./$(	PUNCT	…	…	…	CLARIFY
+…	$.	PUNCT	…	…	…
 </s>
 <s>
 goldspatz	NE	PROPN	Goldspatz	Goldspatz	Goldspatz
@@ -28918,12 +28926,12 @@ Sicherheit	NN	NOUN	Sicherheit	Sicherheit	Sicherheit
 Festplattenverschlüsselung	NN	NOUN	Festplattenverschlüsselung	Festplattenverschlüsselung	Festplattenverschlüsselung
 </s>
 <s>
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$(	PUNCT	...	...	...
 unter	APPR	ADP	unter	unter	unter
 Linux	NE	PROPN	Linux	Linux	Linux
 </s>
 <s>
-...	$./$(	PUNCT	...	...	...	CLARIFY
+...	$(	PUNCT	...	...	...
 unter	APPR	ADP	unter	unter	unter
 Windows	NE	PROPN	Windows	Windows	Windows
 </s>
