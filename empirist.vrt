@@ -2371,7 +2371,7 @@ schdöbbs	NE	PROPN	schdöbbs	schdöbbs	schdöbbs
 </posting>
 <posting id="cmc_train_003_062" author="quaki" origid="1-73">
 <s>
-+	XY/$(/APPR	PUNCT	+	+	+	CLARIFY
++	APPR	ADP	+	+	+
 s	AKW	INTJ	s	s	s
 </s>
 </posting>
@@ -10766,7 +10766,7 @@ wie	KOKOM	ADP	wie	wie	wie
 ein	ART	DET	ein	ein	ein
 Additionszeichen	NN	NOUN	Additionszeichen	Additionszeichen	Additionszeichen
 (	$(	PUNCT	(	(	(
-+	$(/XY	PUNCT	+	+	+	CLARIFY
++	XY	X	+	+	+
 )	$(	PUNCT	)	)	)
 aussieht	VVFIN	VERB	aussieht	aussehen	aussehen
 ,	$,	PUNCT	,	,	,
