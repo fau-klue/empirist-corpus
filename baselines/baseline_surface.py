@@ -11,7 +11,7 @@ def arguments():
 
 
 def lemmatize_file(f):
-    total, sur, norm, nw, sur_nc, norm_nc, nw_nc = 0, 0, 0, 0, 0, 0, 0
+    total, sur, norm, nw, sur_nc, norm_nc, nw_nc, nl = 0, 0, 0, 0, 0, 0, 0, 0
     for line in f:
         line = line.rstrip()
         if line == "":
@@ -34,13 +34,15 @@ def lemmatize_file(f):
             nw_nc += 1
         if word == norm_word:
             nw += 1
-    return total, sur, norm, nw, sur_nc, norm_nc, nw_nc
+        if norm_word == norm_lemma:
+            nl += 1
+    return total, sur, norm, nw, sur_nc, norm_nc, nw_nc, nl
 
 
 def main():
     args = arguments()
-    total, sur, norm, norm_word, sur_nc, norm_nc, norm_word_nc = 0, 0, 0, 0, 0, 0, 0
-    t, s, n, nw, snc, nnc, nwnc = lemmatize_file(args.FILE)
+    total, sur, norm, norm_word, sur_nc, norm_nc, norm_word_nc, normlem = 0, 0, 0, 0, 0, 0, 0, 0
+    t, s, n, nw, snc, nnc, nwnc, nl = lemmatize_file(args.FILE)
     total += t
     sur += s
     norm += n
@@ -48,10 +50,12 @@ def main():
     sur_nc += snc
     norm_nc += nnc
     norm_word_nc += nwnc
+    normlem += nl
     # print(total, sur, norm, norm_word)
     print("Normalized word form: %.2f%% accuracy (%.2f%% case-insensitive)" % (norm_word / total * 100, norm_word_nc / total * 100))
     print("Surface-oriented lemma: %.2f%% accuracy (%.2f%% case-insensitive)" % (sur / total * 100, sur_nc / total * 100))
     print("Normalized lemma: %.2f%% accuracy (%.2f%% case-insensitive)" % (norm / total * 100, norm_nc / total * 100))
+    print("Normalized lemma based on normalized word forms: %.2f%%" % (normlem / total * 100))
 
 
 if __name__ == "__main__":
