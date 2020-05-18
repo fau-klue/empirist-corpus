@@ -33,7 +33,7 @@ The primary evaluation result is the score for setting 1 (surf-surf).
 
 |                              | surf-surf | surf-surf nc | surf-norm | norm-norm |
 |:-----------------------------|----------:|-------------:|----------:|----------:|
-| Use word form                |     66.18 |              |     65.44 |           |
+| Use word form                |     66.18 |        71.63 |     65.44 |     70.73 |
 | Lookup EmpiriST              |     85.75 |              |     85.22 |           |
 | Lookup TIGER                 |     93.27 |              |     92.53 |           |
 | Lookup TIGER + EmpiriST      |     94.52 |              |     93.92 |           |
