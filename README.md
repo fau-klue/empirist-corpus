@@ -27,10 +27,11 @@ data](https://www.cl.uni-heidelberg.de/~rehbein/tweeDe.mhtml),
 manually added sentence boundaries and automatically mapped the
 part-of-speech tags to [UD pos
 tags](https://universaldependencies.org/u/pos/all.html). In our own
-annotation efforts (Proisl et al., in preparation), we manually
-normalized and lemmatized the data and converted the corpus into a
-“vertical” format suitable for importing into the Open Corpus
-Workbench, CQPweb, SketchEngine, or similar corpus tools.
+annotation efforts ([Proisl et al.,
+2020](http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.754.pdf)),
+we manually normalized and lemmatized the data and converted the
+corpus into a “vertical” format suitable for importing into the Open
+Corpus Workbench, CQPweb, SketchEngine, or similar corpus tools.
 
 ## Annotation
 
@@ -126,6 +127,13 @@ Stefan Evert added normalization and lemmatization.
     (WAC-X) and the EmpiriST Shared Task*, 44–56, Berlin. Association
     for Computational Linguistics.
     [PDF](https://www.aclweb.org/anthology/W16-2606).
+  * Proisl, Thomas, Natalie Dykes, Philipp Heinrich, Besim Kabashi,
+    Andreas Blombach, and Stefan Evert. 2020. “EmpiriST Corpus 2.0:
+    Adding Manual Normalization, Lemmatization and Semantic Tagging to
+    a German Web and CMC Corpus.” In *Proceedings of the 12th Language
+    Resources and Evaluation Conference (LREC 2020)*, 6144–6150,
+    Marseille. European Language Resources Association.
+    [PDF](http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.754.pdf).
   * Rehbein, Ines, Josef Ruppenhofer, and Victor Zimmermann. 2018. “A
     harmonised testsuite for POS tagging of German social media data.”
     In *Proceedings of the 14th Conference on Natural Language
