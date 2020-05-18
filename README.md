@@ -34,7 +34,26 @@ Workbench, CQPweb, SketchEngine, or similar corpus tools.
 
 ## Annotation
 
-TODO: Describe S and P attributes
+Here is a one-sentence posting illustrating the corpus format. The six
+columns are: Word form, [STTS IBK
+tag](https://sites.google.com/site/empirist2015/home/annotation-guidelines),
+[UD POS tag](https://universaldependencies.org/u/pos/all.html),
+normalized form, surface-oriented lemma, normalized lemma.
+<!-- seven columns are: Word form, STTS IBK tag, UD POS tag, USAS tag, -->
+<!-- normalized form, surface-oriented lemma, normalized lemma. -->
+
+    <posting id="cmc_train_003_099" author="quaki" origid="1-114">
+    <s>
+    die       ART     DET     die       der       der
+    viecha    NN      NOUN    Viecher   Viech     Viech
+    reissen   VVFIN   VERB    reißen    reissen   reißen
+    imma      ADV     ADV     immer     imma      immer
+    die       ART     DET     die       der       der
+    müllsäcke NN      NOUN    Müllsäcke Müllsack  Müllsack
+    auf       PTKVZ   PART    auf       auf       auf
+    hmmmm     ITJ     INTJ    hm        hmmmm     hm
+    </s>
+    </posting>
 
 The following subsections give a bit of additional information about
 the annotation process.
