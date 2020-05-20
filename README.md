@@ -35,24 +35,23 @@ Corpus Workbench, CQPweb, SketchEngine, or similar corpus tools.
 
 ## Annotation
 
-Here is a one-sentence posting illustrating the corpus format. The six
-columns are: Word form, [STTS IBK
+Here is a one-sentence posting illustrating the corpus format. The
+seven columns are: Word form, [STTS IBK
 tag](https://sites.google.com/site/empirist2015/home/annotation-guidelines),
-[UD POS tag](https://universaldependencies.org/u/pos/all.html),
-normalized form, surface-oriented lemma, normalized lemma.
-<!-- seven columns are: Word form, STTS IBK tag, UD POS tag, USAS tag, -->
-<!-- normalized form, surface-oriented lemma, normalized lemma. -->
+[UD POS tag](https://universaldependencies.org/u/pos/all.html), [USAS
+tag](http://ucrel.lancs.ac.uk/usas/), normalized form,
+surface-oriented lemma, normalized lemma.
 
     <posting id="cmc_train_003_099" author="quaki" origid="1-114">
     <s>
-    die       ART     DET     die       der       der
-    viecha    NN      NOUN    Viecher   Viech     Viech
-    reissen   VVFIN   VERB    reißen    reissen   reißen
-    imma      ADV     ADV     immer     imma      immer
-    die       ART     DET     die       der       der
-    müllsäcke NN      NOUN    Müllsäcke Müllsack  Müllsack
-    auf       PTKVZ   PART    auf       auf       auf
-    hmmmm     ITJ     INTJ    hm        hmmmm     hm
+    die       ART     DET     Z5           die       der       der
+    viecha    NN      NOUN    L2           Viecher   Viech     Viech
+    reissen   VVFIN   VERB    A1.1.2/MWU:7 reißen    reissen   reißen
+    imma      ADV     ADV     N6           immer     imma      immer
+    die       ART     DET     Z5           die       der       der
+    müllsäcke NN      NOUN    O2           Müllsäcke Müllsack  Müllsack
+    auf       PTKVZ   PART    A1.1.2/MWU:3 auf       auf       auf
+    hmmmm     ITJ     INTJ    Z4           hm        hmmmm     hm
     </s>
     </posting>
 
