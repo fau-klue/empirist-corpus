@@ -131,9 +131,9 @@ Stefan Evert added normalization and lemmatization.
   * Proisl, Thomas, Natalie Dykes, Philipp Heinrich, Besim Kabashi,
     Andreas Blombach, and Stefan Evert. 2020. “EmpiriST Corpus 2.0:
     Adding Manual Normalization, Lemmatization and Semantic Tagging to
-    a German Web and CMC Corpus.” In *Proceedings of the 12th Language
-    Resources and Evaluation Conference (LREC 2020)*, 6144–6150,
-    Marseille. European Language Resources Association.
+    a German Web and CMC Corpus.” In *Proceedings of the 12th
+    Conference on Language Resources and Evaluation (LREC 2020)*,
+    6142–6148, Marseille. European Language Resources Association.
     [PDF](http://www.lrec-conf.org/proceedings/lrec2020/pdf/2020.lrec-1.754.pdf).
   * Rehbein, Ines, Josef Ruppenhofer, and Victor Zimmermann. 2018. “A
     harmonised testsuite for POS tagging of German social media data.”
