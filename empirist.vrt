@@ -25279,14 +25279,14 @@ Daten	NN	NOUN	Y1	Daten	Datum	Datum
 der	ART	DET	Z5	der	der	der
 verzeichneten	ADJA	ADJ	A4.1	verzeichneten	verzeichnet	verzeichnet
 Kollektionen	NN	NOUN	A9	Kollektionen	Kollektion	Kollektion
-auf	APPR	ADP	A1.5.1/MWU:25271	auf	auf	auf	auf
+auf	APPR	ADP	Z5	auf	auf	auf	auf
 den	ART	DET	Z5	den	der	der
 durch	APPR	ADP	Z5	durch	durch	durch
 die	ART	DET	Z5	die	der	der
 Registries	NN	NOUN	Y2	Registries	Registry	Registry
 angebotenen	ADJA	ADJ	A9	angebotenen	angeboten	angeboten
 Webservices	NN	NOUN	Y2	Webservices	Webservice	Webservice
-auf	PTKVZ	PART	A1.5.1/MWU:25262	auf	auf	auf
+auf	PTKVZ	PART	A1.5.1/MWU:25271	auf	auf	auf
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
