@@ -21250,7 +21250,7 @@ nahe	ADJD	ADJ	M6	nahe	nah	nah
 an	APPR	ADP	Z5	an	an	an
 der	ART	DET	Z5	der	der	der
 Stadt	NN	NOUN	M7	Stadt	Stadt	Stadt
-vorbei	PTKVZ	PART	M6	vorbei	vorbei	vorbei
+vorbei	APZR	ADP	M6	vorbei	vorbei	vorbei
 .	$.	PUNCT	Z9	.	.	.
 </s>
 </text>
