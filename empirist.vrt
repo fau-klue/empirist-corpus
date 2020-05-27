@@ -1262,7 +1262,7 @@ Dafür	PAV	ADV	Z4	dafür	dafür	dafür
 aber	ADV	ADV	Z5	aber	aber	aber
 die	ART	DET	Z5	die	der	der
 Synonyme	NN	NOUN	Q3	Synonyme	Synonym	Synonym
-:	$(	PUNCT	Z9	:	:	:	CLARIFY
+:	$(	PUNCT	Z9	:	:	:
 abbauen	VVINF	VERB	H1	abbauen	abbauen	abbauen
 ,	$,	PUNCT	Z9	,	,	,
 aufbauen	VVINF	VERB	H1	aufbauen	aufbauen	aufbauen
@@ -1470,7 +1470,7 @@ heißt	VVFIN	VERB	Q1.1	heißt	heißen	heißen
 vorwärts	ADV	ADV	M6	vorwärts	vorwärts	vorwärts
 ...	$(	PUNCT	Z9	...	...	...
 fördern	VVINF	VERB	S8	fördern	fördern	fördern
-:	$(	PUNCT	Z9	:	:	:	CLARIFY
+:	$(	PUNCT	Z9	:	:	:
 eine	ART	DET	Z5	eine	ein	ein
 Sache	NN	NOUN	O2/X4.1	Sache	Sache	Sache
 vorwärts	ADV	ADV	M6	vorwärts	vorwärts	vorwärts
@@ -1484,7 +1484,7 @@ wir	PPER	PRON	Z8	wir	wir	wir
 es	PPER	PRON	Z8	es	es	es
 mit	APPR	ADP	Z5	mit	mit	mit
 Satzstrukturen	NN	NOUN	Q3	Satzstrukturen	Satzstruktur	Satzstruktur
-:	$(	PUNCT	Z9	:	:	:	CLARIFY
+:	$(	PUNCT	Z9	:	:	:
 jdn.	PIS	PRON	Z8	jemanden	jdn.	jemand
 fördern	VVINF	VERB	S8	fördern	fördern	fördern
 =	XY	X	A3/A6.1	=	=	=
