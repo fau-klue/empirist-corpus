@@ -96,6 +96,10 @@ annotators according to the [lemmatization
 guidelines](doc/Lemmatisierungsrichtlinien.pdf). Unclear cases were
 decided in group meetings with the team leaders.
 
+### Semantic Tagging
+
+A preliminary version of the semantic tags for German has been added to the corpus file, with heuristics to represent typical CMC phenomena. Each token may have several tags, separated by slashes. Expressions such as idioms or particle verbs are treated as multiword units (MWU). If no further information is given, the MWU consists of the entire sequence of subsequent tokens marked as MWU. Discontinuous multi-word expressions are marked by one or several numbers separated by colons which point to the line number of all other tokens forming part of the expression (i.e. MWU:15 on line 8 indicates that tokens 8 and 15 form a unit).
+
 ## Authors
 
 The corpus data was collected, tokenized and part-of-speech tagged by
