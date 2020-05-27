@@ -18911,7 +18911,7 @@ kurz	ADJD	ADJ	T1.1	kurz	kurz	kurz
 nach	APPR	ADP	T1.1.3	nach	nach	nach
 5	CARD	NUM	N1/T1.2	5	5	5
 auch	ADV	ADV	Z5	auch	auch	auch
-da	PTKVZ	PART	M6	da	da	da
+da	ADV	ADV	M6	da	da	da
 .	$.	PUNCT	Z9	.	.	.
 😊	EMOIMG	SYM	E4.1/Q2.2	😊	😊	😊
 </s>
