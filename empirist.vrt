@@ -5837,7 +5837,7 @@ Janosch	NE	PROPN	Z1	Janosch	Janosch	Janosch
 Ja	PTKANT	INTJ	Z4	ja	ja	ja
 ...	$(	PUNCT	Z9	...	...	...
 benedikt	NE	PROPN	Z1	Benedikt	Benedikt	Benedikt
-sind	VAFIN	AUX	A3	sind	sein	sein
+sind	VAFIN	AUX	A3	sind	sein	sein	aussein	CLARIFY
 irgendwie	ADV	ADV	A13.5	irgendwie	irgendwie	irgendwie
 etwas	PTKIFG	ADV	A13.5	etwas	etwas	etwas
 seltsam	ADJD	ADJ	A6.2	seltsam	seltsam	seltsam
@@ -6194,8 +6194,8 @@ sie	PPER	PRON	Z8	sie	sie	sie
 mit	APPR	ADP	Z5	mit	mit	mit
 muttizettel	NN	NOUN	Q1.2/S7.4	Muttizettel	Muttizettel	Muttizettel
 quasi	ADV	ADV	Z4	quasi	quasi	quasi
-mit	PTKVZ	PART	S1.1.3	mit	mit	mit
-kann	VMFIN	AUX	A7	kann	können	können
+mit	PTKVZ	PART	S1.1.3	mit	mit	mit	CLARIFY
+kann	VMFIN	AUX	A7	kann	können	können	mitkönnen
 </s>
 <s>
 (	$(	PUNCT	Z9	(	(	(
@@ -15052,7 +15052,7 @@ emon	NE	PROPN	Z1	Emon	Emon	Emon
 .	$.	PUNCT	Z9	.	.	.
 *	$(	PUNCT	Z9	*	*	*
 wieder	ADV	ADV	N4	wieder	wieder	wieder
-weg	PTKVZ	PART	M6	weg	weg	weg
+weg	PTKVZ	PART	M6	weg	weg	weg	CLARIFY
 nehm	AKW	VERB	M2	nehm	nehm	nehm
 *	$(	PUNCT	Z9	*	*	*
 </s>
