@@ -1262,7 +1262,7 @@ Dafür	PAV	ADV	Z4	dafür	dafür	dafür
 aber	ADV	ADV	Z5	aber	aber	aber
 die	ART	DET	Z5	die	der	der
 Synonyme	NN	NOUN	Q3	Synonyme	Synonym	Synonym
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:	CLARIFY
 abbauen	VVINF	VERB	H1	abbauen	abbauen	abbauen
 ,	$,	PUNCT	Z9	,	,	,
 aufbauen	VVINF	VERB	H1	aufbauen	aufbauen	aufbauen
@@ -1470,7 +1470,7 @@ heißt	VVFIN	VERB	Q1.1	heißt	heißen	heißen
 vorwärts	ADV	ADV	M6	vorwärts	vorwärts	vorwärts
 ...	$(	PUNCT	Z9	...	...	...
 fördern	VVINF	VERB	S8	fördern	fördern	fördern
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:	CLARIFY
 eine	ART	DET	Z5	eine	ein	ein
 Sache	NN	NOUN	O2/X4.1	Sache	Sache	Sache
 vorwärts	ADV	ADV	M6	vorwärts	vorwärts	vorwärts
@@ -1484,7 +1484,7 @@ wir	PPER	PRON	Z8	wir	wir	wir
 es	PPER	PRON	Z8	es	es	es
 mit	APPR	ADP	Z5	mit	mit	mit
 Satzstrukturen	NN	NOUN	Q3	Satzstrukturen	Satzstruktur	Satzstruktur
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:	CLARIFY
 jdn.	PIS	PRON	Z8	jemanden	jdn.	jemand
 fördern	VVINF	VERB	S8	fördern	fördern	fördern
 =	XY	X	A3/A6.1	=	=	=
@@ -1537,7 +1537,7 @@ fördern	VVINF	VERB	S8	fördern	fördern	fördern
 <s>
 (	$(	PUNCT	Z9	(	(	(
 Quelle	NN	NOUN	Q4.1/Y1	Quelle	Quelle	Quelle
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 Kindler	NE	PROPN	Z1	Kindler	Kindler	Kindler
 Literaturlexikon	NN	NOUN	Q4.1/Y1	Literaturlexikon	Literaturlexikon	Literaturlexikon
 )	$(	PUNCT	Z9	)	)	)
@@ -1577,7 +1577,7 @@ fördern	VVINF	VERB	S8	fördern	fördern	fördern
 <s>
 (	$(	PUNCT	Z9	(	(	(
 Quelle	NN	NOUN	X4.2	Quelle	Quelle	Quelle
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 Kindler	NE	PROPN	Z1	Kindler	Kindler	Kindler
 Literaturlexikon	NN	NOUN	Q4.1/Y1	Literaturlexikon	Literaturlexikon	Literaturlexikon
 )	$(	PUNCT	Z9	)	)	)
@@ -1625,7 +1625,7 @@ gilt	VVFIN	VERB	S6	gilt	gelten	gelten
 <s>
 (	$(	PUNCT	Z9	(	(	(
 Quelle	NN	NOUN	X4.2	Quelle	Quelle	Quelle
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 ZDNet	NE	PROPN	Y2/Z3	ZDNet	ZDNet	ZDNet
 1999	CARD	NUM	N1	1999	1999	1999
 )	$(	PUNCT	Z9	)	)	)
@@ -1664,7 +1664,7 @@ fördern	VVINF	VERB	S8	fördern	fördern	fördern
 <s>
 (	$(	PUNCT	Z9	(	(	(
 Quelle	NN	NOUN	Z9	Quelle	Quelle	Quelle
-:	$.	PUNCT	X4.2	:	:	:
+:	$(	PUNCT	X4.2	:	:	:
 ZDNet	NE	PROPN	Y2/Z3	ZDNet	ZDNet	ZDNet
 1999	CARD	NUM	N1	1999	1999	1999
 )	$(	PUNCT	Z9	)	)	)
@@ -1709,7 +1709,7 @@ fördern	VVINF	VERB	S8	fördern	fördern	fördern
 <s>
 (	$(	PUNCT	Z9	(	(	(
 Quelle	NN	NOUN	X4.2	Quelle	Quelle	Quelle
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 ZDNet	NE	PROPN	Y2/Z3	ZDNet	ZDNet	ZDNet
 1999	CARD	NUM	N1	1999	1999	1999
 )	$(	PUNCT	Z9	)	)	)
@@ -3959,7 +3959,7 @@ Dank	NN	NOUN	S1.2.4/Z4	Dank	Dank	Dank
 <s>
 CLARIN	NE	PROPN	Y2/Z3/MWU	Clarin	Clarin	Clarin
 VLO	NE	PROPN	Y2/Z3/MWU	Vlo	Vlo	Vlo
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 https://catalog.clarin.eu	URL	PROPN	Z99	https://catalog.clarin.eu	https://catalog.clarin.eu	https://catalog.clarin.eu
 #dtaclarin14	HST	X	Z99	#dtaclarin14	#dtaclarin14	#dtaclarin14
 </s>
@@ -3972,13 +3972,13 @@ Uytvanck	NE	PROPN	Z1/MWU	Uytvanck	Uytvanck	Uytvanck
 (	$(	PUNCT	Z9	(	(	(
 Nijmegen	NE	PROPN	Z2	Nijmegen	Nijmegen	Nijmegen
 )	$(	PUNCT	Z9	)	)	)
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 Auf	APPR	ADP	X2.4/MWU	auf	auf	auf
 der	ART	DET	X2.4/MWU	der	der	der
 Suche	NN	NOUN	X2.4/MWU	Suche	Suche	Suche
 nach	APPR	ADP	X2.4/MWU	nach	nach	nach
 Sprachressourcen	NN	NOUN	Q3/Y2	Sprachressourcen	Sprachressource	Sprachressource
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 CLARINs	NE	PROPN	Z3/MWU	CLARINs	CLARIN	CLARIN
 Virtual	NE	PROPN	Z3/MWU	Virtual	Virtual	Virtual
 Language	NE	PROPN	Z3/MWU	Language	Language	Language
@@ -3994,7 +3994,7 @@ praktisches	ADJA	ADJ	A1.6	praktisches	praktisch	praktisch
 Beispiel	NN	NOUN	A4.1	Beispiel	Beispiel	Beispiel
 der	ART	DET	Z5	der	der	der
 Wortverlaufskurve	NN	NOUN	Q3	Wortverlaufskurve	Wortverlaufskurve	Wortverlaufskurve
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 Abnahme	NN	NOUN	N5	Abnahme	Abnahme	Abnahme
 von	APPR	ADP	Z5	von	von	von
 erweiterten	ADJA	ADJ	Q3	erweiterten	erweitert	erweitert
@@ -4003,7 +4003,7 @@ mit	APPR	ADP	Z5	mit	mit	mit
 "	$(	PUNCT	Z9	"	"	"
 habend	ADJD	ADJ	A9	habend	habend	habend
 "	$(	PUNCT	Z9	"	"	"
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 http://bit.ly/1EUPPhK	URL	PROPN	Z99	http://bit.ly/1eupphk	http://bit.ly/1eupphk	http://bit.ly/1eupphk
 #dtaclarin14	HST	X	Z99	#dtaclarin14	#dtaclarin14	#dtaclarin14
 </s>
@@ -4044,7 +4044,7 @@ noch	ADV	ADV	T1.1.2	noch	noch	noch
 im	APPRART	_	Z5	im	in	in
 @dwds_de	NE	PROPN	Y1/Z3	@dwds_de	@dwds_de	@dwds_de
 fehlt	VVFIN	VERB	A3	fehlt	fehlen	fehlen
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 http://de.m.wikipedia.org/wiki/Troll_(Netzkultur)	URL	PROPN	Z99	http://de.m.wikipedia.org/wiki/troll_(netzkultur)	http://de.m.wikipedia.org/wiki/troll_(netzkultur)	http://de.m.wikipedia.org/wiki/troll_(netzkultur)
 …	$.	PUNCT	Z9	…	…	…
 #dtaclarin14	HST	X	Z99	#dtaclarin14	#dtaclarin14	#dtaclarin14
@@ -4079,7 +4079,7 @@ Europäische	ADJA	ADJ	Z2	europäische	europäisch	europäisch
 Welt-	TRUNC	X	W1	Welt-	Welt	Welt
 und	KON	CCONJ	Z5	und	und	und
 Staats-Geschichte	NN	NOUN	G1.2/P1	Staats-Geschichte	Staats-Geschichte	Staats-Geschichte
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 20	CARD	NUM	N1	20	20	20
 Ausgaben	NN	NOUN	Q4.2	Ausgaben	Ausgabe	Ausgabe
 von	APPR	ADP	Z5	von	von	von
@@ -4100,7 +4100,7 @@ http://www.deutschestextarchiv.de/dtaq/about	URL	PROPN	Z99	http://www.deutschest
 <s>
 Mannheimer	ADJA	ADJ	Z2	Mannheimer	Mannheimer	Mannheimer
 Zeitungskorpus	NN	NOUN	Q3	Zeitungskorpus	Zeitungskorpus	Zeitungskorpus
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 652	CARD	NUM	N1	652	652	652
 Ausgaben	NN	NOUN	Q4.2	Ausgaben	Ausgabe	Ausgabe
 ,	$,	PUNCT	Z9	,	,	,
@@ -4134,7 +4134,7 @@ Kermes	NE	PROPN	Z1/MWU	Kermes	Kermes	Kermes
 ,	$,	PUNCT	Z9	,	,	,
 C	NE	PROPN	Z1/MWU	C	C	C
 Draxler	NE	PROPN	Z1/MWU	Draxler	Draxler	Draxler
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 Kontextualisierung	NN	NOUN	X4.2	Kontextualisierung	Kontextualisierung	Kontextualisierung
 von	APPR	ADP	Z5	von	von	von
 Sprachressourcen	NN	NOUN	Q3	Sprachressourcen	Sprachressource	Sprachressource
@@ -4966,7 +4966,7 @@ Vernachlässigung	NN	NOUN	X5.1	Vernachlässigung	Vernachlässigung	Vernachlässi
 <s>
 Wenn	KOUS	SCONJ	Z7	wenn	wenn	wenn
 2	CARD	NUM	N1	2	2	2
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 warum	PWAV	ADV	A2.2	warum	warum	warum
 ?	$.	PUNCT	Z9	?	?	?
 </s>
@@ -5158,7 +5158,7 @@ Allg.	ADJA	ADJ	A4.2	allgemeine	allg.	allgemein
 Infos	NN	NOUN	S8	Infos	Info	Info
 zu	APPR	ADP	Z5	zu	zu	zu
 Twitterwalls	NN	NOUN	Y2/Z3	Twitterwalls	Twitterwall	Twitterwall
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 http://tinyurl.com/5snbvpn	URL	PROPN	Z99	http://tinyurl.com/5snbvpn	http://tinyurl.com/5snbvpn	http://tinyurl.com/5snbvpn
 )	$(	PUNCT	Z9	)	)	)
 )	$(	PUNCT	Z9	)	)	)
@@ -5204,7 +5204,7 @@ erfunden	VVPP	VERB	X4.1	erfunden	erfinden	erfinden
 </s>
 <s>
 Quelle	NN	NOUN	Q4.1/Y1	Quelle	Quelle	Quelle
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 Mein	PPOSAT	DET	Z8	mein	mein	mein
 Sohn	NN	NOUN	S2.2/S4	Sohn	Sohn	Sohn
 (	$(	PUNCT	Z9	(	(	(
@@ -6309,7 +6309,7 @@ bestellt	VVPP	VERB	I2.2	bestellt	bestellen	bestellen
 <text subcorpus="cmc" set="train" id="cmc_train_007" raw="cmc_train_wiki_discussion_1.txt">
 <s>
 Diskussion	NN	NOUN	Q1.1	Diskussion	Diskussion	Diskussion
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 Kreuzspinnen	NN	NOUN	L2	Kreuzspinnen	Kreuzspinne	Kreuzspinne
 </s>
 <posting id="cmc_train_007_001" author="Thomas G. Graf" date="22. Jun 2004 (CEST)">
@@ -6353,7 +6353,7 @@ zusammengefasst	VVPP	VERB	Q1.1	zusammengefasst	zusammenfassen	zusammenfassen
 ,	$,	PUNCT	Z9	,	,	,
 spricht	VVFIN	VERB	A2.2/MWU	spricht	sprechen	sprechen
 dafür	PAV	ADV	A2.2/MWU	dafür	dafür	dafür
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 Kein	PIAT	DET	Z6	kein	kein	kein
 unnötiges	ADJA	ADJ	S6	unnötiges	unnötig	unnötig
 Herumgerede	NN	NOUN	A1.2/Q1.1	Herumgerede	Herumgerede	Herumgerede
@@ -7290,7 +7290,7 @@ bezeichnen	VVFIN	VERB	Q1.1	bezeichnen	bezeichnen	bezeichnen
 sich	PRF	PRON	Z8	sich	sich	sich
 als	APPR	ADP	Z5	als	als	als
 Liedschreiber	NN	NOUN	K2/Q1.2/S2	Liedschreiber	Liedschreiber	Liedschreiber
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 http://server.selltec.com/go/rcn/_ws/mediabase/Issue/rcn_127_01_48_web.pdf	URL	PROPN	Z9	http://server.selltec.com/go/rcn/_ws/mediabase/issue/rcn_127_01_48_web.pdf	http://server.selltec.com/go/rcn/_ws/mediabase/issue/rcn_127_01_48_web.pdf	http://server.selltec.com/go/rcn/_ws/mediabase/issue/rcn_127_01_48_web.pdf
 ,	$,	PUNCT	Z9	,	,	,
 S.	NN	NOUN	Q4.1	S.	S.	S.
@@ -13290,7 +13290,7 @@ Tschüß	ITJ	INTJ	S1.2.4/Z4	tschüß	tschüß	tschüß
 <s>
 Neues	ADJA	ADJ	T3	neues	neu	neu
 Thema	NN	NOUN	X4.1	Thema	Thema	Thema
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 Drogenpolitik	NN	NOUN	F3/G1.2	Drogenpolitik	Drogenpolitik	Drogenpolitik
 ...	$.	PUNCT	Z9	...	...	...
 </s>
@@ -14024,7 +14024,7 @@ Körper	NN	NOUN	B1	Körper	Körper	Körper
 ,	$,	PUNCT	Z9	,	,	,
 Stichwort	NN	NOUN	Q3	Stichwort	Stichwort	Stichwort
 wieder	ADV	ADV	N6	wieder	wieder	wieder
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 Recht	NN	NOUN	G2.1	Recht	Recht	Recht
 auf	APPR	ADP	Z5	auf	auf	auf
 Rausch	NN	NOUN	F3	Rausch	Rausch	Rausch
@@ -14656,7 +14656,7 @@ am	APPRART	_	Z5	am	an	an
 Debatten-Forum	NN	NOUN	G1.2/Q1.1	Debatten-Forum	Debatten-Forum	Debatten-Forum
 zum	APPRART	_	Z5	zum	zu	zu
 Thema	NN	NOUN	X4.1	Thema	Thema	Thema
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 "	$(	PUNCT	Z9	"	"	"
 Sicher	ADJD	ADJ	A15	sicher	sicher	sicher
 oder	KON	CCONJ	Z5	oder	oder	oder
@@ -17075,10 +17075,10 @@ nitela	FM	X	L2/MWU	nitela	nitela	nitela
 </s>
 <s>
 In	APPR	ADP	M6	in	in	in
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 Carl	NE	PROPN	Z1/MWU	Carl	Carl	Carl
 Vogt	NE	PROPN	Z1/MWU	Vogt	Vogt	Vogt
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 Zoologische	ADJA	ADJ	L2/Y1	zoologische	zoologisch	zoologisch
 Briefe	NN	NOUN	Q1.2	Briefe	Brief	Brief
 .	$.	PUNCT	Z9	.	.	.
@@ -17101,13 +17101,13 @@ Johann	NE	PROPN	Z1/MWU	Johann	Johann	Johann
 Wolfgang	NE	PROPN	Z1/MWU	Wolfgang	Wolfgang	Wolfgang
 von	NE	PROPN	Z1/MWU	von	von	von
 Goethe	NE	PROPN	Z1/MWU	Goethe	Goethe	Goethe
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 #Siebenschläfer	NN	NOUN	Z99	#Siebenschläfer	#Siebenschläfer	#Siebenschläfer
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
 In	APPR	ADP	M6	in	in	in
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 West-östlicher	ADJA	ADJ	M7	west-östlicher	west-östlich	west-östlich
 Divan	NN	NOUN	M7	Divan	Divan	Divan
 .	$.	PUNCT	Z9	.	.	.
@@ -17397,7 +17397,7 @@ in	APPR	ADP	Z5	in	in	in
 diesem	PDAT	DET	Z8	diesem	dieser	dieser
 Artikel	NN	NOUN	Q1.2	Artikel	Artikel	Artikel
 beschrieben	VVPP	VERB	Q2.2	beschrieben	beschreiben	beschreiben
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 http://tinyurl.com/6yldv5d	URL	PROPN	Z99	http://tinyurl.com/6yldv5d	http://tinyurl.com/6yldv5d	http://tinyurl.com/6yldv5d
 (	$(	PUNCT	Z9	(	(	(
 Abschnitt	NN	NOUN	Q1.2	Abschnitt	Abschnitt	Abschnitt
@@ -17506,7 +17506,7 @@ ich	PPER	PRON	Z8	ich	ich	ich
 nochmal	ADV	ADV	N6	nochmal	nochmal	nochmal
 auf	APPR	ADP	Z5	auf	auf	auf
 Luckhardt	NE	PROPN	Z1	Luckhardt	Luckhardt	Luckhardt
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 http://tinyurl.com/3umxkuh	URL	PROPN	Z99	http://tinyurl.com/3umxkuh	http://tinyurl.com/3umxkuh	http://tinyurl.com/3umxkuh
 </s>
 </posting>
@@ -17683,7 +17683,7 @@ Natives	NN	NOUN	S2/Y2/MWU	Natives	Native	Native
 vs.	APPR	ADP	A6.1	vs.	vs.	vs.
 Digital	ADJA	ADJ	S2/Y2/MWU	digital	digital	digital
 Immigrants	NN	NOUN	S2/Y2/MWU	Immigrants	Immigrant	Immigrant
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 http://www.omnisophie.com/day_140.html	URL	PROPN	Z99	http://www.omnisophie.com/day_140.html	http://www.omnisophie.com/day_140.html	http://www.omnisophie.com/day_140.html
 </s>
 </posting>
@@ -17701,7 +17701,7 @@ von	APPR	ADP	Z5	von	von	von
 unserer	PPOSAT	DET	Z8	unserer	unser	unser
 gestrigen	ADJA	ADJ	T1.1.1	gestrigen	gestrig	gestrig
 Sitzung	NN	NOUN	P1/S1.1.3	Sitzung	Sitzung	Sitzung
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 http://blogfilet.wordpress.com/	URL	PROPN	Z99	http://blogfilet.wordpress.com/	http://blogfilet.wordpress.com/	http://blogfilet.wordpress.com/
 </s>
 </posting>
@@ -17797,7 +17797,7 @@ schwierig	ADJD	ADJ	A12	schwierig	schwierig	schwierig
 </s>
 <s>
 Einschätzg	NN	NOUN	X2.1	Einschätzg.	Einschätzg	Einschätzg.
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 http://tinyurl.com/5spl57v	URL	PROPN	Z99	http://tinyurl.com/5spl57v	http://tinyurl.com/5spl57v	http://tinyurl.com/5spl57v
 </s>
 </posting>
@@ -18296,7 +18296,7 @@ für	APPR	ADP	Z5	für	für	für
 unsere	PPOSAT	DET	Z8	unsere	unser	unser
 heutige	ADJA	ADJ	T1.1.2	heutige	heutig	heutig
 Sitzung	NN	NOUN	P1/S1.1.3	Sitzung	Sitzung	Sitzung
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 http://twitterwallr.com/semibk	URL	PROPN	Z99	http://twitterwallr.com/semibk	http://twitterwallr.com/semibk	http://twitterwallr.com/semibk
 </s>
 </posting>
@@ -18317,7 +18317,7 @@ kreative	ADJA	ADJ	C1	kreative	kreativ	kreativ
 Wortbildung	NN	NOUN	Q3	Wortbildung	Wortbildung	Wortbildung
 (	$(	PUNCT	Z9	(	(	(
 Typus	NN	NOUN	A4.1	Typus	Typus	Typus
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 Wortkreuzung	NN	NOUN	Q3	Wortkreuzung	Wortkreuzung	Wortkreuzung
 bzw.	KON	CCONJ	Z5	bzw.	bzw.	bzw.
 Kontamination	NN	NOUN	Q3	Kontamination	Kontamination	Kontamination
@@ -20403,7 +20403,7 @@ ihre	PPOSAT	DET	Z8	ihre	ihr	ihr
 erste	ADJA	ADJ	N1	erste	erster	erster
 Version	NN	NOUN	A4.1	Version	Version	Version
 hier	ADV	ADV	M6	hier	hier	hier
-:	$.	PUNCT	Z9	:	:	:
+:	$(	PUNCT	Z9	:	:	:
 http://de.wikipedia.org/w/index.php?title=Lou_Reed&amp;diff=next&amp;oldid=79503162	URL	PROPN	Z99	http://de.wikipedia.org/w/index.php?title=lou_reed&amp;diff=next&amp;oldid=79503162	http://de.wikipedia.org/w/index.php?title=lou_reed&amp;diff=next&amp;oldid=79503162	http://de.wikipedia.org/w/index.php?title=lou_reed&amp;diff=next&amp;oldid=79503162
 auch	ADV	ADV	Z5	auch	auch	auch
 nicht	PTKNEG	PART	Z6	nicht	nicht	nicht
