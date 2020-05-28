@@ -5723,7 +5723,7 @@ XD	EMOASC	SYM	E4.1/Q2.2	XD	XD	XD
 <s>
 Ahahahaha	ITJ	INTJ	Z4	ahahahaha	ahahahaha	ahahahaha
 !	$.	PUNCT	Z9	!	!	!
-Wie	PTKIFG/PWAV	ADV	A13.3	wie	wie	wie	CLARIFY
+Wie	PWAV	ADV	A13.3	wie	wie	wie
 herrlich	ADJD	ADJ	A5.1	herrlich	herrlich	herrlich
 !	$.	PUNCT	Z9	!	!	!
 XD	EMOASC	SYM	E4.1/Q2.2	XD	XD	XD
@@ -5743,7 +5743,7 @@ Potenzial	NN	NOUN	A7	Potenzial	Potenzial	Potenzial
 Ooh	ITJ	INTJ	Z4	oh	ooh	oh
 mann	NN	NOUN	Z4	Mann	Mann	Mann
 ,	$,	PUNCT	Z9	,	,	,
-wie	PTKIFG/PWAV	ADV	A13.3	wie	wie	wie	CLARIFY
+wie	PWAV	ADV	A13.3	wie	wie	wie
 herrlich	ADJD	ADJ	A5.1	herrlich	herrlich	herrlich
 !	$.	PUNCT	Z9	!	!	!
 </s>
@@ -5837,7 +5837,7 @@ Janosch	NE	PROPN	Z1	Janosch	Janosch	Janosch
 Ja	PTKANT	INTJ	Z4	ja	ja	ja
 ...	$(	PUNCT	Z9	...	...	...
 benedikt	NE	PROPN	Z1	Benedikt	Benedikt	Benedikt
-sind	VAFIN	AUX	A3	sind	sein	sein	aussein	CLARIFY
+sind	VAFIN	AUX	A3	sieht	sein	sehen	aussehen
 irgendwie	ADV	ADV	A13.5	irgendwie	irgendwie	irgendwie
 etwas	PTKIFG	ADV	A13.5	etwas	etwas	etwas
 seltsam	ADJD	ADJ	A6.2	seltsam	seltsam	seltsam
@@ -5960,7 +5960,7 @@ klar	ADJD	ADJ	Z4/MWU	klar	klar	klar
 <s>
 Aaah	ITJ	INTJ	Z4	ah	aaah	ah
 ,	$,	PUNCT	Z9	,	,	,
-wie	PTKIFG/PWAV	ADV	A13.3	wie	wie	wie	CLARIFY
+wie	PWAV	ADV	A13.3	wie	wie	wie
 cool	ADJD	ADJ	A5.1	cool	cool	cool
 *_*	EMOASC	SYM	E4.1/Q2.2	*_*	*_*	*_*
 </s>
@@ -6045,7 +6045,7 @@ nicht	PTKNEG	PART	Z6	nicht	nicht	nicht
 </s>
 <s>
 Hm	ITJ	INTJ	Z4	hm	hm	hm
-...	$./$(	PUNCT	Z9	...	...	...	CLARIFY
+...	$(	PUNCT	Z9	...	...	...
 Und	KON	CCONJ	Z5	und	und	und
 weißt	VVFIN	VERB	X2.2	weißt	wissen	wissen
 du	PPER	PRON	Z8	du	du	du
@@ -6194,8 +6194,8 @@ sie	PPER	PRON	Z8	sie	sie	sie
 mit	APPR	ADP	Z5	mit	mit	mit
 muttizettel	NN	NOUN	Q1.2/S7.4	Muttizettel	Muttizettel	Muttizettel
 quasi	ADV	ADV	Z4	quasi	quasi	quasi
-mit	PTKVZ	PART	S1.1.3	mit	mit	mit	CLARIFY
-kann	VMFIN	AUX	A7	kann	können	können	mitkönnen
+mit	ADV	ADV	S1.1.3	mit	mit	mit
+kann	VMFIN	AUX	A7	kann	können	können
 </s>
 <s>
 (	$(	PUNCT	Z9	(	(	(
@@ -6286,7 +6286,7 @@ Attrappen	NN	NOUN	A5.4/O2	Attrappen	Attrappe	Attrappe
 <posting id="cmc_train_006_045" author="Participant_8" date="26. Okt., 23:01" origid="1363">
 <s>
 Oooh	ITJ	INTJ	Z4	oooh	oooh	oooh
-wie	PTKIFG/PWAV	ADV	A13.3	wie	wie	wie	CLARIFY
+wie	PWAV	ADV	A13.3	wie	wie	wie
 geeeil	ADJD	ADJ	A5.1	geil	geeeil	geil
 !	$.	PUNCT	Z9	!	!	!
 😻	EMOIMG	SYM	E2/Q2.2	😻	😻	😻
@@ -8077,7 +8077,7 @@ dem	ART	DET	Z5	dem	der	der
 Bildschirm	NN	NOUN	O3	Bildschirm	Bildschirm	Bildschirm
 es	PPER	PRON	Z8	es	es	es
 ihnen	PPER	PRON	Z8	ihnen	ihnen	ihnen
-gleich	ADV/ADJD/PTKVZ	ADJ	A6.1	gleich	gleich	gleich	CLARIFY
+gleich	ADJD	ADJ	A6.1	gleich	gleich	gleich
 tat	VVFIN	VERB	A1.1.1	tat	tun	tun
 .	$.	PUNCT	Z9	.	.	.
 </s>
@@ -8837,7 +8837,7 @@ um	KOUI	SCONJ	Z5	um	um	um
 es	PPER	PRON	Z8	es	es	es
 mal	PTKMA	ADV	Z4	mal	mal	mal
 gleich	ADV	ADV	Z4	gleich	gleich	gleich
-vorweg	PTKVZ	PART	Z4	vorweg	vorweg	vorweg	CLARIFY
+vorweg	ADV	ADV	Z4	vorweg	vorweg	vorweg
 zu	PTKZU	PART	Z5	zu	zu	zu
 sagen	VVINF	VERB	Q1.1	sagen	sagen	sagen
 .	$.	PUNCT	Z9	.	.	.
@@ -15052,7 +15052,7 @@ emon	NE	PROPN	Z1	Emon	Emon	Emon
 .	$.	PUNCT	Z9	.	.	.
 *	$(	PUNCT	Z9	*	*	*
 wieder	ADV	ADV	N4	wieder	wieder	wieder
-weg	PTKVZ	PART	M6	weg	weg	weg	CLARIFY
+weg	ADV	ADV	M6	weg	weg	weg
 nehm	AKW	VERB	M2	nehm	nehm	nehm
 *	$(	PUNCT	Z9	*	*	*
 </s>
@@ -18494,7 +18494,7 @@ bekommen	VVPP	VERB	A9	bekommen	bekommen	bekommen
 <posting id="cmc_test_013_002" author="Participant_8" date="26. Okt., 23:09" origid="1367">
 <s>
 Naaaaw	ITJ	INTJ	Z4	naaaaw	naaaaw	naaaaw
-wie	PTKIFG/PWAV	ADV	A14	wie	wie	wie	CLARIFY
+wie	PWAV	ADV	A14	wie	wie	wie
 süß	ADJD	ADJ	O4.2	süß	süß	süß
 !	$.	PUNCT	Z9	!	!	!
 😻	EMOIMG	SYM	E4.1/Q2.2	😻	😻	😻
@@ -19106,7 +19106,7 @@ h&amp;m	NE	PROPN	B5/I2.2/Z3	H&amp;M	H&amp;M	H&amp;M
 <posting id="cmc_test_013_042" author="Participant_7" date="3. Nov., 22:09" origid="1412">
 <s>
 Ahhhhhhhhh	ITJ	INTJ	Z4	ah	ahhhhhhhhh	ah
-wie	PTKIFG/PWAV	ADV	A14	wie	wie	wie	CLARIFY
+wie	PWAV	ADV	A14	wie	wie	wie
 süß	ADJD	ADJ	O4.2	süß	süß	süß
 !	$.	PUNCT	Z9	!	!	!
 😻	EMOIMG	SYM	E4.1/Q2.2	😻	😻	😻
