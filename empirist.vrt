@@ -33,7 +33,7 @@ Seite	NN	NOUN	Y2	Seite	Seite	Seite
 “	$(	PUNCT	Z9	“	“	“
 Fettehenne.info	URL	PROPN	Y2/Z3	fettehenne.info	fettehenne.info	fettehenne.info
 ”	$(	PUNCT	Z9	”	”	”
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Netz	NN	NOUN	Y2	Netz	Netz	Netz
 gibt	VVFIN	VERB	A3	gibt	geben	geben
 ?	$.	PUNCT	Z9	?	?	?
@@ -116,7 +116,7 @@ ist	VAFIN	AUX	A3	ist	sein	sein
 Jahre	NN	NOUN	T1.3	Jahre	Jahr	Jahr
 und	KON	CCONJ	Z5	und	und	und
 zählt	VVFIN	VERB	A1.8/MWU:130	zählt	zählen	zählen
-zum	APPRART	_	A1.4/MWU:119	zum	zu	zu
+zum	APPRART	ADP	A1.4/MWU:119	zum	zu	zu
 Glück	NN	NOUN	A1.4/MWU:188	Glück	Glück	Glück
 (	$(	PUNCT	Z9	(	(	(
 so	ADV	ADV	A6.1	so	so	so
@@ -140,7 +140,7 @@ schreibt	VVFIN	VERB	Q1.2	schreibt	schreiben	schreiben
 Ihr	PPER	PRON	Z8	ihr	ihr	ihr
 euch	PPER	PRON	Z8	euch	sich	sich
 mal	ADV	ADV	Z4	mal	mal	mal
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 SchülerVZ	NE	PROPN	Y2/Z3	SchülerVZ	SchülerVZ	SchülerVZ
 .	$.	PUNCT	Z9	.	.	.
 </s>
@@ -150,7 +150,7 @@ habe	VAFIN	AUX	Z5	habe	haben	haben
 deinen	PPOSAT	DET	Z8	deinen	dein	dein
 Papa	NN	NOUN	S4/S2.2	Papa	Papa	Papa
 auch	ADV	ADV	Z5	auch	auch	auch
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Chat	NN	NOUN	Q1.3/Y2	Chat	Chat	Chat
 kennengelernt	VVPP	VERB	S3.1/X2.3	kennengelernt	kennenlernen	kennenlernen
 vor	APPR	ADP	T1.1.1	vor	vor	vor
@@ -309,7 +309,7 @@ und	KON	CCONJ	Z5	und	und	und
 religiöser	ADJA	ADJ	S9	religiöser	religiös	religiös
 Art	NN	NOUN	A4.1	Art	Art	Art
 (	$(	PUNCT	Z9	(	(	(
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 Fleisch	NN	NOUN	F1	Fleisch	Fleisch	Fleisch
 und	KON	CCONJ	Z5	und	und	und
@@ -324,7 +324,7 @@ werden	VAFIN	AUX	Z5	werden	werden	werden
 </s>
 <s>
 Dabei	PAV	ADV	Z8	dabei	dabei	dabei
-gehts	VVPPER	_	A11.1/MWU:330	gehts	gehen	gehen
+gehts	VVPPER	VERB	A11.1/MWU:330	gehts	gehen	gehen
 ja	PTKMA	ADV	Z4	ja	ja	ja
 weniger	ADJD	ADJ	A13.6	weniger	wenig	wenig
 um	APPR	ADP	A11.1/MWU:327	um	um	um
@@ -427,7 +427,7 @@ nehmen	VVINF	VERB	M2	nehmen	nehmen	nehmen	mitnehmen
 ,	$,	PUNCT	Z9	,	,	,
 damit	KOUS	SCONJ	A2.2	damit	damit	damit
 ich	PPER	PRON	Z8	ich	ich	ich
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Katalog	NN	NOUN	Q1.2/Y2	Katalog	Katalog	Katalog
 nach	APPR	ADP	Z5	nach	nach	nach
 Büchern	NN	NOUN	Q4.1	Büchern	Buch	Buch
@@ -503,7 +503,7 @@ können	VMFIN	AUX	A7/S7.4	können	können	können
 </s>
 <s>
 EVtl.	ADJD	ADJ	A7	evtl.	evtl.	evtl.
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Internet-Pool	NN	NOUN	M7/Y2	Internet-Pool	Internet-Pool	Internet-Pool
 müsste	VMFIN	AUX	S6	müsste	müssen	müssen
 man	PIS	PRON	Z8	man	man	man
@@ -675,7 +675,7 @@ gehört	VVPP	VERB	X3.2	gehört	hören	hören
 ,	$,	PUNCT	Z9	,	,	,
 die	PRELS	PRON	Z8	die	der	der
 nur	PTKIFG	ADV	A14	nur	nur	nur
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Netz	NN	NOUN	Y2	Netz	Netz	Netz
 der	ART	DET	Z5	der	der	der
 Uni	NN	NOUN	M7/Y1	Uni	Uni	Uni
@@ -712,7 +712,7 @@ lassen	VVFIN	VERB	A7/MWU:703	lassen	lassen	lassen
 <s>
 Sitzen	VVFIN	VERB	M8	sitzen	sitzen	sitzen
 Sie	PPER	PRON	Z8	Sie	sie	sie
-zur	APPRART	_	T1.1.2/MWU	zur	zu	zu
+zur	APPRART	ADP	T1.1.2/MWU	zur	zu	zu
 Zeit	NN	NOUN	T1.1.2/MWU	Zeit	Zeit	Zeit
 auf	APPR	ADP	M6	auf	auf	auf
 dem	ART	DET	Z5	dem	der	der
@@ -750,7 +750,7 @@ besuchen	VVINF	VERB	M1/S3.1	besuchen	besuchen	besuchen
 </posting>
 <posting id="cmc_train_002_024" author="BENUTZER" origid="UB3-14">
 <s>
-Zur	APPRART	_	T1.1.2/MWU	zur	zu	zu
+Zur	APPRART	ADP	T1.1.2/MWU	zur	zu	zu
 Zeit	NN	NOUN	T1.1.2/MWU	Zeit	Zeit	Zeit
 sitze	VVFIN	VERB	M8	sitze	sitzen	sitzen
 ich	PPER	PRON	Z8	ich	ich	ich
@@ -765,7 +765,7 @@ ich	PPER	PRON	Z8	ich	ich	ich
 muss	VMFIN	AUX	S6	muss	müssen	müssen
 eh	PTKMA	ADV	Z4	eh	eh	eh
 noch	ADV	ADV	T1.1.3/Z4	noch	noch	noch
-zur	APPRART	_	M6	zur	zu	zu
+zur	APPRART	ADP	M6	zur	zu	zu
 Uni	NN	NOUN	M7/Y1	Uni	Uni	Uni
 .	$.	PUNCT	Z9	.	.	.
 </s>
@@ -802,7 +802,7 @@ als	KON	CCONJ	Z5/MWU:794:802	als	als	als
 auch	ADV	ADV	Z5/MWU:794:801	auch	auch	auch
 elektronische	ADJA	ADJ	Y2	elektronische	elektronisch	elektronisch
 Hilfsmittel	NN	NOUN	S8	Hilfsmittel	Hilfsmittel	Hilfsmittel
-zur	APPRART	_	A1.5.1/MWU:792:806	zur	zu	zu
+zur	APPRART	ADP	A1.5.1/MWU:792:806	zur	zu	zu
 Verfügung	NN	NOUN	A1.5.1/MWU:792:805	Verfügung	Verfügung	Verfügung
 </s>
 </posting>
@@ -1105,7 +1105,7 @@ Buches	NN	NOUN	Q4.1	Buches	Buch	Buch
 </posting>
 <posting id="cmc_train_002_054" author="AUSKUNFT" origid="UB4-16">
 <s>
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 normalen	ADJA	ADJ	A6.2	normalen	normal	normal
 Bestand	NN	NOUN	A9/Q4.1	Bestand	Bestand	Bestand
 </s>
@@ -1248,7 +1248,7 @@ WB	NN	NOUN	Q4.1	Wörterbuch	WB	Wörterbuch
 ?	$.	PUNCT	Z9	?	?	?
 </s>
 <s>
-Im	APPRART	_	Z5	im	in	in
+Im	APPRART	ADP	Z5	im	in	in
 Inet	NN	NOUN	Y2	Internet	Inet	Internet
 finden	VVFIN	VERB	X2.4	finden	finden	finden
 wir	PPER	PRON	Z8	wir	wir	wir
@@ -1507,7 +1507,7 @@ in	APPR	ADP	Z5	in	in	in
 Fördernanlagen	NN	NOUN	I4	Förderanlagen	Fördernanlage	Förderanlage
 (	$(	PUNCT	Z9	(	(	(
 hier	ADV	ADV	M6	hier	hier	hier
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Pott	NN	NOUN	Z2	Pott	Pott	Pott
 :-)	EMOASC	SYM	E4.1/Q2.2	:-)	:-)	:-)
 )	$(	PUNCT	Z9	)	)	)
@@ -2287,7 +2287,7 @@ zori	NE	PROPN	Z1	zori	zori	zori
 oh	ITJ	INTJ	Z4	oh	oh	oh
 man	ITJ	INTJ	Z4	man	man	man
 wat	PWS	PRON	Z8	was	wat	was
-fürn	APPRART	_	Z5	fürn	für	für
+fürn	APPRART	ADP	Z5	fürn	für	für
 krawall	NN	NOUN	X3.2	Krawall	Krawall	Krawall
 hier	ADV	ADV	M6	hier	hier	hier
 draußen	ADV	ADV	M6	draußen	draußen	draußen
@@ -2554,7 +2554,7 @@ eine	ART	DET	Z5	eine	ein	ein
 </posting>
 <posting id="cmc_train_003_085" author="Lantonie" origid="1-99">
 <s>
-Stimmts	VVPPER	_	A5.2/Z4	stimmts	stimmen	stimmen
+Stimmts	VVPPER	VERB	A5.2/Z4	stimmts	stimmen	stimmen
 ?	$.	PUNCT	Z9	?	?	?
 </s>
 </posting>
@@ -2640,7 +2640,7 @@ gegessen	VVPP	VERB	F1	gegessen	essen	essen
 <s>
 da	ADV	ADV	M6	da	da	da
 is	VAFIN	AUX	A3	ist	sein	sein
-sone	ADVART	_	Z5	sone	so	so
+sone	ADVART	ADV	Z5	sone	so	so
 etwa	PTKIFG	ADV	A5.3	etwa	etwa	etwa
 25	CARD	NUM	N1	25	25	25
 m	NN	NOUN	N3.1	m	m	m
@@ -2786,7 +2786,7 @@ ahnung	NN	NOUN	X2.2	Ahnung	Ahnung	Ahnung
 ,	$,	PUNCT	Z9	,	,	,
 eine	ART	DET	Z5	eine	ein	ein
 die	PRELS	PRON	Z8	die	der	der
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 blütezeit	NN	NOUN	L3/T1.3	Blütezeit	Blütezeit	Blütezeit
 wohl	PTKMA	ADV	Z4	wohl	wohl	wohl
 immer	ADV	ADV	T1.1	immer	immer	immer
@@ -2846,7 +2846,7 @@ busch	NE	PROPN	Z1	Busch	Busch	Busch
 zitier	AKW	VERB	Q2.2	zitier	zitier	zitier
 *	$(	PUNCT	Z9	*	*	*
 und	KON	CCONJ	Z5	und	und	und
-vom	APPRART	_	Z5	vom	von	von
+vom	APPRART	ADP	Z5	vom	von	von
 ganzen	ADJA	ADJ	N5.1	ganzen	ganz	ganz
 hühnerschmaus	NN	NOUN	F1	Hühnerschmaus	Hühnerschmaus	Hühnerschmaus
 schaut	VVFIN	VERB	X3.4/MWU:2857	schaut	schauen	schauen	herausschauen
@@ -2882,7 +2882,7 @@ Wien	NE	PROPN	Z2	Wien	Wien	Wien
 <s>
 Warst	VAFIN	AUX	A3	warst	sein	sein
 du	PPER	PRON	Z8	du	du	du
-vom	APPRART	_	A2.2	vom	von	von
+vom	APPRART	ADP	A2.2	vom	von	von
 Zeugnis	NN	NOUN	P1/Q1.2	Zeugnis	Zeugnis	Zeugnis
 überraschtß	VVPP	VERB	E5	überrascht	überraschtßen	überraschen
 </s>
@@ -3048,7 +3048,7 @@ g	AKW	INTJ	E4.1/Q2.2	g	g	g
 quaki	NE	PROPN	Z1	quaki	quaki	quaki
 bindet	VVFIN	VERB	M8/MWU:3053	bindet	binden	binden	festbinden
 tom	NE	PROPN	Z1	Tom	Tom	Tom
-am	APPRART	_	Z5	am	an	an
+am	APPRART	ADP	Z5	am	an	an
 chat	NN	NOUN	Q1.3/Y2	Chat	Chat	Chat
 fest	PTKVZ	PART	M8/MWU:3049	fest	fest	fest
 </s>
@@ -3207,7 +3207,7 @@ wart	AKW	VERB	M8/Q2.2	wart	wart	wart
 <s>
 kommst	VVFIN	VERB	M1	kommst	kommen	kommen
 du	PPER	PRON	Z8	du	du	du
-zum	APPRART	_	M6	zum	zu	zu
+zum	APPRART	ADP	M6	zum	zu	zu
 ct	NN	NOUN	Z99	Ct	ct	Ct
 ?	$.	PUNCT	Z9	?	?	?
 </s>
@@ -3728,7 +3728,7 @@ und	KON	CCONJ	Z5	und	und	und
 ein	ART	DET	Z5	ein	ein	ein
 paar	PIAT	ADJ	N1	paar	paar	paar
 leute	NN	NOUN	S2	Leute	Leute	Leute
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 anpacken	NN	NOUN	S8	Anpacken	anpacken	anpacken
 </s>
 </posting>
@@ -3824,7 +3824,7 @@ wollt	VMFIN	AUX	X7	wollte	wollen	wollen
 ja	PTKMA	ADV	Z4	ja	ja	ja
 vergleichen	VVINF	VERB	A6.1	vergleichen	vergleichen	vergleichen
 tom	NE	PROPN	Z1	Tom	Tom	Tom
-weils	KOUSPPER	_	A2.2	weils	weil	weil
+weils	KOUSPPER	SCONJ	A2.2	weils	weil	weil
 eh	PTKMA	ADV	Z4	eh	eh	eh
 so	ADV	ADV	A13.3	so	so	so
 teuer	ADJD	ADJ	I1.3	teuer	teuer	teuer
@@ -3836,7 +3836,7 @@ so	ADV	ADV	A13.3	so	so	so
 grossen	ADJA	ADJ	N3.2	großen	gross	groß
 unterschied	NN	NOUN	A6.1	Unterschied	Unterschied	Unterschied
 macht	VVFIN	VERB	A1.1.1	macht	machen	machen
-wärs	VAPPER	_	Z7	wärs	sein	sein
+wärs	VAPPER	AUX	Z7	wärs	sein	sein
 ja	PTKMA	ADV	Z4	ja	ja	ja
 mal	PTKMA	ADV	Z4	mal	mal	mal
 drin	ADV	ADV	A7	drin	drin	drin
@@ -3906,7 +3906,7 @@ in	APPR	ADP	M1	in	in	in
 den	ART	DET	Z5	den	der	der
 kleiderkasten	NN	NOUN	H5	Kleiderkasten	Kleiderkasten	Kleiderkasten
 schick	AKW	VERB	M2	schick	schick	schick
-zum	APPRART	_	A2.2	zum	zu	zu
+zum	APPRART	ADP	A2.2	zum	zu	zu
 umziehn	NN	NOUN	B5	Umziehen	umziehn	umziehen
 </s>
 </posting>
@@ -3943,7 +3943,7 @@ g	AKW	INTJ	E4.1/Q2.2	g	g	g
 <posting id="cmc_train_004_001" author="Deutsches Textarchiv @textarchiv" date="18. Nov.">
 <s>
 Das	PDS	PRON	Z8	das	der	der
-wärs	VAPPER	_	T2	wärs	sein	sein
+wärs	VAPPER	AUX	T2	wärs	sein	sein
 ,	$,	PUNCT	Z9	,	,	,
 allen	PIAT	ADJ	N5.1	allen	aller	aller
 Teilnehmern	NN	NOUN	S1.1.3/S5	Teilnehmern	Teilnehmer	Teilnehmer
@@ -4041,7 +4041,7 @@ Troll	NN	NOUN	L2	Troll	Troll	Troll
 ,	$,	PUNCT	Z9	,	,	,
 der	PRELS	PRON	Z8	der	der	der
 noch	ADV	ADV	T1.1.2	noch	noch	noch
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 @dwds_de	NE	PROPN	Y1/Z3	@dwds_de	@dwds_de	@dwds_de
 fehlt	VVFIN	VERB	A3	fehlt	fehlen	fehlen
 :	$(	PUNCT	Z9	:	:	:
@@ -4202,7 +4202,7 @@ Aha	ITJ	INTJ	Z4	aha	aha	aha
 !	$.	PUNCT	Z9	!	!	!
 Es	PPER	PRON	Z8	es	es	es
 zwitschert	VVFIN	VERB	L2	zwitschert	zwitschern	zwitschern
-im	APPRART	_	M8	im	in	in
+im	APPRART	ADP	M8	im	in	in
 virtuellen	ADJA	ADJ	Y2	virtuellen	virtuell	virtuell
 Geäst	NN	NOUN	L3	Geäst	Geäst	Geäst
 !	$.	PUNCT	Z9	!	!	!
@@ -4297,7 +4297,7 @@ noch	PTKMWL	ADV	N6	noch	noch	noch
 mal	PTKMWL	ADV	N6	mal	mal	mal
 schriftlich	ADJD	ADJ	Q1.2	schriftlich	schriftlich	schriftlich
 +	KON	CCONJ	Z5	+	+	+
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Nachlesen	NN	NOUN	X2.4	Nachlesen	nachlesen	nachlesen
 :	$.	PUNCT	Z9	:	:	:
 Verlängerung	NN	NOUN	T1.3	Verlängerung	Verlängerung	Verlängerung
@@ -4309,7 +4309,7 @@ Fertigstellung	NN	NOUN	T2	Fertigstellung	Fertigstellung	Fertigstellung
 der	ART	DET	Z5	der	der	der
 Einstiegsreflexion	NN	NOUN	Q1.2/T2/X4.1	Einstiegsreflexion	Einstiegsreflexion	Einstiegsreflexion
 bis	APPR	ADP	T2	bis	bis	bis
-zum	APPRART	_	T2	zum	zu	zu
+zum	APPRART	ADP	T2	zum	zu	zu
 12.	ADJA	ADJ	N1	12.	12.	12.
 5.	ADJA	ADJ	N1	5.	5.	5.
 </s>
@@ -4325,7 +4325,7 @@ Kann	VMFIN	AUX	A7	kann	können	können
 man	PIS	PRON	Z8	man	man	man
 die	ART	DET	Z5	die	der	der
 Ergebnisse	NN	NOUN	A2.2	Ergebnisse	Ergebnis	Ergebnis
-v.	APPRART	_	Z5	v.	v.	v.
+v.	APPRART	ADP	Z5	v.	v.	v.
 14.	ADJA	ADJ	T1.2	14.	14.	14.
 4.	ADJA	ADJ	T1.2	4.	4.	4.
 noch	ADV	ADV	Z4	noch	noch	noch
@@ -4337,7 +4337,7 @@ nachlesen	VVINF	VERB	X2.4	nachlesen	nachlesen	nachlesen
 &lt;-	XY	X	Z5	&lt;-	&lt;-	&lt;-
 ja	PTKANT	INTJ	Z4	ja	ja	ja
 ,	$,	PUNCT	Z9	,	,	,
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Profil	NN	NOUN	M7/Y2	Profil	Profil	Profil
 von	APPR	ADP	Z5	von	von	von
 Frau	NN	NOUN	S2.1	Frau	Frau	Frau
@@ -4543,7 +4543,7 @@ schreiben	VVINF	VERB	Q1.2	schreiben	schreiben	schreiben
 <s>
 &lt;-	XY	X	Z5	&lt;-	&lt;-	&lt;-
 dacht	VVFIN	VERB	X2.1	dachte	denken	denken
-ichs	PPERPPER	_	Z8	ichs	ich	ich
+ichs	PPERPPER	PRON	Z8	ichs	ich	ich
 mir	PRF	PRON	Z8	mir	sich	sich
 doch	PTKMA	ADV	Z4	doch	doch	doch
 ,	$,	PUNCT	Z9	,	,	,
@@ -4570,7 +4570,7 @@ mich	PRF	PRON	Z8	mich	sich	sich
 für	APPR	ADP	Z5	für	für	für
 den	ART	DET	Z5	den	der	der
 Wurf	NN	NOUN	E5/MWU	Wurf	Wurf	Wurf
-ins	APPRART	_	E5/MWU	ins	in	in
+ins	APPRART	ADP	E5/MWU	ins	in	in
 kalte	ADJA	ADJ	E5/MWU	kalte	kalt	kalt
 Wasser	NN	NOUN	E5/MWU	Wasser	Wasser	Wasser
 -	$(	PUNCT	Z9	-	-	-
@@ -4632,7 +4632,7 @@ Ihren	PPOSAT	DET	Z8	Ihren	ihr	ihr
 Namen	NN	NOUN	Z3	Namen	Name	Name
 ,	$,	PUNCT	Z9	,	,	,
 da	ADV	ADV	M6	da	da	da
-gibts	VVPPER	_	A3	gibts	geben	geben
+gibts	VVPPER	VERB	A3	gibts	geben	geben
 ein	ART	DET	Z5	ein	ein	ein
 "	$(	PUNCT	Z9	"	"	"
 Hilfe-Center	NN	NOUN	M7/S8/Y2	Hilfe-Center	Hilfe-Center	Hilfe-Center
@@ -4707,7 +4707,7 @@ reflexionswürdig	ADJD	ADJ	S1.1.4/X2.1	reflexionswürdig	reflexionswürdig	refle
 das	PDS	PRON	Z8	das	der	der
 gibt	VVFIN	VERB	A9	gibt	geben	geben
 Anstoß	NN	NOUN	T2	Anstoß	Anstoß	Anstoß
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Einstiegsreflexion	NN	NOUN	Q1.2/T2/X4.1	Einstiegsreflexion	Einstiegsreflexion	Einstiegsreflexion
 !	$.	PUNCT	Z9	!	!	!
 "	$(	PUNCT	Z9	"	"	"
@@ -4742,7 +4742,7 @@ Emoticons	NN	NOUN	E1/Q1.2/Y2	Emoticons	Emoticon	Emoticon
 =	XY	X	A6.1	=	=	=
 schriftl.	ADJA	ADJ	Q1.2	schriftliches	schriftl.	schriftlich
 Äquivalent	NN	NOUN	A6.1	Äquivalent	Äquivalent	Äquivalent
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Mimik	NN	NOUN	B1/E1	Mimik	Mimik	Mimik
 ?	$.	PUNCT	Z9	?	?	?
 </s>
@@ -4781,7 +4781,7 @@ anders	ADV	ADV	A6.1	anders	anders	anders
 Handout	NN	NOUN	Q1.2	Handout	Handout	Handout
 mit	APPR	ADP	Z5	mit	mit	mit
 Hinweisen	NN	NOUN	S8	Hinweisen	Hinweis	Hinweis
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Einstiegsreflexion	NN	NOUN	Q1.2/T2/X4.1	Einstiegsreflexion	Einstiegsreflexion	Einstiegsreflexion
 ist	VAFIN	AUX	A3	ist	sein	sein
 online	ADV	ADV	Y2	online	online	online
@@ -4844,7 +4844,7 @@ eigentlich	ADV	ADV	Z4	eigentlich	eigentlich	eigentlich
 ein	ART	DET	Z5	ein	ein	ein
 schriftliches	ADJA	ADJ	Q1.2	schriftliches	schriftlich	schriftlich
 Äquivalent	NN	NOUN	A6.1	Äquivalent	Äquivalent	Äquivalent
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Mimik	NN	NOUN	B1/E1	Mimik	Mimik	Mimik
 in	APPR	ADP	M6	in	in	in
 Face2face-Komm.	NN	NOUN	Q1.1/S1.1.3	Face-to-Face-Kommunikation	Face2face-Komm.	Face-to-Face-Kommunikation
@@ -5064,7 +5064,7 @@ d.	ART	DET	Z5	d.	d.	d.
 Schrift	NN	NOUN	Q3	Schrift	Schrift	Schrift
 kommen	VVFIN	VERB	Q1.1/T1.1.3/MWU:5071	kommen	kommen	kommen
 wir	PPER	PRON	Z8	wir	wir	wir
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Seminar	NN	NOUN	P1/S5	Seminar	Seminar	Seminar
 noch	ADV	ADV	Z5	noch	noch	noch
 z.	PTKZU	PART	Z5	zu	z.	zu
@@ -5109,13 +5109,13 @@ weiternutzen	VVINF	VERB	A1.5.1	weiternutzen	weiternutzen	weiternutzen
 <s>
 Herzlichen	ADJA	ADJ	S1.2.4/Z4/MWU	herzlichen	herzlich	herzlich
 Dank	NN	NOUN	S1.2.4/Z4/MWU	Dank	Dank	Dank
-fürs	APPRART	_	Z5	fürs	für	für
+fürs	APPRART	ADP	Z5	fürs	für	für
 Speed-Tippen	NN	NOUN	N3.8/Q1.2/Y2	Speed-Tippen	speed-tippen	speed-tippen
 !	$.	PUNCT	Z9	!	!	!
 </s>
 <s>
 Dafür	PAV	ADV	A2.2	dafür	dafür	dafür
-gibts	VVPPER	_	A3	gibts	geben	geben
+gibts	VVPPER	VERB	A3	gibts	geben	geben
 nächste	ADJA	ADJ	N4/T1.1.3	nächste	nächster	nächster
 Woche	NN	NOUN	T1.2	Woche	Woche	Woche
 ein	ART	DET	Z5	ein	ein	ein
@@ -5145,7 +5145,7 @@ Twitterwall	NN	NOUN	Y2/Z3	Twitterwall	Twitterwall	Twitterwall
 ggf.	ADV	ADV	Z5	ggf.	ggf.	ggf.
 "	$(	PUNCT	Z9	"	"	"
 für	APPR	ADP	Z5	für	für	für
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Mitschreiben	NN	NOUN	Q1.2	Mitschreiben	mitschreiben	mitschreiben
 "	$(	PUNCT	Z9	"	"	"
 in	APPR	ADP	Z5	in	in	in
@@ -5172,7 +5172,7 @@ SP.ON	NE	PROPN	Q4.2/Z3	SP.ON	SP.ON	SP.ON
 Warum	PWAV	ADV	A2.2	warum	warum	warum
 öffentliches	ADJA	ADJ	S1.1.1	öffentliches	öffentlich	öffentlich
 Interesse	NN	NOUN	X5.2	Interesse	Interesse	Interesse
-am	APPRART	_	Z5	am	an	an
+am	APPRART	ADP	Z5	am	an	an
 Fall	NN	NOUN	G2.1	Fall	Fall	Fall
 Guttenberg	NE	PROPN	Z1	Guttenberg	Guttenberg	Guttenberg
 besteht	VVFIN	VERB	A3	besteht	bestehen	bestehen
@@ -5210,7 +5210,7 @@ Sohn	NN	NOUN	S2.2/S4	Sohn	Sohn	Sohn
 (	$(	PUNCT	Z9	(	(	(
 7	CARD	NUM	N1	7	7	7
 )	$(	PUNCT	Z9	)	)	)
-beim	APPRART	_	T1.1.2	beim	bei	bei
+beim	APPRART	ADP	T1.1.2	beim	bei	bei
 Abendessen	NN	NOUN	F1	Abendessen	Abendessen	Abendessen
 .	$.	PUNCT	Z9	.	.	.
 </s>
@@ -5226,7 +5226,7 @@ kamen	VVFIN	VERB	M1	kamen	kommen	kommen
 die	ART	DET	Z5	die	der	der
 Leute	NN	NOUN	S2	Leute	Leute	Leute
 eigentlich	PTKMA	ADV	Z4	eigentlich	eigentlich	eigentlich
-ins	APPRART	_	M6	ins	in	in
+ins	APPRART	ADP	M6	ins	in	in
 Internet	NN	NOUN	Y2	Internet	Internet	Internet
 ,	$,	PUNCT	Z9	,	,	,
 als	KOUS	SCONJ	T1.1.1	als	als	als
@@ -5490,7 +5490,7 @@ nur	ADV	ADV	Z4	nur	nur	nur
 <s>
 Die	ART	DET	Z5	die	der	der
 Twitterwall-Sequenz	NN	NOUN	Y2/Z3	Twitterwall-Sequenz	Twitterwall-Sequenz	Twitterwall-Sequenz
-vom	APPRART	_	Z5	vom	von	von
+vom	APPRART	ADP	Z5	vom	von	von
 letzten	ADJA	ADJ	T1.1.1	letzten	letzter	letzter
 Do	NN	NOUN	T1.3	Do.	Do	Do.
 habe	VAFIN	AUX	Z5	habe	haben	haben
@@ -5511,7 +5511,7 @@ in	APPR	ADP	M6	in	in	in
 EWS	NE	PROPN	P1/Y2/Z3	EWS	EWS	EWS
 ein	PTKVZ	PART	Q1.2/MWU:5508	ein	ein	ein
 ,	$,	PUNCT	Z9	,	,	,
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Nachlesen	NN	NOUN	X2.4	Nachlesen	nachlesen	nachlesen
 .	$.	PUNCT	Z9	.	.	.
 :)	EMOASC	SYM	E4.1/Q2.2	:)	:)	:)
@@ -5910,12 +5910,12 @@ die	ART	DET	Z5	die	der	der
 halloweenparty	NN	NOUN	S1.1.3/T1.2	Halloweenparty	Halloweenparty	Halloweenparty
 ist	VAFIN	AUX	A3	ist	sein	sein
 :	$.	PUNCT	Z9	:	:	:
-am	APPRART	_	Z5	am	an	an
+am	APPRART	ADP	Z5	am	an	an
 31.	ADJA	ADJ	N1	31.	31.	31.
 :)	EMOASC	SYM	E4.1/Q2.2	:)	:)	:)
 </s>
 <s>
-haste	VAPPER	_	X7/MWU	haste	haben	haben
+haste	VAPPER	AUX	X7/MWU	haste	haben	haben
 lust	NN	NOUN	X7/MWU	Lust	Lust	Lust
 ?	$.	PUNCT	Z9	?	?	?
 :)	EMOASC	SYM	E4.1/Q2.2	:)	:)	:)
@@ -5934,7 +5934,7 @@ Meine	PPOSAT	DET	Z8	meine	mein	mein
 Schwester	NN	NOUN	S2.1/S4	Schwester	Schwester	Schwester
 kommt	VVFIN	VERB	M1	kommt	kommen	kommen
 ja	PTKMA	ADV	Z4	ja	ja	ja
-am	APPRART	_	Z5	am	an	an
+am	APPRART	ADP	Z5	am	an	an
 Sonntag	NN	NOUN	T1.2	Sonntag	Sonntag	Sonntag
 und	KON	CCONJ	Z5	und	und	und
 dann	ADV	ADV	T1	dann	dann	dann
@@ -6038,7 +6038,7 @@ Hm	ITJ	INTJ	Z4	hm	hm	hm
 ...	$(	PUNCT	Z9	...	...	...
 und	KON	CCONJ	Z5	und	und	und
 sonst	ADV	ADV	A1.7	sonst	sonst	sonst
-gehts	VVPPER	_	A7	gehts	gehen	gehen
+gehts	VVPPER	VERB	A7	gehts	gehen	gehen
 gar	PTKIFG	ADV	A13.7	gar	gar	gar
 nicht	PTKNEG	PART	Z6	nicht	nicht	nicht
 ?	$.	PUNCT	Z9	?	?	?
@@ -6594,7 +6594,7 @@ jemand	PIS	PRON	Z8	jemand	jemand	jemand
 noch	ADV	ADV	T1.1.3	noch	noch	noch
 etwas	ADV	ADV	A13.5	etwas	etwas	etwas
 mehr	PIS	PRON	N5	mehr	mehr	mehr
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Gefährlichkeit	NN	NOUN	A15	Gefährlichkeit	Gefährlichkeit	Gefährlichkeit
 der	ART	DET	Z5	der	der	der
 verschiedenen	ADJA	ADJ	A6.3	verschiedenen	verschieden	verschieden
@@ -6673,7 +6673,7 @@ machen	VVINF	VERB	A1.1.1	machen	machen	machen
 </s>
 <s>
 Danke	PTKANT	INTJ	S1.2.4/Z4/MWU	danke	danke	danke
-im	APPRART	_	S1.2.4/Z4/MWU	im	in	in
+im	APPRART	ADP	S1.2.4/Z4/MWU	im	in	in
 Vorraus	NN	NOUN	S1.2.4/Z4/MWU	Voraus	Vorraus	Voraus
 .	$.	PUNCT	Z9	.	.	.
 </s>
@@ -6705,7 +6705,7 @@ ich	PPER	PRON	Z8	ich	ich	ich
 das	ART	DET	Z5	das	der	der
 nächste	ADJA	ADJ	N4/T1.1.3	nächste	nächster	nächster
 Mal	NN	NOUN	N6	Mal	Mal	Mal
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Dunkeln	NN	NOUN	W2	Dunkeln	Dunkel	Dunkel
 so	ADV	ADV	A6.1	so	so	so
 'nem	ART	DET	Z5	einem	'n	ein
@@ -6928,7 +6928,7 @@ Lied	NN	NOUN	K2	Lied	Lied	Lied
 Ich	PPER	PRON	Z8	ich	ich	ich
 hab	VAFIN	AUX	Z5	habe	haben	haben
 mal	PTKMA	ADV	Z4	mal	mal	mal
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Duden	NN	NOUN	Q4.1/Z3	Duden	Duden	Duden
 nachgesehen	VVPP	VERB	X2.4	nachgesehen	nachsehen	nachsehen
 (	$(	PUNCT	Z9	(	(	(
@@ -7070,7 +7070,7 @@ deutschen	ADJA	ADJ	Z2	deutschen	deutsch	deutsch
 Universitäten	NN	NOUN	M7/Y1	Universitäten	Universität	Universität
 erlernen	VVINF	VERB	X2.3	erlernen	erlernen	erlernen
 ,	$,	PUNCT	Z9	,	,	,
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 an	APPR	ADP	Z5	an	an	an
 der	ART	DET	Z5	der	der	der
@@ -7107,7 +7107,7 @@ immer	ADV	ADV	T1.1	immer	immer	immer
 Phi	NE	PROPN	Z1	Phi	Phi	Phi
 -	$(	PUNCT	Z9	-	-	-
 sie	PPER	PRON	Z8	sie	sie	sie
-kanns	VMPPER	_	X9.1	kanns	können	können
+kanns	VMPPER	AUX	X9.1	kanns	können	können
 einfach	ADJD	ADJ	Z4	einfach	einfach	einfach
 nicht	PTKNEG	PART	Z6	nicht	nicht	nicht
 lassen	VVINF	VERB	Z6	lassen	lassen	lassen
@@ -7187,14 +7187,14 @@ Eindeutschung	NN	NOUN	Q3	Eindeutschung	Eindeutschung	Eindeutschung
 und	KON	CCONJ	Z5	und	und	und
 lässt	VVFIN	VERB	A7	lässt	lassen	lassen
 sich	PRF	PRON	Z8	sich	sich	sich
-im	APPRART	_	A6.1/MWU	im	in	in
+im	APPRART	ADP	A6.1/MWU	im	in	in
 Gegensatz	NN	NOUN	A6.1/MWU	Gegensatz	Gegensatz	Gegensatz
 zu	APPR	ADP	A6.1/MWU	zu	zu	zu
 Songwriter	NN	NOUN	K2/Q1.2/S2	Songwriter	Songwriter	Songwriter
 deswegen	PAV	ADV	A2.2	deswegen	deswegen	deswegen
 auch	ADV	ADV	Z5	auch	auch	auch
 nicht	PTKNEG	PART	Z6	nicht	nicht	nicht
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Duden	NN	NOUN	Q4.1/Z3	Duden	Duden	Duden
 finden	VVINF	VERB	X2.4	finden	finden	finden
 .	$.	PUNCT	Z9	.	.	.
@@ -7345,7 +7345,7 @@ auch	ADV	ADV	Z5	auch	auch	auch
 <posting id="cmc_train_008_011" author="88.70.161.4" date="15:23, 26. Sep. 2010 (CEST)">
 <s>
 Da	ADV	ADV	M6	da	da	da
-stehts	VVPPER	_	Q1.2	stehts	stehen	stehen
+stehts	VVPPER	VERB	Q1.2	stehts	stehen	stehen
 nochmal	ADV	ADV	N6	nochmal	nochmal	nochmal
 ganz	PTKIFG	ADV	A13.3	ganz	ganz	ganz
 deutlich	ADJD	ADJ	A1.9	deutlich	deutlich	deutlich
@@ -7405,7 +7405,7 @@ mir	PPER	PRON	Z8	mir	mir	mir
 <s>
 6	CARD	NUM	N1	6	6	6
 Tipps	NN	NOUN	S8	Tipps	Tipp	Tipp
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Fotografieren	NN	NOUN	C1	Fotografieren	fotografieren	fotografieren
 </s>
 <s>
@@ -7418,7 +7418,7 @@ Ihr	PPER	PRON	Z8	ihr	ihr	ihr
 Tipps	NN	NOUN	S8	Tipps	Tipp	Tipp
 ,	$,	PUNCT	Z9	,	,	,
 die	PRELS	PRON	Z8	die	der	der
-beim	APPRART	_	Z5	beim	bei	bei
+beim	APPRART	ADP	Z5	beim	bei	bei
 Fotografieren	NN	NOUN	C1	Fotografieren	fotografieren	fotografieren
 helfen	VVINF	VERB	S8	helfen	helfen	helfen
 könnten	VMFIN	AUX	A7	könnten	können	können
@@ -7449,7 +7449,7 @@ sich	PRF	PRON	A9/MWU:7442:7447	sich	sich	sich
 ,	$,	PUNCT	Z9	,	,	,
 der	PRELS	PRON	Z8	der	der	der
 Kameras	NN	NOUN	C1/O3	Kameras	Kamera	Kamera
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 prallen	ADJA	ADJ	A1.7	prallen	prall	prall
 Sonnenlicht	NN	NOUN	W2/W4	Sonnenlicht	Sonnenlicht	Sonnenlicht
 nur	PTKIFG	ADV	A1.7	nur	nur	nur
@@ -7490,7 +7490,7 @@ Euch	PPER	PRON	Z8	euch	euch	euch
 (	$(	PUNCT	Z9	(	(	(
 in	APPR	ADP	M6	in	in	in
 Deutschland	NE	PROPN	Z2	Deutschland	Deutschland	Deutschland
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 erhältlich	ADJD	ADJ	I2.2	erhältlich	erhältlich	erhältlich
 bei	APPR	ADP	Z5	bei	bei	bei
@@ -7505,11 +7505,11 @@ sehr	PTKIFG	ADV	A13.3	sehr	sehr	sehr
 viele	PIAT	ADJ	N5	viele	vieler	vieler
 kleinere	ADJA	ADJ	N3.2	kleinere	klein	klein
 Probleme	NN	NOUN	A12/S8	Probleme	Problem	Problem
-beim	APPRART	_	Z5	beim	bei	bei
+beim	APPRART	ADP	Z5	beim	bei	bei
 Fotografieren	NN	NOUN	C1	Fotografieren	fotografieren	fotografieren
 lösen	VVINF	VERB	S8	lösen	lösen	lösen
 ,	$,	PUNCT	Z9	,	,	,
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 mit	APPR	ADP	Z5	mit	mit	mit
 einer	ART	DET	Z5	einer	ein	ein
@@ -7667,7 +7667,7 @@ bei	APPR	ADP	Z5	bei	bei	bei
 Filtern	NN	NOUN	O2	Filtern	Filter	Filter
 ,	$,	PUNCT	Z9	,	,	,
 die	PRELS	PRON	Z8	die	der	der
-zum	APPRART	_	A2.2	zum	zu	zu
+zum	APPRART	ADP	A2.2	zum	zu	zu
 Schutz	NN	NOUN	A15	Schutz	Schutz	Schutz
 der	ART	DET	Z5	der	der	der
 Linse	NN	NOUN	O2	Linse	Linse	Linse
@@ -7728,7 +7728,7 @@ Habt	VAFIN	AUX	Z5	habt	haben	haben
 Ihr	PPER	PRON	Z8	ihr	ihr	ihr
 weitere	ADJA	ADJ	N5	weitere	weit	weit
 Tipps	NN	NOUN	S8	Tipps	Tipp	Tipp
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Thema	NN	NOUN	X4.1	Thema	Thema	Thema
 Fotografie	NN	NOUN	C1	Fotografie	Fotografie	Fotografie
 ?	$.	PUNCT	Z9	?	?	?
@@ -7870,7 +7870,7 @@ der	ART	DET	Z5	der	der	der
 Vortrag	NN	NOUN	Q2.1	Vortrag	Vortrag	Vortrag
 16.00	CARD	NUM	N1	16.00	16.00	16.00
 Uhr	NN	NOUN	T1.1	Uhr	Uhr	Uhr
-im	APPRART	_	X4.1/MWU	im	in	in
+im	APPRART	ADP	X4.1/MWU	im	in	in
 Rahmen	NN	NOUN	X4.1/MWU	Rahmen	Rahmen	Rahmen
 der	ART	DET	X4.1/MWU	der	der	der
 Zukunftswerkstatt	NN	NOUN	I3.1/T1.1.3/S1.1.3	Zukunftswerkstatt	Zukunftswerkstatt	Zukunftswerkstatt
@@ -7975,7 +7975,7 @@ gut	ADJD	ADJ	A5.1	gut	gut	gut
 dass	KOUS	SCONJ	Z5	dass	dass	dass
 es	PPER	PRON	Z8	es	es	es
 WLAN	NN	NOUN	Y2	WLAN	WLAN	WLAN
-beim	APPRART	_	Z5	beim	bei	bei
+beim	APPRART	ADP	Z5	beim	bei	bei
 Bibliothekskongress	NN	NOUN	I3.1/Q4.1/S1.1.3	Bibliothekskongress	Bibliothekskongress	Bibliothekskongress
 gibt	VVFIN	VERB	A3	gibt	geben	geben
 .	$.	PUNCT	Z9	.	.	.
@@ -8016,7 +8016,7 @@ Ballast	NN	NOUN	O2/S8	Ballast	Ballast	Ballast
 ging	VVFIN	VERB	T2/MWU	ging	gehen	gehen
 es	PPER	PRON	T2/MWU	es	es	es
 hinein	ADV	ADV	T2/MWU	hinein	hinein	hinein
-ins	APPRART	_	Z5	ins	in	in
+ins	APPRART	ADP	Z5	ins	in	in
 Vergnügen	NN	NOUN	E4.1	Vergnügen	Vergnügen	Vergnügen
 .	$.	PUNCT	Z9	.	.	.
 </s>
@@ -8145,7 +8145,7 @@ Es	PPER	PRON	Z8	es	es	es
 folgte	VVFIN	VERB	N4	folgte	folgen	folgen
 ein	ART	DET	Z5	ein	ein	ein
 Workshop	NN	NOUN	I3.1/S5	Workshop	Workshop	Workshop
-im	APPRART	_	X4.1/MWU:8149:8150	im	in	in
+im	APPRART	ADP	X4.1/MWU:8149:8150	im	in	in
 Sinne	NN	NOUN	X4.1/MWU:8148:8150	Sinne	Sinn	Sinn
 von	APPR	ADP	X4.1/MWU:8148:8149	von	von	von
 German	FM	X	I4/Z3/MWU:8152:8153:8154	German	German	German
@@ -8228,7 +8228,7 @@ mehr	PIS	PRON	N5	mehr	mehr	mehr
 als	KOKOM	ADP	A6	als	als	als
 eine	ART	DET	N1	eine	ein	ein
 Zeitschrift	NN	NOUN	Q4.2	Zeitschrift	Zeitschrift	Zeitschrift
-fürs	APPRART	_	Z5	fürs	für	für
+fürs	APPRART	ADP	Z5	fürs	für	für
 iPad	NE	PROPN	Y2/Z3	iPad	iPad	iPad
 abonnieren	VVINF	VERB	I2.2/N6	abonnieren	abonnieren	abonnieren
 möchte	VMFIN	AUX	X7	möchte	möchten	möchten
@@ -8396,7 +8396,7 @@ Durschnitt	NN	NOUN	N2	Durchschnitt	Durschnitt	Durchschnitt
 :	$.	PUNCT	Z9	:	:	:
 1990	CARD	NUM	N1	1990	1990	1990
 Besucher	NN	NOUN	A1.5.1/S2	Besucher	Besucher	Besucher
-am	APPRART	_	Z5	am	an	an
+am	APPRART	ADP	Z5	am	an	an
 Tag	NN	NOUN	T1.3	Tag	Tag	Tag
 </s>
 <s>
@@ -8504,7 +8504,7 @@ vor	APPR	ADP	A14	vor	vor	vor
 allem	PIS	PRON	A14	allem	alle	alle
 wenn	KOUS	SCONJ	Z7	wenn	wenn	wenn
 es	PPER	PRON	Z8	es	es	es
-ums	APPRART	_	X4.1/MWU:8510	ums	um	um
+ums	APPRART	ADP	X4.1/MWU:8510	ums	um	um
 Thema	NN	NOUN	X4.1	Thema	Thema	Thema
 Podcasts	NN	NOUN	Q4.3	Podcasts	Podcast	Podcast
 geht	VVFIN	VERB	X4.1/MWU:8507	geht	gehen	gehen
@@ -9119,13 +9119,13 @@ Werte	NN	NOUN	G2.2	Werte	Wert	Wert
 ist	VAFIN	AUX	A3	ist	sein	sein
 die	ART	DET	Z5	die	der	der
 Abkehr	NN	NOUN	T2	Abkehr	Abkehr	Abkehr
-vom	APPRART	_	Z5	vom	von	von
+vom	APPRART	ADP	Z5	vom	von	von
 theozentrischen	ADJA	ADJ	G2.2/S9	theozentrischen	theozentrisch	theozentrisch
 Weltbild	NN	NOUN	G2.2	Weltbild	Weltbild	Weltbild
 (	$(	PUNCT	Z9	(	(	(
 Gott	NN	NOUN	S9	Gott	Gott	Gott
 steht	VVFIN	VERB	M8	steht	stehen	stehen
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Mittelpunkt	NN	NOUN	M6/X5.1	Mittelpunkt	Mittelpunkt	Mittelpunkt
 )	$(	PUNCT	Z9	)	)	)
 des	ART	DET	Z5	des	der	der
@@ -9138,7 +9138,7 @@ kommt	VVFIN	VERB	N4/MWU	kommt	kommen	kommen
 zu	APPR	ADP	N4/MWU	zu	zu	zu
 einer	ART	DET	Z5	einer	ein	ein
 Hinwendung	NN	NOUN	T2	Hinwendung	Hinwendung	Hinwendung
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 anthropozentrischen	ADJA	ADJ	G2.2/S2	anthropozentrischen	anthropozentrisch	anthropozentrisch
 Weltbild	NN	NOUN	G2.2	Weltbild	Weltbild	Weltbild
 der	ART	DET	Z5	der	der	der
@@ -9168,7 +9168,7 @@ steht	VVFIN	VERB	M8	steht	stehen	stehen
 also	ADV	ADV	Z4	also	also	also
 der	ART	DET	Z5	der	der	der
 Mensch	NN	NOUN	S2	Mensch	Mensch	Mensch
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Zentrum	NN	NOUN	M6/X5.1	Zentrum	Zentrum	Zentrum
 .	$.	PUNCT	Z9	.	.	.
 </s>
@@ -9181,7 +9181,7 @@ Menschen	NN	NOUN	S2	Menschen	Mensch	Mensch
 wird	VAFIN	AUX	Z5	wird	werden	werden
 immer	PTKMWL	ADV	N5/MWU	immer	immer	immer
 mehr	PIS	PRON	N5/MWU	mehr	mehr	mehr
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Mittelpunkt	NN	NOUN	M6	Mittelpunkt	Mittelpunkt	Mittelpunkt
 des	ART	DET	Z5	des	der	der
 Handelns	NN	NOUN	A1.1.1	Handelns	handeln	handeln
@@ -9350,7 +9350,7 @@ Arbeitens	NN	NOUN	X4.2	Arbeitens	arbeiten	arbeiten
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Im	APPRART	_	Z5	im	in	in
+Im	APPRART	ADP	Z5	im	in	in
 Zeitalter	NN	NOUN	T1.3	Zeitalter	Zeitalter	Zeitalter
 der	ART	DET	Z5	der	der	der
 Aufklärung	NN	NOUN	T1.1.1/T1.3	Aufklärung	Aufklärung	Aufklärung
@@ -9384,7 +9384,7 @@ wurde	VAFIN	AUX	Z5	wurde	werden	werden
 </text>
 <text subcorpus="web" set="train" id="web_train_005" raw="web_train_005.txt" url="http://schoschi.de/texts/reisedinge.htm">
 <s>
-Im	APPRART	_	Z5	im	in	in
+Im	APPRART	ADP	Z5	im	in	in
 Urlaub	NN	NOUN	K1/M1	Urlaub	Urlaub	Urlaub
 </s>
 <s>
@@ -9619,7 +9619,7 @@ Sammler	NN	NOUN	A9/S2	Sammler	Sammler	Sammler
 <s>
 Nahrungsmittel	NN	NOUN	F1	Nahrungsmittel	Nahrungsmittel	Nahrungsmittel
 ,	$,	PUNCT	Z9	,	,	,
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 Königs-Datteln	NN	NOUN	F1	Königs-Datteln	Königs-Dattel	Königs-Dattel
 ,	$,	PUNCT	Z9	,	,	,
@@ -9676,7 +9676,7 @@ mies	ADJD	ADJ	A5.1	mies	mies	mies
 !	$.	PUNCT	Z9	!	!	!
 </s>
 <s>
-Beim	APPRART	_	Z5	beim	bei	bei
+Beim	APPRART	ADP	Z5	beim	bei	bei
 Geschenk	NN	NOUN	A9	Geschenk	Geschenk	Geschenk
 peinlich	ADJD	ADJ	E4.1	peinlich	peinlich	peinlich
 .	$.	PUNCT	Z9	.	.	.
@@ -9774,7 +9774,7 @@ daß	KOUS	SCONJ	Z5	dass	daß	dass
 in	APPR	ADP	Z5	in	in	in
 vielen	PIAT	ADJ	N5	vielen	vieler	vieler
 Regionen	NN	NOUN	M7	Regionen	Region	Region
-beim	APPRART	_	Z5	beim	bei	bei
+beim	APPRART	ADP	Z5	beim	bei	bei
 20fachen	ADJA	ADJ	N5	20fachen	20fach	20fach
 Preis	NN	NOUN	I1.3	Preis	Preis	Preis
 anfangen	VVPP	VERB	T2	angefangen	anfangen	anfangen
@@ -9784,7 +9784,7 @@ handeln	VVINF	VERB	I2.2	handeln	handeln	handeln
 !	$.	PUNCT	Z9	!	!	!
 </s>
 <s>
-Am	APPRART	_	Z5	am	an	an
+Am	APPRART	ADP	Z5	am	an	an
 besten	ADJD	ADJ	A5.1	besten	gut	gut
 Einheimische	NN	NOUN	M7/S2	Einheimische	einheimische	einheimische
 fragen	VVINF	VERB	Q1.1/X2.4	fragen	fragen	fragen
@@ -9885,7 +9885,7 @@ muß	VMFIN	AUX	S6	muss	müssen	müssen
 man	PIS	PRON	Z8	man	man	man
 auch	ADV	ADV	Z5	auch	auch	auch
 bei	APPR	ADP	Z5	bei	bei	bei
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Ausland	NN	NOUN	M7	Ausland	Ausland	Ausland
 geschneiderten	ADJA	ADJ	B5	geschneiderten	geschneidert	geschneidert
 Anzügen	NN	NOUN	B5	Anzügen	Anzug	Anzug
@@ -10158,7 +10158,7 @@ genau	ADJD	ADJ	A5.3/MWU	genau	genau	genau
 genommen	VVPP	VERB	A5.3/MWU	genommen	nehmen	nehmen
 nicht	PTKNEG	PART	Z6	nicht	nicht	nicht
 unbedingt	ADJD	ADJ	Z4	unbedingt	unbedingt	unbedingt
-zum	APPRART	_	S5/MWU:10154	zum	zu	zu
+zum	APPRART	ADP	S5/MWU:10154	zum	zu	zu
 Thema	NN	NOUN	X4.1	Thema	Thema	Thema
 Social	NN	NOUN	Y2/MWU	Social	Social	Social
 Media	NN	NOUN	Y2/MWU	Media	Media	Media
@@ -10206,7 +10206,7 @@ Auch	ADV	ADV	Z5	auch	auch	auch
 dieser	PDAT	DET	Z8	dieser	dieser	dieser
 Blog	NN	NOUN	Q1.3/Y2	Blog	Blog	Blog
 wurde	VAFIN	AUX	Z5	wurde	werden	werden
-zum	APPRART	_	A13.3/MWU	zum	zu	zu
+zum	APPRART	ADP	A13.3/MWU	zum	zu	zu
 großen	ADJA	ADJ	A13.3/MWU	großen	groß	groß
 Teil	NN	NOUN	A13.3/MWU	Teil	Teil	Teil
 via	APPR	ADP	Z5	via	via	via
@@ -10277,7 +10277,7 @@ Sonntag	NN	NOUN	T1.2	Sonntag	Sonntag	Sonntag
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Im	APPRART	_	Z5	im	in	in
+Im	APPRART	ADP	Z5	im	in	in
 Vergleich	NN	NOUN	A6	Vergleich	Vergleich	Vergleich
 mit	APPR	ADP	Z5	mit	mit	mit
 der	ART	DET	Z5	der	der	der
@@ -10336,7 +10336,7 @@ selber	ADV	ADV	Z8	selber	selber	selber
 Hier	ADV	ADV	M6	hier	hier	hier
 mehr	PIS	PRON	N5	mehr	mehr	mehr
 erfahren	VVINF	VERB	X2.2	erfahren	erfahren	erfahren
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Thema	NN	NOUN	X4.1	Thema	Thema	Thema
 Internettelefonie	NN	NOUN	Q1.3/Y2	Internettelefonie	Internettelefonie	Internettelefonie
 </s>
@@ -10373,7 +10373,7 @@ Vokabular	NN	NOUN	Q3	Vokabular	Vokabular	Vokabular
 des	ART	DET	Z5	des	der	der
 Esperanto	NE	PROPN	Q3	Esperanto	Esperanto	Esperanto
 besteht	VVFIN	VERB	A3	besteht	bestehen	bestehen
-zum	APPRART	_	A13.3/MWU	zum	zu	zu
+zum	APPRART	ADP	A13.3/MWU	zum	zu	zu
 großen	ADJA	ADJ	A13.3/MWU	großen	groß	groß
 Teil	NN	NOUN	A13.3/MWU	Teil	Teil	Teil
 aus	APPR	ADP	Z5	aus	aus	aus
@@ -10397,7 +10397,7 @@ zurückführen	VVINF	VERB	X4.2	zurückführen	zurückführen	zurückführen
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Zur	APPRART	_	A2.2	zur	zu	zu
+Zur	APPRART	ADP	A2.2	zur	zu	zu
 leichten	ADJA	ADJ	A12	leichten	leicht	leicht
 Erlernbarkeit	NN	NOUN	A7/X2.3	Erlernbarkeit	Erlernbarkeit	Erlernbarkeit
 setze	VVFIN	VERB	X6	setze	setzen	setzen
@@ -10406,7 +10406,7 @@ auf	APPR	ADP	Z5	auf	auf	auf
 strenge	ADJA	ADJ	A1.7	strenge	streng	streng
 Regularitäten	NN	NOUN	A4.2	Regularitäten	Regularität	Regularität
 ,	$,	PUNCT	Z9	,	,	,
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 eine	ART	DET	Z5	eine	ein	ein
 phonematische	ADJA	ADJ	Q3	phonematische	phonematisch	phonematisch
@@ -10438,7 +10438,7 @@ an	APPR	ADP	Z5	an	an	an
 agglutinierende	ADJA	ADJ	Q3	agglutinierende	agglutinierend	agglutinierend
 Sprachen	NN	NOUN	Q3	Sprachen	Sprache	Sprache
 (	$(	PUNCT	Z9	(	(	(
-z.	APPRART	_	A4.1	z.	z.	z.
+z.	APPRART	ADP	A4.1	z.	z.	z.
 B.	NN	NOUN	A4.1	B.	B.	B.
 Türkisch	NN	NOUN	Q3/Z2	Türkisch	Türkisch	Türkisch
 )	$(	PUNCT	Z9	)	)	)
@@ -10582,7 +10582,7 @@ an	APPR	ADP	Z5	an	an	an
 anderen	ADJA	ADJ	A6.1	anderen	anderer	anderer
 Konzepten	NN	NOUN	X4.1	Konzepten	Konzept	Konzept
 (	$(	PUNCT	Z9	(	(	(
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 Logik	NN	NOUN	Y1	Logik	Logik	Logik
 ,	$,	PUNCT	Z9	,	,	,
@@ -10602,7 +10602,7 @@ inspiriert	ADJD	ADJ	X4.2	inspiriert	inspiriert	inspiriert
 sein	VAINF	AUX	A3	sein	sein	sein
 ,	$,	PUNCT	Z9	,	,	,
 wenn	KOUS	SCONJ	Z7	wenn	wenn	wenn
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 die	ART	DET	Z5	die	der	der
 natürliche	ADJA	ADJ	A5.4	natürliche	natürlich	natürlich
@@ -10746,7 +10746,7 @@ einen	ART	DET	Z5	einen	ein	ein
 zusätzlichen	ADJA	ADJ	N5	zusätzlichen	zusätzlich	zusätzlich
 Querstrich	NN	NOUN	O4.4	Querstrich	Querstrich	Querstrich
 rechts	ADV	ADV	M6	rechts	rechts	rechts
-am	APPRART	_	Z5	am	an	an
+am	APPRART	ADP	Z5	am	an	an
 Zeichen	NN	NOUN	Q3	Zeichen	Zeichen	Zeichen
 unterscheidet	VVFIN	VERB	A6.1	unterscheidet	unterscheiden	unterscheiden
 .	$.	PUNCT	Z9	.	.	.
@@ -10974,7 +10974,7 @@ geworden	VAPP	AUX	A3	geworden	werden	werden
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Beim	APPRART	_	T1.3	beim	bei	bei
+Beim	APPRART	ADP	T1.3	beim	bei	bei
 morgendlichen	ADJA	ADJ	N6/T1.3	morgendlichen	morgendlich	morgendlich
 Kaffee	NN	NOUN	F2	Kaffee	Kaffee	Kaffee
 in	APPR	ADP	M6	in	in	in
@@ -11003,7 +11003,7 @@ mit	APPR	ADP	Z5	mit	mit	mit
 Lebensmitteln	NN	NOUN	F1	Lebensmitteln	Lebensmittel	Lebensmittel
 und	KON	CCONJ	Z5	und	und	und
 Getränken	NN	NOUN	F2	Getränken	Getränk	Getränk
-im	APPRART	_	N5/MWU	im	in	in
+im	APPRART	ADP	N5/MWU	im	in	in
 großen	ADJA	ADJ	N5/MWU	großen	groß	groß
 Stil	NN	NOUN	N5/MWU	Stil	Stil	Stil
 ,	$,	PUNCT	Z9	,	,	,
@@ -11128,14 +11128,14 @@ Platz	NN	NOUN	M7	Platz	Platz	Platz
 </s>
 <s>
 Zelt	NN	NOUN	H1	Zelt	Zelt	Zelt
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Schatten	NN	NOUN	W2	Schatten	Schatten	Schatten
 ,	$,	PUNCT	Z9	,	,	,
 180	CARD	NUM	N1	180	180	180
 Grad	NN	NOUN	N3.6	Grad	Grad	Grad
 Meerblick	NN	NOUN	X3.4/W3	Meerblick	Meerblick	Meerblick
 direkt	ADJD	ADJ	A1.7	direkt	direkt	direkt
-vorm	APPRART	_	M6	vorm	vor	vor
+vorm	APPRART	ADP	M6	vorm	vor	vor
 Zelt-Reißverschluss	NN	NOUN	H1/O2	Zelt-Reißverschluss	Zelt-Reißverschluss	Zelt-Reißverschluss
 und	KON	CCONJ	Z5	und	und	und
 eine	ART	DET	Z5	eine	ein	ein
@@ -11221,7 +11221,7 @@ auf	PTKVZ	PART	B1/MWU	auf	auf	auf
 und	KON	CCONJ	Z5	und	und	und
 stehe	VVFIN	VERB	M8	stehe	stehen	stehen
 direkt	ADJD	ADJ	M6	direkt	direkt	direkt
-vorm	APPRART	_	M6	vorm	vor	vor
+vorm	APPRART	ADP	M6	vorm	vor	vor
 Meer	NN	NOUN	W3	Meer	Meer	Meer
 .	$.	PUNCT	Z9	.	.	.
 </s>
@@ -11273,7 +11273,7 @@ wunderbar	ADJD	ADJ	A5.1	wunderbar	wunderbar	wunderbar
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Im	APPRART	_	M6	im	in	in
+Im	APPRART	ADP	M6	im	in	in
 “	$(	PUNCT	Z9	“	“	“
 Basecamp	NN	NOUN	M7	Basecamp	Basecamp	Basecamp
 ”	$(	PUNCT	Z9	”	”	”
@@ -11285,7 +11285,7 @@ und	KON	CCONJ	Z5	und	und	und
 Abend	NN	NOUN	N6/T1.2	Abend	Abend	Abend
 alle	PIAT	ADJ	Z8	alle	aller	aller
 Amateur-Robinsons	NN	NOUN	I3.2/S2/S5	Amateur-Robinsons	Amateur-Robinson	Amateur-Robinson
-zum	APPRART	_	A2.2	zum	zu	zu
+zum	APPRART	ADP	A2.2	zum	zu	zu
 Essen	NN	NOUN	F1	Essen	essen	essen
 ,	$,	PUNCT	Z9	,	,	,
 trinken	NN	NOUN	F2	Trinken	trinken	trinken
@@ -11452,7 +11452,7 @@ idyllisch	ADJD	ADJ	E3	idyllisch	idyllisch	idyllisch
 nach	APPR	ADP	N4	nach	nach	nach
 dem	ART	DET	Z5	dem	der	der
 Aufstehen	NN	NOUN	B1/M1	Aufstehen	aufstehen	aufstehen
-am	APPRART	_	M6	am	an	an
+am	APPRART	ADP	M6	am	an	an
 Strand	NN	NOUN	W3	Strand	Strand	Strand
 ,	$,	PUNCT	Z9	,	,	,
 sondern	KON	CCONJ	Z5	sondern	sondern	sondern
@@ -11505,7 +11505,7 @@ Trotz	APPR	ADP	A1.7	trotz	trotz	trotz
 des	ART	DET	Z5	des	der	der
 schlechten	ADJA	ADJ	A5.1	schlechten	schlecht	schlecht
 Wetters	NN	NOUN	W4	Wetters	Wetter	Wetter
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Schluss	NN	NOUN	T2	Schluss	Schluss	Schluss
 hatten	VAFIN	AUX	Z5	hatten	haben	haben
 wir	PPER	PRON	Z8	wir	wir	wir
@@ -11523,7 +11523,7 @@ kleine	ADJA	ADJ	N3.2	kleine	klein	klein
 Flecken	NN	NOUN	M7	Flecken	Fleck	Fleck
 Erde	NN	NOUN	M7	Erde	Erde	Erde
 jedem	PIS	PRON	Z8	jedem	jeder	jeder
-ans	APPRART	_	Q2.2/MWU	ans	an	an
+ans	APPRART	ADP	Q2.2/MWU	ans	an	an
 Herz	NN	NOUN	Q2.2/MWU	Herz	Herz	Herz
 legen	VVINF	VERB	Q2.2/MWU	legen	legen	legen
 ,	$,	PUNCT	Z9	,	,	,
@@ -11590,7 +11590,7 @@ schaffen	VVINF	VERB	A2.1	schaffen	schaffen	schaffen
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Im	APPRART	_	Z5	im	in	in
+Im	APPRART	ADP	Z5	im	in	in
 heute	ADV	ADV	T1.1.2	heute	heute	heute
 vorgestellten	ADJA	ADJ	Q2.2	vorgestellten	vorgestellt	vorgestellt
 Koalitionsvertrag	NN	NOUN	G1.2/Q1.2	Koalitionsvertrag	Koalitionsvertrag	Koalitionsvertrag
@@ -11658,7 +11658,7 @@ Umsetzung	NN	NOUN	A1.6	Umsetzung	Umsetzung	Umsetzung
 der	ART	DET	Z5	der	der	der
 nötigen	ADJA	ADJ	S6	nötigen	nötig	nötig
 Regelungen	NN	NOUN	A1.7	Regelungen	Regelung	Regelung
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Urheberrechtsgesetz	NN	NOUN	G2.1/Q1.2	Urheberrechtsgesetz	Urheberrechtsgesetz	Urheberrechtsgesetz
 an	PTKVZ	PART	Z5	an	an	an
 .	$.	PUNCT	Z9	.	.	.
@@ -11869,7 +11869,7 @@ werden	VAINF	AUX	Z5	werden	werden	werden
 Dazu	PAV	ADV	Z8	dazu	dazu	dazu
 heißt	VVFIN	VERB	Q2.2/MWU	heißt	heißen	heißen
 es	PPER	PRON	Q2.2/MWU	es	es	es
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Koalitionsvertrag	NN	NOUN	G1.2/Q1.2	Koalitionsvertrag	Koalitionsvertrag	Koalitionsvertrag
 :	$.	PUNCT	Z9	:	:	:
 „	$(	PUNCT	Z9	„	„	„
@@ -11886,7 +11886,7 @@ der	ART	DET	Z5	der	der	der
 Wissenschaft	NN	NOUN	Y1	Wissenschaft	Wissenschaft	Wissenschaft
 initiieren	VVINF	VERB	T2	initiieren	initiieren	initiieren
 ,	$,	PUNCT	Z9	,	,	,
-zum	APPRART	_	A4.1/MWU	zum	zu	zu
+zum	APPRART	ADP	A4.1/MWU	zum	zu	zu
 Beispiel	NN	NOUN	A4.1/MWU	Beispiel	Beispiel	Beispiel
 um	KOUI	SCONJ	A2.2	um	um	um
 Zugang	NN	NOUN	M1	Zugang	Zugang	Zugang
@@ -12018,7 +12018,7 @@ werden	VAINF	AUX	Z5	werden	werden	werden
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Im	APPRART	_	Z5	im	in	in
+Im	APPRART	ADP	Z5	im	in	in
 Bereich	NN	NOUN	M7	Bereich	Bereich	Bereich
 der	ART	DET	Z5	der	der	der
 digitalen	ADJA	ADJ	Y2	digitalen	digital	digital
@@ -12041,7 +12041,7 @@ von	APPR	ADP	Z5	von	von	von
 Methoden	NN	NOUN	X4.2	Methoden	Methode	Methode
 und	KON	CCONJ	Z5	und	und	und
 Werkzeugen	NN	NOUN	X4.1	Werkzeugen	Werkzeug	Werkzeug
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Datenanalyse	NN	NOUN	X2.4/Y1	Datenanalyse	Datenanalyse	Datenanalyse
 “	$(	PUNCT	Z9	“	“	“
 ausgerichtet	VVPP	VERB	X5.1	ausgerichtet	ausrichten	ausrichten
@@ -12090,7 +12090,7 @@ Themen	NN	NOUN	X4.1	Themen	Thema	Thema
 rasch	ADJD	ADJ	N3.8	rasch	rasch	rasch
 und	KON	CCONJ	Z5	und	und	und
 mutig	ADJD	ADJ	E5	mutig	mutig	mutig
-im	APPRART	_	S8/MWU:12094	im	in	in
+im	APPRART	ADP	S8/MWU:12094	im	in	in
 Sinne	NN	NOUN	S8/MWU:12093	Sinne	Sinn	Sinn
 der	ART	DET	Z5	der	der	der
 Wissenschaft	NN	NOUN	Y1	Wissenschaft	Wissenschaft	Wissenschaft
@@ -12175,7 +12175,7 @@ durchschnittlich	ADJD	ADJ	N2	durchschnittlich	durchschnittlich	durchschnittlich
 zu	APPR	ADP	A1.1.1/MWU:12171	zu	zu	zu
 einem	ART	DET	Z5	einem	ein	ein
 Angriff	NN	NOUN	G3	Angriff	Angriff	Angriff
-im	APPRART	_	N6	im	in	in
+im	APPRART	ADP	N6	im	in	in
 Jahr	NN	NOUN	T1.3	Jahr	Jahr	Jahr
 ,	$,	PUNCT	Z9	,	,	,
 so	ADV	ADV	Z5	so	so	so
@@ -12234,7 +12234,7 @@ die	ART	DET	Z5	die	der	der
 Tötung	NN	NOUN	L1	Tötung	Tötung	Tötung
 der	ART	DET	Z5	der	der	der
 Tiere	NN	NOUN	L2	Tiere	Tier	Tier
-zur	APPRART	_	A9/MWU:12227:12238	zur	zu	zu
+zur	APPRART	ADP	A9/MWU:12227:12238	zur	zu	zu
 Verfügung	NN	NOUN	A9/MWU:12227:12237	Verfügung	Verfügung	Verfügung
 ,	$,	PUNCT	Z9	,	,	,
 den	ART	DET	Z5	den	der	der
@@ -12295,7 +12295,7 @@ sie	PPER	PRON	Z8	sie	sie	sie
 ständen	VVFIN	VERB	M8	ständen	stehen	stehen
 ihnen	PPER	PRON	Z8	ihnen	ihnen	ihnen
 höchstens	ADV	ADV	A14	höchstens	höchstens	höchstens
-im	APPRART	_	S8/MWU	im	in	in
+im	APPRART	ADP	S8/MWU	im	in	in
 Weg	NN	NOUN	S8/MWU	Weg	Weg	Weg
 .	$.	PUNCT	Z9	.	.	.
 </s>
@@ -12443,7 +12443,7 @@ Bonn	NE	PROPN	Z2	Bonn	Bonn	Bonn
 Länder	NN	NOUN	M7	Länder	Land	Land
 ein	ART	DET	Z5	ein	ein	ein
 Abkommen	NN	NOUN	G1.2	Abkommen	Abkommen	Abkommen
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Schutz	NN	NOUN	A15	Schutz	Schutz	Schutz
 von	APPR	ADP	Z5	von	von	von
 sieben	CARD	NUM	N1	sieben	sieben	sieben
@@ -12708,7 +12708,7 @@ Zeichnung	NN	NOUN	O4.4	Zeichnung	Zeichnung	Zeichnung
 <s>
 Eine	ART	DET	Z5	eine	ein	ein
 Gartenkreuzspinne	NN	NOUN	L2	Gartenkreuzspinne	Gartenkreuzspinne	Gartenkreuzspinne
-beim	APPRART	_	Z5	beim	bei	bei
+beim	APPRART	ADP	Z5	beim	bei	bei
 Netzbau	NN	NOUN	L2	Netzbau	Netzbau	Netzbau
 </s>
 <s>
@@ -12719,7 +12719,7 @@ Gartenkreuzspinne	NN	NOUN	L2	Gartenkreuzspinne	Gartenkreuzspinne	Gartenkreuzspin
 <s>
 Junge	ADJA	ADJ	T3	junge	jung	jung
 Gartenkreuzspinne	NN	NOUN	L2	Gartenkreuzspinne	Gartenkreuzspinne	Gartenkreuzspinne
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Netz	NN	NOUN	L2	Netz	Netz	Netz
 </s>
 <s>
@@ -12905,7 +12905,7 @@ Audiodateien	NN	NOUN	K3/Y2	Audiodateien	Audiodatei	Audiodatei
 </s>
 <s>
 Araneus	FM	X	L2	Araneus	Araneus	Araneus
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 World	NE	PROPN	Q4.1/Z3/MWU	World	World	World
 Spider	NE	PROPN	Q4.1/Z3/MWU	Spider	Spider	Spider
 Catalog	NE	PROPN	Q4.1/Z3/MWU	Catalog	Catalog	Catalog
@@ -12931,7 +12931,7 @@ Araneus	FM	X	L2	Araneus	Araneus	Araneus
 </s>
 <s>
 Abgerufen	VVPP	VERB	X2.4/Y2	abgerufen	abrufen	abrufen
-am	APPRART	_	Z5	am	an	an
+am	APPRART	ADP	Z5	am	an	an
 5.	ADJA	ADJ	N1	5.	5.	5.
 September	NN	NOUN	T1.2	September	September	September
 2014	CARD	NUM	N1	2014	2014	2014
@@ -13095,7 +13095,7 @@ zu	PTKZU	PART	Z5	zu	zu	zu
 verstehen	VVINF	VERB	Q1.1/MWU:13087	verstehen	verstehen	verstehen
 (	$(	PUNCT	Z9	(	(	(
 Ganesh	NE	PROPN	S9/Z3	Ganesh	Ganesh	Ganesh
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 Fleisch	NN	NOUN	F1	Fleisch	Fleisch	Fleisch
 zu	PTKZU	PART	Z5	zu	zu	zu
@@ -13103,7 +13103,7 @@ opfern	VVINF	VERB	S9	opfern	opfern	opfern
 käme	VVFIN	VERB	A7/MWU:13109:13110	käme	kommen	kommen
 für	APPR	ADP	Z5	für	für	für
 mich	PPER	PRON	Z8	mich	mich	mich
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 nie	ADV	ADV	T1.1	nie	nie	nie
 in	APPR	ADP	A7/MWU:13103:13110	in	in	in
@@ -13267,7 +13267,7 @@ ungarische	ADJA	ADJ	Q3/Z2	ungarische	ungarisch	ungarisch
 Wort	NN	NOUN	Q3	Wort	Wort	Wort
 mit	APPR	ADP	Z5	mit	mit	mit
 B	NN	NOUN	Z99	B	B	B
-am	APPRART	_	Z5	am	an	an
+am	APPRART	ADP	Z5	am	an	an
 Anfang	NN	NOUN	N4	Anfang	Anfang	Anfang
 !	$.	PUNCT	Z9	!	!	!
 </s>
@@ -13526,7 +13526,7 @@ Repression	NN	NOUN	S7.1	Repression	Repression	Repression
 und	KON	CCONJ	Z5	und	und	und
 Hilfe	NN	NOUN	S8	Hilfe	Hilfe	Hilfe
 auch	PTKIFG	ADV	Z5	auch	auch	auch
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Ausstieg	NN	NOUN	T2	Ausstieg	Ausstieg	Ausstieg
 sind	VAFIN	AUX	A3	sind	sein	sein
 Kernpunkte	NN	NOUN	A11.1	Kernpunkte	Kernpunkt	Kernpunkt
@@ -13753,7 +13753,7 @@ vielleicht	ADV	ADV	A7	vielleicht	vielleicht	vielleicht
 weil	KOUS	SCONJ	A2.2	weil	weil	weil
 man	PIS	PRON	Z8	man	man	man
 es	PPER	PRON	Z8	es	es	es
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 selben	ADJA	ADJ	A6.1	selben	selber	selber
 Milieu	NN	NOUN	M7	Milieu	Milieu	Milieu
 wie	KOKOM	ADP	A6	wie	wie	wie
@@ -13771,7 +13771,7 @@ bekommt	VVFIN	VERB	A9	bekommt	bekommen	bekommen
 Denken	VVFIN	VERB	X2.1	denken	denken	denken
 Sie	PPER	PRON	Z8	sie	sie	sie
 dabei	PAV	ADV	Z8	dabei	dabei	dabei
-ans	APPRART	_	Z5	ans	an	an
+ans	APPRART	ADP	Z5	ans	an	an
 Oktoberfest	NN	NOUN	K1/S1.1.3	Oktoberfest	Oktoberfest	Oktoberfest
 ?	$.	PUNCT	Z9	?	?	?
 </s>
@@ -13888,7 +13888,7 @@ Einschränkungen	NN	NOUN	A1.7	Einschränkungen	Einschränkung	Einschränkung
 bei	APPR	ADP	Z5	bei	bei	bei
 unserer	PPOSAT	DET	Z8	unserer	unser	unser
 Verfassung	NN	NOUN	G2.1	Verfassung	Verfassung	Verfassung
-gibts	VVPPER	_	A3	gibts	geben	geben
+gibts	VVPPER	VERB	A3	gibts	geben	geben
 mit	APPR	ADP	Z5	mit	mit	mit
 uns	PPER	PRON	Z8	uns	uns	uns
 nicht	PTKNEG	PART	Z6	nicht	nicht	nicht
@@ -14012,7 +14012,7 @@ Zu	APPR	ADP	Z5	zu	zu	zu
 246	CARD	NUM	N1	246	246	246
 :	$.	PUNCT	Z9	:	:	:
 Außer	APPR	ADP	A1.8	außer	außer	außer
-beim	APPRART	_	Z5	beim	bei	bei
+beim	APPRART	ADP	Z5	beim	bei	bei
 Recht	NN	NOUN	G2.1	Recht	Recht	Recht
 auf	APPR	ADP	Z5	auf	auf	auf
 freie	ADJA	ADJ	A1.7	freie	frei	frei
@@ -14098,7 +14098,7 @@ Befugnisse	NN	NOUN	G2.1/S7.4	Befugnisse	Befugnis	Befugnis
 für	APPR	ADP	Z5	für	für	für
 die	ART	DET	Z5	die	der	der
 Dienste	NN	NOUN	G1.2	Dienste	Dienst	Dienst
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Sicherheitspaket	NN	NOUN	A15/G1.2	Sicherheitspaket	Sicherheitspaket	Sicherheitspaket
 haben	VAFIN	AUX	Z5	haben	haben	haben
 wir	PPER	PRON	Z8	wir	wir	wir
@@ -14214,7 +14214,7 @@ gibt	VVFIN	VERB	A3	gibt	geben	geben
 es	PPER	PRON	Z8	es	es	es
 starke	ADJA	ADJ	A13.3	starke	stark	stark
 Kontrollrechte	NN	NOUN	G2.1/S7.1/X2.4	Kontrollrechte	Kontrollrecht	Kontrollrecht
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Parlament	NN	NOUN	G1.1	Parlament	Parlament	Parlament
 .	$.	PUNCT	Z9	.	.	.
 </s>
@@ -14222,7 +14222,7 @@ Parlament	NN	NOUN	G1.1	Parlament	Parlament	Parlament
 Wie	PWAV	ADV	Z8	wie	wie	wie
 sieht	VVFIN	VERB	A3/MWU:14228	sieht	sehen	sehen	aussehen
 es	PPER	PRON	Z8	es	es	es
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 bayr.	ADJA	ADJ	Z2	bayerischen	bayerisch	bayerisch
 Landtag	NN	NOUN	G1.2	Landtag	Landtag	Landtag
 aus	PTKVZ	PART	A3/MWU:14223	aus	aus	aus
@@ -14335,7 +14335,7 @@ Beckstein	NE	PROPN	Z1	Beckstein	Beckstein	Beckstein
 <posting id="cmc_test_010_066" author="Günther Beckstein" origid="266">
 <s>
 Wie	KOUS	SCONJ	A6.1	wie	wie	wie
-vom	APPRART	_	Z5	vom	von	von
+vom	APPRART	ADP	Z5	vom	von	von
 Verfassungsgericht	NN	NOUN	G2.1	Verfassungsgericht	Verfassungsgericht	Verfassungsgericht
 bestätigt	VVPP	VERB	A5.2/Q2.2	bestätigt	bestätigen	bestätigen
 .	$.	PUNCT	Z9	.	.	.
@@ -14503,7 +14503,7 @@ Sicherheit	NN	NOUN	A15	Sicherheit	Sicherheit	Sicherheit
 etwas	PIS	PRON	Z8	etwas	etwas	etwas
 verstehen	VVFIN	VERB	X2.5	verstehen	verstehen	verstehen
 -	$(	PUNCT	Z9	-	-	-
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Unterschied	NN	NOUN	A6.1	Unterschied	Unterschied	Unterschied
 zu	APPR	ADP	Z5	zu	zu	zu
 den	ART	DET	Z5	den	der	der
@@ -14582,7 +14582,7 @@ abgelaufen	VVPP	VERB	T2	abgelaufen	ablaufen	ablaufen
 Wir	PPER	PRON	Z8	wir	wir	wir
 bedanken	VVFIN	VERB	S1.2.4/Z4	bedanken	bedanken	bedanken
 uns	PRF	PRON	Z8	uns	sich	sich
-im	APPRART	_	Q1.1/MWU	im	in	in
+im	APPRART	ADP	Q1.1/MWU	im	in	in
 Namen	NN	NOUN	Q1.1/MWU	Namen	Name	Name
 von	APPR	ADP	Q1.1/MWU	von	von	von
 tagesschau.de	NE	PROPN	Y2/Z3	tagesschau.de	tagesschau.de	tagesschau.de
@@ -14652,9 +14652,9 @@ ist	VAFIN	AUX	A3	ist	sein	sein
 herzlich	ADJD	ADJ	S1.2.4/Z4	herzlich	herzlich	herzlich
 eingeladen	VVPP	VERB	S1.1.3/S7.4	eingeladen	einladen	einladen
 ,	$,	PUNCT	Z9	,	,	,
-am	APPRART	_	Z5	am	an	an
+am	APPRART	ADP	Z5	am	an	an
 Debatten-Forum	NN	NOUN	G1.2/Q1.1	Debatten-Forum	Debatten-Forum	Debatten-Forum
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Thema	NN	NOUN	X4.1	Thema	Thema	Thema
 :	$(	PUNCT	Z9	:	:	:
 "	$(	PUNCT	Z9	"	"	"
@@ -14758,7 +14758,7 @@ Dank	NN	NOUN	S1.2.4/Z4/MWU	Dank	Dank	Dank
 <posting id="cmc_test_010_085" author="Cem Özdemir" origid="285">
 <s>
 Bis	APPR	ADP	S1.2.4/Z4/MWU	bis	bis	bis
-zum	APPRART	_	S1.2.4/Z4/MWU	zum	zu	zu
+zum	APPRART	ADP	S1.2.4/Z4/MWU	zum	zu	zu
 nächsten	ADJA	ADJ	S1.2.4/Z4/MWU	nächsten	nächster	nächster
 "	$(	PUNCT	Z9	"	"	"
 Treffen	NN	NOUN	S1.1.2/S3.1	Treffen	treffen	treffen
@@ -14812,7 +14812,7 @@ Ciao	ITJ	INTJ	S1.2.4/Z4	ciao	ciao	ciao
 <text subcorpus="cmc" set="test" id="cmc_test_011" raw="cmc_test_social_chat.txt">
 <posting id="cmc_test_011_001" author="Bochum" origid="1-258">
 <s>
-beim	APPRART	_	T1.2	beim	bei	bei
+beim	APPRART	ADP	T1.2	beim	bei	bei
 ertsen	ADJA	ADJ	N1	ersten	ertser	erster
 umzug	NN	NOUN	H4/M1	Umzug	Umzug	Umzug
 hat	VAFIN	AUX	Z5	hat	haben	haben
@@ -14912,7 +14912,7 @@ marc	NE	PROPN	Z1	Marc	Marc	Marc
 naja	ITJ	INTJ	Z4	naja	naja	naja
 ,	$,	PUNCT	Z9	,	,	,
 dann	ADV	ADV	Z4/MWU	dann	dann	dann
-heissts	VVPPER	_	Z4/MWU	heißts	heissen	heißen
+heissts	VVPPER	VERB	Z4/MWU	heißts	heissen	heißen
 wohl	PTKMA	ADV	Z4/MWU	wohl	wohl	wohl
 mal	PTKMA	ADV	Z4/MWU	mal	mal	mal
 rumtelefonieren	VVINF	VERB	Q1.3	rumtelefonieren	rumtelefonieren	rumtelefonieren
@@ -14921,7 +14921,7 @@ nachfragen	VVINF	VERB	Q2.2/X2.4	nachfragen	nachfragen	nachfragen
 da	KOUS	SCONJ	A2.2	da	da	da
 umzugsfiormen	NN	NOUN	H4/I4/M1	Umzugsfirmen	Umzugsfiorm	Umzugsfirma
 selten	ADJD	ADJ	N6	selten	selten	selten
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 i8nternet	NN	NOUN	Y2	Internet	I8nternet	Internet
 stehen	VVFIN	VERB	M8	stehen	stehen	stehen
 @zora	ADR	PROPN	Z1	@zora	@zora	@zora
@@ -14949,7 +14949,7 @@ okay	PTKANT	INTJ	Z4	okay	okay	okay
 ...	$.	PUNCT	Z9	...	...	...
 *	$(	PUNCT	Z9	*	*	*
 1	CARD	NUM	A5.1/N1	1	1	1
-anne	APPRART	_	M6	anne	an	an
+anne	APPRART	ADP	M6	anne	an	an
 stirn	NN	NOUN	B1	Stirn	Stirn	Stirn
 bapp	AKW	VERB	M2/Q2.2	bapp	bapp	bapp
 *	$(	PUNCT	Z9	*	*	*
@@ -14970,7 +14970,7 @@ preise	NN	NOUN	I1.3	Preise	Preis	Preis
 <s>
 aber	KON	CCONJ	Z5	aber	aber	aber
 wie	PWAV	ADV	Z8	wie	wie	wie
-kommste	VVPPER	_	M1	kommste	kommen	kommen
+kommste	VVPPER	VERB	M1	kommste	kommen	kommen
 mit	APPR	ADP	Z5	mit	mit	mit
 den	ART	DET	Z5	den	der	der
 1,51	CARD	NUM	N1/N3.2	1,51	1,51	1,51
@@ -15075,7 +15075,7 @@ beule	NN	NOUN	B2	Beule	Beule	Beule
 <posting id="cmc_test_011_026" author="Bochum" origid="1-285">
 <s>
 wie	PWAV	ADV	Z5	wie	wie	wie
-kommste	VVPPER	_	M1	kommste	kommen	kommen
+kommste	VVPPER	VERB	M1	kommste	kommen	kommen
 an	APPR	ADP	Z5	an	an	an
 die	ART	DET	Z5	die	der	der
 sprossen	NN	NOUN	O2	Sprossen	Sprosse	Sprosse
@@ -15084,7 +15084,7 @@ sprossen	NN	NOUN	O2	Sprossen	Sprosse	Sprosse
 </posting>
 <posting id="cmc_test_011_027" author="quaki" origid="1-286">
 <s>
-am	APPRART	_	M6	am	an	an
+am	APPRART	ADP	M6	am	an	an
 nabel	NN	NOUN	B1	Nabel	Nabel	Nabel
 ??	$.	PUNCT	Z9	??	??	??
 </s>
@@ -15110,7 +15110,7 @@ hmpf	ITJ	INTJ	Q2.2/Z4	hmpf	hmpf	hmpf
 </posting>
 <posting id="cmc_test_011_030" author="quaki" origid="1-289">
 <s>
-son	ADVART	_	Z4	son	so	so
+son	ADVART	ADV	Z4	son	so	so
 bierbauch	NN	NOUN	B1/F2	Bierbauch	Bierbauch	Bierbauch
 ??	$.	PUNCT	Z9	??	??	??
 </s>
@@ -15160,7 +15160,7 @@ noch	PTKIFG	ADV	T1.1	noch	noch	noch
 kostbare	ADJA	ADJ	I1.3	kostbare	kostbar	kostbar
 minuten	NN	NOUN	T1.2	Minuten	Minute	Minute
 bis	APPR	ADP	Z5	bis	bis	bis
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 mittagspause	NN	NOUN	T1.3	Mittagspause	Mittagspause	Mittagspause
 </s>
 </posting>
@@ -15380,7 +15380,7 @@ partie	NN	NOUN	X6	Partie	Partie	Partie
 Es	PPER	PRON	Z8	es	es	es
 gibt	VVFIN	VERB	A3	gibt	geben	geben
 Entenbraten	NN	NOUN	F1	Entenbraten	Entenbraten	Entenbraten
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Hochzeit	NN	NOUN	S3.2	Hochzeit	Hochzeit	Hochzeit
 .	$.	PUNCT	Z9	.	.	.
 </s>
@@ -16113,7 +16113,7 @@ buzze	NN	NOUN	Z99	Buzze	Buzze	Buzze
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-sparste	VVPPER	_	I1.1	sparste	sparen	sparen
+sparste	VVPPER	VERB	I1.1	sparste	sparen	sparen
 den	ART	DET	Z5	den	der	der
 umzug	NN	NOUN	H4/M3	Umzug	Umzug	Umzug
 </s>
@@ -16190,7 +16190,7 @@ was	PIS	PRON	Z8	was	was	was
 für	APPR	ADP	Z5	für	für	für
 100	CARD	NUM	N1	100	100	100
 euro	NN	NOUN	I1.3	Euro	Euro	Euro
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 parktiker	NE	PROPN	I2.1/Z3	Praktiker	Parktiker	Praktiker
 </s>
 </posting>
@@ -16325,7 +16325,7 @@ quaki	NE	PROPN	Z1	quaki	quaki	quaki
 <posting id="cmc_test_011_163" author="Thor..." origid="1-436">
 <s>
 ich	PPER	PRON	Z8	ich	ich	ich
-vom	APPRART	_	Z5	vom	von	von
+vom	APPRART	ADP	Z5	vom	von	von
 has	NE	PROPN	Z99	Has	Has	Has
 emon	NE	PROPN	Z1	Emon	Emon	Emon
 *	$(	PUNCT	Z9	*	*	*
@@ -16576,7 +16576,7 @@ denn	ITJ	INTJ	Z4	denn	denn	denn
 <posting id="cmc_test_011_195" author="TomcatMJ" origid="1-473">
 <s>
 *	$(	PUNCT	Z9	*	*	*
-aufn	APPRART	_	M6	aufn	auf	auf
+aufn	APPRART	ADP	M6	aufn	auf	auf
 baum	NN	NOUN	L3	Baum	Baum	Baum
 wieder	ADV	ADV	N6	wieder	wieder	wieder
 raufflitz	AKW	VERB	M1	raufflitz	raufflitz	raufflitz
@@ -16584,7 +16584,7 @@ damit	KOUS	SCONJ	A2.2	damit	damit	damit
 stoeps	NE	PROPN	Z1	stoeps	stoeps	stoeps
 nich	PTKNEG	PART	Z6	nicht	nich	nicht
 hinterherkann	VMFIN	AUX	A7/M1	hinterherkann	hinterherkönnen	hinterherkönnen
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 pieksen	NN	NOUN	B1	Pieksen	pieksen	pieksen
 *	$(	PUNCT	Z9	*	*	*
 </s>
@@ -16689,7 +16689,7 @@ Erdbeere$	NE	PROPN	Z1	Erdbeere$	Erdbeere$	Erdbeere$
 ist	VAFIN	AUX	A3	ist	sein	sein
 ein	ART	DET	Z5	ein	ein	ein
 Stern	NN	NOUN	W1	Stern	Stern	Stern
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Erdbeerkosmos	NN	NOUN	W1	Erdbeerkosmos	Erdbeerkosmos	Erdbeerkosmos
 </s>
 </posting>
@@ -16729,7 +16729,7 @@ seh	AKW	VERB	X3.4/Q2.2	seh	seh	seh
 ich	PPER	PRON	Z8	ich	ich	ich
 sag	VVFIN	VERB	Q2.1	sage	sagen	sagen
 doch	PTKMA	ADV	Z4	doch	doch	doch
-son	ADVART	_	Z5	son	so	so
+son	ADVART	ADV	Z5	son	so	so
 baum	NN	NOUN	L3	Baum	Baum	Baum
 is	VAFIN	AUX	A3	ist	sein	sein
 nix	PIS	PRON	A1.2	nix	nix	nix
@@ -16744,7 +16744,7 @@ erdbeere	NE	PROPN	Z1	erdbeere	erdbeere	erdbeere
 ist	VAFIN	AUX	A3	ist	sein	sein
 ne	ART	DET	Z5	eine	n	ein
 frucht	NN	NOUN	F1	Frucht	Frucht	Frucht
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 pudding	NN	NOUN	F1	Pudding	Pudding	Pudding
 </s>
 </posting>
@@ -16821,7 +16821,7 @@ stoeps	NE	PROPN	Z1	stoeps	stoeps	stoeps
 in	APPR	ADP	M6	in	in	in
 den	ART	DET	Z5	den	der	der
 teich	NN	NOUN	W3	Teich	Teich	Teich
-am	APPRART	_	M6	am	an	an
+am	APPRART	ADP	M6	am	an	an
 fuße	NN	NOUN	B1	Fuße	Fuß	Fuß
 des	ART	DET	Z5	des	der	der
 baums	NN	NOUN	L3	Baums	Baum	Baum
@@ -16881,9 +16881,9 @@ ast	NN	NOUN	L3	Ast	Ast	Ast
 in	APPR	ADP	M6	in	in	in
 der	ART	DET	Z5	der	der	der
 hand	NN	NOUN	B1	Hand	Hand	Hand
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 teich	NN	NOUN	W3	Teich	Teich	Teich
-am	APPRART	_	Z5	am	an	an
+am	APPRART	ADP	Z5	am	an	an
 rumsitzen	NN	NOUN	M8	Rumsitzen	rumsitzen	rumsitzen
 @stoeps	ADR	PROPN	Z1	@stoeps	@stoeps	@stoeps
 *	$(	PUNCT	Z9	*	*	*
@@ -16903,7 +16903,7 @@ bochum	NE	PROPN	Z2	Bochum	Bochum	Bochum
 ist	VAFIN	AUX	A3	ist	sein	sein
 ne	ART	DET	Z5	eine	n	ein
 stadt	NN	NOUN	M7	Stadt	Stadt	Stadt
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 pott	NE	PROPN	Z2	Pott	Pott	Pott
 </s>
 </posting>
@@ -16965,7 +16965,7 @@ Häbbie	NE	PROPN	Z1	Häbbie	Häbbie	Häbbie
 <posting id="cmc_test_011_237" author="Thor..." origid="1-523">
 <s>
 was	PWS	PRON	Z8	was	was	was
-fürn	APPRART	_	Z5	fürn	für	für
+fürn	APPRART	ADP	Z5	fürn	für	für
 pott	NN	NOUN	Z2	Pott	Pott	Pott
 ?	$.	PUNCT	Z9	?	?	?
 </s>
@@ -17196,7 +17196,7 @@ erfinden	VVINF	VERB	X4.1	erfinden	erfinden	erfinden
 </s>
 <s>
 Wie	PWAV	ADV	Z5	wie	wie	wie
-wärs	VAPPER	_	A5.1	wärs	sein	sein
+wärs	VAPPER	AUX	A5.1	wärs	sein	sein
 zB	ADV	ADV	A4.1	z.B.	zB	z.B.
 mit	APPR	ADP	Z5	mit	mit	mit
 diesem	PDS	PRON	Z8	diesem	dieser	dieser
@@ -17221,7 +17221,7 @@ Unter	APPR	ADP	Z5	unter	unter	unter
 den	ART	DET	Z5	den	der	der
 empirischen	ADJA	ADJ	Y1	empirischen	empirisch	empirisch
 Projekten	NN	NOUN	X2.4/Y1	Projekten	Projekt	Projekt
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Seminar	NN	NOUN	P1/S5	Seminar	Seminar	Seminar
 wird	VAFIN	AUX	Z5	wird	werden	werden
 es	PPER	PRON	Z8	es	es	es
@@ -17391,7 +17391,7 @@ Szenario	NN	NOUN	A1.6	Szenario	Szenario	Szenario
 solcher	PIAT	DET	A6.1	solcher	solcher	solcher
 Polit-Chats	NN	NOUN	G1.2/Q1.3/Y2	Polit-Chats	Polit-Chat	Polit-Chat
 ist	VAFIN	AUX	A3	ist	sein	sein
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 in	APPR	ADP	Z5	in	in	in
 diesem	PDAT	DET	Z8	diesem	dieser	dieser
@@ -17498,7 +17498,7 @@ individuelle	ADJA	ADJ	S1.1.1	individuelle	individuell	individuell
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Zur	APPRART	_	Z5	zur	zu	zu
+Zur	APPRART	ADP	Z5	zur	zu	zu
 indiv.	ADJA	ADJ	S1.1.1	indiv.	indiv.	indiv.
 Variation	NN	NOUN	A6.3	Variation	Variation	Variation
 verweise	VVFIN	VERB	Q2.2	verweise	verweisen	verweisen
@@ -17519,7 +17519,7 @@ http://tinyurl.com/3umxkuh	URL	PROPN	Z99	http://tinyurl.com/3umxkuh	http://tinyu
 [	$(	PUNCT	Z9	[	[	[
 2	CARD	NUM	N1	2	2	2
 ]	$(	PUNCT	Z9	]	]	]
-am	APPRART	_	Z5	am	an	an
+am	APPRART	ADP	Z5	am	an	an
 Bsp	NN	NOUN	A4.1	Bsp.	Bsp	Bsp/Bsp.
 Chats	NN	NOUN	Q1.3/Y2	Chats	Chat	Chat
 gezeigt	VVPP	VERB	A10	gezeigt	zeigen	zeigen
@@ -17532,7 +17532,7 @@ dass	KOUS	SCONJ	Z5	dass	dass	dass
 (	$(	PUNCT	Z9	(	(	(
 wie	KOKOM	ADP	A6	wie	wie	wie
 auch	ADV	ADV	Z5	auch	auch	auch
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Real	ADJA	ADJ	Z99	real	real	real
 Life	NN	NOUN	Z99	Life	Life	Life
 )	$(	PUNCT	Z9	)	)	)
@@ -17676,7 +17676,7 @@ noch	PTKMWL	ADV	Z4	noch	noch	noch
 mal	ADV	ADV	Z4	mal	mal	mal
 ein	ART	DET	Z5	ein	ein	ein
 Nachtrag	NN	NOUN	N4/Q2.2	Nachtrag	Nachtrag	Nachtrag
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Thema	NN	NOUN	X4.1	Thema	Thema	Thema
 Digital	ADJA	ADJ	S2/Y2/MWU	digital	digital	digital
 Natives	NN	NOUN	S2/Y2/MWU	Natives	Native	Native
@@ -17748,7 +17748,7 @@ weiterdiskutieren	VVINF	VERB	N4/Q2.2/S1.1.2	weiterdiskutieren	weiterdiskutieren	
 #semibk	HST	X	Z99	#semibk	#semibk	#semibk
 </s>
 <s>
-Zum	APPRART	_	Z5	zum	zu	zu
+Zum	APPRART	ADP	Z5	zum	zu	zu
 Konzept	NN	NOUN	X4.1	Konzept	Konzept	Konzept
 Digital	ADJA	ADJ	S2/Y2/MWU	digital	digital	digital
 Natives	NN	NOUN	S2/Y2/MWU	Natives	Native	Native
@@ -17779,7 +17779,7 @@ Litliste	NN	NOUN	Q1.2/Q4.1	Literaturliste	Litliste	Literaturliste
 Beeinflusst	VVFIN	VERB	A2.2	beeinflusst	beeinflussen	beeinflussen
 Internetkomm	NN	NOUN	Q3/Y2	Internetkommunikation	Internetkomm	Internetkommunikation
 Sprache	NN	NOUN	Q3	Sprache	Sprache	Sprache
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Alltag	NN	NOUN	A6.2/T1.1.2	Alltag	Alltag	Alltag
 ?	$.	PUNCT	Z9	?	?	?
 "	$(	PUNCT	Z9	"	"	"
@@ -17819,7 +17819,7 @@ Chatsprache	NN	NOUN	Q1.3/Q3/Y2	Chatsprache	Chatsprache	Chatsprache
 <s>
 ->	XY	X	Z99	->	->	->
 vgl.	VVIMP	VERB	A6	vgl.	vgl.	vgl.
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 die	ART	DET	Z5	die	der	der
 gestern	ADV	ADV	T1.1.2	gestern	gestern	gestern
@@ -17848,7 +17848,7 @@ weitere	ADJA	ADJ	N5	weitere	weit	weit
 Reflexion	NN	NOUN	X2.1	Reflexion	Reflexion	Reflexion
 unserer	PPOSAT	DET	Z8	unserer	unser	unser
 Twitternutzung	NN	NOUN	A1.5/Y2/Z3	Twitternutzung	Twitternutzung	Twitternutzung
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Sem	NN	NOUN	P1/S5	Sem.	Sem	Sem.
 :	$.	PUNCT	Z9	:	:	:
 Vor	TRUNC	X	A1.5.2/MWU	Vor-	Vor	Vor
@@ -17874,16 +17874,16 @@ Kommentaren	NN	NOUN	Q2.2/X2.4	Kommentaren	Kommentar	Kommentar
 </s>
 <s>
 ...	$(	PUNCT	Z9	...	...	...
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Weiterentwicklung	NN	NOUN	X4.2	Weiterentwicklung	Weiterentwicklung	Weiterentwicklung
 der	ART	DET	Z5	der	der	der
 Erkenntnisse	NN	NOUN	X2.2	Erkenntnisse	Erkenntnis	Erkenntnis
 +	KON	CCONJ	Z5	+	+	+
 Theorien	NN	NOUN	X4.1/Y1	Theorien	Theorie	Theorie
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Thema	NN	NOUN	X4.1	Thema	Thema	Thema
 bzw.	KON	CCONJ	Z5	bzw.	bzw.	bzw.
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 wiss.	ADJA	ADJ	Y1	wiss.	wiss.	wiss.
 Sicht	NN	NOUN	X2.1	Sicht	Sicht	Sicht
 a.	APPR	ADP	Z5	a.	a.	a.
@@ -17913,7 +17913,7 @@ zu	PTKZU	PART	Z5	zu	zu	zu
 können	VMINF	AUX	X9.1	können	können	können
 ,	$,	PUNCT	Z9	,	,	,
 was	PWS	PRON	Z8	was	was	was
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Thema	NN	NOUN	X4.1	Thema	Thema	Thema
 schon	ADV	ADV	Z4	schon	schon	schon
 herausgefunden	VVPP	VERB	X2.4	herausgefunden	herausfinden	herausfinden
@@ -17977,7 +17977,7 @@ darüber	PAV	ADV	Z8	darüber	darüber	darüber
 ,	$,	PUNCT	Z9	,	,	,
 was	PWS	PRON	Z8	was	was	was
 es	PPER	PRON	Z8	es	es	es
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Gegenstand	NN	NOUN	X4.1	Gegenstand	Gegenstand	Gegenstand
 schon	ADV	ADV	Z4	schon	schon	schon
 für	APPR	ADP	Z5	für	für	für
@@ -18104,7 +18104,7 @@ klicken	VVINF	VERB	Y2	klicken	klicken	klicken
 muss	VMFIN	AUX	S6	muss	müssen	müssen
 (	$(	PUNCT	Z9	(	(	(
 praktisch	ADJD	ADJ	A1.5.2	praktisch	praktisch	praktisch
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Sem	NN	NOUN	P1/S5	Sem.	Sem	Sem.
 )	$(	PUNCT	Z9	)	)	)
 </s>
@@ -18124,7 +18124,7 @@ sehen	VVFIN	VERB	X3.4	sehen	sehen	sehen
 Sie	PPER	PRON	Z8	sie	sie	sie
 rechts	ADV	ADV	M6	rechts	rechts	rechts
 oben	ADV	ADV	M6	oben	oben	oben
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Tweet	NN	NOUN	Y2/Z3	Tweet	Tweet	Tweet
 ein	ART	DET	Z5	ein	ein	ein
 Sprechblasen-Icon	NN	NOUN	C1	Sprechblasen-Icon	Sprechblasen-Icon	Sprechblasen-Icon
@@ -18238,7 +18238,7 @@ Wahl	NN	NOUN	X6	Wahl	Wahl	Wahl
 sein	VAINF	AUX	A3	sein	sein	sein
 ->	XY	X	Z9	->	->	->
 s.	VVIMP	VERB	Z5	s.	s.	s.
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 http://de.wikia.com	URL	PROPN	Z99	http://de.wikia.com	http://de.wikia.com	http://de.wikia.com
 </s>
@@ -18256,7 +18256,7 @@ privaten	ADJA	ADJ	A10	privaten	privat	privat
 Frage	NN	NOUN	Q2.2/X2.4	Frage	Frage	Frage
 :	$.	PUNCT	Z9	:	:	:
 Wenn	KOUS	SCONJ	Z7	wenn	wenn	wenn
-Sies	PPERPPER	_	Z8	Sies	sie	sie
+Sies	PPERPPER	PRON	Z8	Sies	sie	sie
 kostenlos	ADJD	ADJ	I1.3	kostenlos	kostenlos	kostenlos
 UND	KON	CCONJ	Z5	und	und	und
 einfach	ADJD	ADJ	A12	einfach	einfach	einfach
@@ -18333,7 +18333,7 @@ Kontamination	NN	NOUN	Q3	Kontamination	Kontamination	Kontamination
 <s>
 "	$(	PUNCT	Z9	"	"	"
 sitze	VVFIN	VERB	M8	sitze	sitzen	sitzen
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Sudelbuch-Seminar	NN	NOUN	P1/S5	Sudelbuch-Seminar	Sudelbuch-Seminar	Sudelbuch-Seminar
 -	$(	PUNCT	Z9	-	-	-
 wer	PWS	PRON	Z8	wer	wer	wer
@@ -18368,14 +18368,14 @@ Schaun	VVFIN	VERB	X2.4/Z4/MWU	schauen	schaun	schauen
 wir	PPER	PRON	X2.4/Z4/MWU	wir	wir	wir
 mal	PTKMA	ADV	X2.4/Z4/MWU	mal	mal	mal
 ,	$,	PUNCT	Z9	,	,	,
-obs	KOUSPPER	_	Z5	obs	ob	ob
+obs	KOUSPPER	SCONJ	Z5	obs	ob	ob
 "	$(	PUNCT	Z9	"	"	"
 lustig	ADJD	ADJ	E4.1	lustig	lustig	lustig
 "	$(	PUNCT	Z9	"	"	"
 wird	VAFIN	AUX	Z5	wird	werden	werden
 -	$(	PUNCT	Z9	-	-	-
 hoffentlich	ADV	ADV	X7	hoffentlich	hoffentlich	hoffentlich
-wirds	VAPPER	_	Z5	wirds	werden	werden
+wirds	VAPPER	AUX	Z5	wirds	werden	werden
 nicht	PTKNEG	PART	Z6	nicht	nicht	nicht
 zu	PTKA	PART	Z5	zu	zu	zu
 chaotisch	ADJD	ADJ	A1.1.2/S7.1	chaotisch	chaotisch	chaotisch
@@ -18541,7 +18541,7 @@ Also	DM	CCONJ	Z4	also	also	also
 ich	PPER	PRON	Z8	ich	ich	ich
 hab	VAFIN	AUX	Z5	habe	haben	haben
 jetzt	ADV	ADV	T1.1.2	jetzt	jetzt	jetzt
-vom	APPRART	_	Z5	vom	von	von
+vom	APPRART	ADP	Z5	vom	von	von
 4rooms	NE	PROPN	K1/Z3	4rooms	4rooms	4rooms
 antwort	NN	NOUN	Q2.2	Antwort	Antwort	Antwort
 bekommen	VVPP	VERB	A9	bekommen	bekommen	bekommen
@@ -18598,7 +18598,7 @@ oder	KON	CCONJ	Z5	oder	oder	oder
 nicht	PTKNEG	PART	Z6	nicht	nicht	nicht
 (	$(	PUNCT	Z9	(	(	(
 da	ADV	ADV	M6	da	da	da
-ists	VAPPER	_	A3	ists	sein	sein
+ists	VAPPER	AUX	A3	ists	sein	sein
 echt	PTKMA	ADV	Z4	echt	echt	echt
 immer	ADV	ADV	T1.1	immer	immer	immer
 ziemlich	PTKIFG	ADV	A13.5	ziemlich	ziemlich	ziemlich
@@ -18633,7 +18633,7 @@ das	PDS	PRON	Z8	das	der	der
 stimmt	VVFIN	VERB	A5.2	stimmt	stimmen	stimmen
 schon	PTKMA	ADV	Z4	schon	schon	schon
 und	KON	CCONJ	Z5	und	und	und
-am	APPRART	_	Z5	am	an	an
+am	APPRART	ADP	Z5	am	an	an
 Donnerstag	NN	NOUN	T1.2	Donnerstag	Donnerstag	Donnerstag
 bin	VAFIN	AUX	A3	bin	sein	sein
 ich	PPER	PRON	Z8	ich	ich	ich
@@ -18702,7 +18702,7 @@ mit	APPR	ADP	Z5	mit	mit	mit
 worbla	NE	PROPN	C1/Z3	Worbla	Worbla	Worbla
 aus	PTKVZ	PART	A2.1/A5.3/MWU:18698	aus	aus	aus
 und	KON	CCONJ	Z5	und	und	und
-am	APPRART	_	Z5	am	an	an
+am	APPRART	ADP	Z5	am	an	an
 Donnerstag	NN	NOUN	T1.2	Donnerstag	Donnerstag	Donnerstag
 machen	VVFIN	VERB	A1.1.1	machen	machen	machen
 wir	PPER	PRON	Z8	wir	wir	wir
@@ -18832,7 +18832,7 @@ Lenaaaaa	NE	PROPN	Z1	Lena	Lenaaaaa	Lena
 alles	PIAT	ADJ	S1.2.4/Z4/MWU	alles	aller	aller
 alles	PIAT	ADJ	S1.2.4/Z4/MWU	alles	aller	aller
 Liebe	NN	NOUN	S1.2.4/Z4/MWU	Liebe	liebe	liebe
-zum	APPRART	_	S1.2.4/Z4/MWU	zum	zu	zu
+zum	APPRART	ADP	S1.2.4/Z4/MWU	zum	zu	zu
 Geburtstag	NN	NOUN	S1.2.4/Z4/MWU	Geburtstag	Geburtstag	Geburtstag
 .	$.	PUNCT	Z9	.	.	.
 😻	EMOIMG	SYM	S3.2/Q2.2	😻	😻	😻
@@ -18895,7 +18895,7 @@ klar	ADJD	ADJ	Z4/MWU	klar	klar	klar
 <s>
 um	APPR	ADP	T1.1	um	um	um
 5	CARD	NUM	N1/T1.2	5	5	5
-wars	VAPPER	_	A3	wars	sein	sein
+wars	VAPPER	AUX	A3	wars	sein	sein
 ,	$,	PUNCT	Z9	,	,	,
 ne	ITJ	INTJ	Z4	ne	ne	ne
 ?	$.	PUNCT	Z9	?	?	?
@@ -19028,7 +19028,7 @@ ich	PPER	PRON	Z8	ich	ich	ich
 eben	ADV	ADV	T1.1.1	eben	eben	eben
 schon	ADV	ADV	Z4	schon	schon	schon
 gemerkt	VVPP	VERB	X5.1	gemerkt	merken	merken
-som	ADVART	_	Z4	son	so	so
+som	ADVART	ADV	Z4	son	so	so
 schrott	NN	NOUN	A5.1	Schrott	Schrott	Schrott
 da	ADV	ADV	Z4	da	da	da
 xd	EMOASC	SYM	E4.1/Q2.2	xd	xd	xd
@@ -19261,7 +19261,7 @@ gesehen	VVPP	VERB	X3.4	gesehen	sehen	sehen
 </s>
 <s>
 Hoffentlich	ADV	ADV	X7	hoffentlich	hoffentlich	hoffentlich
-gibts	VVPPER	_	A3	gibts	geben	geben
+gibts	VVPPER	VERB	A3	gibts	geben	geben
 die	PDS	PRON	Z8	die	der	der
 auch	PTKIFG	ADV	Z5	auch	auch	auch
 in	APPR	ADP	Z5	in	in	in
@@ -19449,7 +19449,7 @@ wünsch	VVFIN	VERB	S1.2.4/Z4	wünsche	wünschen	wünschen
 noch	ADV	ADV	Z4	noch	noch	noch
 viel	PIAT	ADJ	S1.2.4/Z4/MWU:1951	viel	viel	viel
 Spaß	NN	NOUN	S1.2.4/Z4/MWU:1950	Spaß	Spaß	Spaß
-beim	APPRART	_	Z5	beim	bei	bei
+beim	APPRART	ADP	Z5	beim	bei	bei
 Beobachten	NN	NOUN	X3.4	Beobachten	beobachten	beobachten
 !	$.	PUNCT	Z9	!	!	!
 </s>
@@ -19463,7 +19463,7 @@ die	PDS	PRON	Z8	die	der	der
 ,	$,	PUNCT	Z9	,	,	,
 die	PRELS	PRON	Z8	die	der	der
 ich	PPER	PRON	Z8	ich	ich	ich
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Haus	NN	NOUN	H1	Haus	Haus	Haus
 gefunden	VVPP	VERB	A10	gefunden	finden	finden
 habe	VAFIN	AUX	Z5	habe	haben	haben
@@ -19492,7 +19492,7 @@ umbringen	VVINF	VERB	L1	umbringen	umbringen	umbringen
 </posting>
 <posting id="cmc_test_014_003" author="Mhohner" date="10:37, 2. Jun. 2008 (CEST)">
 <s>
-Zur	APPRART	_	Z5	zur	zu	zu
+Zur	APPRART	ADP	Z5	zur	zu	zu
 völligen	ADJA	ADJ	A13.2	völligen	völlig	völlig
 Überraschung	NN	NOUN	E5	Überraschung	Überraschung	Überraschung
 habe	VAFIN	AUX	Z5	habe	haben	haben
@@ -19561,7 +19561,7 @@ soll	VMFIN	AUX	S6	soll	sollen	sollen
 eine	ART	DET	Z5	eine	ein	ein
 wunderbares	ADJA	ADJ	A5.1	wunderbares	wunderbar	wunderbar
 Spinnennetz	NN	NOUN	L2	Spinnennetz	Spinnennetz	Spinnennetz
-am	APPRART	_	M6	am	an	an
+am	APPRART	ADP	M6	am	an	an
 Küchenfenster	NN	NOUN	H2	Küchenfenster	Küchenfenster	Küchenfenster
 irritiert	VVFIN	VERB	E4.2	irritiert	irritieren	irritieren
 schon	PTKMA	ADV	Z4	schon	schon	schon
@@ -19618,7 +19618,7 @@ wohl	PTKMA	ADV	Z4	wohl	wohl	wohl
 dass	KOUS	SCONJ	Z5	dass	dass	dass
 die	ART	DET	Z5	die	der	der
 Haut	NN	NOUN	B1	Haut	Haut	Haut
-am	APPRART	_	M6	am	an	an
+am	APPRART	ADP	M6	am	an	an
 Ohr	NN	NOUN	B1	Ohr	Ohr	Ohr
 duenner	ADJD	ADJ	O4.1	dünner	duenn	dünn
 ist	VAFIN	AUX	A3	ist	sein	sein
@@ -19705,7 +19705,7 @@ können	VMFIN	AUX	A7	können	können	können
 ein	ART	DET	Z5	ein	ein	ein
 echtes	ADJA	ADJ	A5.4	echtes	echt	echt
 Gesundheitsproblem	NN	NOUN	B2	Gesundheitsproblem	Gesundheitsproblem	Gesundheitsproblem
-beim	APPRART	_	Z5	beim	bei	bei
+beim	APPRART	ADP	Z5	beim	bei	bei
 Biss	NN	NOUN	B1	Biss	Biss	Biss
 einer	ART	DET	Z5	einer	ein	ein
 Kreuzspinne	NN	NOUN	L2	Kreuzspinne	Kreuzspinne	Kreuzspinne
@@ -19837,7 +19837,7 @@ es	PPER	PRON	Z8	es	es	es
 für	APPR	ADP	Z5	für	für	für
 wahrscheinlicher	ADJD	ADJ	A1.4	wahrscheinlicher	wahrscheinlich	wahrscheinlich
 ,	$,	PUNCT	Z9	,	,	,
-vom	APPRART	_	Z5	vom	von	von
+vom	APPRART	ADP	Z5	vom	von	von
 Blitz	NN	NOUN	W4	Blitz	Blitz	Blitz
 erschlagen	VVINF	VERB	L1	erschlagen	erschlagen	erschlagen
 zu	PTKZU	PART	Z5	zu	zu	zu
@@ -20055,7 +20055,7 @@ aber	ADV	ADV	Z4	aber	aber	aber
 der	ART	DET	Z5	der	der	der
 gesamte	ADJA	ADJ	N5.1	gesamte	gesamt	gesamt
 Zusammenhang	NN	NOUN	X4.1	Zusammenhang	Zusammenhang	Zusammenhang
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Artikel	NN	NOUN	Q1.2/Y2	Artikel	Artikel	Artikel
 "	$(	PUNCT	Z9	"	"	"
 flöten	VVINF	VERB	A3/MWU:20052	flöten	flöten	flöten
@@ -20115,7 +20115,7 @@ Alles	PIAT	ADJ	N5.1/Z8	alles	aller	aller
 weitere	NN	NOUN	N5	Weitere	weitere	weitere
 wird	VAFIN	AUX	Z5	wird	werden	werden
 anschließend	ADJD	ADJ	N4	anschließend	anschließend	anschließend
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Artikel	NN	NOUN	Q1.2/Y2	Artikel	Artikel	Artikel
 geklärt	VVPP	VERB	Q2.2	geklärt	klären	klären
 .	$.	PUNCT	Z9	.	.	.
@@ -20407,7 +20407,7 @@ hier	ADV	ADV	M6	hier	hier	hier
 http://de.wikipedia.org/w/index.php?title=Lou_Reed&amp;diff=next&amp;oldid=79503162	URL	PROPN	Z99	http://de.wikipedia.org/w/index.php?title=lou_reed&amp;diff=next&amp;oldid=79503162	http://de.wikipedia.org/w/index.php?title=lou_reed&amp;diff=next&amp;oldid=79503162	http://de.wikipedia.org/w/index.php?title=lou_reed&amp;diff=next&amp;oldid=79503162
 auch	ADV	ADV	Z5	auch	auch	auch
 nicht	PTKNEG	PART	Z6	nicht	nicht	nicht
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Duden	NN	NOUN	Q4.1/Z3	Duden	Duden	Duden
 befindet	VVFIN	VERB	A3	befindet	befinden	befinden
 .	$.	PUNCT	Z9	.	.	.
@@ -20506,7 +20506,7 @@ Deutschlands	NE	PROPN	Z2	Deutschlands	Deutschland	Deutschland
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Im	APPRART	_	M6/N3.3/MWU	im	in	in
+Im	APPRART	ADP	M6/N3.3/MWU	im	in	in
 Umkreis	NN	NOUN	M6/N3.3/MWU	Umkreis	Umkreis	Umkreis
 der	ART	DET	Z5	der	der	der
 von	APPR	ADP	Z5	von	von	von
@@ -20535,7 +20535,7 @@ Veranstaltungen	NN	NOUN	K1/S1.1.3	Veranstaltungen	Veranstaltung	Veranstaltung
 <s>
 Jedes	PIAT	DET	N6	jedes	jeder	jeder
 Jahr	NN	NOUN	T1.2	Jahr	Jahr	Jahr
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Frühjahr	NN	NOUN	T1.3	Frühjahr	Frühjahr	Frühjahr
 finden	VVFIN	VERB	A3/MWU:20557	finden	finden	finden	stattfinden
 in	APPR	ADP	M6	in	in	in
@@ -20544,7 +20544,7 @@ Fußgängerzone	NN	NOUN	M7	Fußgängerzone	Fußgängerzone	Fußgängerzone
 der	ART	DET	Z5	der	der	der
 Innenstadt	NN	NOUN	M7	Innenstadt	Innenstadt	Innenstadt
 sowie	KON	CCONJ	Z5	sowie	sowie	sowie
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Kaiserkeller	NE	PROPN	Z2	Kaiserkeller	Kaiserkeller	Kaiserkeller
 und	KON	CCONJ	Z5	und	und	und
 in	APPR	ADP	M6	in	in	in
@@ -20560,7 +20560,7 @@ statt	PTKVZ	PART	A3/MWU:20540	statt	statt	statt
 <s>
 Gäste	NN	NOUN	S1.1.3/S2	Gäste	Gast	Gast
 sind	VAFIN	AUX	A3	sind	sein	sein
-zum	APPRART	_	A4.1/MWU	zum	zu	zu
+zum	APPRART	ADP	A4.1/MWU	zum	zu	zu
 Beispiel	NN	NOUN	A4.1/MWU	Beispiel	Beispiel	Beispiel
 Robin	NE	PROPN	Z1	Robin	Robin	Robin
 Eubanks	NE	PROPN	Z1	Eubanks	Eubanks	Eubanks
@@ -20574,7 +20574,7 @@ Musikhochschule	NN	NOUN	K2/M7/P1	Musikhochschule	Musikhochschule	Musikhochschule
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Im	APPRART	_	T1.1	im	in	in
+Im	APPRART	ADP	T1.1	im	in	in
 Frühsommer	NN	NOUN	T1.3	Frühsommer	Frühsommer	Frühsommer
 findet	VVFIN	VERB	A3/MWU:20590	findet	finden	finden	stattfinden
 das	ART	DET	Z5	das	der	der
@@ -20594,7 +20594,7 @@ statt	PTKVZ	PART	A3/MWU:20579	statt	statt	statt
 ]	$(	PUNCT	Z9	]	]	]
 </s>
 <s>
-Im	APPRART	_	T1.1	im	in	in
+Im	APPRART	ADP	T1.1	im	in	in
 Sommer	NN	NOUN	T1.3	Sommer	Sommer	Sommer
 werden	VAFIN	AUX	Z5	werden	werden	werden
 regelmäßig	ADJD	ADJ	N6	regelmäßig	regelmäßig	regelmäßig
@@ -20630,9 +20630,9 @@ Marktplatz	NN	NOUN	M7	Marktplatz	Marktplatz	Marktplatz
 Lippe	NE	PROPN	Z2	Lippe	Lippe	Lippe
 Kulinarisch	ADJD	ADJ	F1/S1.1.3	Kulinarisch	kulinarisch	kulinarisch
 bietet	VVFIN	VERB	A9/MWU:20655	bietet	bieten	bieten	anbieten
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Schlossgarten	NN	NOUN	L3/M7	Schlossgarten	Schlossgarten	Schlossgarten
-im	APPRART	_	T1.1	im	in	in
+im	APPRART	ADP	T1.1	im	in	in
 Juli	NN	NOUN	T1.3	Juli	Juli	Juli
 /	$(	PUNCT	Z9	/	/	/
 August	NN	NOUN	T1.3	August	August	August
@@ -20656,7 +20656,7 @@ an	PTKVZ	PART	A9/MWU:20632	an	an	an
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Im	APPRART	_	Z5	im	in	in
+Im	APPRART	ADP	Z5	im	in	in
 zweijährigen	ADJA	ADJ	N6	zweijährigen	zweijährig	zweijährig
 Rhythmus	NN	NOUN	N6	Rhythmus	Rhythmus	Rhythmus
 ,	$,	PUNCT	Z9	,	,	,
@@ -20716,7 +20716,7 @@ Stadt	NN	NOUN	M7	Stadt	Stadt	Stadt
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Im	APPRART	_	Z5	im	in	in
+Im	APPRART	ADP	Z5	im	in	in
 Herbst	NN	NOUN	T1.3	Herbst	Herbst	Herbst
 findet	VVFIN	VERB	A1.1.1/MWU:20741	findet	finden	finden	stattfinden
 jedes	PIAT	DET	N6	jedes	jeder	jeder
@@ -20729,7 +20729,7 @@ Buß-	TRUNC	X	T1.2/MWU	Buß-	Buß	Buß
 und	KON	CCONJ	T1.2/MWU	und	und	und
 Bettag	NN	NOUN	T1.2/MWU	Bettag	Bettag	Bettag
 bis	APPR	ADP	T2	bis	bis	bis
-zum	APPRART	_	T2	zum	zu	zu
+zum	APPRART	ADP	T2	zum	zu	zu
 darauffolgenden	ADJA	ADJ	N4	darauffolgenden	darauffolgend	darauffolgend
 Sonntag	NN	NOUN	T1.1.2	Sonntag	Sonntag	Sonntag
 die	ART	DET	Z5	die	der	der
@@ -20796,7 +20796,7 @@ Bauernmarkt	NN	NOUN	I2.2/F4/M7	Bauernmarkt	Bauernmarkt	Bauernmarkt
 Jeden	PIAT	DET	N6	jeden	jeder	jeder
 ersten	ADJA	ADJ	N4	ersten	erster	erster
 Samstag	NN	NOUN	T1.2	Samstag	Samstag	Samstag
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Monat	NN	NOUN	T1.3	Monat	Monat	Monat
 findet	VVFIN	VERB	A3/MWU:20813	findet	finden	finden	stattfinden
 von	APPR	ADP	T2	von	von	von
@@ -20807,7 +20807,7 @@ ein	ART	DET	Z5	ein	ein	ein
 Flohmarkt	NN	NOUN	I2.2/M7/S1.1.3	Flohmarkt	Flohmarkt	Flohmarkt
 ohne	APPR	ADP	Z5	ohne	ohne	ohne
 Neuwaren	NN	NOUN	O2/T3	Neuwaren	Neuware	Neuware
-am	APPRART	_	Z5	am	an	an
+am	APPRART	ADP	Z5	am	an	an
 Friedrichstaler	ADJA	ADJ	Z2	Friedrichstaler	Friedrichstaler	Friedrichstaler
 Kanal	NN	NOUN	W3	Kanal	Kanal	Kanal
 statt	PTKVZ	PART	A3/MWU:20801	statt	statt	statt
@@ -20965,7 +20965,7 @@ es	PPER	PRON	Z8	es	es	es
 ,	$,	PUNCT	Z9	,	,	,
 dass	KOUS	SCONJ	Z5	dass	dass	dass
 es	PPER	PRON	Z8	es	es	es
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Stadtgebiet	NN	NOUN	M7	Stadtgebiet	Stadtgebiet	Stadtgebiet
 keine	PIAT	DET	Z6	keine	kein	kein
 vierspurig	ADJD	ADJ	M3	vierspurig	vierspurig	vierspurig
@@ -21001,7 +21001,7 @@ Altenbeken	NE	PROPN	Z1	Altenbeken	Altenbeken	Altenbeken
 Er	PPER	PRON	Z8	er	er	er
 wird	VAFIN	AUX	Z5	wird	werden	werden
 jeweils	ADV	ADV	Z5	jeweils	jeweils	jeweils
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Stundentakt	NN	NOUN	N6	Stundentakt	Stundentakt	Stundentakt
 von	APPR	ADP	Z5	von	von	von
 Regionalzügen	NN	NOUN	M3	Regionalzügen	Regionalzug	Regionalzug
@@ -21049,7 +21049,7 @@ bedient	VVPP	VERB	M3	bedient	bedienen	bedienen
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Im	APPRART	_	M6	im	in	in
+Im	APPRART	ADP	M6	im	in	in
 Straßenpersonennahverkehr	NN	NOUN	M3	Straßenpersonennahverkehr	Straßenpersonennahverkehr	Straßenpersonennahverkehr
 ist	VAFIN	AUX	A3	ist	sein	sein
 Detmold	NE	PROPN	Z2	Detmold	Detmold	Detmold
@@ -21096,7 +21096,7 @@ entspricht	VVFIN	VERB	A6.1	entspricht	entsprechen	entsprechen
 <s>
 Detmold	NE	PROPN	Z2	Detmold	Detmold	Detmold
 gehört	VVFIN	VERB	S5	gehört	gehören	gehören
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Tarifverbund	NN	NOUN	M3	Tarifverbund	Tarifverbund	Tarifverbund
 „	$(	PUNCT	Z9	„	„	„
 Der	ART	DET	M3/Z3/MWU	der	der	der
@@ -21127,7 +21127,7 @@ der	ART	DET	Z5	der	der	der
 Britischen	ADJA	ADJ	Z2	britischen	britisch	britisch
 Rheinarmee	NN	NOUN	G3	Rheinarmee	Rheinarmee	Rheinarmee
 wurde	VAFIN	AUX	Z5	wurde	werden	werden
-am	APPRART	_	T1.2	am	an	an
+am	APPRART	ADP	T1.2	am	an	an
 31.	ADJA	ADJ	N1/T1.2	31.	31.	31.
 Juli	NN	NOUN	T1.2	Juli	Juli	Juli
 1995	CARD	NUM	N1	1995	1995	1995
@@ -21168,7 +21168,7 @@ ziviler	ADJA	ADJ	G3	ziviler	zivil	zivil
 Sonderlandeplatz	NN	NOUN	A6.2/M5/M7	Sonderlandeplatz	Sonderlandeplatz	Sonderlandeplatz
 und	KON	CCONJ	Z5	und	und	und
 wird	VAFIN	AUX	Z5	wird	werden	werden
-vom	APPRART	_	Z5	vom	von	von
+vom	APPRART	ADP	Z5	vom	von	von
 Luftsportverein	NN	NOUN	K1/K5.1/M5/S5	Luftsportverein	Luftsportverein	Luftsportverein
 Detmold	NE	PROPN	Z2	Detmold	Detmold	Detmold
 e.	ADJA	ADJ	G2.1/MWU	e.	e.	e.
@@ -21241,7 +21241,7 @@ Tallinn	NE	PROPN	Z2	Tallinn	Tallinn	Tallinn
 (	$(	PUNCT	Z9	(	(	(
 Estland	NE	PROPN	Z2	Estland	Estland	Estland
 )	$(	PUNCT	Z9	)	)	)
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Süden	NN	NOUN	M6	Süden	Süden	Süden
 (	$(	PUNCT	Z9	(	(	(
 Externsteine	NN	NOUN	W3	Externsteine	Externstein	Externstein
@@ -21401,7 +21401,7 @@ Bevölkerung	NN	NOUN	M7/S5	Bevölkerung	Bevölkerung	Bevölkerung
 Die	ART	DET	Z5	die	der	der
 Wintersportgäste	NN	NOUN	K5.1/S1.1.3/S2	Wintersportgäste	Wintersportgast	Wintersportgast
 blieben	VVFIN	VERB	M8	blieben	bleiben	bleiben
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Durchschnitt	NN	NOUN	N2	Durchschnitt	Durchschnitt	Durchschnitt
 fünf	CARD	NUM	N1	fünf	fünf	fünf
 Nächte	NN	NOUN	T1.3	Nächte	Nacht	Nacht
@@ -21520,7 +21520,7 @@ Entwicklung	NN	NOUN	N4	Entwicklung	Entwicklung	Entwicklung
 So	ADV	ADV	Z4	so	so	so
 wird	VAFIN	AUX	Z5	wird	werden	werden
 beispielsweise	ADV	ADV	A4.1	beispielsweise	beispielsweise	beispielsweise
-beim	APPRART	_	Z5	beim	bei	bei
+beim	APPRART	ADP	Z5	beim	bei	bei
 Planieren	NN	NOUN	M3	Planieren	planieren	planieren
 von	APPR	ADP	Z5	von	von	von
 Skipisten	NN	NOUN	K5.1/M7	Skipisten	Skipiste	Skipiste
@@ -21542,7 +21542,7 @@ Pflanzendecke	NN	NOUN	W3	Pflanzendecke	Pflanzendecke	Pflanzendecke
 Der	ART	DET	Z5	der	der	der
 Boden	NN	NOUN	W3	Boden	Boden	Boden
 wird	VAFIN	AUX	Z5	wird	werden	werden
-beim	APPRART	_	Z5	beim	bei	bei
+beim	APPRART	ADP	Z5	beim	bei	bei
 Planieren	NN	NOUN	M3	Planieren	planieren	planieren
 verdichtet	VVPP	VERB	O4.5	verdichtet	verdichten	verdichten
 .	$.	PUNCT	Z9	.	.	.
@@ -21571,7 +21571,7 @@ nimmt	VVFIN	VERB	N5/MWU:21572	nimmt	nehmen	nehmen	zunehmen
 dadurch	PAV	ADV	A2.2	dadurch	dadurch	dadurch
 zu	PTKVZ	PART	N5/MWU:21570	zu	zu	zu
 ,	$,	PUNCT	Z9	,	,	,
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 schlimmsten	ADJA	ADJ	A5.1/N5.1	schlimmsten	schlimm	schlimm
 Fall	NN	NOUN	Z7	Fall	Fall	Fall
 kommt	VVFIN	VERB	A2.2	kommt	kommen	kommen
@@ -21610,7 +21610,7 @@ Lebensgrundlage	NN	NOUN	L1/S6	Lebensgrundlage	Lebensgrundlage	Lebensgrundlage
 <s>
 So	ADV	ADV	Z4	so	so	so
 sind	VAFIN	AUX	A3	sind	sein	sein
-zum	APPRART	_	A4.1/MWU	zum	zu	zu
+zum	APPRART	ADP	A4.1/MWU	zum	zu	zu
 Beispiel	NN	NOUN	A4.1/MWU	Beispiel	Beispiel	Beispiel
 manche	PIAT	ADJ	N5/Z8	manche	mancher	mancher
 Insekten	NN	NOUN	L2	Insekten	Insekt	Insekt
@@ -21890,11 +21890,11 @@ das	ART	DET	Z5	das	der	der
 Alpenareal	NN	NOUN	M7	Alpenareal	Alpenareal	Alpenareal
 ,	$,	PUNCT	Z9	,	,	,
 sowohl	KON	CCONJ	Z5	sowohl	sowohl	sowohl
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Sommer	NN	NOUN	T1.3	Sommer	Sommer	Sommer
 als	KON	CCONJ	Z5	als	als	als
 auch	ADV	ADV	Z5	auch	auch	auch
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Winter	NN	NOUN	T1.3	Winter	Winter	Winter
 .	$.	PUNCT	Z9	.	.	.
 </s>
@@ -21928,7 +21928,7 @@ kann	VMFIN	AUX	A7	kann	können	können
 <s>
 Novastation	NN	NOUN	Q4.3/Z3	Novastation	Novastation	Novastation
 sendet	VVFIN	VERB	Q1.3	sendet	senden	senden
-vom	APPRART	_	Z5	vom	von	von
+vom	APPRART	ADP	Z5	vom	von	von
 Ende	NN	NOUN	T2	Ende	Ende	Ende
 der	ART	DET	Z5	der	der	der
 Welt	NN	NOUN	W1	Welt	Welt	Welt
@@ -21947,7 +21947,7 @@ Station	NN	NOUN	Q4.3/Z3	Station	Station	Station
 wurde	VAFIN	AUX	Z5	wurde	werden	werden
 1926	CARD	NUM	N1	1926	1926	1926
 ,	$,	PUNCT	Z9	,	,	,
-im	APPRART	_	T1.3/MWU	im	in	in
+im	APPRART	ADP	T1.3/MWU	im	in	in
 Zuge	NN	NOUN	T1.3/MWU	Zuge	Zug	Zug
 einer	ART	DET	Z5	einer	ein	ein
 Polarexpedition	NN	NOUN	W3/M1	Polarexpedition	Polarexpedition	Polarexpedition
@@ -21966,7 +21966,7 @@ gegründet	VVPP	VERB	T2	gegründet	gründen	gründen
 Die	ART	DET	Z5	die	der	der
 Expedition	NN	NOUN	S5/X2.4/Y1	Expedition	Expedition	Expedition
 hatte	VAFIN	AUX	Z5	hatte	haben	haben
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Ziel	NN	NOUN	X7	Ziel	Ziel	Ziel
 ,	$,	PUNCT	Z9	,	,	,
 das	ART	DET	Z5	das	der	der
@@ -22037,7 +22037,7 @@ belebte	VVFIN	VERB	L1	belebte	beleben	beleben	wiederbeleben
 die	ART	DET	Z5	die	der	der
 Nova	NE	PROPN	Q4.3/Z3/MWU	Nova	Nova	Nova
 Station	NN	NOUN	Q4.3/Z3/MWU	Station	Station	Station
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Jahre	NN	NOUN	T1.2	Jahre	Jahr	Jahr
 1963	CARD	NUM	N1	1963	1963	1963
 zunächst	ADV	ADV	N4	zunächst	zunächst	zunächst
@@ -22089,7 +22089,7 @@ Geheimtipp	NN	NOUN	A10/S8	Geheimtipp	Geheimtipp	Geheimtipp
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Im	APPRART	_	Z5	im	in	in
+Im	APPRART	ADP	Z5	im	in	in
 August	NN	NOUN	T1.3	August	August	August
 2008	CARD	NUM	N1	2008	2008	2008
 war	VAFIN	AUX	A3	war	sein	sein
@@ -22660,7 +22660,7 @@ Grundrecht	NN	NOUN	G2.1	Grundrecht	Grundrecht	Grundrecht
 auf	APPR	ADP	Z5	auf	auf	auf
 technischer	ADJA	ADJ	Y1	technischer	technisch	technisch
 Ebene	NN	NOUN	X4.1	Ebene	Ebene	Ebene
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 schrankenlosen	ADJA	ADJ	A1.7	schrankenlosen	schrankenlos	schrankenlos
 Grundrecht	NN	NOUN	G2.1	Grundrecht	Grundrecht	Grundrecht
 wird	VAFIN	AUX	Z5	wird	werden	werden
@@ -22692,7 +22692,7 @@ Präventivmaßnahme	NN	NOUN	A15	Präventivmaßnahme	Präventivmaßnahme	Prävent
 die	PRELS	PRON	Z8	die	der	der
 erst	PTKIFG	ADV	Z7	erst	erst	erst
 dann	ADV	ADV	Z7	dann	dann	dann
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Anwendung	NN	NOUN	A1.5.1	Anwendung	Anwendung	Anwendung
 kommt	VVFIN	VERB	A1.1.1	kommt	kommen	kommen
 ,	$,	PUNCT	Z9	,	,	,
@@ -22713,7 +22713,7 @@ Rechtfertigung	NN	NOUN	A2.2/Q2.2	Rechtfertigung	Rechtfertigung	Rechtfertigung
 kann	VMFIN	AUX	S7.4	kann	können	können
 der	ART	DET	Z5	der	der	der
 Staat	NN	NOUN	G1.1	Staat	Staat	Staat
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 Versammlungsteilnehmern	NN	NOUN	S1.1.3/S2/S5	Versammlungsteilnehmern	Versammlungsteilnehmer	Versammlungsteilnehmer
 untersagen	VVINF	VERB	S7.4	untersagen	untersagen	untersagen
@@ -22751,7 +22751,7 @@ auszusetzen	VVIZU	VERB	A5.1	auszusetzen	aussetzen	aussetzen
 Wer	PWS	PRON	Z8	wer	wer	wer
 (	$(	PUNCT	Z9	(	(	(
 wie	KOKOM	ADP	A6.1	wie	wie	wie
-z.	APPRART	_	A4.1/MWU:22755	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU:22755	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU:22754	B.	B.	B.
 Edward	NE	PROPN	Z1/MWU:22757	Edward	Edward	Edward
 Snowden	NE	PROPN	Z1/MWU:22756	Snowden	Snowden	Snowden
@@ -22842,7 +22842,7 @@ Situation	NN	NOUN	A3	Situation	Situation	Situation
 sicherlich	ADV	ADV	A7	sicherlich	sicherlich	sicherlich
 diskutieren	VVINF	VERB	Q2.2	diskutieren	diskutieren	diskutieren
 –	$(	PUNCT	Z9	–	–	–
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Ergebnis	NN	NOUN	A2.2	Ergebnis	Ergebnis	Ergebnis
 muss	VMFIN	AUX	S6	muss	müssen	müssen
 man	PIS	PRON	Z8	man	man	man
@@ -23127,7 +23127,7 @@ Windowssysteme	NN	NOUN	Y2/Z3	Windowssysteme	Windowssystem	Windowssystem
 <s>
 Dies	PDS	PRON	Z8	dies	dieser	dieser
 liegt	VVFIN	VERB	A2.2	liegt	liegen	liegen
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 einen	PIS	PRON	N1	einen	einer	einer
 daran	PAV	ADV	Z8	daran	daran	daran
 ,	$,	PUNCT	Z9	,	,	,
@@ -23232,7 +23232,7 @@ dann	ADV	ADV	Z7	dann	dann	dann
 wenn	KOUS	SCONJ	Z7	wenn	wenn	wenn
 man	PIS	PRON	Z8	man	man	man
 regelmäßig	ADJD	ADJ	N6	regelmäßig	regelmäßig	regelmäßig
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Internet	NN	NOUN	Y2	Internet	Internet	Internet
 surft	VVFIN	VERB	Y2	surft	surfen	surfen
 .	$.	PUNCT	Z9	.	.	.
@@ -23301,7 +23301,7 @@ unsicher	ADJD	ADJ	A15	unsicher	unsicher	unsicher
 konzipiert	VVPP	VERB	X4.2	konzipiert	konzipieren	konzipieren
 und	KON	CCONJ	Z5	und	und	und
 dann	ADV	ADV	N4	dann	dann	dann
-vom	APPRART	_	Z5	vom	von	von
+vom	APPRART	ADP	Z5	vom	von	von
 Benutzer	NN	NOUN	A1.5.1/S2	Benutzer	Benutzer	Benutzer
 abgedichtet	VVPP	VERB	A10	abgedichtet	abdichten	abdichten
 werden	VAINF	AUX	Z5	werden	werden	werden
@@ -23414,7 +23414,7 @@ läuft	VVFIN	VERB	I3.1	läuft	laufen	laufen
 mit	APPR	ADP	Z5	mit	mit	mit
 Linux	NE	PROPN	Y2/Z3	Linux	Linux	Linux
 (	$(	PUNCT	Z9	(	(	(
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 auch	ADV	ADV	Z5	auch	auch	auch
 Serverfarmen	NN	NOUN	Y2	Serverfarmen	Serverfarm	Serverfarm
@@ -23494,7 +23494,7 @@ dass	KOUS	SCONJ	Z5	dass	dass	dass
 dieses	PDAT	DET	Z8	dieses	dieser	dieser
 Konzept	NN	NOUN	X4.1	Konzept	Konzept	Konzept
 strikt	ADJD	ADJ	A1.7	strikt	strikt	strikt
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 gesamten	ADJA	ADJ	N5.1	gesamten	gesamt	gesamt
 System	NN	NOUN	Y2	System	System	System
 fehlerfrei	ADJD	ADJ	A5.3	fehlerfrei	fehlerfrei	fehlerfrei
@@ -23514,9 +23514,9 @@ Schadsoftware	NN	NOUN	Y2/A15	Schadsoftware	Schadsoftware	Schadsoftware
 ,	$,	PUNCT	Z9	,	,	,
 die	PRELS	PRON	Z8	die	der	der
 Lücken	NN	NOUN	A5.3	Lücken	Lücke	Lücke
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Firefox	NN	NOUN	Y2/Z3	Firefox	Firefox	Firefox
 oder	KON	CCONJ	Z5	oder	oder	oder
 Adobe	NN	NOUN	Y2/Z3/MWU	Adobe	Adobe	Adobe
@@ -23591,7 +23591,7 @@ umsetzen	VVINF	VERB	A1.5.1	umsetzen	umsetzen	umsetzen
 "	$(	PUNCT	Z9	"	"	"
 </s>
 <s>
-Vom	APPRART	_	Z5	vom	von	von
+Vom	APPRART	ADP	Z5	vom	von	von
 Sicherheitskonzept	NN	NOUN	A15/X4.2	Sicherheitskonzept	Sicherheitskonzept	Sicherheitskonzept
 her	APZR	ADP	Z5	her	her	her
 sind	VAFIN	AUX	A3	sind	sein	sein
@@ -23768,7 +23768,7 @@ er	PPER	PRON	Z8	er	er	er
 explizit	ADJD	ADJ	A10	explizit	explizit	explizit
 anfordern	VVINF	VERB	Q2.2	anfordern	anfordern	anfordern
 (	$(	PUNCT	Z9	(	(	(
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 mit	APPR	ADP	Z5	mit	mit	mit
 sudo	NN	NOUN	Y2	sudo	sudo	sudo
@@ -23791,7 +23791,7 @@ eine	ART	DET	Z5	eine	ein	ein
 bestimmte	ADJA	ADJ	N5	bestimmte	bestimmt	bestimmt
 Zeit	NN	NOUN	T1.3	Zeit	Zeit	Zeit
 (	$(	PUNCT	Z9	(	(	(
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 15	CARD	NUM	N1	15	15	15
 Min.	NN	NOUN	T1.3	Min.	Min.	Min.
@@ -23833,7 +23833,7 @@ Plötzlich	ADJD	ADJ	N3.8	plötzlich	plötzlich	plötzlich
 finden	VVFIN	VERB	A3	finden	finden	finden
 sich	PRF	PRON	Z8	sich	sich	sich
 Löcher	NN	NOUN	A1.1.2	Löcher	Loch	Loch
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Text	NN	NOUN	Q1.2	Text	Text	Text
 ,	$,	PUNCT	Z9	,	,	,
 Zeilen	NN	NOUN	Q1.2	Zeilen	Zeile	Zeile
@@ -23881,7 +23881,7 @@ wird	VAFIN	AUX	Z5	wird	werden	werden
 sehr	PTKIFG	ADV	A13.3	sehr	sehr	sehr
 lange	ADV	ADV	T1.3	lange	lange	lange
 nur	PTKIFG	ADV	A14	nur	nur	nur
-vom	APPRART	_	Z5	vom	von	von
+vom	APPRART	ADP	Z5	vom	von	von
 »	$(	PUNCT	Z9	»	»	»
 eBook	NN	NOUN	Q4.1/Y2	E-Book	eBook	E-Book
 «	$(	PUNCT	Z9	«	«	«
@@ -23900,7 +23900,7 @@ macht	VVFIN	VERB	A2.2/MWU:23912	macht	machen	machen	festmachen
 allle	PIAT	ADJ	N5.1	alle	alller	aller
 Probleme	NN	NOUN	A5.3	Probleme	Problem	Problem
 nur	PTKIFG	ADV	A14	nur	nur	nur
-am	APPRART	_	Z5	am	an	an
+am	APPRART	ADP	Z5	am	an	an
 »	$(	PUNCT	Z9	»	»	»
 eBook	NN	NOUN	Q4.1/Y2	E-Book	eBook	E-Book
 «	$(	PUNCT	Z9	«	«	«
@@ -23928,7 +23928,7 @@ zahllose	ADJA	ADJ	N5	zahllose	zahllos	zahllos
 Gründe	NN	NOUN	A2.2	Gründe	Grund	Grund
 ,	$,	PUNCT	Z9	,	,	,
 die	PRELS	PRON	Z8	die	der	der
-zum	APPRART	_	N5/MWU	zum	zu	zu
+zum	APPRART	ADP	N5/MWU	zum	zu	zu
 Teil	NN	NOUN	N5/MWU	Teil	Teil	Teil
 bei	APPR	ADP	Z5	bei	bei	bei
 den	ART	DET	Z5	den	der	der
@@ -23940,7 +23940,7 @@ den	ART	DET	Z5	den	der	der
 eBooks	NN	NOUN	Q4.1/Y2	E-Books	eBook	E-Book
 )	$(	PUNCT	Z9	)	)	)
 und	KON	CCONJ	Z5	und	und	und
-zum	APPRART	_	N5/MWU	zum	zu	zu
+zum	APPRART	ADP	N5/MWU	zum	zu	zu
 Teil	NN	NOUN	N5/MWU	Teil	Teil	Teil
 bei	APPR	ADP	Z5	bei	bei	bei
 den	ART	DET	Z5	den	der	der
@@ -23976,7 +23976,7 @@ falsch	ADJD	ADJ	A5.3	falsch	falsch	falsch
 <s>
 Erst	PTKIFG	ADV	Z5	erst	erst	erst
 spät	ADJD	ADJ	N4/T4	spät	spät	spät
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Artikel	NN	NOUN	Q1.2	Artikel	Artikel	Artikel
 geht	VVFIN	VERB	M1	geht	gehen	gehen	abgehen
 man	PIS	PRON	Z8	man	man	man
@@ -24006,7 +24006,7 @@ mehr	PIS	PRON	N5	mehr	mehr	mehr
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Beim	APPRART	_	Z5	beim	bei	bei
+Beim	APPRART	ADP	Z5	beim	bei	bei
 Satz	NN	NOUN	Q1.2	Satz	Satz	Satz
 Und	KON	CCONJ	Z5	und	und	und
 wenn	KOUS	SCONJ	Z7	wenn	wenn	wenn
@@ -24019,7 +24019,7 @@ jede	PIAT	DET	N5	jede	jeder	jeder
 Seite	NN	NOUN	Q1.2	Seite	Seite	Seite
 des	ART	DET	Z5	des	der	der
 E-Books	NN	NOUN	Q4.1/Y2	E-Books	E-Book	E-Book
-beim	APPRART	_	Z5	beim	bei	bei
+beim	APPRART	ADP	Z5	beim	bei	bei
 Umblättern	NN	NOUN	Q1.2	Umblättern	umblättern	umblättern
 so	ADV	ADV	A14	so	so	so
 lange	ADV	ADV	T1.3	lange	lange	lange
@@ -24029,7 +24029,7 @@ man	PIS	PRON	Z8	man	man	man
 den	ART	DET	Z5	den	der	der
 Reader	NN	NOUN	Q4.1/Y2	Reader	Reader	Reader
 entnervt	ADJD	ADJ	E3	entnervt	entnervt	entnervt
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Seite	NN	NOUN	M6	Seite	Seite	Seite
 legt	VVFIN	VERB	M2	legt	legen	legen
 .	$.	PUNCT	Z9	.	.	.
@@ -24050,11 +24050,11 @@ hat	VAFIN	AUX	Z5	hat	haben	haben
 denn	KON	CCONJ	A2.2	denn	denn	denn
 die	ART	DET	Z5	die	der	der
 Verzögerungen	NN	NOUN	T4	Verzögerungen	Verzögerung	Verzögerung
-beim	APPRART	_	Z5	beim	bei	bei
+beim	APPRART	ADP	Z5	beim	bei	bei
 Umblättern	NN	NOUN	Q1.2	Umblättern	umblättern	umblättern
 gehören	VVFIN	VERB	A1.8	gehören	gehören	gehören
 längst	ADV	ADV	T1.1	längst	längst	längst
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Vergangenheit	NN	NOUN	T1.1.1	Vergangenheit	Vergangenheit	Vergangenheit
 und	KON	CCONJ	Z5	und	und	und
 angeblich	ADJD	ADJ	A8	angeblich	angeblich	angeblich
@@ -24152,7 +24152,7 @@ ist	VAFIN	AUX	A3	ist	sein	sein
 <s>
 Das	PDS	PRON	Z8	das	der	der
 ist	VAFIN	AUX	A3	ist	sein	sein
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 einen	PIS	PRON	Z5	einen	einer	einer
 ein	ART	DET	Z5	ein	ein	ein
 technisches	ADJA	ADJ	Y2	technisches	technisch	technisch
@@ -24462,9 +24462,9 @@ zwei	CARD	NUM	N1	zwei	zwei	zwei
 Standards	NN	NOUN	A6.2/I4	Standards	Standard	Standard
 ,	$,	PUNCT	Z9	,	,	,
 die	PRELS	PRON	Z8	die	der	der
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Gegensatz	NN	NOUN	A6.1	Gegensatz	Gegensatz	Gegensatz
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 PDF-Version	NN	NOUN	Y2	PDF-Version	PDF-Version	PDF-Version
 einen	ART	DET	Z5	einen	ein	ein
 dynamischen	ADJA	ADJ	Q1.2	dynamischen	dynamisch	dynamisch
@@ -24650,7 +24650,7 @@ werden	VAFIN	AUX	Z5	werden	werden	werden
 zentral	ADJD	ADJ	M6	zentral	zentral	zentral
 verzeichnet	VVPP	VERB	A4.1	verzeichnet	verzeichnen	verzeichnen
 ,	$,	PUNCT	Z9	,	,	,
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Vermeidung	NN	NOUN	A1.9	Vermeidung	Vermeidung	Vermeidung
 von	APPR	ADP	Z5	von	von	von
 Informationsverlusten	NN	NOUN	A9/X2.2	Informationsverlusten	Informationsverlust	Informationsverlust
@@ -24767,7 +24767,7 @@ Weiterverarbeitung	NN	NOUN	A1.5.1/N4	Weiterverarbeitung	Weiterverarbeitung	Weite
 in	APPR	ADP	Z5	in	in	in
 integrierter	ADJA	ADJ	Y2	integrierter	integriert	integriert
 Form	NN	NOUN	A4.1	Form	Form	Form
-zur	APPRART	_	A3/MWU	zur	zu	zu
+zur	APPRART	ADP	A3/MWU	zur	zu	zu
 Verfügung	NN	NOUN	A3/MWU	Verfügung	Verfügung	Verfügung
 .	$.	PUNCT	Z9	.	.	.
 </s>
@@ -24838,7 +24838,7 @@ einfachen	ADJA	ADJ	A12	einfachen	einfach	einfach
 Modells	NN	NOUN	X4.1	Modells	Modell	Modell
 ,	$,	PUNCT	Z9	,	,	,
 wie	KOKOM	ADP	A6	wie	wie	wie
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
 Dublin	NE	PROPN	Z2	Dublin	Dublin	Dublin
 Core	NE	PROPN	Z3	Core	Core	Core
@@ -24846,7 +24846,7 @@ Core	NE	PROPN	Z3	Core	Core	Core
 DCES	NE	PROPN	Z3	DCES	DCES	DCES
 )	$(	PUNCT	Z9	)	)	)
 –	$(	PUNCT	Z9	–	–	–
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Verlust	NN	NOUN	A9	Verlust	Verlust	Verlust
 großer	ADJA	ADJ	N3.2	großer	groß	groß
 Anteile	NN	NOUN	N5	Anteile	Anteil	Anteil
@@ -24864,7 +24864,7 @@ DARIAH-DE	NE	PROPN	Y2/Z3	DARIAH-DE	DARIAH-DE	DARIAH-DE
 umgesetzten	ADJA	ADJ	A1.6	umgesetzten	umgesetzt	umgesetzt
 Föderationsarchitektur	NN	NOUN	Y2	Föderationsarchitektur	Föderationsarchitektur	Föderationsarchitektur
 werden	VAFIN	AUX	Z5	werden	werden	werden
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Folgenden	NN	NOUN	N4	Folgenden	folgend	folgend
 zwei	CARD	NUM	N1	zwei	zwei	zwei
 Anwendungsfälle	NN	NOUN	A1.5.1	Anwendungsfälle	Anwendungsfall	Anwendungsfall
@@ -24920,9 +24920,9 @@ Anpassung	NN	NOUN	A2.1	Anpassung	Anpassung	Anpassung
 der	ART	DET	Z5	der	der	der
 Suche	NN	NOUN	X2.4/Y2	Suche	Suche	Suche
 –	$(	PUNCT	Z9	–	–	–
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Hinblick	NN	NOUN	M6/X3.4	Hinblick	Hinblick	Hinblick
 auf	APPR	ADP	Z5	auf	auf	auf
 eine	ART	DET	Z5	eine	ein	ein
@@ -25033,7 +25033,7 @@ erforderlich	ADJD	ADJ	S6	erforderlich	erforderlich	erforderlich
 um	KOUI	SCONJ	A2.2	um	um	um
 die	ART	DET	Z5	die	der	der
 jeweils	ADV	ADV	Z5	jeweils	jeweils	jeweils
-zur	APPRART	_	A9/MWU	zur	zu	zu
+zur	APPRART	ADP	A9/MWU	zur	zu	zu
 Verfügung	NN	NOUN	A9/MWU	Verfügung	Verfügung	Verfügung
 stehende	ADJA	ADJ	A9/MWU	stehende	stehend	stehend
 Granularität	NN	NOUN	A4.2	Granularität	Granularität	Granularität
@@ -25049,7 +25049,7 @@ können	VMINF	AUX	A7	können	können	können
 Datenintegration	NN	NOUN	Y2	Datenintegration	Datenintegration	Datenintegration
 </s>
 <s>
-Im	APPRART	_	A6.1/MWU	im	in	in
+Im	APPRART	ADP	A6.1/MWU	im	in	in
 Gegensatz	NN	NOUN	A6.1/MWU	Gegensatz	Gegensatz	Gegensatz
 zu	APPR	ADP	A6.1/MWU	zu	zu	zu
 der	ART	DET	Z5	der	der	der
@@ -25104,9 +25104,9 @@ Forschungsfrage	NN	NOUN	X2.4/Y1	Forschungsfrage	Forschungsfrage	Forschungsfrage
 abhängig	ADJD	ADJ	A2.2	abhängig	abhängig	abhängig
 und	KON	CCONJ	Z5	und	und	und
 können	VMFIN	AUX	A7	können	können	können
-z.	APPRART	_	A4.1/MWU	z.	z.	z.
+z.	APPRART	ADP	A4.1/MWU	z.	z.	z.
 B.	NN	NOUN	A4.1/MWU	B.	B.	B.
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Kontext	NN	NOUN	X4.1	Kontext	Kontext	Kontext
 der	ART	DET	Z5	der	der	der
 Ablösung	NN	NOUN	A2.1	Ablösung	Ablösung	Ablösung
@@ -25151,11 +25151,11 @@ einer	ART	DET	Z5	einer	ein	ein
 zentralen	ADJA	ADJ	M6	zentralen	zentral	zentral
 Ontologie	NN	NOUN	A4.1/X2.2/Y1	Ontologie	Ontologie	Ontologie
 führt	VVFIN	VERB	A2.2	führt	führen	führen
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Fall	NN	NOUN	A4.1	Fall	Fall	Fall
 der	ART	DET	Z5	der	der	der
 Datenintegration	NN	NOUN	Y2	Datenintegration	Datenintegration	Datenintegration
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Gesamtkontext	NN	NOUN	N5.1/X4.1	Gesamtkontext	Gesamtkontext	Gesamtkontext
 der	ART	DET	Z5	der	der	der
 Digital	ADJA	ADJ	Y1/Y2/MWU	digital	digital	digital
@@ -25235,7 +25235,7 @@ aus	APPR	ADP	Z5	aus	aus	aus
 der	ART	DET	Z5	der	der	der
 Collection	NN	NOUN	Y2/Z3/MWU	Collection	Collection	Collection
 Registry	NN	NOUN	Y2/Z3/MWU	Registry	Registry	Registry
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Verzeichnung	NN	NOUN	Q1.2	Verzeichnung	Verzeichnung	Verzeichnung
 von	APPR	ADP	Z5	von	von	von
 Kollektionen	NN	NOUN	A9	Kollektionen	Kollektion	Kollektion
@@ -25243,7 +25243,7 @@ Kollektionen	NN	NOUN	A9	Kollektionen	Kollektion	Kollektion
 der	ART	DET	Z5	der	der	der
 Schema	NN	NOUN	Y2/Z3/MWU	Schema	Schema	Schema
 Registry	NN	NOUN	Y2/Z3/MWU	Registry	Registry	Registry
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Verwaltung	NN	NOUN	G2.1	Verwaltung	Verwaltung	Verwaltung
 von	APPR	ADP	Z5	von	von	von
 Schemata	NN	NOUN	Y2	Schemata	Schema	Schema
@@ -25252,7 +25252,7 @@ und	KON	CCONJ	Z5	und	und	und
 der	ART	DET	Z5	der	der	der
 Crosswalk	NN	NOUN	Y2/Z3/MWU	Crosswalk	Crosswalk	Crosswalk
 Registry	NN	NOUN	Y2/Z3/MWU	Registry	Registry	Registry
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Beschreibung	NN	NOUN	Q2.2	Beschreibung	Beschreibung	Beschreibung
 von	APPR	ADP	Z5	von	von	von
 Assoziationen	NN	NOUN	A6.1	Assoziationen	Assoziation	Assoziation
@@ -25317,7 +25317,7 @@ oder	KON	CCONJ	Z5	oder	oder	oder
 der	PRELS	PRON	Z8	der	der	der
 eine	ART	DET	Z5	eine	ein	ein
 Sammlung	NN	NOUN	A4.1	Sammlung	Sammlung	Sammlung
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Rahmen	NN	NOUN	X4.1	Rahmen	Rahmen	Rahmen
 der	ART	DET	Z5	der	der	der
 Förderationsarchitektur	NN	NOUN	Y2	Förderationsarchitektur	Förderationsarchitektur	Förderationsarchitektur
@@ -25335,14 +25335,14 @@ Vergleich	NN	NOUN	A6.1/X4.2	Vergleich	Vergleich	Vergleich
 mit	APPR	ADP	Z5	mit	mit	mit
 anderen	ADJA	ADJ	A6.1	anderen	anderer	anderer
 Sammlungen	NN	NOUN	A4.1	Sammlungen	Sammlung	Sammlung
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Verfügung	NN	NOUN	A9	Verfügung	Verfügung	Verfügung
 stellen	VVINF	VERB	A9	stellen	stellen	stellen
 möchte	VMFIN	AUX	X7	möchte	möchten	möchten
 ,	$,	PUNCT	Z9	,	,	,
 ergibt	VVFIN	VERB	A2.2	ergibt	ergeben	ergeben
 sich	PRF	PRON	Z8	sich	sich	sich
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Zusammenspiel	NN	NOUN	A1.8	Zusammenspiel	Zusammenspiel	Zusammenspiel
 mit	APPR	ADP	Z5	mit	mit	mit
 der	ART	DET	Z5	der	der	der
@@ -25366,7 +25366,7 @@ Das	ART	DET	Z5	das	der	der
 Besondere	NN	NOUN	A6.2	Besondere	besondere	besondere
 dabei	PAV	ADV	Z8	dabei	dabei	dabei
 :	$.	PUNCT	Z9	:	:	:
-Im	APPRART	_	M6	im	in	in
+Im	APPRART	ADP	M6	im	in	in
 goldspatz	NE	PROPN	I2.1/Z3	Goldspatz	Goldspatz	Goldspatz
 findet	VVFIN	VERB	A3	findet	finden	finden
 sich	PRF	PRON	Z8	sich	sich	sich
@@ -25443,7 +25443,7 @@ Kindermode	NN	NOUN	B5/T3	Kindermode	Kindermode	Kindermode
 die	PRELS	PRON	Z8	die	der	der
 sich	PRF	PRON	Z8	sich	sich	sich
 klar	ADJD	ADJ	A11.2	klar	klar	klar
-vom	APPRART	_	Z8	vom	von	von
+vom	APPRART	ADP	Z8	vom	von	von
 Einheitsbrei	NN	NOUN	A6.2	Einheitsbrei	Einheitsbrei	Einheitsbrei
 abgrenzt	VVFIN	VERB	A6.1	abgrenzt	abgrenzen	abgrenzen
 .	$.	PUNCT	Z9	.	.	.
@@ -25522,7 +25522,7 @@ Schwangeren	NN	NOUN	B1/S2.1	Schwangeren	schwangere	schwangere
 sondern	KON	CCONJ	Z5	sondern	sondern	sondern
 bei	APPR	ADP	Z5	bei	bei	bei
 Frauen	NN	NOUN	S2.1	Frauen	Frau	Frau
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Allgemeinen	NN	NOUN	A6.2	Allgemeinen	allgemeine	allgemeine
 sehr	PTKIFG	ADV	A13.3	sehr	sehr	sehr
 gut	ADJD	ADJ	A5.1	gut	gut	gut
@@ -25649,14 +25649,14 @@ auch	ADV	ADV	Z5	auch	auch	auch
 so	ADV	ADV	Z4	so	so	so
 sehr	PTKIFG	ADV	A13.3	sehr	sehr	sehr
 gut	ADJD	ADJ	A5.1	gut	gut	gut
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Regal	NN	NOUN	H5	Regal	Regal	Regal
 machen	VVFIN	VERB	A8	machen	machen	machen
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
 Wer	PWS	PRON	Z8	wer	wer	wer
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 goldspatz	NE	PROPN	Z3	Goldspatz	Goldspatz	Goldspatz
 einkaufen	VVINF	VERB	I2.2	einkaufen	einkaufen	einkaufen
 geht	VVFIN	VERB	M1	geht	gehen	gehen
@@ -25699,7 +25699,7 @@ können	VMFIN	AUX	A7	können	können	können
 sich	PRF	PRON	Z8	sich	sich	sich
 derweil	ADV	ADV	T1.1.2	derweil	derweil	derweil
 beispielsweise	ADV	ADV	A4.1	beispielsweise	beispielsweise	beispielsweise
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 eigens	ADV	ADV	A4.2	eigens	eigens	eigens
 dafür	PAV	ADV	A2.2	dafür	dafür	dafür
 gebauten	ADJA	ADJ	A1.1.1	gebauten	gebaut	gebaut
@@ -25813,7 +25813,7 @@ richtet	VVFIN	VERB	Q1.1	richtet	richten	richten
 die	PRELS	PRON	Z8	die	der	der
 Schönes	NN	NOUN	O4.2	Schönes	schöne	schöne
 abseits	ADV	ADV	M6	abseits	abseits	abseits
-vom	APPRART	_	Z5	vom	von	von
+vom	APPRART	ADP	Z5	vom	von	von
 Allerlei	NN	NOUN	A6.2	Allerlei	Allerlei	Allerlei
 suchen	VVFIN	VERB	X2.4	suchen	suchen	suchen
 .	$.	PUNCT	Z9	.	.	.
@@ -25914,7 +25914,7 @@ eine	ART	DET	Z5	eine	ein	ein
 kleine	ADJA	ADJ	N3.2	kleine	klein	klein
 Oase	NN	NOUN	W3	Oase	Oase	Oase
 abseits	ADV	ADV	M6	abseits	abseits	abseits
-vom	APPRART	_	Z5	vom	von	von
+vom	APPRART	ADP	Z5	vom	von	von
 Zentrumsramsch	NN	NOUN	A5.1/A6.2/I2.2	Zentrumsramsch	Zentrumsramsch	Zentrumsramsch
 darstellt	VVFIN	VERB	A3	darstellt	darstellen	darstellen
 ,	$,	PUNCT	Z9	,	,	,
@@ -26031,7 +26031,7 @@ geht	VVFIN	VERB	M1	geht	gehen	gehen
 einfach	PTKMA	ADV	A12	einfach	einfach	einfach
 nach	APPR	ADP	M6	nach	nach	nach
 Nebenan	NN	NOUN	M6	Nebenan	Nebenan	Nebenan
-ins	APPRART	_	M6	ins	in	in
+ins	APPRART	ADP	M6	ins	in	in
 Petit	NE	PROPN	I2.2/Z3/MWU	Petit	Petit	Petit
 Café	NE	PROPN	I2.2/Z3/MWU	Café	Café	Café
 .	$.	PUNCT	Z9	.	.	.
@@ -26242,7 +26242,7 @@ sein	VAINF	AUX	A3	sein	sein	sein
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Vom	APPRART	_	Z5	vom	von	von
+Vom	APPRART	ADP	Z5	vom	von	von
 Kuchen	NN	NOUN	F1	Kuchen	Kuchen	Kuchen
 über	APPR	ADP	Z5	über	über	über
 Frosting	NN	NOUN	F1	Frosting	Frosting	Frosting
@@ -26250,7 +26250,7 @@ und	KON	CCONJ	Z5	und	und	und
 Glasur	NN	NOUN	F1	Glasur	Glasur	Glasur
 bis	APPR	ADP	Z5	bis	bis	bis
 hin	ADV	ADV	Z5	hin	hin	hin
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Dekoration	NN	NOUN	C1	Dekoration	Dekoration	Dekoration
 und	KON	CCONJ	Z5	und	und	und
 Präsentation	NN	NOUN	A10	Präsentation	Präsentation	Präsentation
@@ -26305,7 +26305,7 @@ so	ADV	ADV	Z4	so	so	so
 die	ART	DET	Z5	die	der	der
 richtige	ADJA	ADJ	A5.3	richtige	richtig	richtig
 Konsistenz	NN	NOUN	O1.1	Konsistenz	Konsistenz	Konsistenz
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Formen	NN	NOUN	O4.4	Formen	formen	formen
 der	ART	DET	Z5	der	der	der
 Kugeln	NN	NOUN	O4.4	Kugeln	Kugel	Kugel
@@ -26407,7 +26407,7 @@ und	KON	CCONJ	Z5	und	und	und
 eventuell	ADJD	ADJ	A7	eventuell	eventuell	eventuell
 verbrannte	ADJA	ADJ	F1	verbrannte	verbrannt	verbrannt
 Stellen	NN	NOUN	N5.1	Stellen	Stelle	Stelle
-vom	APPRART	_	Z5	vom	von	von
+vom	APPRART	ADP	Z5	vom	von	von
 Kuchen	NN	NOUN	F1	Kuchen	Kuchen	Kuchen
 ab	PTKVZ	PART	Z5	ab	ab	ab
 und	KON	CCONJ	Z5	und	und	und
@@ -26445,7 +26445,7 @@ ersparen	VVINF	VERB	I1.3	ersparen	ersparen	ersparen
 ,	$,	PUNCT	Z9	,	,	,
 kann	VMFIN	AUX	A7	kann	können	können
 man	PIS	PRON	Z8	man	man	man
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Cake	NN	NOUN	F1	Cake	Cake	Cake
 Pops	NN	NOUN	F1	Pops	Pop	Pop
 machen	VVINF	VERB	A1.1.1	machen	machen	machen
@@ -26479,7 +26479,7 @@ des	ART	DET	Z5	des	der	der
 Kuchens	NN	NOUN	F1	Kuchens	Kuchen	Kuchen
 wird	VAFIN	AUX	Z5	wird	werden	werden
 dann	ADV	ADV	N4	dann	dann	dann
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Cake	NN	NOUN	F1	Cake	Cake	Cake
 Pops	NN	NOUN	F1	Pops	Pop	Pop
 Teig	NN	NOUN	F1	Teig	Teig	Teig
@@ -26609,7 +26609,7 @@ und	KON	CCONJ	Z5	und	und	und
 mit	APPR	ADP	Z5	mit	mit	mit
 einem	ART	DET	Z5	einem	ein	ein
 Frosting	NN	NOUN	F1	Frosting	Frosting	Frosting
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Cake	NN	NOUN	F1	Cake	Cake	Cake
 Pops	NN	NOUN	F1	Pops	Pop	Pop
 Teig	NN	NOUN	F1	Teig	Teig	Teig
@@ -26808,7 +26808,7 @@ III	CARD	NUM	N1	III	III	III
 )	$(	PUNCT	Z9	)	)	)
 der	ART	DET	Z5	der	der	der
 Generalversammlung	NN	NOUN	G1.2/S1.1.3	Generalversammlung	Generalversammlung	Generalversammlung
-vom	APPRART	_	Z5	vom	von	von
+vom	APPRART	ADP	Z5	vom	von	von
 10.	ADJA	ADJ	N1	10.	10.	10.
 Dezember	NN	NOUN	T1.2	Dezember	Dezember	Dezember
 1948	CARD	NUM	N1	1948	1948	1948
@@ -26926,7 +26926,7 @@ wird	VAFIN	AUX	Z5	wird	werden	werden
 als	APPR	ADP	Z5	als	als	als
 letztes	ADJA	ADJ	N4	letztes	letzter	letzter
 Mittel	NN	NOUN	S8	Mittel	Mittel	Mittel
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Aufstand	NN	NOUN	G3	Aufstand	Aufstand	Aufstand
 gegen	APPR	ADP	Z5	gegen	gegen	gegen
 Tyrannei	NN	NOUN	S7.1	Tyrannei	Tyrannei	Tyrannei
@@ -27159,7 +27159,7 @@ begabt	ADJD	ADJ	X9.1	begabt	begabt	begabt
 und	KON	CCONJ	Z5	und	und	und
 sollen	VMFIN	AUX	S6	sollen	sollen	sollen
 einander	PRF	PRON	Z8	einander	sich	sich
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Geiste	NN	NOUN	S9	Geiste	Geist	Geist
 der	ART	DET	Z5	der	der	der
 Brüderlichkeit	NN	NOUN	S1.1.2	Brüderlichkeit	Brüderlichkeit	Brüderlichkeit
@@ -27490,14 +27490,14 @@ Suche	NN	NOUN	X2.4	Suche	Suche	Suche
 </s>
 <s>
 Gewächshäuser	NN	NOUN	F4	Gewächshäuser	Gewächshaus	Gewächshaus
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Botanischen	ADJA	ADJ	L3	botanischen	botanisch	botanisch
 Garten	NN	NOUN	F4	Garten	Garten	Garten
 </s>
 <s>
 Schmiedeeisernes	ADJA	ADJ	O1.1	schmiedeeisernes	schmiedeeisern	schmiedeeisern
 Eingangstor	NN	NOUN	H2	Eingangstor	Eingangstor	Eingangstor
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Garten	NN	NOUN	F4	Garten	Garten	Garten
 </s>
 <s>
@@ -27570,7 +27570,7 @@ Botanischen	ADJA	ADJ	F4	botanischen	botanisch	botanisch
 Gartens	NN	NOUN	F4	Gartens	Garten	Garten
 Darmstadt	NE	PROPN	Z2	Darmstadt	Darmstadt	Darmstadt
 beginnt	VVFIN	VERB	T2	beginnt	beginnen	beginnen
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Jahr	NN	NOUN	T1.3	Jahr	Jahr	Jahr
 1814	CARD	NUM	N1	1814	1814	1814
 .	$.	PUNCT	Z9	.	.	.
@@ -27647,7 +27647,7 @@ vor	PTKVZ	PART	Z5	vor	vor	vor
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Am	APPRART	_	T1.2	am	an	an
+Am	APPRART	ADP	T1.2	am	an	an
 17.	ADJA	ADJ	N1	17.	17.	17.
 Juni	NN	NOUN	T1.2	Juni	Juni	Juni
 1814	CARD	NUM	N1	1814	1814	1814
@@ -27788,7 +27788,7 @@ wurde	VAFIN	AUX	Z5	wurde	werden	werden
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Im	APPRART	_	Z5	im	in	in
+Im	APPRART	ADP	Z5	im	in	in
 Jahre	NN	NOUN	T1.2	Jahre	Jahr	Jahr
 1830	CARD	NUM	N1	1830	1830	1830
 wurde	VAFIN	AUX	Z5	wurde	werden	werden
@@ -27807,7 +27807,7 @@ der	ART	DET	Z5	der	der	der
 Name	NN	NOUN	Q1.1	Name	Name	Name
 der	ART	DET	Z5	der	der	der
 Straße	NN	NOUN	M3	Straße	Straße	Straße
-am	APPRART	_	Z5	am	an	an
+am	APPRART	ADP	Z5	am	an	an
 heutigen	ADJA	ADJ	T1.1.2	heutigen	heutig	heutig
 botanischen	ADJA	ADJ	F4	botanischen	botanisch	botanisch
 Garten	NN	NOUN	F4	Garten	Garten	Garten
@@ -27818,7 +27818,7 @@ jüngerer	ADJA	ADJ	T3	jüngerer	jung	jung
 Bruder	NN	NOUN	S4	Bruder	Bruder	Bruder
 Gottfrieds	NE	PROPN	Z1	Gottfrieds	Gottfried	Gottfried
 ,	$,	PUNCT	Z9	,	,	,
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Garteninspektor	NN	NOUN	F4/S2.2/S7.1	Garteninspektor	Garteninspektor	Garteninspektor
 ernannt	VVPP	VERB	Q2.2	ernannt	ernennen	ernennen
 .	$.	PUNCT	Z9	.	.	.
@@ -27863,7 +27863,7 @@ der	ART	DET	Z5	der	der	der
 Garten	NN	NOUN	F4	Garten	Garten	Garten
 bis	APPR	ADP	T2	bis	bis	bis
 1848	CARD	NUM	N1	1848	1848	1848
-am	APPRART	_	M6	am	an	an
+am	APPRART	ADP	M6	am	an	an
 kleinen	ADJA	ADJ	N3.2	kleinen	klein	klein
 Woog	NE	PROPN	Z2	Woog	Woog	Woog
 in	APPR	ADP	M6	in	in	in
@@ -27940,7 +27940,7 @@ Pachtgelände	NN	NOUN	I2.2/M7	Pachtgelände	Pachtgelände	Pachtgelände
 von	APPR	ADP	Z5	von	von	von
 einem	ART	DET	N1	einem	ein	ein
 Hektar	NN	NOUN	N3.6	Hektar	Hektar	Hektar
-im	APPRART	_	M6	im	in	in
+im	APPRART	ADP	M6	im	in	in
 Meiereipark	NN	NOUN	F4/Z3	Meiereipark	Meiereipark	Meiereipark
 an	APPR	ADP	Z5	an	an	an
 der	ART	DET	Z5	der	der	der
@@ -28045,7 +28045,7 @@ galt	VVFIN	VERB	A1.8	galt	gelten	gelten
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Im	APPRART	_	Z5	im	in	in
+Im	APPRART	ADP	Z5	im	in	in
 Laufe	NN	NOUN	T1.3	Laufe	Lauf	Lauf
 der	ART	DET	Z5	der	der	der
 Jahre	NN	NOUN	T1.3	Jahre	Jahr	Jahr
@@ -28078,7 +28078,7 @@ zusammen	PTKVZ	PART	Z5	zusammen	zusammen	zusammen
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Am	APPRART	_	T1.2	am	an	an
+Am	APPRART	ADP	T1.2	am	an	an
 1.	ADJA	ADJ	N1	1.	1.	1.
 April	NN	NOUN	T1.2	April	April	April
 1897	CARD	NUM	N1	1897	1897	1897
@@ -28132,7 +28132,7 @@ Architekt	NN	NOUN	H1/I3.1	Architekt	Architekt	Architekt
 erbaut	VVPP	VERB	H1/T2	erbaut	erbauen	erbauen
 ,	$,	PUNCT	Z9	,	,	,
 das	PRELS	PRON	Z8	das	der	der
-im	APPRART	_	Z5	im	in	in
+im	APPRART	ADP	Z5	im	in	in
 Heimatstil	NN	NOUN	C1	Heimatstil	Heimatstil	Heimatstil
 gehalten	VVPP	VERB	M8	gehalten	halten	halten
 ist	VAFIN	AUX	A3	ist	sein	sein
@@ -28227,7 +28227,7 @@ Verfahren	NN	NOUN	X4.2	Verfahren	Verfahren	Verfahren
 Verschlüsselungsalgorithmen	NN	NOUN	A15/Y2	Verschlüsselungsalgorithmen	Verschlüsselungsalgorithmus	Verschlüsselungsalgorithmus
 )	$(	PUNCT	Z9	)	)	)
 sind	VAFIN	AUX	A3	sind	sein	sein
-z.	APPRART	_	A4.1	z.	z.	z.
+z.	APPRART	ADP	A4.1	z.	z.	z.
 B.	NN	NOUN	A4.1	B.	B.	B.
 AES	NE	PROPN	Y2/Z3	AES	AES	AES
 ,	$,	PUNCT	Z9	,	,	,
@@ -28330,7 +28330,7 @@ sollte	VMFIN	AUX	S7.4	sollte	sollen	sollen
 .	$.	PUNCT	Z9	.	.	.
 </s>
 <s>
-Im	APPRART	_	Z5	im	in	in
+Im	APPRART	ADP	Z5	im	in	in
 Verlustfall	NN	NOUN	A10/Z7	Verlustfall	Verlustfall	Verlustfall
 sollte	VMFIN	AUX	S6	sollte	sollen	sollen
 man	PIS	PRON	Z8	man	man	man
@@ -28383,7 +28383,7 @@ zukommen	VVINF	VERB	A9	zukommen	zukommen	zukommen
 lassen	VVINF	VERB	A1.1.1	lassen	lassen	lassen
 will	VMFIN	AUX	X7	will	wollen	wollen
 ,	$,	PUNCT	Z9	,	,	,
-z.	APPRART	_	A4.1	z.	z.	z.
+z.	APPRART	ADP	A4.1	z.	z.	z.
 B.	NN	NOUN	A4.1	B.	B.	B.
 auf	APPR	ADP	Z5	auf	auf	auf
 der	ART	DET	Z5	der	der	der
@@ -28522,7 +28522,7 @@ Verfahren	NN	NOUN	X4.2	Verfahren	Verfahren	Verfahren
 Verschlüsselungsalgorithmen	NN	NOUN	A15/Y2	Verschlüsselungsalgorithmen	Verschlüsselungsalgorithmus	Verschlüsselungsalgorithmus
 )	$(	PUNCT	Z9	)	)	)
 sind	VAFIN	AUX	A3	sind	sein	sein
-z.	APPRART	_	A4.1	z.	z.	z.
+z.	APPRART	ADP	A4.1	z.	z.	z.
 B.	NN	NOUN	A4.1	B.	B.	B.
 RSA	NE	PROPN	A15/Y2	RSA	RSA	RSA
 (	$(	PUNCT	Z9	(	(	(
@@ -28671,7 +28671,7 @@ PKI	NN	NOUN	Y2	PKI	PKI	PKI
 ausgestellten	ADJA	ADJ	A9	ausgestellten	ausgestellt	ausgestellt
 Zertifikate	NN	NOUN	A15/Y2	Zertifikate	Zertifikat	Zertifikat
 werden	VAFIN	AUX	Z5	werden	werden	werden
-zur	APPRART	_	Z5	zur	zu	zu
+zur	APPRART	ADP	Z5	zur	zu	zu
 Absicherung	NN	NOUN	A15	Absicherung	Absicherung	Absicherung
 computergestützter	ADJA	ADJ	Y2	computergestützter	computergestützt	computergestützt
 Kommunikation	NN	NOUN	Q1.1	Kommunikation	Kommunikation	Kommunikation
@@ -28752,7 +28752,7 @@ Verschlüsselung	NN	NOUN	A15/Y2	Verschlüsselung	Verschlüsselung	Verschlüsselu
 Hybride	ADJA	ADJ	A15/Y2	hybride	hybrid	hybrid
 Verschlüsselungsverfahren	NN	NOUN	A15/Y2	Verschlüsselungsverfahren	Verschlüsselungsverfahren	Verschlüsselungsverfahren
 werden	VAFIN	AUX	Z5	werden	werden	werden
-z.	APPRART	_	A4.1	z.	z.	z.
+z.	APPRART	ADP	A4.1	z.	z.	z.
 B.	NN	NOUN	A4.1	B.	B.	B.
 bei	APPR	ADP	Z5	bei	bei	bei
 der	ART	DET	Z5	der	der	der
@@ -28845,7 +28845,7 @@ Netzwerkprotokollen	NN	NOUN	Y2	Netzwerkprotokollen	Netzwerkprotokoll	Netzwerkpro
 IPsec	NE	PROPN	Y2	IPsec	IPsec	IPsec
 und	KON	CCONJ	Z5	und	und	und
 SSL	NE	PROPN	Y2	SSL	SSL	SSL
-zum	APPRART	_	Z5	zum	zu	zu
+zum	APPRART	ADP	Z5	zum	zu	zu
 Einsatz	NN	NOUN	A1.5.1	Einsatz	Einsatz	Einsatz
 .	$.	PUNCT	Z9	.	.	.
 </s>
@@ -28894,7 +28894,7 @@ generator	NN	NOUN	A15/Y2	Generator	Generator	Generator
 </s>
 <s>
 Hilfe	NN	NOUN	S8	Hilfe	Hilfe	Hilfe
-vom	APPRART	_	Z5	vom	von	von
+vom	APPRART	ADP	Z5	vom	von	von
 Autor	NN	NOUN	Q1.2/S2.2	Autor	Autor	Autor
 siehe	VVIMP	VERB	X3.4	siehe	sehen	sehen
 stefanux.net	URL	PROPN	Z99	stefanux.net	stefanux.net	stefanux.net
