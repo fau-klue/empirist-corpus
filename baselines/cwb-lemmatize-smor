@@ -159,7 +159,7 @@ my $V = $Word->max_id;
 my $n_skip = 0;
 foreach my $i (0 .. $V - 1) {
   my $word = decode($Charset, $Word->id2str($i));
-  if (length($word) > $MaxLen || $word =~ /\s/) {
+  if (length($word) > $MaxLen || $word =~ /\s/ || $word =~ /<.+>/) {
     $n_skip++;
     next;
   }
