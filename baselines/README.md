@@ -33,10 +33,10 @@ The primary evaluation result is the score for setting 1 (surf-surf).
 
 |                              | surf-surf | surf-surf nc | surf-norm | norm-norm |
 |:-----------------------------|----------:|-------------:|----------:|----------:|
-| Use word form                |     66.18 |        71.63 |     65.44 |     71.29 |
-| Lookup EmpiriST              |     85.75 |              |     85.22 |           |
-| Lookup TIGER                 |     93.27 |              |     92.53 |           |
-| Lookup TIGER + EmpiriST      |     94.52 |              |     93.92 |           |
+| Use word form                |     66.24 |        71.68 |     65.48 |     71.33 |
+| Lookup EmpiriST              |     85.72 |        87.71 |     85.18 |     87.65 |
+| Lookup TIGER                 |     93.34 |        94.93 |     92.58 |     95.18 |
+| Lookup TIGER + EmpiriST      |     94.54 |        95.67 |     93.92 |     95.67 |
 |                              |           |              |           |           |
 | TreeTagger                   |     80.80 |              |     80.34 |           |
 | TreeTagger + post-processing |     92.01 |              |     91.74 |           |
@@ -50,9 +50,9 @@ The primary evaluation result is the score for setting 1 (surf-surf).
 |                              |           |              |           |           |
 | **SMOR morphology**          |           |              |           |           |
 | `cwb-lemmatize-smor` v1.0    |     74.01 |              |     74.04 |           |
-|  + TIGER post-processing     |     89.21 |              |     89.22 |           |
-|  + unknown-word heuristics   |     96.96 |              |     96.20 |           |
+| + TIGER post-processing      |     89.21 |              |     89.22 |           |
+| + unknown-word heuristics    |     96.96 |              |     96.20 |           |
 | `cwb-lemmatize-smor` v1.2    |           |              |           |           |
-|  + heuristic & disambiguation|     83.44 |        84.88 |     82.80 |     83.98 |
-|  + TIGER adaptations         |     97.30 |        98.62 |     96.66 |     97.95 |
-|  + EmpiriST adaptations      | **97.81** |    **98.73** | **96.94** | **98.62** |
+| + heuristic & disambiguation |     83.44 |        84.88 |     82.80 |     83.98 |
+| + TIGER adaptations          |     97.30 |        98.62 |     96.66 |     97.95 |
+| + EmpiriST adaptations       | **97.81** |    **98.73** | **96.94** | **98.62** |
