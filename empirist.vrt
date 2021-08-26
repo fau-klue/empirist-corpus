@@ -4863,14 +4863,14 @@ Unterschiede	NN	NOUN	A6.1	Unterschiede	Unterschied	Unterschied
 </posting>
 <posting id="cmc_train_005_024" author="AUTOR" date="14. Apr. 2011">
 <s>
-"	$(	PUNCT	/Z9	"	"	"
+"	$(	PUNCT	Z9	"	"	"
 asynchroner	ADJA	ADJ	T1.1.2	asynchroner	asynchron	asynchron
 Ablauf	NN	NOUN	N4/T1.1	Ablauf	Ablauf	Ablauf
 /	$(	PUNCT	Z9	/	/	/
 Durcheinander	NN	NOUN	A1.7	Durcheinander	Durcheinander	Durcheinander
 der	ART	DET	Z5	der	der	der
-Abfolge	NN	NOUN	/Z9	Abfolge	Abfolge	Abfolge
-"	$(	PUNCT	N4 Lin_Ordng/T1.1	"	"	"
+Abfolge	NN	NOUN	N4/T1.1	Abfolge	Abfolge	Abfolge
+"	$(	PUNCT	Z9	"	"	"
 </s>
 <s>
 &lt;--	XY	X	Z5	&lt;--	&lt;--	&lt;--
