@@ -5596,7 +5596,7 @@ ich	PPER	PRON	Z8	ich	ich	ich
 auch	ADV	ADV	Z5	auch	auch	auch
 schon	ADV	ADV	Z4	schon	schon	schon
 gefunden	VVPP	VERB	X2.4	gefunden	finden	finden
-.	$.	PUNCT	.	.	.	.
+.	$.	PUNCT	Z9	.	.	.	.
 </s>
 <s>
 Müssen	VMFIN	AUX	S6	müssen	müssen	müssen
